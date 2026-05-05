@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Capital City Building Activity (FY 2024–25)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": 800,
+  "height": 450,
+  "projection": {"type": "mercator"},
+  "layer": [
+    {
+      "data": {
+        "url": "../topojson/aus-states.topojson",
+        "format": {"type": "json", "property": "features"}
+      },
+      "mark": {"type": "geoshape", "fill": "#dce8f5", "stroke": "white", "strokeWidth": 1}
+    },
+    {
+      "data": {"url": "../data/gccsa_summary.csv"},
+      "transform": [
+        {
+          "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",
+          "as": "short_name"
+        }
+      ],
+      "mark": {"type": "circle", "opacity": 0.78, "stroke": "white", "strokeWidth": 1},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "total",
+          "type": "quantitative",
+          "title": "Approvals FY24–25",
+          "scale": {"domain": [300, 50000], "range": [80, 2200]},
+          "legend": {"format": ","}
+        },
+        "color": {
+          "field": "approvals_per_1000",
+          "type": "quantitative",
+          "title": "Per 1,000 people",
+          "scale": {"scheme": "orangered"},
+          "legend": {}
+        },
+        "tooltip": [
+          {"field": "short_name", "type": "nominal", "title": "City"},
+          {"field": "total", "type": "quantitative", "title": "Approvals FY24–25", "format": ","},
+          {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 residents", "format": ".2f"},
+          {"field": "pop_growth_pct", "type": "quantitative", "title": "Pop. growth (%)", "format": ".2f"}
+        ]
+      }
+    },
+    {
+      "data": {"url": "../data/gccsa_summary.csv"},
+      "transform": [
+        {
+          "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",
+          "as": "short_name"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "dy": -14,
+        "fontSize": 10,
+        "fontWeight": "600",
+        "color": "#1a1a2e"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "short_name", "type": "nominal"}
+      }
+    }
+  ]
+}

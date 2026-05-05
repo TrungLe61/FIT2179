@@ -1,0 +1,48 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Year-on-Year Change in Building Approvals by State (FY23–24 vs FY24–25)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 260,
+  "data": {"url": "../data/state_summary.csv"},
+  "transform": [
+    {"filter": "isValid(datum.yoy_change_pct)"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "bar", "cornerRadiusEnd": 3},
+      "encoding": {
+        "y": {
+          "field": "state_name",
+          "type": "nominal",
+          "sort": {"field": "yoy_change_pct", "order": "descending"},
+          "title": null,
+          "axis": {"labelFontSize": 11}
+        },
+        "x": {
+          "field": "yoy_change_pct",
+          "type": "quantitative",
+          "title": "Year-on-Year Change (%)",
+          "axis": {"format": ".0f", "grid": true}
+        },
+        "color": {
+          "condition": {"test": "datum.yoy_change_pct > 0", "value": "#2196F3"},
+          "value": "#F44336"
+        },
+        "tooltip": [
+          {"field": "state_name", "type": "nominal", "title": "State"},
+          {"field": "approvals_fy2425", "type": "quantitative", "title": "Approvals FY24–25", "format": ","},
+          {"field": "approvals_fy2324", "type": "quantitative", "title": "Approvals FY23–24", "format": ","},
+          {"field": "yoy_change_pct", "type": "quantitative", "title": "YoY Change (%)", "format": ".1f"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#333", "strokeWidth": 1},
+      "encoding": {"x": {"datum": 0}}
+    }
+  ]
+}

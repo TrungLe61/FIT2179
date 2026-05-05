@@ -1,0 +1,72 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Supply vs Demand: Building Rate vs Population Growth by Capital City",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {"url": "../data/gccsa_summary.csv"},
+  "transform": [
+    {
+      "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra (ACT)' : replace(datum.city_name, 'Greater ', '')",
+      "as": "short_name"
+    },
+    {
+      "fold": ["approvals_per_1000", "pop_growth_pct"],
+      "as": ["metric_key", "value"]
+    },
+    {
+      "calculate": "datum.metric_key === 'approvals_per_1000' ? 'Supply (approvals per 1,000)' : 'Demand (pop. growth %)'",
+      "as": "metric_label"
+    }
+  ],
+  "layer": [
+    {
+      "mark": {"type": "line", "color": "#bbb", "strokeWidth": 2},
+      "encoding": {
+        "y": {
+          "field": "short_name",
+          "type": "nominal",
+          "sort": {"field": "approvals_per_1000", "op": "max", "order": "descending"},
+          "title": null,
+          "axis": {"labelFontSize": 12}
+        },
+        "x": {
+          "field": "value",
+          "type": "quantitative",
+          "title": "Rate (approvals per 1,000 people  /  population growth %)",
+          "axis": {"grid": true}
+        },
+        "detail": {"field": "short_name"}
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 110, "opacity": 0.9},
+      "encoding": {
+        "y": {
+          "field": "short_name",
+          "type": "nominal",
+          "sort": {"field": "approvals_per_1000", "op": "max", "order": "descending"}
+        },
+        "x": {"field": "value", "type": "quantitative"},
+        "color": {
+          "field": "metric_label",
+          "type": "nominal",
+          "title": null,
+          "scale": {
+            "domain": ["Supply (approvals per 1,000)", "Demand (pop. growth %)"],
+            "range": ["#1565C0", "#FF6F00"]
+          },
+          "legend": {"orient": "top", "labelFontSize": 11}
+        },
+        "tooltip": [
+          {"field": "short_name", "type": "nominal", "title": "City"},
+          {"field": "metric_label", "title": "Metric"},
+          {"field": "value", "type": "quantitative", "title": "Value", "format": ".2f"}
+        ]
+      }
+    }
+  ]
+}

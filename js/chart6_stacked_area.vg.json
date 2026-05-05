@@ -1,0 +1,50 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Composition of Approvals: Houses vs Apartments (1983–2026)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 300,
+  "data": {"url": "../data/approvals_national_monthly.csv"},
+  "transform": [
+    {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
+    {
+      "calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'",
+      "as": "dwelling_type"
+    }
+  ],
+  "mark": {"type": "area", "interpolate": "monotone", "opacity": 0.9},
+  "encoding": {
+    "x": {
+      "field": "date",
+      "type": "temporal",
+      "title": null,
+      "axis": {"grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "approvals",
+      "type": "quantitative",
+      "stack": "zero",
+      "title": "Monthly Approvals",
+      "axis": {"format": ","}
+    },
+    "color": {
+      "field": "dwelling_type",
+      "type": "nominal",
+      "title": "Dwelling Type",
+      "scale": {
+        "domain": ["Houses", "Apartments / Other"],
+        "range": ["#1565C0", "#FF6F00"]
+      },
+      "legend": {"orient": "top-left"}
+    },
+    "order": {"field": "type", "sort": "ascending"},
+    "tooltip": [
+      {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
+      {"field": "dwelling_type", "title": "Type"},
+      {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
+    ]
+  }
+}

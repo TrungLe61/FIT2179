@@ -1,0 +1,41 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Building Approvals by State/Territory (FY 2024–25)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": 480,
+  "height": 340,
+  "projection": {"type": "mercator"},
+  "data": {
+    "url": "../topojson/aus-states.topojson",
+    "format": {"type": "json", "property": "features"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.STATE_NAME",
+      "from": {
+        "data": {"url": "../data/state_summary.csv"},
+        "key": "state_name",
+        "fields": ["state_name", "approvals_fy2425", "approvals_per_1000", "yoy_change_pct"]
+      }
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1},
+  "encoding": {
+    "color": {
+      "field": "approvals_fy2425",
+      "type": "quantitative",
+      "title": "Approvals FY24–25",
+      "scale": {"scheme": "blues"},
+      "legend": {"format": ","}
+    },
+    "tooltip": [
+      {"field": "state_name", "type": "nominal", "title": "State"},
+      {"field": "approvals_fy2425", "type": "quantitative", "title": "Approvals FY24–25", "format": ","},
+      {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 people", "format": ".2f"},
+      {"field": "yoy_change_pct", "type": "quantitative", "title": "YoY change (%)", "format": ".1f"}
+    ]
+  }
+}

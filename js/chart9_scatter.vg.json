@@ -1,0 +1,77 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Which States Are Keeping Up? Population Growth vs Building Supply",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 340,
+  "data": {"url": "../data/state_summary.csv"},
+  "transform": [
+    {"filter": "isValid(datum.approvals_per_1000) && isValid(datum.pop_growth_pct)"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "rule", "color": "#ccc", "strokeDash": [4, 4]},
+      "encoding": {"x": {"datum": 1.3}}
+    },
+    {
+      "mark": {"type": "rule", "color": "#ccc", "strokeDash": [4, 4]},
+      "encoding": {"y": {"datum": 5.5}}
+    },
+    {
+      "mark": {"type": "circle", "opacity": 0.75},
+      "encoding": {
+        "x": {
+          "field": "pop_growth_pct",
+          "type": "quantitative",
+          "title": "Population Growth Rate (%)",
+          "scale": {"domain": [0, 3]},
+          "axis": {"grid": false}
+        },
+        "y": {
+          "field": "approvals_per_1000",
+          "type": "quantitative",
+          "title": "Approvals per 1,000 People",
+          "axis": {"grid": false}
+        },
+        "size": {
+          "field": "pop_2025",
+          "type": "quantitative",
+          "title": "Population (2025)",
+          "scale": {
+            "domain": [500000, 1000000, 3000000, 6000000, 9000000],
+            "range": [60, 120, 280, 500, 750]
+          },
+          "legend": {"format": ","}
+        },
+        "color": {
+          "field": "state_name",
+          "type": "nominal",
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "state_name", "type": "nominal", "title": "State"},
+          {"field": "pop_growth_pct", "type": "quantitative", "title": "Pop. growth (%)", "format": ".2f"},
+          {"field": "approvals_per_1000", "type": "quantitative", "title": "Approvals per 1,000", "format": ".2f"},
+          {"field": "pop_2025", "type": "quantitative", "title": "Population (2025)", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dy": -12,
+        "fontSize": 11,
+        "fontWeight": "600"
+      },
+      "encoding": {
+        "x": {"field": "pop_growth_pct", "type": "quantitative"},
+        "y": {"field": "approvals_per_1000", "type": "quantitative"},
+        "text": {"field": "state"},
+        "color": {"field": "state_name", "type": "nominal", "legend": null}
+      }
+    }
+  ]
+}

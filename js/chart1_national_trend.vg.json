@@ -1,0 +1,82 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia's Building Approvals: 40 Years of Booms and Busts (1983–2026)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 340,
+  "layer": [
+    {
+      "data": {"url": "../data/approvals_national_monthly.csv"},
+      "transform": [
+        {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
+        {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}
+      ],
+      "mark": {"type": "line", "strokeWidth": 1.8},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false, "labelAngle": 0}
+        },
+        "y": {
+          "field": "approvals",
+          "type": "quantitative",
+          "title": "Monthly Approvals",
+          "axis": {"format": ","}
+        },
+        "color": {
+          "field": "dwelling_type",
+          "type": "nominal",
+          "title": "Dwelling Type",
+          "scale": {
+            "domain": ["Houses", "Apartments / Other"],
+            "range": ["#1565C0", "#FF6F00"]
+          },
+          "legend": {"orient": "top-left"}
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
+          {"field": "dwelling_type", "title": "Type"},
+          {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
+        ]
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {"date": "2008-09-01", "note": "GFC"},
+          {"date": "2012-06-01", "note": "Mining Boom Peak"},
+          {"date": "2020-03-01", "note": "COVID-19"},
+          {"date": "2022-05-01", "note": "Rate Hikes Begin"}
+        ]
+      },
+      "layer": [
+        {
+          "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#999", "strokeWidth": 1.2},
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"}
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "dx": 4,
+            "fontSize": 9.5,
+            "color": "#555",
+            "fontStyle": "italic"
+          },
+          "encoding": {
+            "x": {"field": "date", "type": "temporal"},
+            "y": {"value": 12},
+            "text": {"field": "note"}
+          }
+        }
+      ]
+    }
+  ]
+}

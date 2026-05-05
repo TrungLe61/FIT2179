@@ -1,0 +1,9 @@
+city,city_name,total,houses,non_houses,house_pct,gccsa_name,pop_2024,pop_2025,pop_growth_pct,approvals_per_1000,lat,lon
+ACT,Australian Capital Territory,2831.0,705.0,2126.0,24.9,Australian Capital Territory,478430,484630,1.3,5.84,-35.28,149.13
+Adelaide,Greater Adelaide,11837.0,7857.0,3980.0,66.4,Greater Adelaide,1472368,1491015,1.27,7.94,-34.93,138.60
+Brisbane,Greater Brisbane,21588.0,13606.0,7982.0,63.0,Greater Brisbane,2775301,2833524,2.1,7.62,-27.47,153.02
+Darwin,Greater Darwin,364.0,300.0,64.0,82.4,Greater Darwin,156565,159284,1.74,2.29,-12.46,130.84
+Hobart,Greater Hobart,885.0,824.0,61.0,93.1,Greater Hobart,254708,255250,0.21,3.47,-42.88,147.33
+Melbourne,Greater Melbourne,46530.0,24101.0,22429.0,51.8,Greater Melbourne,5330560,5435590,1.97,8.56,-37.81,144.96
+Perth,Greater Perth,19458.0,15490.0,3968.0,79.6,Greater Perth,2394677,2452765,2.43,7.93,-31.95,115.86
+Sydney,Greater Sydney,33573.0,12987.0,20586.0,38.7,Greater Sydney,5563600,5638830,1.35,5.95,-33.87,151.21

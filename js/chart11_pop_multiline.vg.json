@@ -1,0 +1,52 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Capital City Population Growth (2001–2025)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 320,
+  "data": {"url": "../data/population_gccsa_2001_2025.csv"},
+  "transform": [
+    {
+      "filter": "indexof(['Greater Sydney','Greater Melbourne','Greater Brisbane','Greater Perth','Greater Adelaide','Australian Capital Territory','Greater Hobart','Greater Darwin'], datum.gccsa_name) >= 0"
+    }
+  ],
+  "params": [
+    {
+      "name": "highlight",
+      "select": {"type": "point", "on": "mouseover", "fields": ["gccsa_name"]}
+    }
+  ],
+  "mark": {"type": "line", "point": true, "strokeWidth": 2},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "title": null,
+      "axis": {"format": "d", "grid": false, "labelAngle": 0}
+    },
+    "y": {
+      "field": "population",
+      "type": "quantitative",
+      "title": "Population",
+      "axis": {"format": ".2s"}
+    },
+    "color": {
+      "field": "gccsa_name",
+      "type": "nominal",
+      "title": "City",
+      "legend": {"labelFontSize": 10}
+    },
+    "opacity": {
+      "condition": {"param": "highlight", "value": 1},
+      "value": 0.15
+    },
+    "tooltip": [
+      {"field": "gccsa_name", "type": "nominal", "title": "City"},
+      {"field": "year", "type": "quantitative", "title": "Year", "format": "d"},
+      {"field": "population", "type": "quantitative", "title": "Population", "format": ","}
+    ]
+  }
+}

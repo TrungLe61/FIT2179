@@ -1,0 +1,65 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Building Approvals per 1,000 People by State (FY 2024–25)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 260,
+  "data": {"url": "../data/state_summary.csv"},
+  "transform": [
+    {"filter": "isValid(datum.approvals_per_1000)"}
+  ],
+  "layer": [
+    {
+      "mark": {"type": "bar", "cornerRadiusEnd": 3},
+      "encoding": {
+        "y": {
+          "field": "state_name",
+          "type": "nominal",
+          "sort": {"field": "approvals_per_1000", "order": "descending"},
+          "title": null,
+          "axis": {"labelFontSize": 11}
+        },
+        "x": {
+          "field": "approvals_per_1000",
+          "type": "quantitative",
+          "title": "Approvals per 1,000 Residents",
+          "axis": {"grid": true}
+        },
+        "color": {
+          "condition": {"test": "datum.approvals_per_1000 >= 5.8", "value": "#2196F3"},
+          "value": "#FF9800"
+        },
+        "tooltip": [
+          {"field": "state_name", "type": "nominal", "title": "State"},
+          {"field": "approvals_per_1000", "type": "quantitative", "title": "Approvals per 1,000", "format": ".2f"},
+          {"field": "approvals_fy2425", "type": "quantitative", "title": "Total Approvals", "format": ","},
+          {"field": "pop_2025", "type": "quantitative", "title": "Population (2025)", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#C62828", "strokeWidth": 1.5, "strokeDash": [5, 3]},
+      "encoding": {"x": {"datum": 5.8}}
+    },
+    {
+      "data": {"values": [{"label": "National avg ~5.8"}]},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 4,
+        "dy": -5,
+        "color": "#C62828",
+        "fontSize": 9,
+        "fontStyle": "italic"
+      },
+      "encoding": {
+        "x": {"datum": 5.8},
+        "y": {"value": 8},
+        "text": {"field": "label"}
+      }
+    }
+  ]
+}

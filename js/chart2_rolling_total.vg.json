@@ -1,0 +1,63 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Are We Building Enough? (12-Month Rolling Total)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "height": 280,
+  "layer": [
+    {
+      "data": {"url": "../data/approvals_national_monthly.csv"},
+      "transform": [
+        {
+          "window": [{"op": "sum", "field": "total", "as": "rolling_12m"}],
+          "frame": [-11, 0]
+        },
+        {"filter": "datum.date >= '1984-06-01'"}
+      ],
+      "mark": {"type": "bar", "color": "#90CAF9"},
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal",
+          "title": null,
+          "axis": {"grid": false, "labelAngle": 0}
+        },
+        "y": {
+          "field": "rolling_12m",
+          "type": "quantitative",
+          "title": "Annual Approvals (rolling 12 months)",
+          "axis": {"format": ","}
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
+          {"field": "rolling_12m", "type": "quantitative", "title": "Rolling 12-month total", "format": ","}
+        ]
+      }
+    },
+    {
+      "data": {"values": [{}]},
+      "mark": {"type": "rule", "color": "#C62828", "strokeWidth": 2.5, "strokeDash": [6, 3]},
+      "encoding": {"y": {"datum": 240000}}
+    },
+    {
+      "data": {"values": [{"label": "240,000 annual target"}]},
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "dy": -6,
+        "color": "#C62828",
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {"value": 8},
+        "y": {"datum": 240000},
+        "text": {"field": "label"}
+      }
+    }
+  ]
+}
