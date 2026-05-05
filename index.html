@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australia's Housing Supply — FIT2179 DV2</title>
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.30.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.21.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.26.0"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', system-ui, -apple-system, sans-serif; background: #f1f5f9; color: #1e293b; line-height: 1.5; }
+
+    /* Hero */
+    .hero { background: linear-gradient(135deg, #0f2d5c 0%, #1d4ed8 60%, #2563eb 100%); color: white; padding: 64px 24px 56px; text-align: center; }
+    .hero h1 { font-size: 2.4rem; font-weight: 700; line-height: 1.2; margin-bottom: 14px; letter-spacing: -0.02em; }
+    .hero .subtitle { font-size: 1.05rem; opacity: 0.82; max-width: 660px; margin: 0 auto 40px; }
+    .stats-row { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+    .stat { text-align: center; }
+    .stat-value { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; }
+    .stat-label { font-size: 0.72rem; opacity: 0.72; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 2px; }
+    .stat-divider { width: 1px; background: rgba(255,255,255,0.25); align-self: stretch; }
+
+    /* Layout */
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+    /* Section */
+    .section { padding: 52px 0; }
+    .section-header { margin-bottom: 36px; }
+    .section-tag { display: inline-flex; align-items: center; gap: 6px; background: #1d4ed8; color: white; font-size: 0.7rem; font-weight: 700; padding: 4px 12px; border-radius: 20px; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .section-title { font-size: 1.65rem; font-weight: 700; margin-bottom: 10px; letter-spacing: -0.01em; }
+    .section-desc { color: #475569; font-size: 0.95rem; max-width: 720px; line-height: 1.65; }
+
+    /* Chart grid */
+    .chart-grid { display: grid; gap: 20px; }
+    .chart-grid-1 { grid-template-columns: 1fr; }
+    .chart-grid-2 { grid-template-columns: 1fr 1fr; }
+    .chart-grid-3 { grid-template-columns: 1fr 1fr 1fr; }
+
+    /* Cards */
+    .card { background: white; border-radius: 14px; padding: 24px 24px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.07), 0 2px 8px rgba(0,0,0,0.04); }
+    .card-title { font-size: 0.95rem; font-weight: 600; color: #0f172a; margin-bottom: 3px; }
+    .card-desc { font-size: 0.78rem; color: #64748b; margin-bottom: 16px; line-height: 1.5; }
+
+    /* Insight */
+    .insight { display: flex; gap: 10px; background: #eff6ff; border-left: 3px solid #1d4ed8; border-radius: 0 8px 8px 0; padding: 10px 14px; margin-top: 14px; font-size: 0.8rem; color: #1e40af; line-height: 1.55; }
+    .insight::before { content: "↗"; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    /* Divider */
+    .divider { border: none; border-top: 1px solid #e2e8f0; }
+
+    /* Key facts band */
+    .fact-band { background: #0f172a; color: white; padding: 28px 24px; }
+    .fact-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .fact-value { font-size: 1.6rem; font-weight: 700; color: #60a5fa; letter-spacing: -0.02em; }
+    .fact-city { font-size: 0.75rem; font-weight: 600; margin: 3px 0; }
+    .fact-label { font-size: 0.68rem; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.05em; }
+
+    /* Footer */
+    footer { background: #0f172a; color: #64748b; padding: 36px 24px; text-align: center; font-size: 0.78rem; line-height: 1.8; }
+    footer strong { color: #94a3b8; }
+    footer a { color: #60a5fa; text-decoration: none; }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .chart-grid-2, .chart-grid-3 { grid-template-columns: 1fr; }
+      .fact-grid { grid-template-columns: repeat(2, 1fr); }
+      .hero h1 { font-size: 1.8rem; }
+      .stats-row { gap: 24px; }
+      .stat-divider { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════ HERO ═══════════════════════════════ -->
+<div class="hero">
+  <div class="container">
+    <h1>Australia's Housing Supply Crisis</h1>
+    <p class="subtitle">Building approvals data reveals a nation struggling to house its growing population — with dramatic differences by state, city, and dwelling type.</p>
+    <div class="stats-row">
+      <div class="stat">
+        <div class="stat-value">17,780</div>
+        <div class="stat-label">Approvals in Mar 2026</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value">200K</div>
+        <div class="stat-label">Annual dwellings needed</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value">+31.4%</div>
+        <div class="stat-label">WA growth (YoY)</div>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat">
+        <div class="stat-value">−37.8%</div>
+        <div class="stat-label">ACT decline (YoY)</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ SECTION 1 — THE NATIONAL PICTURE ═══════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Section 1</div>
+      <h2 class="section-title">The National Picture</h2>
+      <p class="section-desc">Forty years of building approvals reveal a volatile history shaped by economic crises, government stimulus, and population booms. The underlying question: are we building enough?</p>
+    </div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">National Building Approvals, 1983–2026</div>
+        <div class="card-desc">Monthly approvals for houses and non-house dwellings (apartments, units, townhouses). Annotated with major economic events.</div>
+        <div id="chart1"></div>
+        <div class="insight">The COVID-era stimulus spike (2020–21) drove approvals to near-record highs, but rapid interest rate hikes from May 2022 caused a sharp contraction — particularly in apartment approvals.</div>
+      </div>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">Are We Building Enough? Rolling 12-Month Total</div>
+        <div class="card-desc">Australia needs approximately 200,000 new dwellings per year to meet population demand. The dashed red line marks that target.</div>
+        <div id="chart2"></div>
+        <div class="insight">Australia has only briefly exceeded 200,000 annual approvals during the 2021 stimulus boom. In the current rate-hike environment, we are running roughly 25,000 dwellings short each year.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ═══════════════ SECTION 2 — WHERE IS AUSTRALIA BUILDING? ═══════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Section 2</div>
+      <h2 class="section-title">Where Is Australia Building?</h2>
+      <p class="section-desc">Building activity is heavily concentrated in Victoria, New South Wales, and Queensland — but on a per-capita basis, the picture changes dramatically. Western Australia is leading the recovery while the ACT has collapsed.</p>
+    </div>
+    <div class="chart-grid chart-grid-2">
+      <div class="card">
+        <div class="card-title">Building Approvals by State — FY 2024–25</div>
+        <div class="card-desc">Total dwelling approvals by state and territory. Hover to explore values.</div>
+        <div id="chart3"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Capital City Approvals — Bubble Map</div>
+        <div class="card-desc">Bubble size = total FY2024–25 approvals. Colour = approvals per 1,000 residents.</div>
+        <div id="chart4"></div>
+      </div>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">State Year-on-Year Change in Approvals (FY23–24 vs FY24–25)</div>
+        <div class="card-desc">Which states are accelerating construction and which are falling behind?</div>
+        <div id="chart5"></div>
+        <div class="insight">Western Australia (+31.4%) and Queensland (+12.4%) are the standout performers, driven by strong migration. The ACT's −37.8% collapse reflects high interest rates crushing apartment development in Canberra.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ═══════════════ SECTION 3 — WHAT TYPE OF HOMES? ═══════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Section 3</div>
+      <h2 class="section-title">What Type of Homes Are We Building?</h2>
+      <p class="section-desc">Australia's housing mix has shifted dramatically over four decades, with apartments and units taking a larger share. But this shift is far from uniform across cities.</p>
+    </div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">Houses vs Apartments — National Trend (1983–2026)</div>
+        <div class="card-desc">Stacked monthly approvals showing the long-run shift in dwelling composition.</div>
+        <div id="chart6"></div>
+        <div class="insight">Non-house dwellings (apartments, units, townhouses) have grown from under 20% of approvals in the 1980s to routinely exceeding 40% today — reflecting densification in major cities.</div>
+      </div>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">House vs Apartment Mix by Capital City — FY 2024–25</div>
+        <div class="card-desc">Each city has a dramatically different dwelling mix. Perth and Darwin build mostly houses; Sydney and Canberra skew heavily towards apartments.</div>
+        <div id="chart7"></div>
+        <div class="insight">Perth (79.6% houses) and Darwin reflect land-abundant cities favouring detached housing. Sydney (38.7% houses) and Canberra (24.9%) show high-density urban markets constrained by land costs.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ═════════ SECTION 4 — IS SUPPLY MEETING DEMAND? ═════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Section 4</div>
+      <h2 class="section-title">Is Supply Meeting Demand?</h2>
+      <p class="section-desc">Raw approval counts don't tell the full story. When adjusted for population size and growth, the supply-demand mismatch reveals which cities face the most acute housing pressure.</p>
+    </div>
+    <div class="chart-grid chart-grid-2">
+      <div class="card">
+        <div class="card-title">Approvals per 1,000 Residents by State</div>
+        <div class="card-desc">States above the national average are better keeping pace with population. Colour shows above/below average.</div>
+        <div id="chart8"></div>
+      </div>
+      <div class="card">
+        <div class="card-title">Population Growth vs Supply Rate (States)</div>
+        <div class="card-desc">X = annual population growth rate; Y = approvals per 1,000 residents. Bubble size = population. States in the top-right quadrant have both high demand and strong supply response.</div>
+        <div id="chart9"></div>
+      </div>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">Supply vs Demand Race by Capital City</div>
+        <div class="card-desc">Each city shows two dots: <strong style="color:#1d4ed8">supply rate</strong> (approvals per 1,000 people, normalised 0–10) and <strong style="color:#ea580c">demand pressure</strong> (population growth %, normalised 0–10). Cities where the orange dot is far right of the blue dot face acute supply shortfalls.</div>
+        <div id="chart10"></div>
+        <div class="insight">Melbourne and Adelaide show the strongest supply response relative to demand. Sydney and Darwin show the opposite — high demand pressure with comparatively weak supply. Perth is surging on both metrics.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<!-- ═══════════════ SECTION 5 — THE LONG VIEW ═══════════════ -->
+<div class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-tag">Section 5</div>
+      <h2 class="section-title">The Long View</h2>
+      <p class="section-desc">Population growth trajectories show where demand will be concentrated over the coming decade — and which local government areas are already straining under growth pressure.</p>
+    </div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">Capital City Population Growth, 2001–2025</div>
+        <div class="card-desc">Each line represents a capital city GCCSA. Melbourne and Sydney have added over 1.5 million residents each since 2001.</div>
+        <div id="chart11"></div>
+        <div class="insight">Melbourne is on track to surpass Sydney as Australia's largest city within a decade. Perth, Brisbane, and Adelaide are all accelerating, while Darwin and Hobart remain far smaller.</div>
+      </div>
+    </div>
+    <div style="height: 20px"></div>
+    <div class="chart-grid chart-grid-1">
+      <div class="card">
+        <div class="card-title">Top 20 Fastest-Growing LGAs in Australia (FY 2024–25)</div>
+        <div class="card-desc">Local Government Areas ranked by population growth rate. Colour indicates state. These are the areas where housing demand is most acute.</div>
+        <div id="chart12"></div>
+        <div class="insight">Growth hotspots are heavily concentrated in outer-suburban greenfield areas (Melton, Wyndham, Cardinia in VIC; Ipswich, Moreton Bay in QLD) — where land is cheaper but infrastructure is stretched.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+<footer>
+  <div class="container">
+    <p><strong>Data sources:</strong>
+      <a href="https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia/latest-release" target="_blank">ABS Building Approvals (8731.0)</a> — March 2026 release &nbsp;·&nbsp;
+      <a href="https://www.abs.gov.au/statistics/people/population/regional-population/latest-release" target="_blank">ABS Regional Population (3218.0)</a> — 2024–25 release
+    </p>
+    <p style="margin-top: 6px;">FIT2179 Data Visualisation — Assignment 2 &nbsp;·&nbsp; Trung Le &nbsp;·&nbsp; May 2026</p>
+  </div>
+</footer>
+
+<script>
+/* ─────────────────────────────────────────────
+   Shared config
+───────────────────────────────────────────── */
+const EMBED_OPTS = { actions: false, renderer: "svg" };
+const BLUE   = "#1d4ed8";
+const ORANGE = "#ea580c";
+const GREEN  = "#16a34a";
+const RED    = "#dc2626";
+const GRAY   = "#94a3b8";
+
+const STATE_GEOJSON = "https://raw.githubusercontent.com/rowanhogan/australian-states/master/states.min.geojson";
+
+const CITY_COORDS = [
+  { city: "ACT",       lat: -35.28, lon: 149.13 },
+  { city: "Adelaide",  lat: -34.93, lon: 138.60 },
+  { city: "Brisbane",  lat: -27.47, lon: 153.03 },
+  { city: "Darwin",    lat: -12.46, lon: 130.85 },
+  { city: "Hobart",    lat: -42.88, lon: 147.33 },
+  { city: "Melbourne", lat: -37.81, lon: 144.96 },
+  { city: "Perth",     lat: -31.95, lon: 115.86 },
+  { city: "Sydney",    lat: -33.87, lon: 151.21 }
+];
+
+/* ─────────────────────────────────────────────
+   CHART 1 — National trend dual-line + annotations
+───────────────────────────────────────────── */
+const spec1 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 300,
+  data: { url: "approvals_national_monthly.csv" },
+  layer: [
+    {
+      transform: [
+        { fold: ["houses", "non_houses"], as: ["type", "approvals"] },
+        { calculate: "datum.type === 'houses' ? 'Houses' : 'Apartments & Units'", as: "label" }
+      ],
+      mark: { type: "line", strokeWidth: 1.8 },
+      encoding: {
+        x: { field: "date", type: "temporal", title: "", axis: { labelFontSize: 10, gridColor: "#f1f5f9" } },
+        y: { field: "approvals", type: "quantitative", title: "Monthly approvals", axis: { labelFontSize: 10, gridColor: "#f1f5f9" } },
+        color: {
+          field: "label", type: "nominal",
+          scale: { domain: ["Houses", "Apartments & Units"], range: [BLUE, ORANGE] },
+          legend: { title: null, orient: "top-left", labelFontSize: 11 }
+        },
+        tooltip: [
+          { field: "date", type: "temporal", title: "Month", format: "%b %Y" },
+          { field: "label", title: "Type" },
+          { field: "approvals", type: "quantitative", title: "Approvals", format: "," }
+        ]
+      }
+    },
+    {
+      data: { values: [
+        { date: "2008-09-01", label: "GFC" },
+        { date: "2020-04-01", label: "COVID" },
+        { date: "2022-05-01", label: "Rate hikes" },
+        { date: "2012-01-01", label: "Mining boom" }
+      ]},
+      layer: [
+        {
+          mark: { type: "rule", strokeDash: [4, 4], color: "#cbd5e1", strokeWidth: 1.2 },
+          encoding: { x: { field: "date", type: "temporal" } }
+        },
+        {
+          mark: { type: "text", align: "left", dx: 4, fontSize: 9.5, color: "#64748b", fontStyle: "italic" },
+          encoding: {
+            x: { field: "date", type: "temporal" },
+            y: { value: 8 },
+            text: { field: "label" }
+          }
+        }
+      ]
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 2 — Rolling 12-month total + target line
+───────────────────────────────────────────── */
+const spec2 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 280,
+  layer: [
+    {
+      data: { url: "approvals_national_monthly.csv" },
+      transform: [
+        { window: [{ op: "sum", field: "total", as: "r12" }], frame: [-11, 0] },
+        { filter: "datum.date >= '1984-06-01'" }
+      ],
+      mark: { type: "bar", color: "#93c5fd" },
+      encoding: {
+        x: { field: "date", type: "temporal", title: "", axis: { labelFontSize: 10, gridColor: "#f1f5f9" } },
+        y: { field: "r12", type: "quantitative", title: "Annual total (rolling 12 months)", axis: { labelFontSize: 10, gridColor: "#f1f5f9", format: "," } },
+        tooltip: [
+          { field: "date", type: "temporal", title: "Month", format: "%b %Y" },
+          { field: "r12", type: "quantitative", title: "Rolling 12-month total", format: "," }
+        ]
+      }
+    },
+    {
+      data: { values: [{}] },
+      mark: { type: "rule", color: RED, strokeWidth: 2, strokeDash: [6, 3] },
+      encoding: { y: { datum: 200000 } }
+    },
+    {
+      data: { values: [{ label: "200,000 target" }] },
+      mark: { type: "text", align: "left", dx: 6, dy: -6, color: RED, fontSize: 10, fontWeight: 600 },
+      encoding: {
+        y: { datum: 200000 },
+        x: { value: 8 },
+        text: { field: "label" }
+      }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 3 — State choropleth
+───────────────────────────────────────────── */
+const spec3 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: 460, height: 380,
+  projection: { type: "mercator" },
+  layer: [
+    {
+      data: { url: STATE_GEOJSON, format: { type: "json", property: "features" } },
+      transform: [
+        {
+          lookup: "properties.STATE_NAME",
+          from: {
+            data: { url: "state_summary.csv" },
+            key: "state_name",
+            fields: ["approvals_fy2425", "state", "yoy_change_pct"]
+          }
+        }
+      ],
+      mark: { type: "geoshape", stroke: "white", strokeWidth: 1 },
+      encoding: {
+        color: {
+          field: "approvals_fy2425", type: "quantitative",
+          title: "FY24–25 approvals",
+          scale: { scheme: "blues" },
+          legend: { orient: "bottom-right", labelFontSize: 9, titleFontSize: 9 }
+        },
+        tooltip: [
+          { field: "properties.STATE_NAME", title: "State" },
+          { field: "approvals_fy2425", title: "Approvals FY24–25", format: "," },
+          { field: "yoy_change_pct", title: "YoY change (%)", format: ".1f" }
+        ]
+      }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 4 — Capital city bubble map
+───────────────────────────────────────────── */
+const spec4 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: 460, height: 380,
+  projection: { type: "mercator" },
+  layer: [
+    {
+      data: { url: STATE_GEOJSON, format: { type: "json", property: "features" } },
+      mark: { type: "geoshape", fill: "#e2e8f0", stroke: "white", strokeWidth: 0.8 }
+    },
+    {
+      data: { url: "gccsa_summary.csv" },
+      transform: [
+        {
+          lookup: "city",
+          from: {
+            data: { values: CITY_COORDS },
+            key: "city",
+            fields: ["lat", "lon"]
+          }
+        },
+        { calculate: "replace(datum.city_name, 'Greater ', '')", as: "short_name" },
+        { calculate: "datum.city_name === 'Australian Capital Territory' ? 'Canberra (ACT)' : datum.short_name", as: "short_name" }
+      ],
+      mark: { type: "circle", opacity: 0.78, stroke: "white", strokeWidth: 1 },
+      encoding: {
+        latitude:  { field: "lat",  type: "quantitative" },
+        longitude: { field: "lon",  type: "quantitative" },
+        size: {
+          field: "total", type: "quantitative",
+          title: "Approvals FY24–25",
+          scale: { range: [120, 3200] },
+          legend: { orient: "bottom-left", labelFontSize: 9, titleFontSize: 9 }
+        },
+        color: {
+          field: "approvals_per_1000", type: "quantitative",
+          title: "Per 1,000 people",
+          scale: { scheme: "oranges" },
+          legend: { orient: "top-right", labelFontSize: 9, titleFontSize: 9 }
+        },
+        tooltip: [
+          { field: "short_name", title: "City" },
+          { field: "total", title: "Approvals FY24–25", format: "," },
+          { field: "approvals_per_1000", title: "Per 1,000 residents", format: ".2f" },
+          { field: "pop_growth_pct", title: "Pop. growth (%)", format: ".2f" }
+        ]
+      }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 5 — State YoY diverging bar
+───────────────────────────────────────────── */
+const spec5 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 260,
+  data: { url: "state_summary.csv" },
+  transform: [
+    { filter: "isValid(datum.yoy_change_pct)" },
+    { calculate: "datum.yoy_change_pct >= 0 ? 'Increase' : 'Decrease'", as: "direction" }
+  ],
+  layer: [
+    {
+      mark: { type: "bar", cornerRadiusEnd: 3 },
+      encoding: {
+        x: {
+          field: "yoy_change_pct", type: "quantitative",
+          title: "Year-on-year change (%)",
+          axis: { labelFontSize: 10, gridColor: "#f1f5f9" }
+        },
+        y: {
+          field: "state_name", type: "nominal",
+          sort: { field: "yoy_change_pct", order: "descending" },
+          title: "",
+          axis: { labelFontSize: 10 }
+        },
+        color: {
+          field: "direction", type: "nominal",
+          scale: { domain: ["Increase", "Decrease"], range: [GREEN, RED] },
+          legend: { title: null, orient: "top-right", labelFontSize: 10 }
+        },
+        tooltip: [
+          { field: "state_name", title: "State" },
+          { field: "approvals_fy2425", title: "FY24–25 approvals", format: "," },
+          { field: "approvals_fy2324", title: "FY23–24 approvals", format: "," },
+          { field: "yoy_change_pct", title: "YoY change (%)", format: ".1f" }
+        ]
+      }
+    },
+    {
+      mark: { type: "rule", color: "#64748b", strokeWidth: 1 },
+      encoding: { x: { datum: 0 } }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 6 — Stacked area (houses vs apartments national)
+───────────────────────────────────────────── */
+const spec6 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 300,
+  data: { url: "approvals_national_monthly.csv" },
+  transform: [
+    { fold: ["houses", "non_houses"], as: ["type", "approvals"] },
+    { calculate: "datum.type === 'houses' ? 'Houses' : 'Apartments & Units'", as: "label" }
+  ],
+  mark: { type: "area", opacity: 0.9, line: false },
+  encoding: {
+    x: { field: "date", type: "temporal", title: "", axis: { labelFontSize: 10, gridColor: "#f1f5f9" } },
+    y: { field: "approvals", type: "quantitative", stack: "zero", title: "Monthly approvals", axis: { labelFontSize: 10, format: "," } },
+    color: {
+      field: "label", type: "nominal",
+      scale: { domain: ["Houses", "Apartments & Units"], range: [BLUE, ORANGE] },
+      legend: { title: null, orient: "top-left", labelFontSize: 11 }
+    },
+    order: { field: "type", sort: "ascending" },
+    tooltip: [
+      { field: "date", type: "temporal", title: "Month", format: "%b %Y" },
+      { field: "label", title: "Type" },
+      { field: "approvals", type: "quantitative", title: "Approvals", format: "," }
+    ]
+  }
+};
+
+/* ─────────────────────────────────────────────
+   CHART 7 — 100% normalised bar by city
+───────────────────────────────────────────── */
+const spec7 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 300,
+  data: { url: "gccsa_summary.csv" },
+  transform: [
+    { fold: ["houses", "non_houses"], as: ["type", "count"] },
+    { calculate: "datum.type === 'houses' ? 'Houses' : 'Apartments & Units'", as: "label" },
+    { calculate: "replace(datum.city_name, 'Greater ', '')", as: "short_name" },
+    { calculate: "datum.city_name === 'Australian Capital Territory' ? 'Canberra (ACT)' : datum.short_name", as: "short_name" }
+  ],
+  mark: "bar",
+  encoding: {
+    x: {
+      field: "count", type: "quantitative",
+      stack: "normalize",
+      title: "Share of approvals",
+      axis: { format: "%", labelFontSize: 10 }
+    },
+    y: {
+      field: "short_name", type: "nominal",
+      sort: { field: "house_pct", op: "max", order: "descending" },
+      title: "",
+      axis: { labelFontSize: 11 }
+    },
+    color: {
+      field: "label", type: "nominal",
+      scale: { domain: ["Houses", "Apartments & Units"], range: [BLUE, ORANGE] },
+      legend: { title: null, orient: "top-right", labelFontSize: 11 }
+    },
+    order: { field: "type", sort: "ascending" },
+    tooltip: [
+      { field: "short_name", title: "City" },
+      { field: "label", title: "Type" },
+      { field: "count", title: "Approvals", format: "," },
+      { field: "house_pct", title: "House %", format: ".1f" }
+    ]
+  }
+};
+
+/* ─────────────────────────────────────────────
+   CHART 8 — Approvals per 1000 by state (bar)
+───────────────────────────────────────────── */
+const spec8 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 300,
+  data: { url: "state_summary.csv" },
+  transform: [
+    { filter: "isValid(datum.approvals_per_1000)" },
+    { calculate: "datum.approvals_per_1000 >= 5.5 ? 'Above average' : 'Below average'", as: "vs_avg" }
+  ],
+  layer: [
+    {
+      mark: { type: "bar", cornerRadiusEnd: 3 },
+      encoding: {
+        y: {
+          field: "state_name", type: "nominal",
+          sort: { field: "approvals_per_1000", order: "descending" },
+          title: "",
+          axis: { labelFontSize: 10 }
+        },
+        x: {
+          field: "approvals_per_1000", type: "quantitative",
+          title: "Approvals per 1,000 residents (FY24–25)",
+          axis: { labelFontSize: 10, gridColor: "#f1f5f9" }
+        },
+        color: {
+          field: "vs_avg", type: "nominal",
+          scale: { domain: ["Above average", "Below average"], range: [BLUE, GRAY] },
+          legend: { title: null, orient: "top-right", labelFontSize: 10 }
+        },
+        tooltip: [
+          { field: "state_name", title: "State" },
+          { field: "approvals_per_1000", title: "Approvals per 1,000", format: ".2f" },
+          { field: "approvals_fy2425", title: "Total approvals", format: "," }
+        ]
+      }
+    },
+    {
+      mark: { type: "rule", color: "#64748b", strokeDash: [4, 3], strokeWidth: 1.5 },
+      encoding: { x: { datum: 5.5 } }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 9 — Pop growth vs supply scatter (states)
+───────────────────────────────────────────── */
+const spec9 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 320,
+  data: { url: "state_summary.csv" },
+  transform: [
+    { filter: "isValid(datum.approvals_per_1000) && isValid(datum.pop_growth_pct)" }
+  ],
+  layer: [
+    {
+      mark: { type: "point", filled: true, opacity: 0.85 },
+      encoding: {
+        x: {
+          field: "pop_growth_pct", type: "quantitative",
+          title: "Population growth rate (%)",
+          axis: { labelFontSize: 10, gridColor: "#f1f5f9" }
+        },
+        y: {
+          field: "approvals_per_1000", type: "quantitative",
+          title: "Approvals per 1,000 residents",
+          axis: { labelFontSize: 10, gridColor: "#f1f5f9" }
+        },
+        size: {
+          field: "pop_2025", type: "quantitative",
+          title: "Population 2025",
+          scale: { range: [80, 1400] },
+          legend: { title: "Population", labelFontSize: 9, titleFontSize: 9 }
+        },
+        color: { value: BLUE },
+        tooltip: [
+          { field: "state_name", title: "State" },
+          { field: "pop_growth_pct", title: "Pop. growth (%)", format: ".2f" },
+          { field: "approvals_per_1000", title: "Approvals per 1,000", format: ".2f" },
+          { field: "pop_2025", title: "Population (2025)", format: "," }
+        ]
+      }
+    },
+    {
+      mark: { type: "text", dy: -12, fontSize: 10, fontWeight: 500, color: "#1e293b" },
+      encoding: {
+        x: { field: "pop_growth_pct", type: "quantitative" },
+        y: { field: "approvals_per_1000", type: "quantitative" },
+        text: { field: "state" }
+      }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 10 — Connected dot plot (supply vs demand, cities)
+   Normalises both metrics to 0–10 scale for visual comparison
+───────────────────────────────────────────── */
+const spec10 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 320,
+  data: { url: "gccsa_summary.csv" },
+  transform: [
+    { calculate: "replace(datum.city_name, 'Greater ', '')", as: "short_name" },
+    { calculate: "datum.city_name === 'Australian Capital Territory' ? 'Canberra (ACT)' : datum.short_name", as: "short_name" },
+    { calculate: "(datum.approvals_per_1000 - 2.29) / (8.56 - 2.29) * 10", as: "supply_norm" },
+    { calculate: "(datum.pop_growth_pct - 0.21) / (2.43 - 0.21) * 10", as: "demand_norm" },
+    { fold: ["supply_norm", "demand_norm"], as: ["metric_raw", "norm_value"] },
+    { calculate: "datum.metric_raw === 'supply_norm' ? 'Supply rate (per 1,000)' : 'Demand pressure (pop. growth %)'", as: "metric" }
+  ],
+  layer: [
+    {
+      mark: { type: "line", color: "#cbd5e1", strokeWidth: 2.5 },
+      encoding: {
+        x: { field: "norm_value", type: "quantitative", title: "Normalised score (0 = lowest, 10 = highest)", axis: { labelFontSize: 10, gridColor: "#f1f5f9" } },
+        y: { field: "short_name", type: "nominal", title: "", sort: { field: "supply_norm", op: "max", order: "descending" }, axis: { labelFontSize: 11 } },
+        detail: { field: "short_name" }
+      }
+    },
+    {
+      mark: { type: "point", filled: true, size: 90, opacity: 0.9 },
+      encoding: {
+        x: { field: "norm_value", type: "quantitative" },
+        y: { field: "short_name", type: "nominal", sort: { field: "supply_norm", op: "max", order: "descending" } },
+        color: {
+          field: "metric", type: "nominal",
+          scale: { domain: ["Supply rate (per 1,000)", "Demand pressure (pop. growth %)"], range: [BLUE, ORANGE] },
+          legend: { title: null, orient: "top-right", labelFontSize: 10 }
+        },
+        tooltip: [
+          { field: "short_name", title: "City" },
+          { field: "metric", title: "Metric" },
+          { field: "norm_value", title: "Normalised score (0–10)", format: ".1f" }
+        ]
+      }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 11 — Capital city population multi-line
+───────────────────────────────────────────── */
+const spec11 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 340,
+  data: { url: "population_gccsa_2001_2025.csv" },
+  transform: [
+    { filter: "!test(/Rest of/, datum.gccsa_name)" },
+    { filter: "!test(/Other/, datum.gccsa_name)" }
+  ],
+  layer: [
+    {
+      mark: { type: "line", strokeWidth: 2 },
+      encoding: {
+        x: {
+          field: "year", type: "quantitative",
+          title: "",
+          axis: { labelFontSize: 10, gridColor: "#f1f5f9", format: "d" }
+        },
+        y: {
+          field: "population", type: "quantitative",
+          title: "Population",
+          axis: { labelFontSize: 10, gridColor: "#f1f5f9", format: ",.0f" }
+        },
+        color: {
+          field: "gccsa_name", type: "nominal",
+          title: "City",
+          legend: { labelFontSize: 10, titleFontSize: 10, orient: "top-left" }
+        },
+        tooltip: [
+          { field: "gccsa_name", title: "City" },
+          { field: "year", title: "Year" },
+          { field: "population", title: "Population", format: "," }
+        ]
+      }
+    }
+  ]
+};
+
+/* ─────────────────────────────────────────────
+   CHART 12 — Top 20 fastest-growing LGAs
+───────────────────────────────────────────── */
+const spec12 = {
+  $schema: "https://vega.github.io/schema/vega-lite/v5.json",
+  width: "container", height: 480,
+  data: { url: "population_lga_2024_25.csv" },
+  transform: [
+    { filter: "isValid(datum.change_pct) && datum.change_pct > 0" },
+    { window: [{ op: "rank", as: "rank" }], sort: [{ field: "change_pct", order: "descending" }] },
+    { filter: "datum.rank <= 20" }
+  ],
+  mark: { type: "bar", cornerRadiusEnd: 3 },
+  encoding: {
+    y: {
+      field: "lga_name", type: "nominal",
+      sort: { field: "change_pct", order: "descending" },
+      title: "",
+      axis: { labelFontSize: 10 }
+    },
+    x: {
+      field: "change_pct", type: "quantitative",
+      title: "Population growth rate (% FY 2024–25)",
+      axis: { labelFontSize: 10, gridColor: "#f1f5f9" }
+    },
+    color: {
+      field: "state_abbr", type: "nominal",
+      title: "State",
+      legend: { labelFontSize: 10, titleFontSize: 10, orient: "bottom-right" }
+    },
+    tooltip: [
+      { field: "lga_name", title: "LGA" },
+      { field: "state_abbr", title: "State" },
+      { field: "change_pct", title: "Growth (%)", format: ".1f" },
+      { field: "erp_2025", title: "Population 2025", format: "," }
+    ]
+  }
+};
+
+/* ─────────────────────────────────────────────
+   Embed all charts
+───────────────────────────────────────────── */
+vegaEmbed("#chart1",  spec1,  EMBED_OPTS);
+vegaEmbed("#chart2",  spec2,  EMBED_OPTS);
+vegaEmbed("#chart3",  spec3,  EMBED_OPTS);
+vegaEmbed("#chart4",  spec4,  EMBED_OPTS);
+vegaEmbed("#chart5",  spec5,  EMBED_OPTS);
+vegaEmbed("#chart6",  spec6,  EMBED_OPTS);
+vegaEmbed("#chart7",  spec7,  EMBED_OPTS);
+vegaEmbed("#chart8",  spec8,  EMBED_OPTS);
+vegaEmbed("#chart9",  spec9,  EMBED_OPTS);
+vegaEmbed("#chart10", spec10, EMBED_OPTS);
+vegaEmbed("#chart11", spec11, EMBED_OPTS);
+vegaEmbed("#chart12", spec12, EMBED_OPTS);
+</script>
+</body>
+</html>
