@@ -1,0 +1,9 @@
+state,state_name,approvals_fy2425,approvals_fy2324,yoy_change_pct,pop_2024,pop_2025,pop_growth_pct,approvals_per_1000
+ACT,Australian Capital Territory,2831.0,4549.0,-37.8,,,,
+NSW,New South Wales,49515.0,43018.0,15.1,8492050.0,8592524.0,1.18,5.76
+NT,Northern Territory,703.0,437.0,60.9,260884.0,264556.0,1.41,2.66
+QLD,Queensland,38229.0,32995.0,15.9,5571890.0,5669764.0,1.76,6.74
+SA,South Australia,14517.0,11295.0,28.5,1882164.0,1902665.0,1.09,7.63
+TAS,Tasmania,2341.0,2569.0,-8.9,574765.0,576261.0,0.26,4.06
+VIC,Victoria,56581.0,51921.0,9.0,6950961.0,7073859.0,1.77,8.0
+WA,Western Australia,22945.0,17465.0,31.4,2980636.0,3046897.0,2.22,7.53

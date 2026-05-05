@@ -1,0 +1,401 @@
+year,gccsa_name,population
+2001,Greater Sydney,4102580
+2002,Greater Sydney,4135637
+2003,Greater Sydney,4162593
+2004,Greater Sydney,4184763
+2005,Greater Sydney,4217563
+2006,Greater Sydney,4256161
+2007,Greater Sydney,4325525
+2008,Greater Sydney,4409562
+2009,Greater Sydney,4492380
+2010,Greater Sydney,4555516
+2011,Greater Sydney,4608949
+2012,Greater Sydney,4677196
+2013,Greater Sydney,4757364
+2014,Greater Sydney,4841349
+2015,Greater Sydney,4930189
+2016,Greater Sydney,5024923
+2017,Greater Sydney,5119495
+2018,Greater Sydney,5190353
+2019,Greater Sydney,5256836
+2020,Greater Sydney,5295529
+2021,Greater Sydney,5261801
+2022,Greater Sydney,5312887
+2023,Greater Sydney,5458942
+2024,Greater Sydney,5563600
+2025,Greater Sydney,5638830
+2001,Rest of NSW,2427769
+2002,Rest of NSW,2445170
+2003,Rest of NSW,2458122
+2004,Rest of NSW,2465972
+2005,Rest of NSW,2475643
+2006,Rest of NSW,2486529
+2007,Rest of NSW,2508631
+2008,Rest of NSW,2533899
+2009,Rest of NSW,2561375
+2010,Rest of NSW,2588776
+2011,Rest of NSW,2609580
+2012,Rest of NSW,2627048
+2013,Rest of NSW,2646668
+2014,Rest of NSW,2667004
+2015,Rest of NSW,2685979
+2016,Rest of NSW,2707935
+2017,Rest of NSW,2735821
+2018,Rest of NSW,2764123
+2019,Rest of NSW,2789912
+2020,Rest of NSW,2815081
+2021,Rest of NSW,2835261
+2022,Rest of NSW,2869211
+2023,Rest of NSW,2897445
+2024,Rest of NSW,2928450
+2025,Rest of NSW,2953694
+2001,Greater Melbourne,3500249
+2002,Greater Melbourne,3545579
+2003,Greater Melbourne,3594031
+2004,Greater Melbourne,3641951
+2005,Greater Melbourne,3697372
+2006,Greater Melbourne,3760760
+2007,Greater Melbourne,3841760
+2008,Greater Melbourne,3931438
+2009,Greater Melbourne,4031787
+2010,Greater Melbourne,4105857
+2011,Greater Melbourne,4169366
+2012,Greater Melbourne,4265843
+2013,Greater Melbourne,4370067
+2014,Greater Melbourne,4476030
+2015,Greater Melbourne,4586012
+2016,Greater Melbourne,4714387
+2017,Greater Melbourne,4820116
+2018,Greater Melbourne,4916589
+2019,Greater Melbourne,5006457
+2020,Greater Melbourne,5061107
+2021,Greater Melbourne,4975319
+2022,Greater Melbourne,5028420
+2023,Greater Melbourne,5194491
+2024,Greater Melbourne,5330560
+2025,Greater Melbourne,5435590
+2001,Rest of Vic.,1263366
+2002,Rest of Vic.,1272195
+2003,Rest of Vic.,1279778
+2004,Rest of Vic.,1285198
+2005,Rest of Vic.,1291874
+2006,Rest of Vic.,1300506
+2007,Rest of Vic.,1311762
+2008,Rest of Vic.,1324937
+2009,Rest of Vic.,1340147
+2010,Rest of Vic.,1355244
+2011,Rest of Vic.,1368451
+2012,Rest of Vic.,1385248
+2013,Rest of Vic.,1402602
+2014,Rest of Vic.,1418887
+2015,Rest of Vic.,1436310
+2016,Rest of Vic.,1458785
+2017,Rest of Vic.,1482492
+2018,Rest of Vic.,1506449
+2019,Rest of Vic.,1530848
+2020,Rest of Vic.,1553939
+2021,Rest of Vic.,1572503
+2022,Rest of Vic.,1586812
+2023,Rest of Vic.,1602678
+2024,Rest of Vic.,1620401
+2025,Rest of Vic.,1638269
+2001,Greater Brisbane,1693556
+2002,Greater Brisbane,1735730
+2003,Greater Brisbane,1780650
+2004,Greater Brisbane,1823496
+2005,Greater Brisbane,1866210
+2006,Greater Brisbane,1908265
+2007,Greater Brisbane,1958907
+2008,Greater Brisbane,2012204
+2009,Greater Brisbane,2068479
+2010,Greater Brisbane,2108348
+2011,Greater Brisbane,2147436
+2012,Greater Brisbane,2196288
+2013,Greater Brisbane,2241944
+2014,Greater Brisbane,2281740
+2015,Greater Brisbane,2318653
+2016,Greater Brisbane,2362672
+2017,Greater Brisbane,2409466
+2018,Greater Brisbane,2454907
+2019,Greater Brisbane,2503078
+2020,Greater Brisbane,2545379
+2021,Greater Brisbane,2567714
+2022,Greater Brisbane,2621767
+2023,Greater Brisbane,2703213
+2024,Greater Brisbane,2775301
+2025,Greater Brisbane,2833524
+2001,Rest of Qld,1877913
+2002,Rest of Qld,1917393
+2003,Rest of Qld,1962471
+2004,Rest of Qld,2006474
+2005,Rest of Qld,2052284
+2006,Rest of Qld,2099727
+2007,Rest of Qld,2152111
+2008,Rest of Qld,2207301
+2009,Rest of Qld,2260292
+2010,Rest of Qld,2296396
+2011,Rest of Qld,2329342
+2012,Rest of Qld,2372399
+2013,Rest of Qld,2410880
+2014,Rest of Qld,2437913
+2015,Rest of Qld,2459039
+2016,Rest of Qld,2482480
+2017,Rest of Qld,2516914
+2018,Rest of Qld,2551716
+2019,Rest of Qld,2585769
+2020,Rest of Qld,2620234
+2021,Rest of Qld,2648100
+2022,Rest of Qld,2689138
+2023,Rest of Qld,2747022
+2024,Rest of Qld,2796589
+2025,Rest of Qld,2836240
+2001,Greater Adelaide,1148006
+2002,Greater Adelaide,1154981
+2003,Greater Adelaide,1162250
+2004,Greater Adelaide,1168541
+2005,Greater Adelaide,1177345
+2006,Greater Adelaide,1189243
+2007,Greater Adelaide,1204210
+2008,Greater Adelaide,1219523
+2009,Greater Adelaide,1237354
+2010,Greater Adelaide,1253097
+2011,Greater Adelaide,1264091
+2012,Greater Adelaide,1277850
+2013,Greater Adelaide,1289696
+2014,Greater Adelaide,1302079
+2015,Greater Adelaide,1313419
+2016,Greater Adelaide,1324057
+2017,Greater Adelaide,1338270
+2018,Greater Adelaide,1353662
+2019,Greater Adelaide,1372414
+2020,Greater Adelaide,1392755
+2021,Greater Adelaide,1401872
+2022,Greater Adelaide,1421298
+2023,Greater Adelaide,1450662
+2024,Greater Adelaide,1472368
+2025,Greater Adelaide,1491015
+2001,Rest of SA,355455
+2002,Rest of SA,356586
+2003,Rest of SA,358149
+2004,Rest of SA,359648
+2005,Rest of SA,361459
+2006,Rest of SA,363286
+2007,Rest of SA,366409
+2008,Rest of SA,369142
+2009,Rest of SA,371548
+2010,Rest of SA,374225
+2011,Rest of SA,375523
+2012,Rest of SA,378875
+2013,Rest of SA,381792
+2014,Rest of SA,384866
+2015,Rest of SA,387249
+2016,Rest of SA,388786
+2017,Rest of SA,390403
+2018,Rest of SA,392475
+2019,Rest of SA,394981
+2020,Rest of SA,397600
+2021,Rest of SA,400729
+2022,Rest of SA,403671
+2023,Rest of SA,406984
+2024,Rest of SA,409796
+2025,Rest of SA,411650
+2001,Greater Perth,1455361
+2002,Greater Perth,1474536
+2003,Greater Perth,1496016
+2004,Greater Perth,1520232
+2005,Greater Perth,1544977
+2006,Greater Perth,1576912
+2007,Greater Perth,1628467
+2008,Greater Perth,1682860
+2009,Greater Perth,1739342
+2010,Greater Perth,1781132
+2011,Greater Perth,1833567
+2012,Greater Perth,1892862
+2013,Greater Perth,1943855
+2014,Greater Perth,1973923
+2015,Greater Perth,1998937
+2016,Greater Perth,2019263
+2017,Greater Perth,2046413
+2018,Greater Perth,2075953
+2019,Greater Perth,2114184
+2020,Greater Perth,2161561
+2021,Greater Perth,2191838
+2022,Greater Perth,2229793
+2023,Greater Perth,2317268
+2024,Greater Perth,2394677
+2025,Greater Perth,2452765
+2001,Rest of WA,450913
+2002,Rest of WA,453976
+2003,Rest of WA,456725
+2004,Rest of WA,459310
+2005,Rest of WA,466230
+2006,Rest of WA,473669
+2007,Rest of WA,477672
+2008,Rest of WA,488840
+2009,Rest of WA,500908
+2010,Rest of WA,509713
+2011,Rest of WA,519842
+2012,Rest of WA,532645
+2013,Rest of WA,543089
+2014,Rest of WA,543685
+2015,Rest of WA,541735
+2016,Rest of WA,536715
+2017,Rest of WA,539307
+2018,Rest of WA,541839
+2019,Rest of WA,545441
+2020,Rest of WA,551351
+2021,Rest of WA,557527
+2022,Rest of WA,564141
+2023,Rest of WA,573668
+2024,Rest of WA,583470
+2025,Rest of WA,591617
+2001,Greater Hobart,197403
+2002,Greater Hobart,197726
+2003,Greater Hobart,199788
+2004,Greater Hobart,201771
+2005,Greater Hobart,203288
+2006,Greater Hobart,204753
+2007,Greater Hobart,206649
+2008,Greater Hobart,209166
+2009,Greater Hobart,212085
+2010,Greater Hobart,214669
+2011,Greater Hobart,216273
+2012,Greater Hobart,217670
+2013,Greater Hobart,219315
+2014,Greater Hobart,221365
+2015,Greater Hobart,223502
+2016,Greater Hobart,225913
+2017,Greater Hobart,231291
+2018,Greater Hobart,236954
+2019,Greater Hobart,242498
+2020,Greater Hobart,246859
+2021,Greater Hobart,250717
+2022,Greater Hobart,253134
+2023,Greater Hobart,254077
+2024,Greater Hobart,254708
+2025,Greater Hobart,255250
+2001,Rest of Tas.,276265
+2002,Rest of Tas.,276426
+2003,Rest of Tas.,278746
+2004,Rest of Tas.,281407
+2005,Rest of Tas.,282914
+2006,Rest of Tas.,284549
+2007,Rest of Tas.,286613
+2008,Rest of Tas.,289402
+2009,Rest of Tas.,292268
+2010,Rest of Tas.,294178
+2011,Rest of Tas.,295210
+2012,Rest of Tas.,294054
+2013,Rest of Tas.,292916
+2014,Rest of Tas.,292256
+2015,Rest of Tas.,291615
+2016,Rest of Tas.,291601
+2017,Rest of Tas.,295471
+2018,Rest of Tas.,300337
+2019,Rest of Tas.,305343
+2020,Rest of Tas.,310719
+2021,Rest of Tas.,316522
+2022,Rest of Tas.,319166
+2023,Rest of Tas.,319654
+2024,Rest of Tas.,320057
+2025,Rest of Tas.,321011
+2001,Greater Darwin,108280
+2002,Greater Darwin,108679
+2003,Greater Darwin,108433
+2004,Greater Darwin,109211
+2005,Greater Darwin,111388
+2006,Greater Darwin,113461
+2007,Greater Darwin,116935
+2008,Greater Darwin,121210
+2009,Greater Darwin,125315
+2010,Greater Darwin,127829
+2011,Greater Darwin,129106
+2012,Greater Darwin,133105
+2013,Greater Darwin,138471
+2014,Greater Darwin,141169
+2015,Greater Darwin,144914
+2016,Greater Darwin,147102
+2017,Greater Darwin,148752
+2018,Greater Darwin,148273
+2019,Greater Darwin,147251
+2020,Greater Darwin,147673
+2021,Greater Darwin,147971
+2022,Greater Darwin,151215
+2023,Greater Darwin,154281
+2024,Greater Darwin,156565
+2025,Greater Darwin,159284
+2001,Rest of NT,93463
+2002,Rest of NT,93572
+2003,Rest of NT,93292
+2004,Rest of NT,93452
+2005,Rest of NT,94517
+2006,Rest of NT,95596
+2007,Rest of NT,96813
+2008,Rest of NT,98664
+2009,Rest of NT,100712
+2010,Rest of NT,101949
+2011,Rest of NT,102186
+2012,Rest of NT,102810
+2013,Rest of NT,103251
+2014,Rest of NT,101725
+2015,Rest of NT,99778
+2016,Rest of NT,98576
+2017,Rest of NT,98660
+2018,Rest of NT,98822
+2019,Rest of NT,99308
+2020,Rest of NT,99755
+2021,Rest of NT,100180
+2022,Rest of NT,101885
+2023,Rest of NT,103227
+2024,Rest of NT,104319
+2025,Rest of NT,105272
+2001,Australian Capital Territory,321538
+2002,Australian Capital Territory,324627
+2003,Australian Capital Territory,327357
+2004,Australian Capital Territory,328940
+2005,Australian Capital Territory,331399
+2006,Australian Capital Territory,335170
+2007,Australian Capital Territory,342644
+2008,Australian Capital Territory,348368
+2009,Australian Capital Territory,354785
+2010,Australian Capital Territory,361766
+2011,Australian Capital Territory,367985
+2012,Australian Capital Territory,376539
+2013,Australian Capital Territory,383257
+2014,Australian Capital Territory,388799
+2015,Australian Capital Territory,395813
+2016,Australian Capital Territory,403104
+2017,Australian Capital Territory,415046
+2018,Australian Capital Territory,426081
+2019,Australian Capital Territory,435730
+2020,Australian Capital Territory,444903
+2021,Australian Capital Territory,452508
+2022,Australian Capital Territory,461262
+2023,Australian Capital Territory,471340
+2024,Australian Capital Territory,478430
+2025,Australian Capital Territory,484630
+2001,Other Territories,2584
+2002,Other Territories,2397
+2003,Other Territories,2336
+2004,Other Territories,2356
+2005,Other Territories,2381
+2006,Other Territories,2379
+2007,Other Territories,2514
+2008,Other Territories,2683
+2009,Other Territories,2876
+2010,Other Territories,3055
+2011,Other Territories,3117
+2012,Other Territories,3033
+2013,Other Territories,2962
+2014,Other Territories,2896
+2015,Other Territories,2851
+2016,Other Territories,4608
+2017,Other Territories,4671
+2018,Other Territories,4725
+2019,Other Territories,4776
+2020,Other Territories,4803
+2021,Other Territories,4850
+2022,Other Territories,4921
+2023,Other Territories,4970
+2024,Other Territories,4995
+2025,Other Territories,5013

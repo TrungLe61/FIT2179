@@ -1,0 +1,4105 @@
+date,state,state_name,approvals
+1983-07-01,NSW,New South Wales,2889.0
+1983-07-01,VIC,Victoria,2836.0
+1983-07-01,QLD,Queensland,2285.0
+1983-07-01,SA,South Australia,816.0
+1983-07-01,WA,Western Australia,911.0
+1983-07-01,TAS,Tasmania,231.0
+1983-07-01,NT,Northern Territory,300.0
+1983-07-01,ACT,Australian Capital Territory,210.0
+1983-08-01,NSW,New South Wales,3506.0
+1983-08-01,VIC,Victoria,3284.0
+1983-08-01,QLD,Queensland,2613.0
+1983-08-01,SA,South Australia,1030.0
+1983-08-01,WA,Western Australia,1396.0
+1983-08-01,TAS,Tasmania,280.0
+1983-08-01,NT,Northern Territory,293.0
+1983-08-01,ACT,Australian Capital Territory,143.0
+1983-09-01,NSW,New South Wales,3441.0
+1983-09-01,VIC,Victoria,2971.0
+1983-09-01,QLD,Queensland,2966.0
+1983-09-01,SA,South Australia,1001.0
+1983-09-01,WA,Western Australia,1630.0
+1983-09-01,TAS,Tasmania,297.0
+1983-09-01,NT,Northern Territory,155.0
+1983-09-01,ACT,Australian Capital Territory,142.0
+1983-10-01,NSW,New South Wales,3438.0
+1983-10-01,VIC,Victoria,3025.0
+1983-10-01,QLD,Queensland,2937.0
+1983-10-01,SA,South Australia,1117.0
+1983-10-01,WA,Western Australia,1360.0
+1983-10-01,TAS,Tasmania,321.0
+1983-10-01,NT,Northern Territory,195.0
+1983-10-01,ACT,Australian Capital Territory,144.0
+1983-11-01,NSW,New South Wales,3685.0
+1983-11-01,VIC,Victoria,3164.0
+1983-11-01,QLD,Queensland,2937.0
+1983-11-01,SA,South Australia,1062.0
+1983-11-01,WA,Western Australia,1449.0
+1983-11-01,TAS,Tasmania,327.0
+1983-11-01,NT,Northern Territory,171.0
+1983-11-01,ACT,Australian Capital Territory,243.0
+1983-12-01,NSW,New South Wales,3762.0
+1983-12-01,VIC,Victoria,2825.0
+1983-12-01,QLD,Queensland,2328.0
+1983-12-01,SA,South Australia,1062.0
+1983-12-01,WA,Western Australia,1415.0
+1983-12-01,TAS,Tasmania,282.0
+1983-12-01,NT,Northern Territory,214.0
+1983-12-01,ACT,Australian Capital Territory,160.0
+1984-01-01,NSW,New South Wales,2921.0
+1984-01-01,VIC,Victoria,2258.0
+1984-01-01,QLD,Queensland,2327.0
+1984-01-01,SA,South Australia,910.0
+1984-01-01,WA,Western Australia,1059.0
+1984-01-01,TAS,Tasmania,183.0
+1984-01-01,NT,Northern Territory,155.0
+1984-01-01,ACT,Australian Capital Territory,111.0
+1984-02-01,NSW,New South Wales,3500.0
+1984-02-01,VIC,Victoria,2915.0
+1984-02-01,QLD,Queensland,3251.0
+1984-02-01,SA,South Australia,1077.0
+1984-02-01,WA,Western Australia,1317.0
+1984-02-01,TAS,Tasmania,353.0
+1984-02-01,NT,Northern Territory,261.0
+1984-02-01,ACT,Australian Capital Territory,239.0
+1984-03-01,NSW,New South Wales,3552.0
+1984-03-01,VIC,Victoria,3222.0
+1984-03-01,QLD,Queensland,3623.0
+1984-03-01,SA,South Australia,1503.0
+1984-03-01,WA,Western Australia,1548.0
+1984-03-01,TAS,Tasmania,311.0
+1984-03-01,NT,Northern Territory,242.0
+1984-03-01,ACT,Australian Capital Territory,258.0
+1984-04-01,NSW,New South Wales,3130.0
+1984-04-01,VIC,Victoria,2939.0
+1984-04-01,QLD,Queensland,2491.0
+1984-04-01,SA,South Australia,1467.0
+1984-04-01,WA,Western Australia,1346.0
+1984-04-01,TAS,Tasmania,345.0
+1984-04-01,NT,Northern Territory,245.0
+1984-04-01,ACT,Australian Capital Territory,203.0
+1984-05-01,NSW,New South Wales,4228.0
+1984-05-01,VIC,Victoria,4132.0
+1984-05-01,QLD,Queensland,3225.0
+1984-05-01,SA,South Australia,1382.0
+1984-05-01,WA,Western Australia,2079.0
+1984-05-01,TAS,Tasmania,330.0
+1984-05-01,NT,Northern Territory,263.0
+1984-05-01,ACT,Australian Capital Territory,307.0
+1984-06-01,NSW,New South Wales,3294.0
+1984-06-01,VIC,Victoria,3340.0
+1984-06-01,QLD,Queensland,2692.0
+1984-06-01,SA,South Australia,1115.0
+1984-06-01,WA,Western Australia,1797.0
+1984-06-01,TAS,Tasmania,454.0
+1984-06-01,NT,Northern Territory,240.0
+1984-06-01,ACT,Australian Capital Territory,345.0
+1984-07-01,NSW,New South Wales,3522.0
+1984-07-01,VIC,Victoria,3857.0
+1984-07-01,QLD,Queensland,2881.0
+1984-07-01,SA,South Australia,1129.0
+1984-07-01,WA,Western Australia,1899.0
+1984-07-01,TAS,Tasmania,349.0
+1984-07-01,NT,Northern Territory,223.0
+1984-07-01,ACT,Australian Capital Territory,122.0
+1984-08-01,NSW,New South Wales,3659.0
+1984-08-01,VIC,Victoria,3961.0
+1984-08-01,QLD,Queensland,3302.0
+1984-08-01,SA,South Australia,1183.0
+1984-08-01,WA,Western Australia,2014.0
+1984-08-01,TAS,Tasmania,422.0
+1984-08-01,NT,Northern Territory,368.0
+1984-08-01,ACT,Australian Capital Territory,325.0
+1984-09-01,NSW,New South Wales,3523.0
+1984-09-01,VIC,Victoria,3258.0
+1984-09-01,QLD,Queensland,2254.0
+1984-09-01,SA,South Australia,1267.0
+1984-09-01,WA,Western Australia,1398.0
+1984-09-01,TAS,Tasmania,362.0
+1984-09-01,NT,Northern Territory,182.0
+1984-09-01,ACT,Australian Capital Territory,264.0
+1984-10-01,NSW,New South Wales,3323.0
+1984-10-01,VIC,Victoria,3926.0
+1984-10-01,QLD,Queensland,2749.0
+1984-10-01,SA,South Australia,1296.0
+1984-10-01,WA,Western Australia,1770.0
+1984-10-01,TAS,Tasmania,420.0
+1984-10-01,NT,Northern Territory,379.0
+1984-10-01,ACT,Australian Capital Territory,250.0
+1984-11-01,NSW,New South Wales,4272.0
+1984-11-01,VIC,Victoria,3369.0
+1984-11-01,QLD,Queensland,2951.0
+1984-11-01,SA,South Australia,1471.0
+1984-11-01,WA,Western Australia,1693.0
+1984-11-01,TAS,Tasmania,459.0
+1984-11-01,NT,Northern Territory,181.0
+1984-11-01,ACT,Australian Capital Territory,342.0
+1984-12-01,NSW,New South Wales,3484.0
+1984-12-01,VIC,Victoria,2490.0
+1984-12-01,QLD,Queensland,2525.0
+1984-12-01,SA,South Australia,1608.0
+1984-12-01,WA,Western Australia,1290.0
+1984-12-01,TAS,Tasmania,262.0
+1984-12-01,NT,Northern Territory,82.0
+1984-12-01,ACT,Australian Capital Territory,316.0
+1985-01-01,NSW,New South Wales,3082.0
+1985-01-01,VIC,Victoria,2843.0
+1985-01-01,QLD,Queensland,2278.0
+1985-01-01,SA,South Australia,1199.0
+1985-01-01,WA,Western Australia,1380.0
+1985-01-01,TAS,Tasmania,287.0
+1985-01-01,NT,Northern Territory,252.0
+1985-01-01,ACT,Australian Capital Territory,306.0
+1985-02-01,NSW,New South Wales,3341.0
+1985-02-01,VIC,Victoria,3399.0
+1985-02-01,QLD,Queensland,2309.0
+1985-02-01,SA,South Australia,1040.0
+1985-02-01,WA,Western Australia,1412.0
+1985-02-01,TAS,Tasmania,283.0
+1985-02-01,NT,Northern Territory,233.0
+1985-02-01,ACT,Australian Capital Territory,363.0
+1985-03-01,NSW,New South Wales,3463.0
+1985-03-01,VIC,Victoria,3552.0
+1985-03-01,QLD,Queensland,2817.0
+1985-03-01,SA,South Australia,1187.0
+1985-03-01,WA,Western Australia,1396.0
+1985-03-01,TAS,Tasmania,434.0
+1985-03-01,NT,Northern Territory,384.0
+1985-03-01,ACT,Australian Capital Territory,239.0
+1985-04-01,NSW,New South Wales,3791.0
+1985-04-01,VIC,Victoria,3556.0
+1985-04-01,QLD,Queensland,2623.0
+1985-04-01,SA,South Australia,1244.0
+1985-04-01,WA,Western Australia,1471.0
+1985-04-01,TAS,Tasmania,351.0
+1985-04-01,NT,Northern Territory,220.0
+1985-04-01,ACT,Australian Capital Territory,254.0
+1985-05-01,NSW,New South Wales,3748.0
+1985-05-01,VIC,Victoria,3851.0
+1985-05-01,QLD,Queensland,2651.0
+1985-05-01,SA,South Australia,1473.0
+1985-05-01,WA,Western Australia,2091.0
+1985-05-01,TAS,Tasmania,374.0
+1985-05-01,NT,Northern Territory,210.0
+1985-05-01,ACT,Australian Capital Territory,401.0
+1985-06-01,NSW,New South Wales,3722.0
+1985-06-01,VIC,Victoria,3145.0
+1985-06-01,QLD,Queensland,2737.0
+1985-06-01,SA,South Australia,1051.0
+1985-06-01,WA,Western Australia,1647.0
+1985-06-01,TAS,Tasmania,398.0
+1985-06-01,NT,Northern Territory,185.0
+1985-06-01,ACT,Australian Capital Territory,496.0
+1985-07-01,NSW,New South Wales,3657.0
+1985-07-01,VIC,Victoria,3627.0
+1985-07-01,QLD,Queensland,3041.0
+1985-07-01,SA,South Australia,924.0
+1985-07-01,WA,Western Australia,1866.0
+1985-07-01,TAS,Tasmania,374.0
+1985-07-01,NT,Northern Territory,180.0
+1985-07-01,ACT,Australian Capital Territory,265.0
+1985-08-01,NSW,New South Wales,3706.0
+1985-08-01,VIC,Victoria,3903.0
+1985-08-01,QLD,Queensland,2751.0
+1985-08-01,SA,South Australia,1073.0
+1985-08-01,WA,Western Australia,1826.0
+1985-08-01,TAS,Tasmania,344.0
+1985-08-01,NT,Northern Territory,128.0
+1985-08-01,ACT,Australian Capital Territory,470.0
+1985-09-01,NSW,New South Wales,3594.0
+1985-09-01,VIC,Victoria,3301.0
+1985-09-01,QLD,Queensland,2593.0
+1985-09-01,SA,South Australia,977.0
+1985-09-01,WA,Western Australia,1623.0
+1985-09-01,TAS,Tasmania,325.0
+1985-09-01,NT,Northern Territory,99.0
+1985-09-01,ACT,Australian Capital Territory,437.0
+1985-10-01,NSW,New South Wales,3968.0
+1985-10-01,VIC,Victoria,3966.0
+1985-10-01,QLD,Queensland,3027.0
+1985-10-01,SA,South Australia,1173.0
+1985-10-01,WA,Western Australia,1550.0
+1985-10-01,TAS,Tasmania,424.0
+1985-10-01,NT,Northern Territory,253.0
+1985-10-01,ACT,Australian Capital Territory,636.0
+1985-11-01,NSW,New South Wales,3563.0
+1985-11-01,VIC,Victoria,3323.0
+1985-11-01,QLD,Queensland,2387.0
+1985-11-01,SA,South Australia,833.0
+1985-11-01,WA,Western Australia,1706.0
+1985-11-01,TAS,Tasmania,414.0
+1985-11-01,NT,Northern Territory,221.0
+1985-11-01,ACT,Australian Capital Territory,323.0
+1985-12-01,NSW,New South Wales,3173.0
+1985-12-01,VIC,Victoria,2908.0
+1985-12-01,QLD,Queensland,2149.0
+1985-12-01,SA,South Australia,808.0
+1985-12-01,WA,Western Australia,1273.0
+1985-12-01,TAS,Tasmania,332.0
+1985-12-01,NT,Northern Territory,137.0
+1985-12-01,ACT,Australian Capital Territory,135.0
+1986-01-01,NSW,New South Wales,2531.0
+1986-01-01,VIC,Victoria,2559.0
+1986-01-01,QLD,Queensland,2066.0
+1986-01-01,SA,South Australia,896.0
+1986-01-01,WA,Western Australia,1353.0
+1986-01-01,TAS,Tasmania,320.0
+1986-01-01,NT,Northern Territory,102.0
+1986-01-01,ACT,Australian Capital Territory,307.0
+1986-02-01,NSW,New South Wales,2305.0
+1986-02-01,VIC,Victoria,2936.0
+1986-02-01,QLD,Queensland,1975.0
+1986-02-01,SA,South Australia,663.0
+1986-02-01,WA,Western Australia,1525.0
+1986-02-01,TAS,Tasmania,262.0
+1986-02-01,NT,Northern Territory,88.0
+1986-02-01,ACT,Australian Capital Territory,296.0
+1986-03-01,NSW,New South Wales,2499.0
+1986-03-01,VIC,Victoria,2355.0
+1986-03-01,QLD,Queensland,1787.0
+1986-03-01,SA,South Australia,1025.0
+1986-03-01,WA,Western Australia,1432.0
+1986-03-01,TAS,Tasmania,259.0
+1986-03-01,NT,Northern Territory,107.0
+1986-03-01,ACT,Australian Capital Territory,119.0
+1986-04-01,NSW,New South Wales,2594.0
+1986-04-01,VIC,Victoria,2954.0
+1986-04-01,QLD,Queensland,1819.0
+1986-04-01,SA,South Australia,837.0
+1986-04-01,WA,Western Australia,1460.0
+1986-04-01,TAS,Tasmania,337.0
+1986-04-01,NT,Northern Territory,147.0
+1986-04-01,ACT,Australian Capital Territory,331.0
+1986-05-01,NSW,New South Wales,2780.0
+1986-05-01,VIC,Victoria,3012.0
+1986-05-01,QLD,Queensland,1662.0
+1986-05-01,SA,South Australia,738.0
+1986-05-01,WA,Western Australia,1711.0
+1986-05-01,TAS,Tasmania,363.0
+1986-05-01,NT,Northern Territory,125.0
+1986-05-01,ACT,Australian Capital Territory,236.0
+1986-06-01,NSW,New South Wales,3431.0
+1986-06-01,VIC,Victoria,2908.0
+1986-06-01,QLD,Queensland,1642.0
+1986-06-01,SA,South Australia,1073.0
+1986-06-01,WA,Western Australia,1411.0
+1986-06-01,TAS,Tasmania,371.0
+1986-06-01,NT,Northern Territory,214.0
+1986-06-01,ACT,Australian Capital Territory,331.0
+1986-07-01,NSW,New South Wales,3552.0
+1986-07-01,VIC,Victoria,3247.0
+1986-07-01,QLD,Queensland,1892.0
+1986-07-01,SA,South Australia,1002.0
+1986-07-01,WA,Western Australia,1620.0
+1986-07-01,TAS,Tasmania,255.0
+1986-07-01,NT,Northern Territory,53.0
+1986-07-01,ACT,Australian Capital Territory,230.0
+1986-08-01,NSW,New South Wales,2533.0
+1986-08-01,VIC,Victoria,2837.0
+1986-08-01,QLD,Queensland,1865.0
+1986-08-01,SA,South Australia,721.0
+1986-08-01,WA,Western Australia,1386.0
+1986-08-01,TAS,Tasmania,401.0
+1986-08-01,NT,Northern Territory,54.0
+1986-08-01,ACT,Australian Capital Territory,184.0
+1986-09-01,NSW,New South Wales,2687.0
+1986-09-01,VIC,Victoria,3051.0
+1986-09-01,QLD,Queensland,1757.0
+1986-09-01,SA,South Australia,862.0
+1986-09-01,WA,Western Australia,1490.0
+1986-09-01,TAS,Tasmania,300.0
+1986-09-01,NT,Northern Territory,110.0
+1986-09-01,ACT,Australian Capital Territory,236.0
+1986-10-01,NSW,New South Wales,2551.0
+1986-10-01,VIC,Victoria,3214.0
+1986-10-01,QLD,Queensland,2050.0
+1986-10-01,SA,South Australia,756.0
+1986-10-01,WA,Western Australia,1589.0
+1986-10-01,TAS,Tasmania,383.0
+1986-10-01,NT,Northern Territory,79.0
+1986-10-01,ACT,Australian Capital Territory,242.0
+1986-11-01,NSW,New South Wales,2604.0
+1986-11-01,VIC,Victoria,2899.0
+1986-11-01,QLD,Queensland,1928.0
+1986-11-01,SA,South Australia,787.0
+1986-11-01,WA,Western Australia,1322.0
+1986-11-01,TAS,Tasmania,308.0
+1986-11-01,NT,Northern Territory,96.0
+1986-11-01,ACT,Australian Capital Territory,299.0
+1986-12-01,NSW,New South Wales,2360.0
+1986-12-01,VIC,Victoria,2941.0
+1986-12-01,QLD,Queensland,1771.0
+1986-12-01,SA,South Australia,870.0
+1986-12-01,WA,Western Australia,1344.0
+1986-12-01,TAS,Tasmania,297.0
+1986-12-01,NT,Northern Territory,119.0
+1986-12-01,ACT,Australian Capital Territory,225.0
+1987-01-01,NSW,New South Wales,2031.0
+1987-01-01,VIC,Victoria,2109.0
+1987-01-01,QLD,Queensland,1605.0
+1987-01-01,SA,South Australia,533.0
+1987-01-01,WA,Western Australia,1120.0
+1987-01-01,TAS,Tasmania,275.0
+1987-01-01,NT,Northern Territory,42.0
+1987-01-01,ACT,Australian Capital Territory,201.0
+1987-02-01,NSW,New South Wales,2657.0
+1987-02-01,VIC,Victoria,2508.0
+1987-02-01,QLD,Queensland,1603.0
+1987-02-01,SA,South Australia,573.0
+1987-02-01,WA,Western Australia,1358.0
+1987-02-01,TAS,Tasmania,244.0
+1987-02-01,NT,Northern Territory,79.0
+1987-02-01,ACT,Australian Capital Territory,268.0
+1987-03-01,NSW,New South Wales,2842.0
+1987-03-01,VIC,Victoria,2716.0
+1987-03-01,QLD,Queensland,1991.0
+1987-03-01,SA,South Australia,885.0
+1987-03-01,WA,Western Australia,1520.0
+1987-03-01,TAS,Tasmania,278.0
+1987-03-01,NT,Northern Territory,136.0
+1987-03-01,ACT,Australian Capital Territory,59.0
+1987-04-01,NSW,New South Wales,2462.0
+1987-04-01,VIC,Victoria,2352.0
+1987-04-01,QLD,Queensland,1737.0
+1987-04-01,SA,South Australia,761.0
+1987-04-01,WA,Western Australia,1323.0
+1987-04-01,TAS,Tasmania,259.0
+1987-04-01,NT,Northern Territory,319.0
+1987-04-01,ACT,Australian Capital Territory,72.0
+1987-05-01,NSW,New South Wales,3102.0
+1987-05-01,VIC,Victoria,2806.0
+1987-05-01,QLD,Queensland,2005.0
+1987-05-01,SA,South Australia,664.0
+1987-05-01,WA,Western Australia,1509.0
+1987-05-01,TAS,Tasmania,336.0
+1987-05-01,NT,Northern Territory,86.0
+1987-05-01,ACT,Australian Capital Territory,84.0
+1987-06-01,NSW,New South Wales,2807.0
+1987-06-01,VIC,Victoria,2628.0
+1987-06-01,QLD,Queensland,2515.0
+1987-06-01,SA,South Australia,778.0
+1987-06-01,WA,Western Australia,1606.0
+1987-06-01,TAS,Tasmania,313.0
+1987-06-01,NT,Northern Territory,231.0
+1987-06-01,ACT,Australian Capital Territory,269.0
+1987-07-01,NSW,New South Wales,3051.0
+1987-07-01,VIC,Victoria,2805.0
+1987-07-01,QLD,Queensland,2424.0
+1987-07-01,SA,South Australia,762.0
+1987-07-01,WA,Western Australia,1648.0
+1987-07-01,TAS,Tasmania,250.0
+1987-07-01,NT,Northern Territory,102.0
+1987-07-01,ACT,Australian Capital Territory,263.0
+1987-08-01,NSW,New South Wales,2982.0
+1987-08-01,VIC,Victoria,2711.0
+1987-08-01,QLD,Queensland,2269.0
+1987-08-01,SA,South Australia,769.0
+1987-08-01,WA,Western Australia,1387.0
+1987-08-01,TAS,Tasmania,257.0
+1987-08-01,NT,Northern Territory,92.0
+1987-08-01,ACT,Australian Capital Territory,191.0
+1987-09-01,NSW,New South Wales,3069.0
+1987-09-01,VIC,Victoria,3030.0
+1987-09-01,QLD,Queensland,2725.0
+1987-09-01,SA,South Australia,728.0
+1987-09-01,WA,Western Australia,1442.0
+1987-09-01,TAS,Tasmania,315.0
+1987-09-01,NT,Northern Territory,213.0
+1987-09-01,ACT,Australian Capital Territory,169.0
+1987-10-01,NSW,New South Wales,3269.0
+1987-10-01,VIC,Victoria,3058.0
+1987-10-01,QLD,Queensland,2867.0
+1987-10-01,SA,South Australia,587.0
+1987-10-01,WA,Western Australia,1673.0
+1987-10-01,TAS,Tasmania,293.0
+1987-10-01,NT,Northern Territory,228.0
+1987-10-01,ACT,Australian Capital Territory,231.0
+1987-11-01,NSW,New South Wales,4142.0
+1987-11-01,VIC,Victoria,2909.0
+1987-11-01,QLD,Queensland,2813.0
+1987-11-01,SA,South Australia,754.0
+1987-11-01,WA,Western Australia,1588.0
+1987-11-01,TAS,Tasmania,318.0
+1987-11-01,NT,Northern Territory,142.0
+1987-11-01,ACT,Australian Capital Territory,124.0
+1987-12-01,NSW,New South Wales,3233.0
+1987-12-01,VIC,Victoria,2963.0
+1987-12-01,QLD,Queensland,2872.0
+1987-12-01,SA,South Australia,693.0
+1987-12-01,WA,Western Australia,1667.0
+1987-12-01,TAS,Tasmania,284.0
+1987-12-01,NT,Northern Territory,73.0
+1987-12-01,ACT,Australian Capital Territory,158.0
+1988-01-01,NSW,New South Wales,2988.0
+1988-01-01,VIC,Victoria,2270.0
+1988-01-01,QLD,Queensland,2772.0
+1988-01-01,SA,South Australia,618.0
+1988-01-01,WA,Western Australia,1438.0
+1988-01-01,TAS,Tasmania,217.0
+1988-01-01,NT,Northern Territory,52.0
+1988-01-01,ACT,Australian Capital Territory,129.0
+1988-02-01,NSW,New South Wales,3952.0
+1988-02-01,VIC,Victoria,2656.0
+1988-02-01,QLD,Queensland,3111.0
+1988-02-01,SA,South Australia,710.0
+1988-02-01,WA,Western Australia,1849.0
+1988-02-01,TAS,Tasmania,301.0
+1988-02-01,NT,Northern Territory,65.0
+1988-02-01,ACT,Australian Capital Territory,315.0
+1988-03-01,NSW,New South Wales,4104.0
+1988-03-01,VIC,Victoria,3120.0
+1988-03-01,QLD,Queensland,3764.0
+1988-03-01,SA,South Australia,837.0
+1988-03-01,WA,Western Australia,2078.0
+1988-03-01,TAS,Tasmania,309.0
+1988-03-01,NT,Northern Territory,65.0
+1988-03-01,ACT,Australian Capital Territory,360.0
+1988-04-01,NSW,New South Wales,3764.0
+1988-04-01,VIC,Victoria,2870.0
+1988-04-01,QLD,Queensland,2828.0
+1988-04-01,SA,South Australia,819.0
+1988-04-01,WA,Western Australia,1933.0
+1988-04-01,TAS,Tasmania,244.0
+1988-04-01,NT,Northern Territory,55.0
+1988-04-01,ACT,Australian Capital Territory,168.0
+1988-05-01,NSW,New South Wales,4773.0
+1988-05-01,VIC,Victoria,2991.0
+1988-05-01,QLD,Queensland,3414.0
+1988-05-01,SA,South Australia,808.0
+1988-05-01,WA,Western Australia,2566.0
+1988-05-01,TAS,Tasmania,382.0
+1988-05-01,NT,Northern Territory,63.0
+1988-05-01,ACT,Australian Capital Territory,481.0
+1988-06-01,NSW,New South Wales,4810.0
+1988-06-01,VIC,Victoria,3440.0
+1988-06-01,QLD,Queensland,3840.0
+1988-06-01,SA,South Australia,924.0
+1988-06-01,WA,Western Australia,2573.0
+1988-06-01,TAS,Tasmania,343.0
+1988-06-01,NT,Northern Territory,46.0
+1988-06-01,ACT,Australian Capital Territory,213.0
+1988-07-01,NSW,New South Wales,4434.0
+1988-07-01,VIC,Victoria,3209.0
+1988-07-01,QLD,Queensland,3752.0
+1988-07-01,SA,South Australia,666.0
+1988-07-01,WA,Western Australia,2466.0
+1988-07-01,TAS,Tasmania,276.0
+1988-07-01,NT,Northern Territory,76.0
+1988-07-01,ACT,Australian Capital Territory,217.0
+1988-08-01,NSW,New South Wales,5425.0
+1988-08-01,VIC,Victoria,3639.0
+1988-08-01,QLD,Queensland,4567.0
+1988-08-01,SA,South Australia,998.0
+1988-08-01,WA,Western Australia,2641.0
+1988-08-01,TAS,Tasmania,362.0
+1988-08-01,NT,Northern Territory,209.0
+1988-08-01,ACT,Australian Capital Territory,265.0
+1988-09-01,NSW,New South Wales,4705.0
+1988-09-01,VIC,Victoria,3554.0
+1988-09-01,QLD,Queensland,4651.0
+1988-09-01,SA,South Australia,1011.0
+1988-09-01,WA,Western Australia,2487.0
+1988-09-01,TAS,Tasmania,379.0
+1988-09-01,NT,Northern Territory,99.0
+1988-09-01,ACT,Australian Capital Territory,159.0
+1988-10-01,NSW,New South Wales,3744.0
+1988-10-01,VIC,Victoria,3293.0
+1988-10-01,QLD,Queensland,4697.0
+1988-10-01,SA,South Australia,941.0
+1988-10-01,WA,Western Australia,2362.0
+1988-10-01,TAS,Tasmania,325.0
+1988-10-01,NT,Northern Territory,90.0
+1988-10-01,ACT,Australian Capital Territory,237.0
+1988-11-01,NSW,New South Wales,5059.0
+1988-11-01,VIC,Victoria,3648.0
+1988-11-01,QLD,Queensland,4366.0
+1988-11-01,SA,South Australia,1067.0
+1988-11-01,WA,Western Australia,2518.0
+1988-11-01,TAS,Tasmania,396.0
+1988-11-01,NT,Northern Territory,127.0
+1988-11-01,ACT,Australian Capital Territory,350.0
+1988-12-01,NSW,New South Wales,3886.0
+1988-12-01,VIC,Victoria,3282.0
+1988-12-01,QLD,Queensland,3442.0
+1988-12-01,SA,South Australia,938.0
+1988-12-01,WA,Western Australia,2077.0
+1988-12-01,TAS,Tasmania,287.0
+1988-12-01,NT,Northern Territory,31.0
+1988-12-01,ACT,Australian Capital Territory,130.0
+1989-01-01,NSW,New South Wales,4059.0
+1989-01-01,VIC,Victoria,2787.0
+1989-01-01,QLD,Queensland,2836.0
+1989-01-01,SA,South Australia,745.0
+1989-01-01,WA,Western Australia,1843.0
+1989-01-01,TAS,Tasmania,239.0
+1989-01-01,NT,Northern Territory,27.0
+1989-01-01,ACT,Australian Capital Territory,138.0
+1989-02-01,NSW,New South Wales,4113.0
+1989-02-01,VIC,Victoria,3136.0
+1989-02-01,QLD,Queensland,3752.0
+1989-02-01,SA,South Australia,874.0
+1989-02-01,WA,Western Australia,2311.0
+1989-02-01,TAS,Tasmania,269.0
+1989-02-01,NT,Northern Territory,63.0
+1989-02-01,ACT,Australian Capital Territory,228.0
+1989-03-01,NSW,New South Wales,4628.0
+1989-03-01,VIC,Victoria,3181.0
+1989-03-01,QLD,Queensland,3906.0
+1989-03-01,SA,South Australia,845.0
+1989-03-01,WA,Western Australia,2286.0
+1989-03-01,TAS,Tasmania,302.0
+1989-03-01,NT,Northern Territory,101.0
+1989-03-01,ACT,Australian Capital Territory,281.0
+1989-04-01,NSW,New South Wales,3945.0
+1989-04-01,VIC,Victoria,3365.0
+1989-04-01,QLD,Queensland,3733.0
+1989-04-01,SA,South Australia,947.0
+1989-04-01,WA,Western Australia,2367.0
+1989-04-01,TAS,Tasmania,343.0
+1989-04-01,NT,Northern Territory,66.0
+1989-04-01,ACT,Australian Capital Territory,239.0
+1989-05-01,NSW,New South Wales,4684.0
+1989-05-01,VIC,Victoria,4133.0
+1989-05-01,QLD,Queensland,4274.0
+1989-05-01,SA,South Australia,1030.0
+1989-05-01,WA,Western Australia,2472.0
+1989-05-01,TAS,Tasmania,391.0
+1989-05-01,NT,Northern Territory,73.0
+1989-05-01,ACT,Australian Capital Territory,281.0
+1989-06-01,NSW,New South Wales,4301.0
+1989-06-01,VIC,Victoria,3596.0
+1989-06-01,QLD,Queensland,3500.0
+1989-06-01,SA,South Australia,1176.0
+1989-06-01,WA,Western Australia,2182.0
+1989-06-01,TAS,Tasmania,355.0
+1989-06-01,NT,Northern Territory,117.0
+1989-06-01,ACT,Australian Capital Territory,281.0
+1989-07-01,NSW,New South Wales,3323.0
+1989-07-01,VIC,Victoria,2770.0
+1989-07-01,QLD,Queensland,3127.0
+1989-07-01,SA,South Australia,1088.0
+1989-07-01,WA,Western Australia,1376.0
+1989-07-01,TAS,Tasmania,265.0
+1989-07-01,NT,Northern Territory,38.0
+1989-07-01,ACT,Australian Capital Territory,168.0
+1989-08-01,NSW,New South Wales,3979.0
+1989-08-01,VIC,Victoria,3043.0
+1989-08-01,QLD,Queensland,3297.0
+1989-08-01,SA,South Australia,970.0
+1989-08-01,WA,Western Australia,1607.0
+1989-08-01,TAS,Tasmania,312.0
+1989-08-01,NT,Northern Territory,123.0
+1989-08-01,ACT,Australian Capital Territory,188.0
+1989-09-01,NSW,New South Wales,4031.0
+1989-09-01,VIC,Victoria,2591.0
+1989-09-01,QLD,Queensland,2856.0
+1989-09-01,SA,South Australia,952.0
+1989-09-01,WA,Western Australia,1550.0
+1989-09-01,TAS,Tasmania,262.0
+1989-09-01,NT,Northern Territory,52.0
+1989-09-01,ACT,Australian Capital Territory,245.0
+1989-10-01,NSW,New South Wales,3655.0
+1989-10-01,VIC,Victoria,2506.0
+1989-10-01,QLD,Queensland,3615.0
+1989-10-01,SA,South Australia,959.0
+1989-10-01,WA,Western Australia,1471.0
+1989-10-01,TAS,Tasmania,333.0
+1989-10-01,NT,Northern Territory,56.0
+1989-10-01,ACT,Australian Capital Territory,205.0
+1989-11-01,NSW,New South Wales,3852.0
+1989-11-01,VIC,Victoria,2627.0
+1989-11-01,QLD,Queensland,3438.0
+1989-11-01,SA,South Australia,1071.0
+1989-11-01,WA,Western Australia,1780.0
+1989-11-01,TAS,Tasmania,412.0
+1989-11-01,NT,Northern Territory,109.0
+1989-11-01,ACT,Australian Capital Territory,134.0
+1989-12-01,NSW,New South Wales,2533.0
+1989-12-01,VIC,Victoria,2241.0
+1989-12-01,QLD,Queensland,2314.0
+1989-12-01,SA,South Australia,923.0
+1989-12-01,WA,Western Australia,1328.0
+1989-12-01,TAS,Tasmania,194.0
+1989-12-01,NT,Northern Territory,65.0
+1989-12-01,ACT,Australian Capital Territory,94.0
+1990-01-01,NSW,New South Wales,2950.0
+1990-01-01,VIC,Victoria,2045.0
+1990-01-01,QLD,Queensland,2076.0
+1990-01-01,SA,South Australia,674.0
+1990-01-01,WA,Western Australia,1432.0
+1990-01-01,TAS,Tasmania,289.0
+1990-01-01,NT,Northern Territory,50.0
+1990-01-01,ACT,Australian Capital Territory,157.0
+1990-02-01,NSW,New South Wales,2992.0
+1990-02-01,VIC,Victoria,2329.0
+1990-02-01,QLD,Queensland,2675.0
+1990-02-01,SA,South Australia,949.0
+1990-02-01,WA,Western Australia,1604.0
+1990-02-01,TAS,Tasmania,302.0
+1990-02-01,NT,Northern Territory,82.0
+1990-02-01,ACT,Australian Capital Territory,297.0
+1990-03-01,NSW,New South Wales,3736.0
+1990-03-01,VIC,Victoria,2678.0
+1990-03-01,QLD,Queensland,3037.0
+1990-03-01,SA,South Australia,1006.0
+1990-03-01,WA,Western Australia,1424.0
+1990-03-01,TAS,Tasmania,318.0
+1990-03-01,NT,Northern Territory,58.0
+1990-03-01,ACT,Australian Capital Territory,176.0
+1990-04-01,NSW,New South Wales,2968.0
+1990-04-01,VIC,Victoria,2056.0
+1990-04-01,QLD,Queensland,2449.0
+1990-04-01,SA,South Australia,808.0
+1990-04-01,WA,Western Australia,1036.0
+1990-04-01,TAS,Tasmania,281.0
+1990-04-01,NT,Northern Territory,72.0
+1990-04-01,ACT,Australian Capital Territory,213.0
+1990-05-01,NSW,New South Wales,3839.0
+1990-05-01,VIC,Victoria,2837.0
+1990-05-01,QLD,Queensland,3003.0
+1990-05-01,SA,South Australia,1105.0
+1990-05-01,WA,Western Australia,1676.0
+1990-05-01,TAS,Tasmania,295.0
+1990-05-01,NT,Northern Territory,119.0
+1990-05-01,ACT,Australian Capital Territory,309.0
+1990-06-01,NSW,New South Wales,3297.0
+1990-06-01,VIC,Victoria,2472.0
+1990-06-01,QLD,Queensland,2560.0
+1990-06-01,SA,South Australia,1196.0
+1990-06-01,WA,Western Australia,1252.0
+1990-06-01,TAS,Tasmania,296.0
+1990-06-01,NT,Northern Territory,69.0
+1990-06-01,ACT,Australian Capital Territory,196.0
+1990-07-01,NSW,New South Wales,3188.0
+1990-07-01,VIC,Victoria,2088.0
+1990-07-01,QLD,Queensland,2895.0
+1990-07-01,SA,South Australia,984.0
+1990-07-01,WA,Western Australia,1347.0
+1990-07-01,TAS,Tasmania,269.0
+1990-07-01,NT,Northern Territory,27.0
+1990-07-01,ACT,Australian Capital Territory,178.0
+1990-08-01,NSW,New South Wales,3514.0
+1990-08-01,VIC,Victoria,2159.0
+1990-08-01,QLD,Queensland,3157.0
+1990-08-01,SA,South Australia,956.0
+1990-08-01,WA,Western Australia,1229.0
+1990-08-01,TAS,Tasmania,276.0
+1990-08-01,NT,Northern Territory,83.0
+1990-08-01,ACT,Australian Capital Territory,253.0
+1990-09-01,NSW,New South Wales,3400.0
+1990-09-01,VIC,Victoria,1847.0
+1990-09-01,QLD,Queensland,2552.0
+1990-09-01,SA,South Australia,951.0
+1990-09-01,WA,Western Australia,1233.0
+1990-09-01,TAS,Tasmania,243.0
+1990-09-01,NT,Northern Territory,85.0
+1990-09-01,ACT,Australian Capital Territory,163.0
+1990-10-01,NSW,New South Wales,3518.0
+1990-10-01,VIC,Victoria,2293.0
+1990-10-01,QLD,Queensland,2716.0
+1990-10-01,SA,South Australia,1001.0
+1990-10-01,WA,Western Australia,1214.0
+1990-10-01,TAS,Tasmania,379.0
+1990-10-01,NT,Northern Territory,143.0
+1990-10-01,ACT,Australian Capital Territory,217.0
+1990-11-01,NSW,New South Wales,3976.0
+1990-11-01,VIC,Victoria,2371.0
+1990-11-01,QLD,Queensland,2772.0
+1990-11-01,SA,South Australia,1076.0
+1990-11-01,WA,Western Australia,1264.0
+1990-11-01,TAS,Tasmania,312.0
+1990-11-01,NT,Northern Territory,69.0
+1990-11-01,ACT,Australian Capital Territory,150.0
+1990-12-01,NSW,New South Wales,2620.0
+1990-12-01,VIC,Victoria,1511.0
+1990-12-01,QLD,Queensland,2038.0
+1990-12-01,SA,South Australia,902.0
+1990-12-01,WA,Western Australia,949.0
+1990-12-01,TAS,Tasmania,258.0
+1990-12-01,NT,Northern Territory,68.0
+1990-12-01,ACT,Australian Capital Territory,157.0
+1991-01-01,NSW,New South Wales,2954.0
+1991-01-01,VIC,Victoria,1793.0
+1991-01-01,QLD,Queensland,2250.0
+1991-01-01,SA,South Australia,791.0
+1991-01-01,WA,Western Australia,945.0
+1991-01-01,TAS,Tasmania,253.0
+1991-01-01,NT,Northern Territory,139.0
+1991-01-01,ACT,Australian Capital Territory,154.0
+1991-02-01,NSW,New South Wales,2748.0
+1991-02-01,VIC,Victoria,1838.0
+1991-02-01,QLD,Queensland,2732.0
+1991-02-01,SA,South Australia,860.0
+1991-02-01,WA,Western Australia,1302.0
+1991-02-01,TAS,Tasmania,276.0
+1991-02-01,NT,Northern Territory,58.0
+1991-02-01,ACT,Australian Capital Territory,137.0
+1991-03-01,NSW,New South Wales,3040.0
+1991-03-01,VIC,Victoria,1593.0
+1991-03-01,QLD,Queensland,2715.0
+1991-03-01,SA,South Australia,1095.0
+1991-03-01,WA,Western Australia,1088.0
+1991-03-01,TAS,Tasmania,275.0
+1991-03-01,NT,Northern Territory,43.0
+1991-03-01,ACT,Australian Capital Territory,43.0
+1991-04-01,NSW,New South Wales,2903.0
+1991-04-01,VIC,Victoria,1809.0
+1991-04-01,QLD,Queensland,2849.0
+1991-04-01,SA,South Australia,837.0
+1991-04-01,WA,Western Australia,1169.0
+1991-04-01,TAS,Tasmania,315.0
+1991-04-01,NT,Northern Territory,52.0
+1991-04-01,ACT,Australian Capital Territory,184.0
+1991-05-01,NSW,New South Wales,3803.0
+1991-05-01,VIC,Victoria,2257.0
+1991-05-01,QLD,Queensland,3266.0
+1991-05-01,SA,South Australia,1103.0
+1991-05-01,WA,Western Australia,1473.0
+1991-05-01,TAS,Tasmania,409.0
+1991-05-01,NT,Northern Territory,84.0
+1991-05-01,ACT,Australian Capital Territory,290.0
+1991-06-01,NSW,New South Wales,3054.0
+1991-06-01,VIC,Victoria,1751.0
+1991-06-01,QLD,Queensland,2795.0
+1991-06-01,SA,South Australia,870.0
+1991-06-01,WA,Western Australia,1348.0
+1991-06-01,TAS,Tasmania,251.0
+1991-06-01,NT,Northern Territory,83.0
+1991-06-01,ACT,Australian Capital Territory,247.0
+1991-07-01,NSW,New South Wales,4025.0
+1991-07-01,VIC,Victoria,2321.0
+1991-07-01,QLD,Queensland,3282.0
+1991-07-01,SA,South Australia,1057.0
+1991-07-01,WA,Western Australia,1546.0
+1991-07-01,TAS,Tasmania,252.0
+1991-07-01,NT,Northern Territory,46.0
+1991-07-01,ACT,Australian Capital Territory,310.0
+1991-08-01,NSW,New South Wales,3707.0
+1991-08-01,VIC,Victoria,2011.0
+1991-08-01,QLD,Queensland,3416.0
+1991-08-01,SA,South Australia,994.0
+1991-08-01,WA,Western Australia,1467.0
+1991-08-01,TAS,Tasmania,391.0
+1991-08-01,NT,Northern Territory,101.0
+1991-08-01,ACT,Australian Capital Territory,340.0
+1991-09-01,NSW,New South Wales,3903.0
+1991-09-01,VIC,Victoria,2082.0
+1991-09-01,QLD,Queensland,3264.0
+1991-09-01,SA,South Australia,920.0
+1991-09-01,WA,Western Australia,1485.0
+1991-09-01,TAS,Tasmania,311.0
+1991-09-01,NT,Northern Territory,91.0
+1991-09-01,ACT,Australian Capital Territory,191.0
+1991-10-01,NSW,New South Wales,3680.0
+1991-10-01,VIC,Victoria,2586.0
+1991-10-01,QLD,Queensland,3929.0
+1991-10-01,SA,South Australia,938.0
+1991-10-01,WA,Western Australia,1385.0
+1991-10-01,TAS,Tasmania,354.0
+1991-10-01,NT,Northern Territory,145.0
+1991-10-01,ACT,Australian Capital Territory,307.0
+1991-11-01,NSW,New South Wales,3577.0
+1991-11-01,VIC,Victoria,2051.0
+1991-11-01,QLD,Queensland,3524.0
+1991-11-01,SA,South Australia,865.0
+1991-11-01,WA,Western Australia,1370.0
+1991-11-01,TAS,Tasmania,310.0
+1991-11-01,NT,Northern Territory,155.0
+1991-11-01,ACT,Australian Capital Territory,194.0
+1991-12-01,NSW,New South Wales,3293.0
+1991-12-01,VIC,Victoria,1834.0
+1991-12-01,QLD,Queensland,2952.0
+1991-12-01,SA,South Australia,813.0
+1991-12-01,WA,Western Australia,1225.0
+1991-12-01,TAS,Tasmania,307.0
+1991-12-01,NT,Northern Territory,140.0
+1991-12-01,ACT,Australian Capital Territory,256.0
+1992-01-01,NSW,New South Wales,3090.0
+1992-01-01,VIC,Victoria,1735.0
+1992-01-01,QLD,Queensland,2863.0
+1992-01-01,SA,South Australia,957.0
+1992-01-01,WA,Western Australia,1349.0
+1992-01-01,TAS,Tasmania,324.0
+1992-01-01,NT,Northern Territory,187.0
+1992-01-01,ACT,Australian Capital Territory,279.0
+1992-02-01,NSW,New South Wales,3108.0
+1992-02-01,VIC,Victoria,2018.0
+1992-02-01,QLD,Queensland,3508.0
+1992-02-01,SA,South Australia,713.0
+1992-02-01,WA,Western Australia,1406.0
+1992-02-01,TAS,Tasmania,297.0
+1992-02-01,NT,Northern Territory,164.0
+1992-02-01,ACT,Australian Capital Territory,320.0
+1992-03-01,NSW,New South Wales,3982.0
+1992-03-01,VIC,Victoria,2405.0
+1992-03-01,QLD,Queensland,3552.0
+1992-03-01,SA,South Australia,1007.0
+1992-03-01,WA,Western Australia,1746.0
+1992-03-01,TAS,Tasmania,355.0
+1992-03-01,NT,Northern Territory,53.0
+1992-03-01,ACT,Australian Capital Territory,407.0
+1992-04-01,NSW,New South Wales,3833.0
+1992-04-01,VIC,Victoria,2346.0
+1992-04-01,QLD,Queensland,3405.0
+1992-04-01,SA,South Australia,958.0
+1992-04-01,WA,Western Australia,1674.0
+1992-04-01,TAS,Tasmania,320.0
+1992-04-01,NT,Northern Territory,220.0
+1992-04-01,ACT,Australian Capital Territory,460.0
+1992-05-01,NSW,New South Wales,3982.0
+1992-05-01,VIC,Victoria,2291.0
+1992-05-01,QLD,Queensland,4178.0
+1992-05-01,SA,South Australia,891.0
+1992-05-01,WA,Western Australia,1983.0
+1992-05-01,TAS,Tasmania,319.0
+1992-05-01,NT,Northern Territory,86.0
+1992-05-01,ACT,Australian Capital Territory,295.0
+1992-06-01,NSW,New South Wales,4100.0
+1992-06-01,VIC,Victoria,2366.0
+1992-06-01,QLD,Queensland,4192.0
+1992-06-01,SA,South Australia,1176.0
+1992-06-01,WA,Western Australia,2042.0
+1992-06-01,TAS,Tasmania,372.0
+1992-06-01,NT,Northern Territory,78.0
+1992-06-01,ACT,Australian Capital Territory,447.0
+1992-07-01,NSW,New South Wales,4146.0
+1992-07-01,VIC,Victoria,2638.0
+1992-07-01,QLD,Queensland,3822.0
+1992-07-01,SA,South Australia,1018.0
+1992-07-01,WA,Western Australia,2023.0
+1992-07-01,TAS,Tasmania,326.0
+1992-07-01,NT,Northern Territory,134.0
+1992-07-01,ACT,Australian Capital Territory,513.0
+1992-08-01,NSW,New South Wales,3604.0
+1992-08-01,VIC,Victoria,2359.0
+1992-08-01,QLD,Queensland,3964.0
+1992-08-01,SA,South Australia,1001.0
+1992-08-01,WA,Western Australia,1707.0
+1992-08-01,TAS,Tasmania,352.0
+1992-08-01,NT,Northern Territory,113.0
+1992-08-01,ACT,Australian Capital Territory,507.0
+1992-09-01,NSW,New South Wales,4468.0
+1992-09-01,VIC,Victoria,2480.0
+1992-09-01,QLD,Queensland,3751.0
+1992-09-01,SA,South Australia,995.0
+1992-09-01,WA,Western Australia,1912.0
+1992-09-01,TAS,Tasmania,360.0
+1992-09-01,NT,Northern Territory,72.0
+1992-09-01,ACT,Australian Capital Territory,426.0
+1992-10-01,NSW,New South Wales,4073.0
+1992-10-01,VIC,Victoria,2587.0
+1992-10-01,QLD,Queensland,4152.0
+1992-10-01,SA,South Australia,984.0
+1992-10-01,WA,Western Australia,2019.0
+1992-10-01,TAS,Tasmania,363.0
+1992-10-01,NT,Northern Territory,127.0
+1992-10-01,ACT,Australian Capital Territory,239.0
+1992-11-01,NSW,New South Wales,4639.0
+1992-11-01,VIC,Victoria,2589.0
+1992-11-01,QLD,Queensland,3826.0
+1992-11-01,SA,South Australia,982.0
+1992-11-01,WA,Western Australia,1712.0
+1992-11-01,TAS,Tasmania,419.0
+1992-11-01,NT,Northern Territory,105.0
+1992-11-01,ACT,Australian Capital Territory,408.0
+1992-12-01,NSW,New South Wales,4171.0
+1992-12-01,VIC,Victoria,2488.0
+1992-12-01,QLD,Queensland,3769.0
+1992-12-01,SA,South Australia,1147.0
+1992-12-01,WA,Western Australia,1849.0
+1992-12-01,TAS,Tasmania,355.0
+1992-12-01,NT,Northern Territory,143.0
+1992-12-01,ACT,Australian Capital Territory,237.0
+1993-01-01,NSW,New South Wales,3733.0
+1993-01-01,VIC,Victoria,2090.0
+1993-01-01,QLD,Queensland,3138.0
+1993-01-01,SA,South Australia,811.0
+1993-01-01,WA,Western Australia,1602.0
+1993-01-01,TAS,Tasmania,311.0
+1993-01-01,NT,Northern Territory,100.0
+1993-01-01,ACT,Australian Capital Territory,249.0
+1993-02-01,NSW,New South Wales,4008.0
+1993-02-01,VIC,Victoria,2336.0
+1993-02-01,QLD,Queensland,3427.0
+1993-02-01,SA,South Australia,1084.0
+1993-02-01,WA,Western Australia,1651.0
+1993-02-01,TAS,Tasmania,215.0
+1993-02-01,NT,Northern Territory,102.0
+1993-02-01,ACT,Australian Capital Territory,324.0
+1993-03-01,NSW,New South Wales,4838.0
+1993-03-01,VIC,Victoria,2763.0
+1993-03-01,QLD,Queensland,4512.0
+1993-03-01,SA,South Australia,1137.0
+1993-03-01,WA,Western Australia,1981.0
+1993-03-01,TAS,Tasmania,392.0
+1993-03-01,NT,Northern Territory,117.0
+1993-03-01,ACT,Australian Capital Territory,333.0
+1993-04-01,NSW,New South Wales,3929.0
+1993-04-01,VIC,Victoria,2303.0
+1993-04-01,QLD,Queensland,4383.0
+1993-04-01,SA,South Australia,1004.0
+1993-04-01,WA,Western Australia,1759.0
+1993-04-01,TAS,Tasmania,344.0
+1993-04-01,NT,Northern Territory,161.0
+1993-04-01,ACT,Australian Capital Territory,392.0
+1993-05-01,NSW,New South Wales,4313.0
+1993-05-01,VIC,Victoria,2481.0
+1993-05-01,QLD,Queensland,4476.0
+1993-05-01,SA,South Australia,1061.0
+1993-05-01,WA,Western Australia,1989.0
+1993-05-01,TAS,Tasmania,306.0
+1993-05-01,NT,Northern Territory,125.0
+1993-05-01,ACT,Australian Capital Territory,380.0
+1993-06-01,NSW,New South Wales,3940.0
+1993-06-01,VIC,Victoria,2469.0
+1993-06-01,QLD,Queensland,4712.0
+1993-06-01,SA,South Australia,1116.0
+1993-06-01,WA,Western Australia,2364.0
+1993-06-01,TAS,Tasmania,362.0
+1993-06-01,NT,Northern Territory,188.0
+1993-06-01,ACT,Australian Capital Territory,385.0
+1993-07-01,NSW,New South Wales,4501.0
+1993-07-01,VIC,Victoria,2689.0
+1993-07-01,QLD,Queensland,4691.0
+1993-07-01,SA,South Australia,1138.0
+1993-07-01,WA,Western Australia,2028.0
+1993-07-01,TAS,Tasmania,342.0
+1993-07-01,NT,Northern Territory,151.0
+1993-07-01,ACT,Australian Capital Territory,395.0
+1993-08-01,NSW,New South Wales,3910.0
+1993-08-01,VIC,Victoria,2513.0
+1993-08-01,QLD,Queensland,4676.0
+1993-08-01,SA,South Australia,1188.0
+1993-08-01,WA,Western Australia,2185.0
+1993-08-01,TAS,Tasmania,383.0
+1993-08-01,NT,Northern Territory,165.0
+1993-08-01,ACT,Australian Capital Territory,499.0
+1993-09-01,NSW,New South Wales,4558.0
+1993-09-01,VIC,Victoria,2803.0
+1993-09-01,QLD,Queensland,4889.0
+1993-09-01,SA,South Australia,896.0
+1993-09-01,WA,Western Australia,2266.0
+1993-09-01,TAS,Tasmania,341.0
+1993-09-01,NT,Northern Territory,200.0
+1993-09-01,ACT,Australian Capital Territory,265.0
+1993-10-01,NSW,New South Wales,4021.0
+1993-10-01,VIC,Victoria,2700.0
+1993-10-01,QLD,Queensland,4570.0
+1993-10-01,SA,South Australia,859.0
+1993-10-01,WA,Western Australia,2095.0
+1993-10-01,TAS,Tasmania,351.0
+1993-10-01,NT,Northern Territory,129.0
+1993-10-01,ACT,Australian Capital Territory,234.0
+1993-11-01,NSW,New South Wales,4669.0
+1993-11-01,VIC,Victoria,2940.0
+1993-11-01,QLD,Queensland,4790.0
+1993-11-01,SA,South Australia,1017.0
+1993-11-01,WA,Western Australia,2370.0
+1993-11-01,TAS,Tasmania,411.0
+1993-11-01,NT,Northern Territory,77.0
+1993-11-01,ACT,Australian Capital Territory,236.0
+1993-12-01,NSW,New South Wales,3495.0
+1993-12-01,VIC,Victoria,2638.0
+1993-12-01,QLD,Queensland,4187.0
+1993-12-01,SA,South Australia,927.0
+1993-12-01,WA,Western Australia,2297.0
+1993-12-01,TAS,Tasmania,374.0
+1993-12-01,NT,Northern Territory,60.0
+1993-12-01,ACT,Australian Capital Territory,265.0
+1994-01-01,NSW,New South Wales,3859.0
+1994-01-01,VIC,Victoria,2185.0
+1994-01-01,QLD,Queensland,3572.0
+1994-01-01,SA,South Australia,734.0
+1994-01-01,WA,Western Australia,1560.0
+1994-01-01,TAS,Tasmania,345.0
+1994-01-01,NT,Northern Territory,152.0
+1994-01-01,ACT,Australian Capital Territory,685.0
+1994-02-01,NSW,New South Wales,3724.0
+1994-02-01,VIC,Victoria,2824.0
+1994-02-01,QLD,Queensland,3969.0
+1994-02-01,SA,South Australia,852.0
+1994-02-01,WA,Western Australia,2110.0
+1994-02-01,TAS,Tasmania,344.0
+1994-02-01,NT,Northern Territory,144.0
+1994-02-01,ACT,Australian Capital Territory,241.0
+1994-03-01,NSW,New South Wales,4720.0
+1994-03-01,VIC,Victoria,2918.0
+1994-03-01,QLD,Queensland,5072.0
+1994-03-01,SA,South Australia,1036.0
+1994-03-01,WA,Western Australia,2432.0
+1994-03-01,TAS,Tasmania,333.0
+1994-03-01,NT,Northern Territory,133.0
+1994-03-01,ACT,Australian Capital Territory,359.0
+1994-04-01,NSW,New South Wales,4084.0
+1994-04-01,VIC,Victoria,2446.0
+1994-04-01,QLD,Queensland,4032.0
+1994-04-01,SA,South Australia,847.0
+1994-04-01,WA,Western Australia,2105.0
+1994-04-01,TAS,Tasmania,280.0
+1994-04-01,NT,Northern Territory,142.0
+1994-04-01,ACT,Australian Capital Territory,247.0
+1994-05-01,NSW,New South Wales,5620.0
+1994-05-01,VIC,Victoria,3527.0
+1994-05-01,QLD,Queensland,5608.0
+1994-05-01,SA,South Australia,1103.0
+1994-05-01,WA,Western Australia,2667.0
+1994-05-01,TAS,Tasmania,348.0
+1994-05-01,NT,Northern Territory,114.0
+1994-05-01,ACT,Australian Capital Territory,359.0
+1994-06-01,NSW,New South Wales,5202.0
+1994-06-01,VIC,Victoria,2734.0
+1994-06-01,QLD,Queensland,5136.0
+1994-06-01,SA,South Australia,1179.0
+1994-06-01,WA,Western Australia,2661.0
+1994-06-01,TAS,Tasmania,306.0
+1994-06-01,NT,Northern Territory,111.0
+1994-06-01,ACT,Australian Capital Territory,299.0
+1994-07-01,NSW,New South Wales,4403.0
+1994-07-01,VIC,Victoria,2743.0
+1994-07-01,QLD,Queensland,4519.0
+1994-07-01,SA,South Australia,969.0
+1994-07-01,WA,Western Australia,2128.0
+1994-07-01,TAS,Tasmania,311.0
+1994-07-01,NT,Northern Territory,72.0
+1994-07-01,ACT,Australian Capital Territory,297.0
+1994-08-01,NSW,New South Wales,6363.0
+1994-08-01,VIC,Victoria,3246.0
+1994-08-01,QLD,Queensland,5352.0
+1994-08-01,SA,South Australia,1081.0
+1994-08-01,WA,Western Australia,2320.0
+1994-08-01,TAS,Tasmania,292.0
+1994-08-01,NT,Northern Territory,154.0
+1994-08-01,ACT,Australian Capital Territory,297.0
+1994-09-01,NSW,New South Wales,6210.0
+1994-09-01,VIC,Victoria,2732.0
+1994-09-01,QLD,Queensland,5008.0
+1994-09-01,SA,South Australia,1073.0
+1994-09-01,WA,Western Australia,2445.0
+1994-09-01,TAS,Tasmania,315.0
+1994-09-01,NT,Northern Territory,209.0
+1994-09-01,ACT,Australian Capital Territory,264.0
+1994-10-01,NSW,New South Wales,4609.0
+1994-10-01,VIC,Victoria,3187.0
+1994-10-01,QLD,Queensland,4192.0
+1994-10-01,SA,South Australia,804.0
+1994-10-01,WA,Western Australia,1878.0
+1994-10-01,TAS,Tasmania,330.0
+1994-10-01,NT,Northern Territory,174.0
+1994-10-01,ACT,Australian Capital Territory,394.0
+1994-11-01,NSW,New South Wales,4589.0
+1994-11-01,VIC,Victoria,3101.0
+1994-11-01,QLD,Queensland,4421.0
+1994-11-01,SA,South Australia,1055.0
+1994-11-01,WA,Western Australia,2149.0
+1994-11-01,TAS,Tasmania,285.0
+1994-11-01,NT,Northern Territory,131.0
+1994-11-01,ACT,Australian Capital Territory,178.0
+1994-12-01,NSW,New South Wales,4203.0
+1994-12-01,VIC,Victoria,2525.0
+1994-12-01,QLD,Queensland,3225.0
+1994-12-01,SA,South Australia,698.0
+1994-12-01,WA,Western Australia,1856.0
+1994-12-01,TAS,Tasmania,228.0
+1994-12-01,NT,Northern Territory,115.0
+1994-12-01,ACT,Australian Capital Territory,113.0
+1995-01-01,NSW,New South Wales,3880.0
+1995-01-01,VIC,Victoria,1787.0
+1995-01-01,QLD,Queensland,2805.0
+1995-01-01,SA,South Australia,774.0
+1995-01-01,WA,Western Australia,1535.0
+1995-01-01,TAS,Tasmania,218.0
+1995-01-01,NT,Northern Territory,99.0
+1995-01-01,ACT,Australian Capital Territory,240.0
+1995-02-01,NSW,New South Wales,3993.0
+1995-02-01,VIC,Victoria,2413.0
+1995-02-01,QLD,Queensland,2908.0
+1995-02-01,SA,South Australia,679.0
+1995-02-01,WA,Western Australia,1586.0
+1995-02-01,TAS,Tasmania,259.0
+1995-02-01,NT,Northern Territory,143.0
+1995-02-01,ACT,Australian Capital Territory,246.0
+1995-03-01,NSW,New South Wales,4167.0
+1995-03-01,VIC,Victoria,2538.0
+1995-03-01,QLD,Queensland,3551.0
+1995-03-01,SA,South Australia,913.0
+1995-03-01,WA,Western Australia,1762.0
+1995-03-01,TAS,Tasmania,288.0
+1995-03-01,NT,Northern Territory,135.0
+1995-03-01,ACT,Australian Capital Territory,148.0
+1995-04-01,NSW,New South Wales,3749.0
+1995-04-01,VIC,Victoria,1883.0
+1995-04-01,QLD,Queensland,2805.0
+1995-04-01,SA,South Australia,481.0
+1995-04-01,WA,Western Australia,1180.0
+1995-04-01,TAS,Tasmania,200.0
+1995-04-01,NT,Northern Territory,109.0
+1995-04-01,ACT,Australian Capital Territory,163.0
+1995-05-01,NSW,New South Wales,5049.0
+1995-05-01,VIC,Victoria,2782.0
+1995-05-01,QLD,Queensland,3141.0
+1995-05-01,SA,South Australia,589.0
+1995-05-01,WA,Western Australia,1794.0
+1995-05-01,TAS,Tasmania,251.0
+1995-05-01,NT,Northern Territory,163.0
+1995-05-01,ACT,Australian Capital Territory,228.0
+1995-06-01,NSW,New South Wales,3649.0
+1995-06-01,VIC,Victoria,2326.0
+1995-06-01,QLD,Queensland,3271.0
+1995-06-01,SA,South Australia,646.0
+1995-06-01,WA,Western Australia,1795.0
+1995-06-01,TAS,Tasmania,209.0
+1995-06-01,NT,Northern Territory,157.0
+1995-06-01,ACT,Australian Capital Territory,153.0
+1995-07-01,NSW,New South Wales,4438.0
+1995-07-01,VIC,Victoria,2050.0
+1995-07-01,QLD,Queensland,2657.0
+1995-07-01,SA,South Australia,576.0
+1995-07-01,WA,Western Australia,1203.0
+1995-07-01,TAS,Tasmania,213.0
+1995-07-01,NT,Northern Territory,119.0
+1995-07-01,ACT,Australian Capital Territory,232.0
+1995-08-01,NSW,New South Wales,3834.0
+1995-08-01,VIC,Victoria,2105.0
+1995-08-01,QLD,Queensland,2951.0
+1995-08-01,SA,South Australia,671.0
+1995-08-01,WA,Western Australia,1596.0
+1995-08-01,TAS,Tasmania,223.0
+1995-08-01,NT,Northern Territory,149.0
+1995-08-01,ACT,Australian Capital Territory,122.0
+1995-09-01,NSW,New South Wales,3868.0
+1995-09-01,VIC,Victoria,2139.0
+1995-09-01,QLD,Queensland,2525.0
+1995-09-01,SA,South Australia,592.0
+1995-09-01,WA,Western Australia,1410.0
+1995-09-01,TAS,Tasmania,252.0
+1995-09-01,NT,Northern Territory,102.0
+1995-09-01,ACT,Australian Capital Territory,180.0
+1995-10-01,NSW,New South Wales,3433.0
+1995-10-01,VIC,Victoria,2002.0
+1995-10-01,QLD,Queensland,2502.0
+1995-10-01,SA,South Australia,519.0
+1995-10-01,WA,Western Australia,1265.0
+1995-10-01,TAS,Tasmania,225.0
+1995-10-01,NT,Northern Territory,109.0
+1995-10-01,ACT,Australian Capital Territory,182.0
+1995-11-01,NSW,New South Wales,3787.0
+1995-11-01,VIC,Victoria,2086.0
+1995-11-01,QLD,Queensland,2579.0
+1995-11-01,SA,South Australia,527.0
+1995-11-01,WA,Western Australia,1379.0
+1995-11-01,TAS,Tasmania,208.0
+1995-11-01,NT,Northern Territory,97.0
+1995-11-01,ACT,Australian Capital Territory,400.0
+1995-12-01,NSW,New South Wales,2923.0
+1995-12-01,VIC,Victoria,1824.0
+1995-12-01,QLD,Queensland,2221.0
+1995-12-01,SA,South Australia,434.0
+1995-12-01,WA,Western Australia,993.0
+1995-12-01,TAS,Tasmania,219.0
+1995-12-01,NT,Northern Territory,141.0
+1995-12-01,ACT,Australian Capital Territory,80.0
+1996-01-01,NSW,New South Wales,2896.0
+1996-01-01,VIC,Victoria,1519.0
+1996-01-01,QLD,Queensland,1867.0
+1996-01-01,SA,South Australia,355.0
+1996-01-01,WA,Western Australia,1241.0
+1996-01-01,TAS,Tasmania,228.0
+1996-01-01,NT,Northern Territory,82.0
+1996-01-01,ACT,Australian Capital Territory,116.0
+1996-02-01,NSW,New South Wales,3361.0
+1996-02-01,VIC,Victoria,1931.0
+1996-02-01,QLD,Queensland,2405.0
+1996-02-01,SA,South Australia,486.0
+1996-02-01,WA,Western Australia,1482.0
+1996-02-01,TAS,Tasmania,197.0
+1996-02-01,NT,Northern Territory,68.0
+1996-02-01,ACT,Australian Capital Territory,179.0
+1996-03-01,NSW,New South Wales,3259.0
+1996-03-01,VIC,Victoria,2119.0
+1996-03-01,QLD,Queensland,2420.0
+1996-03-01,SA,South Australia,437.0
+1996-03-01,WA,Western Australia,1501.0
+1996-03-01,TAS,Tasmania,165.0
+1996-03-01,NT,Northern Territory,119.0
+1996-03-01,ACT,Australian Capital Territory,143.0
+1996-04-01,NSW,New South Wales,3097.0
+1996-04-01,VIC,Victoria,1870.0
+1996-04-01,QLD,Queensland,2681.0
+1996-04-01,SA,South Australia,430.0
+1996-04-01,WA,Western Australia,1169.0
+1996-04-01,TAS,Tasmania,246.0
+1996-04-01,NT,Northern Territory,198.0
+1996-04-01,ACT,Australian Capital Territory,206.0
+1996-05-01,NSW,New South Wales,4514.0
+1996-05-01,VIC,Victoria,2095.0
+1996-05-01,QLD,Queensland,3053.0
+1996-05-01,SA,South Australia,505.0
+1996-05-01,WA,Western Australia,1420.0
+1996-05-01,TAS,Tasmania,175.0
+1996-05-01,NT,Northern Territory,146.0
+1996-05-01,ACT,Australian Capital Territory,233.0
+1996-06-01,NSW,New South Wales,3174.0
+1996-06-01,VIC,Victoria,1967.0
+1996-06-01,QLD,Queensland,2590.0
+1996-06-01,SA,South Australia,436.0
+1996-06-01,WA,Western Australia,1195.0
+1996-06-01,TAS,Tasmania,195.0
+1996-06-01,NT,Northern Territory,122.0
+1996-06-01,ACT,Australian Capital Territory,77.0
+1996-07-01,NSW,New South Wales,4643.0
+1996-07-01,VIC,Victoria,2209.0
+1996-07-01,QLD,Queensland,3011.0
+1996-07-01,SA,South Australia,528.0
+1996-07-01,WA,Western Australia,1336.0
+1996-07-01,TAS,Tasmania,121.0
+1996-07-01,NT,Northern Territory,162.0
+1996-07-01,ACT,Australian Capital Territory,137.0
+1996-08-01,NSW,New South Wales,3426.0
+1996-08-01,VIC,Victoria,2522.0
+1996-08-01,QLD,Queensland,2925.0
+1996-08-01,SA,South Australia,547.0
+1996-08-01,WA,Western Australia,1277.0
+1996-08-01,TAS,Tasmania,177.0
+1996-08-01,NT,Northern Territory,166.0
+1996-08-01,ACT,Australian Capital Territory,345.0
+1996-09-01,NSW,New South Wales,3507.0
+1996-09-01,VIC,Victoria,1894.0
+1996-09-01,QLD,Queensland,2590.0
+1996-09-01,SA,South Australia,514.0
+1996-09-01,WA,Western Australia,1245.0
+1996-09-01,TAS,Tasmania,160.0
+1996-09-01,NT,Northern Territory,143.0
+1996-09-01,ACT,Australian Capital Territory,126.0
+1996-10-01,NSW,New South Wales,3829.0
+1996-10-01,VIC,Victoria,2433.0
+1996-10-01,QLD,Queensland,3300.0
+1996-10-01,SA,South Australia,566.0
+1996-10-01,WA,Western Australia,1375.0
+1996-10-01,TAS,Tasmania,190.0
+1996-10-01,NT,Northern Territory,169.0
+1996-10-01,ACT,Australian Capital Territory,119.0
+1996-11-01,NSW,New South Wales,4080.0
+1996-11-01,VIC,Victoria,1921.0
+1996-11-01,QLD,Queensland,2855.0
+1996-11-01,SA,South Australia,488.0
+1996-11-01,WA,Western Australia,1366.0
+1996-11-01,TAS,Tasmania,168.0
+1996-11-01,NT,Northern Territory,228.0
+1996-11-01,ACT,Australian Capital Territory,217.0
+1996-12-01,NSW,New South Wales,3517.0
+1996-12-01,VIC,Victoria,2005.0
+1996-12-01,QLD,Queensland,2312.0
+1996-12-01,SA,South Australia,410.0
+1996-12-01,WA,Western Australia,1242.0
+1996-12-01,TAS,Tasmania,153.0
+1996-12-01,NT,Northern Territory,123.0
+1996-12-01,ACT,Australian Capital Territory,81.0
+1997-01-01,NSW,New South Wales,3767.0
+1997-01-01,VIC,Victoria,2113.0
+1997-01-01,QLD,Queensland,2239.0
+1997-01-01,SA,South Australia,351.0
+1997-01-01,WA,Western Australia,1182.0
+1997-01-01,TAS,Tasmania,153.0
+1997-01-01,NT,Northern Territory,120.0
+1997-01-01,ACT,Australian Capital Territory,135.0
+1997-02-01,NSW,New South Wales,3871.0
+1997-02-01,VIC,Victoria,2516.0
+1997-02-01,QLD,Queensland,2700.0
+1997-02-01,SA,South Australia,472.0
+1997-02-01,WA,Western Australia,1047.0
+1997-02-01,TAS,Tasmania,153.0
+1997-02-01,NT,Northern Territory,106.0
+1997-02-01,ACT,Australian Capital Territory,267.0
+1997-03-01,NSW,New South Wales,3542.0
+1997-03-01,VIC,Victoria,2456.0
+1997-03-01,QLD,Queensland,2846.0
+1997-03-01,SA,South Australia,543.0
+1997-03-01,WA,Western Australia,1216.0
+1997-03-01,TAS,Tasmania,125.0
+1997-03-01,NT,Northern Territory,151.0
+1997-03-01,ACT,Australian Capital Territory,122.0
+1997-04-01,NSW,New South Wales,4272.0
+1997-04-01,VIC,Victoria,2537.0
+1997-04-01,QLD,Queensland,2748.0
+1997-04-01,SA,South Australia,628.0
+1997-04-01,WA,Western Australia,1626.0
+1997-04-01,TAS,Tasmania,196.0
+1997-04-01,NT,Northern Territory,234.0
+1997-04-01,ACT,Australian Capital Territory,138.0
+1997-05-01,NSW,New South Wales,5237.0
+1997-05-01,VIC,Victoria,2676.0
+1997-05-01,QLD,Queensland,3014.0
+1997-05-01,SA,South Australia,620.0
+1997-05-01,WA,Western Australia,1576.0
+1997-05-01,TAS,Tasmania,147.0
+1997-05-01,NT,Northern Territory,132.0
+1997-05-01,ACT,Australian Capital Territory,216.0
+1997-06-01,NSW,New South Wales,4187.0
+1997-06-01,VIC,Victoria,2568.0
+1997-06-01,QLD,Queensland,2546.0
+1997-06-01,SA,South Australia,597.0
+1997-06-01,WA,Western Australia,1254.0
+1997-06-01,TAS,Tasmania,118.0
+1997-06-01,NT,Northern Territory,253.0
+1997-06-01,ACT,Australian Capital Territory,54.0
+1997-07-01,NSW,New South Wales,4189.0
+1997-07-01,VIC,Victoria,2632.0
+1997-07-01,QLD,Queensland,3363.0
+1997-07-01,SA,South Australia,634.0
+1997-07-01,WA,Western Australia,1531.0
+1997-07-01,TAS,Tasmania,165.0
+1997-07-01,NT,Northern Territory,137.0
+1997-07-01,ACT,Australian Capital Territory,107.0
+1997-08-01,NSW,New South Wales,4559.0
+1997-08-01,VIC,Victoria,3220.0
+1997-08-01,QLD,Queensland,3094.0
+1997-08-01,SA,South Australia,568.0
+1997-08-01,WA,Western Australia,1373.0
+1997-08-01,TAS,Tasmania,136.0
+1997-08-01,NT,Northern Territory,146.0
+1997-08-01,ACT,Australian Capital Territory,153.0
+1997-09-01,NSW,New South Wales,4294.0
+1997-09-01,VIC,Victoria,3162.0
+1997-09-01,QLD,Queensland,3491.0
+1997-09-01,SA,South Australia,600.0
+1997-09-01,WA,Western Australia,1328.0
+1997-09-01,TAS,Tasmania,149.0
+1997-09-01,NT,Northern Territory,98.0
+1997-09-01,ACT,Australian Capital Territory,83.0
+1997-10-01,NSW,New South Wales,4180.0
+1997-10-01,VIC,Victoria,2681.0
+1997-10-01,QLD,Queensland,3176.0
+1997-10-01,SA,South Australia,599.0
+1997-10-01,WA,Western Australia,1508.0
+1997-10-01,TAS,Tasmania,163.0
+1997-10-01,NT,Northern Territory,242.0
+1997-10-01,ACT,Australian Capital Territory,142.0
+1997-11-01,NSW,New South Wales,4729.0
+1997-11-01,VIC,Victoria,3247.0
+1997-11-01,QLD,Queensland,2628.0
+1997-11-01,SA,South Australia,552.0
+1997-11-01,WA,Western Australia,1541.0
+1997-11-01,TAS,Tasmania,128.0
+1997-11-01,NT,Northern Territory,135.0
+1997-11-01,ACT,Australian Capital Territory,117.0
+1997-12-01,NSW,New South Wales,4511.0
+1997-12-01,VIC,Victoria,2830.0
+1997-12-01,QLD,Queensland,2813.0
+1997-12-01,SA,South Australia,513.0
+1997-12-01,WA,Western Australia,1412.0
+1997-12-01,TAS,Tasmania,155.0
+1997-12-01,NT,Northern Territory,257.0
+1997-12-01,ACT,Australian Capital Territory,94.0
+1998-01-01,NSW,New South Wales,3753.0
+1998-01-01,VIC,Victoria,2439.0
+1998-01-01,QLD,Queensland,2935.0
+1998-01-01,SA,South Australia,431.0
+1998-01-01,WA,Western Australia,1155.0
+1998-01-01,TAS,Tasmania,133.0
+1998-01-01,NT,Northern Territory,207.0
+1998-01-01,ACT,Australian Capital Territory,88.0
+1998-02-01,NSW,New South Wales,3536.0
+1998-02-01,VIC,Victoria,2757.0
+1998-02-01,QLD,Queensland,2763.0
+1998-02-01,SA,South Australia,666.0
+1998-02-01,WA,Western Australia,1441.0
+1998-02-01,TAS,Tasmania,121.0
+1998-02-01,NT,Northern Territory,188.0
+1998-02-01,ACT,Australian Capital Territory,95.0
+1998-03-01,NSW,New South Wales,4350.0
+1998-03-01,VIC,Victoria,3546.0
+1998-03-01,QLD,Queensland,3064.0
+1998-03-01,SA,South Australia,738.0
+1998-03-01,WA,Western Australia,1747.0
+1998-03-01,TAS,Tasmania,125.0
+1998-03-01,NT,Northern Territory,179.0
+1998-03-01,ACT,Australian Capital Territory,104.0
+1998-04-01,NSW,New South Wales,4943.0
+1998-04-01,VIC,Victoria,3313.0
+1998-04-01,QLD,Queensland,3280.0
+1998-04-01,SA,South Australia,502.0
+1998-04-01,WA,Western Australia,1576.0
+1998-04-01,TAS,Tasmania,133.0
+1998-04-01,NT,Northern Territory,159.0
+1998-04-01,ACT,Australian Capital Territory,93.0
+1998-05-01,NSW,New South Wales,4561.0
+1998-05-01,VIC,Victoria,3356.0
+1998-05-01,QLD,Queensland,3066.0
+1998-05-01,SA,South Australia,602.0
+1998-05-01,WA,Western Australia,1794.0
+1998-05-01,TAS,Tasmania,128.0
+1998-05-01,NT,Northern Territory,256.0
+1998-05-01,ACT,Australian Capital Territory,105.0
+1998-06-01,NSW,New South Wales,5088.0
+1998-06-01,VIC,Victoria,3255.0
+1998-06-01,QLD,Queensland,2806.0
+1998-06-01,SA,South Australia,810.0
+1998-06-01,WA,Western Australia,2054.0
+1998-06-01,TAS,Tasmania,107.0
+1998-06-01,NT,Northern Territory,214.0
+1998-06-01,ACT,Australian Capital Territory,215.0
+1998-07-01,NSW,New South Wales,5718.0
+1998-07-01,VIC,Victoria,3063.0
+1998-07-01,QLD,Queensland,2540.0
+1998-07-01,SA,South Australia,901.0
+1998-07-01,WA,Western Australia,1707.0
+1998-07-01,TAS,Tasmania,120.0
+1998-07-01,NT,Northern Territory,209.0
+1998-07-01,ACT,Australian Capital Territory,244.0
+1998-08-01,NSW,New South Wales,3742.0
+1998-08-01,VIC,Victoria,3263.0
+1998-08-01,QLD,Queensland,2644.0
+1998-08-01,SA,South Australia,634.0
+1998-08-01,WA,Western Australia,1735.0
+1998-08-01,TAS,Tasmania,129.0
+1998-08-01,NT,Northern Territory,158.0
+1998-08-01,ACT,Australian Capital Territory,190.0
+1998-09-01,NSW,New South Wales,4096.0
+1998-09-01,VIC,Victoria,3325.0
+1998-09-01,QLD,Queensland,3107.0
+1998-09-01,SA,South Australia,742.0
+1998-09-01,WA,Western Australia,1413.0
+1998-09-01,TAS,Tasmania,139.0
+1998-09-01,NT,Northern Territory,239.0
+1998-09-01,ACT,Australian Capital Territory,101.0
+1998-10-01,NSW,New South Wales,3979.0
+1998-10-01,VIC,Victoria,3079.0
+1998-10-01,QLD,Queensland,2747.0
+1998-10-01,SA,South Australia,585.0
+1998-10-01,WA,Western Australia,1634.0
+1998-10-01,TAS,Tasmania,139.0
+1998-10-01,NT,Northern Territory,245.0
+1998-10-01,ACT,Australian Capital Territory,88.0
+1998-11-01,NSW,New South Wales,4903.0
+1998-11-01,VIC,Victoria,3439.0
+1998-11-01,QLD,Queensland,2589.0
+1998-11-01,SA,South Australia,606.0
+1998-11-01,WA,Western Australia,1650.0
+1998-11-01,TAS,Tasmania,108.0
+1998-11-01,NT,Northern Territory,221.0
+1998-11-01,ACT,Australian Capital Territory,130.0
+1998-12-01,NSW,New South Wales,4395.0
+1998-12-01,VIC,Victoria,3301.0
+1998-12-01,QLD,Queensland,2341.0
+1998-12-01,SA,South Australia,563.0
+1998-12-01,WA,Western Australia,1641.0
+1998-12-01,TAS,Tasmania,114.0
+1998-12-01,NT,Northern Territory,139.0
+1998-12-01,ACT,Australian Capital Territory,289.0
+1999-01-01,NSW,New South Wales,3560.0
+1999-01-01,VIC,Victoria,2475.0
+1999-01-01,QLD,Queensland,1940.0
+1999-01-01,SA,South Australia,444.0
+1999-01-01,WA,Western Australia,1307.0
+1999-01-01,TAS,Tasmania,119.0
+1999-01-01,NT,Northern Territory,139.0
+1999-01-01,ACT,Australian Capital Territory,132.0
+1999-02-01,NSW,New South Wales,4139.0
+1999-02-01,VIC,Victoria,3784.0
+1999-02-01,QLD,Queensland,2295.0
+1999-02-01,SA,South Australia,607.0
+1999-02-01,WA,Western Australia,1548.0
+1999-02-01,TAS,Tasmania,109.0
+1999-02-01,NT,Northern Territory,187.0
+1999-02-01,ACT,Australian Capital Territory,216.0
+1999-03-01,NSW,New South Wales,4514.0
+1999-03-01,VIC,Victoria,3637.0
+1999-03-01,QLD,Queensland,2586.0
+1999-03-01,SA,South Australia,750.0
+1999-03-01,WA,Western Australia,1939.0
+1999-03-01,TAS,Tasmania,127.0
+1999-03-01,NT,Northern Territory,152.0
+1999-03-01,ACT,Australian Capital Territory,178.0
+1999-04-01,NSW,New South Wales,4038.0
+1999-04-01,VIC,Victoria,3417.0
+1999-04-01,QLD,Queensland,2393.0
+1999-04-01,SA,South Australia,568.0
+1999-04-01,WA,Western Australia,1637.0
+1999-04-01,TAS,Tasmania,133.0
+1999-04-01,NT,Northern Territory,225.0
+1999-04-01,ACT,Australian Capital Territory,147.0
+1999-05-01,NSW,New South Wales,4829.0
+1999-05-01,VIC,Victoria,3610.0
+1999-05-01,QLD,Queensland,2393.0
+1999-05-01,SA,South Australia,683.0
+1999-05-01,WA,Western Australia,1977.0
+1999-05-01,TAS,Tasmania,98.0
+1999-05-01,NT,Northern Territory,124.0
+1999-05-01,ACT,Australian Capital Territory,183.0
+1999-06-01,NSW,New South Wales,4696.0
+1999-06-01,VIC,Victoria,3330.0
+1999-06-01,QLD,Queensland,2860.0
+1999-06-01,SA,South Australia,845.0
+1999-06-01,WA,Western Australia,2431.0
+1999-06-01,TAS,Tasmania,89.0
+1999-06-01,NT,Northern Territory,180.0
+1999-06-01,ACT,Australian Capital Territory,176.0
+1999-07-01,NSW,New South Wales,5168.0
+1999-07-01,VIC,Victoria,3913.0
+1999-07-01,QLD,Queensland,2520.0
+1999-07-01,SA,South Australia,846.0
+1999-07-01,WA,Western Australia,2062.0
+1999-07-01,TAS,Tasmania,161.0
+1999-07-01,NT,Northern Territory,140.0
+1999-07-01,ACT,Australian Capital Territory,139.0
+1999-08-01,NSW,New South Wales,5085.0
+1999-08-01,VIC,Victoria,4814.0
+1999-08-01,QLD,Queensland,2532.0
+1999-08-01,SA,South Australia,784.0
+1999-08-01,WA,Western Australia,2097.0
+1999-08-01,TAS,Tasmania,119.0
+1999-08-01,NT,Northern Territory,123.0
+1999-08-01,ACT,Australian Capital Territory,116.0
+1999-09-01,NSW,New South Wales,4479.0
+1999-09-01,VIC,Victoria,4113.0
+1999-09-01,QLD,Queensland,3133.0
+1999-09-01,SA,South Australia,921.0
+1999-09-01,WA,Western Australia,2097.0
+1999-09-01,TAS,Tasmania,120.0
+1999-09-01,NT,Northern Territory,116.0
+1999-09-01,ACT,Australian Capital Territory,361.0
+1999-10-01,NSW,New South Wales,4392.0
+1999-10-01,VIC,Victoria,3998.0
+1999-10-01,QLD,Queensland,3089.0
+1999-10-01,SA,South Australia,794.0
+1999-10-01,WA,Western Australia,1907.0
+1999-10-01,TAS,Tasmania,161.0
+1999-10-01,NT,Northern Territory,110.0
+1999-10-01,ACT,Australian Capital Territory,127.0
+1999-11-01,NSW,New South Wales,4857.0
+1999-11-01,VIC,Victoria,4585.0
+1999-11-01,QLD,Queensland,3201.0
+1999-11-01,SA,South Australia,999.0
+1999-11-01,WA,Western Australia,2435.0
+1999-11-01,TAS,Tasmania,183.0
+1999-11-01,NT,Northern Territory,192.0
+1999-11-01,ACT,Australian Capital Territory,205.0
+1999-12-01,NSW,New South Wales,4464.0
+1999-12-01,VIC,Victoria,4266.0
+1999-12-01,QLD,Queensland,3162.0
+1999-12-01,SA,South Australia,844.0
+1999-12-01,WA,Western Australia,2014.0
+1999-12-01,TAS,Tasmania,180.0
+1999-12-01,NT,Northern Territory,157.0
+1999-12-01,ACT,Australian Capital Territory,137.0
+2000-01-01,NSW,New South Wales,3765.0
+2000-01-01,VIC,Victoria,4249.0
+2000-01-01,QLD,Queensland,2734.0
+2000-01-01,SA,South Australia,786.0
+2000-01-01,WA,Western Australia,1675.0
+2000-01-01,TAS,Tasmania,180.0
+2000-01-01,NT,Northern Territory,114.0
+2000-01-01,ACT,Australian Capital Territory,248.0
+2000-02-01,NSW,New South Wales,4684.0
+2000-02-01,VIC,Victoria,4838.0
+2000-02-01,QLD,Queensland,3489.0
+2000-02-01,SA,South Australia,1090.0
+2000-02-01,WA,Western Australia,1972.0
+2000-02-01,TAS,Tasmania,168.0
+2000-02-01,NT,Northern Territory,165.0
+2000-02-01,ACT,Australian Capital Territory,334.0
+2000-03-01,NSW,New South Wales,4283.0
+2000-03-01,VIC,Victoria,4962.0
+2000-03-01,QLD,Queensland,3260.0
+2000-03-01,SA,South Australia,989.0
+2000-03-01,WA,Western Australia,1768.0
+2000-03-01,TAS,Tasmania,166.0
+2000-03-01,NT,Northern Territory,88.0
+2000-03-01,ACT,Australian Capital Territory,171.0
+2000-04-01,NSW,New South Wales,3408.0
+2000-04-01,VIC,Victoria,3656.0
+2000-04-01,QLD,Queensland,2867.0
+2000-04-01,SA,South Australia,646.0
+2000-04-01,WA,Western Australia,1375.0
+2000-04-01,TAS,Tasmania,136.0
+2000-04-01,NT,Northern Territory,83.0
+2000-04-01,ACT,Australian Capital Territory,130.0
+2000-05-01,NSW,New South Wales,4561.0
+2000-05-01,VIC,Victoria,3460.0
+2000-05-01,QLD,Queensland,3576.0
+2000-05-01,SA,South Australia,832.0
+2000-05-01,WA,Western Australia,1816.0
+2000-05-01,TAS,Tasmania,233.0
+2000-05-01,NT,Northern Territory,110.0
+2000-05-01,ACT,Australian Capital Territory,203.0
+2000-06-01,NSW,New South Wales,3145.0
+2000-06-01,VIC,Victoria,3280.0
+2000-06-01,QLD,Queensland,2083.0
+2000-06-01,SA,South Australia,599.0
+2000-06-01,WA,Western Australia,1719.0
+2000-06-01,TAS,Tasmania,91.0
+2000-06-01,NT,Northern Territory,141.0
+2000-06-01,ACT,Australian Capital Territory,204.0
+2000-07-01,NSW,New South Wales,2241.0
+2000-07-01,VIC,Victoria,3366.0
+2000-07-01,QLD,Queensland,1671.0
+2000-07-01,SA,South Australia,713.0
+2000-07-01,WA,Western Australia,1115.0
+2000-07-01,TAS,Tasmania,84.0
+2000-07-01,NT,Northern Territory,93.0
+2000-07-01,ACT,Australian Capital Territory,76.0
+2000-08-01,NSW,New South Wales,2774.0
+2000-08-01,VIC,Victoria,2748.0
+2000-08-01,QLD,Queensland,2276.0
+2000-08-01,SA,South Australia,522.0
+2000-08-01,WA,Western Australia,1283.0
+2000-08-01,TAS,Tasmania,84.0
+2000-08-01,NT,Northern Territory,94.0
+2000-08-01,ACT,Australian Capital Territory,170.0
+2000-09-01,NSW,New South Wales,2580.0
+2000-09-01,VIC,Victoria,2562.0
+2000-09-01,QLD,Queensland,2021.0
+2000-09-01,SA,South Australia,411.0
+2000-09-01,WA,Western Australia,1201.0
+2000-09-01,TAS,Tasmania,119.0
+2000-09-01,NT,Northern Territory,62.0
+2000-09-01,ACT,Australian Capital Territory,131.0
+2000-10-01,NSW,New South Wales,3499.0
+2000-10-01,VIC,Victoria,2103.0
+2000-10-01,QLD,Queensland,1923.0
+2000-10-01,SA,South Australia,515.0
+2000-10-01,WA,Western Australia,1215.0
+2000-10-01,TAS,Tasmania,122.0
+2000-10-01,NT,Northern Territory,70.0
+2000-10-01,ACT,Australian Capital Territory,185.0
+2000-11-01,NSW,New South Wales,3433.0
+2000-11-01,VIC,Victoria,3115.0
+2000-11-01,QLD,Queensland,2564.0
+2000-11-01,SA,South Australia,662.0
+2000-11-01,WA,Western Australia,1230.0
+2000-11-01,TAS,Tasmania,116.0
+2000-11-01,NT,Northern Territory,61.0
+2000-11-01,ACT,Australian Capital Territory,125.0
+2000-12-01,NSW,New South Wales,2707.0
+2000-12-01,VIC,Victoria,3021.0
+2000-12-01,QLD,Queensland,1636.0
+2000-12-01,SA,South Australia,458.0
+2000-12-01,WA,Western Australia,1069.0
+2000-12-01,TAS,Tasmania,57.0
+2000-12-01,NT,Northern Territory,38.0
+2000-12-01,ACT,Australian Capital Territory,97.0
+2001-01-01,NSW,New South Wales,2758.0
+2001-01-01,VIC,Victoria,2608.0
+2001-01-01,QLD,Queensland,1785.0
+2001-01-01,SA,South Australia,433.0
+2001-01-01,WA,Western Australia,1048.0
+2001-01-01,TAS,Tasmania,92.0
+2001-01-01,NT,Northern Territory,45.0
+2001-01-01,ACT,Australian Capital Territory,184.0
+2001-02-01,NSW,New South Wales,2485.0
+2001-02-01,VIC,Victoria,3187.0
+2001-02-01,QLD,Queensland,1568.0
+2001-02-01,SA,South Australia,470.0
+2001-02-01,WA,Western Australia,1006.0
+2001-02-01,TAS,Tasmania,106.0
+2001-02-01,NT,Northern Territory,28.0
+2001-02-01,ACT,Australian Capital Territory,123.0
+2001-03-01,NSW,New South Wales,2520.0
+2001-03-01,VIC,Victoria,3396.0
+2001-03-01,QLD,Queensland,1844.0
+2001-03-01,SA,South Australia,641.0
+2001-03-01,WA,Western Australia,1180.0
+2001-03-01,TAS,Tasmania,89.0
+2001-03-01,NT,Northern Territory,117.0
+2001-03-01,ACT,Australian Capital Territory,66.0
+2001-04-01,NSW,New South Wales,2555.0
+2001-04-01,VIC,Victoria,2457.0
+2001-04-01,QLD,Queensland,2072.0
+2001-04-01,SA,South Australia,517.0
+2001-04-01,WA,Western Australia,1304.0
+2001-04-01,TAS,Tasmania,68.0
+2001-04-01,NT,Northern Territory,178.0
+2001-04-01,ACT,Australian Capital Territory,119.0
+2001-05-01,NSW,New South Wales,3759.0
+2001-05-01,VIC,Victoria,3687.0
+2001-05-01,QLD,Queensland,3191.0
+2001-05-01,SA,South Australia,709.0
+2001-05-01,WA,Western Australia,1856.0
+2001-05-01,TAS,Tasmania,134.0
+2001-05-01,NT,Northern Territory,132.0
+2001-05-01,ACT,Australian Capital Territory,187.0
+2001-06-01,NSW,New South Wales,3239.0
+2001-06-01,VIC,Victoria,3329.0
+2001-06-01,QLD,Queensland,2539.0
+2001-06-01,SA,South Australia,736.0
+2001-06-01,WA,Western Australia,1786.0
+2001-06-01,TAS,Tasmania,127.0
+2001-06-01,NT,Northern Territory,184.0
+2001-06-01,ACT,Australian Capital Territory,285.0
+2001-07-01,NSW,New South Wales,3867.0
+2001-07-01,VIC,Victoria,3752.0
+2001-07-01,QLD,Queensland,2696.0
+2001-07-01,SA,South Australia,989.0
+2001-07-01,WA,Western Australia,1760.0
+2001-07-01,TAS,Tasmania,118.0
+2001-07-01,NT,Northern Territory,94.0
+2001-07-01,ACT,Australian Capital Territory,182.0
+2001-08-01,NSW,New South Wales,4072.0
+2001-08-01,VIC,Victoria,5703.0
+2001-08-01,QLD,Queensland,3287.0
+2001-08-01,SA,South Australia,844.0
+2001-08-01,WA,Western Australia,1858.0
+2001-08-01,TAS,Tasmania,149.0
+2001-08-01,NT,Northern Territory,75.0
+2001-08-01,ACT,Australian Capital Territory,122.0
+2001-09-01,NSW,New South Wales,4155.0
+2001-09-01,VIC,Victoria,4289.0
+2001-09-01,QLD,Queensland,2997.0
+2001-09-01,SA,South Australia,875.0
+2001-09-01,WA,Western Australia,1581.0
+2001-09-01,TAS,Tasmania,190.0
+2001-09-01,NT,Northern Territory,75.0
+2001-09-01,ACT,Australian Capital Territory,106.0
+2001-10-01,NSW,New South Wales,5389.0
+2001-10-01,VIC,Victoria,4421.0
+2001-10-01,QLD,Queensland,2876.0
+2001-10-01,SA,South Australia,924.0
+2001-10-01,WA,Western Australia,1752.0
+2001-10-01,TAS,Tasmania,170.0
+2001-10-01,NT,Northern Territory,103.0
+2001-10-01,ACT,Australian Capital Territory,411.0
+2001-11-01,NSW,New South Wales,4811.0
+2001-11-01,VIC,Victoria,3800.0
+2001-11-01,QLD,Queensland,3157.0
+2001-11-01,SA,South Australia,953.0
+2001-11-01,WA,Western Australia,2047.0
+2001-11-01,TAS,Tasmania,170.0
+2001-11-01,NT,Northern Territory,50.0
+2001-11-01,ACT,Australian Capital Territory,378.0
+2001-12-01,NSW,New South Wales,3600.0
+2001-12-01,VIC,Victoria,3904.0
+2001-12-01,QLD,Queensland,2508.0
+2001-12-01,SA,South Australia,986.0
+2001-12-01,WA,Western Australia,1529.0
+2001-12-01,TAS,Tasmania,160.0
+2001-12-01,NT,Northern Territory,36.0
+2001-12-01,ACT,Australian Capital Territory,180.0
+2002-01-01,NSW,New South Wales,3705.0
+2002-01-01,VIC,Victoria,3501.0
+2002-01-01,QLD,Queensland,2531.0
+2002-01-01,SA,South Australia,791.0
+2002-01-01,WA,Western Australia,1541.0
+2002-01-01,TAS,Tasmania,284.0
+2002-01-01,NT,Northern Territory,69.0
+2002-01-01,ACT,Australian Capital Territory,79.0
+2002-02-01,NSW,New South Wales,3330.0
+2002-02-01,VIC,Victoria,3808.0
+2002-02-01,QLD,Queensland,3149.0
+2002-02-01,SA,South Australia,998.0
+2002-02-01,WA,Western Australia,1554.0
+2002-02-01,TAS,Tasmania,147.0
+2002-02-01,NT,Northern Territory,75.0
+2002-02-01,ACT,Australian Capital Territory,97.0
+2002-03-01,NSW,New South Wales,3680.0
+2002-03-01,VIC,Victoria,3530.0
+2002-03-01,QLD,Queensland,3624.0
+2002-03-01,SA,South Australia,924.0
+2002-03-01,WA,Western Australia,1389.0
+2002-03-01,TAS,Tasmania,163.0
+2002-03-01,NT,Northern Territory,118.0
+2002-03-01,ACT,Australian Capital Territory,167.0
+2002-04-01,NSW,New South Wales,5098.0
+2002-04-01,VIC,Victoria,4376.0
+2002-04-01,QLD,Queensland,2946.0
+2002-04-01,SA,South Australia,1017.0
+2002-04-01,WA,Western Australia,1722.0
+2002-04-01,TAS,Tasmania,145.0
+2002-04-01,NT,Northern Territory,84.0
+2002-04-01,ACT,Australian Capital Territory,166.0
+2002-05-01,NSW,New South Wales,5173.0
+2002-05-01,VIC,Victoria,4462.0
+2002-05-01,QLD,Queensland,3297.0
+2002-05-01,SA,South Australia,989.0
+2002-05-01,WA,Western Australia,1943.0
+2002-05-01,TAS,Tasmania,165.0
+2002-05-01,NT,Northern Territory,49.0
+2002-05-01,ACT,Australian Capital Territory,249.0
+2002-06-01,NSW,New South Wales,3748.0
+2002-06-01,VIC,Victoria,3993.0
+2002-06-01,QLD,Queensland,3249.0
+2002-06-01,SA,South Australia,836.0
+2002-06-01,WA,Western Australia,1732.0
+2002-06-01,TAS,Tasmania,180.0
+2002-06-01,NT,Northern Territory,122.0
+2002-06-01,ACT,Australian Capital Territory,95.0
+2002-07-01,NSW,New South Wales,3942.0
+2002-07-01,VIC,Victoria,4178.0
+2002-07-01,QLD,Queensland,3553.0
+2002-07-01,SA,South Australia,953.0
+2002-07-01,WA,Western Australia,2197.0
+2002-07-01,TAS,Tasmania,179.0
+2002-07-01,NT,Northern Territory,128.0
+2002-07-01,ACT,Australian Capital Territory,328.0
+2002-08-01,NSW,New South Wales,4880.0
+2002-08-01,VIC,Victoria,5782.0
+2002-08-01,QLD,Queensland,4348.0
+2002-08-01,SA,South Australia,1119.0
+2002-08-01,WA,Western Australia,1849.0
+2002-08-01,TAS,Tasmania,177.0
+2002-08-01,NT,Northern Territory,84.0
+2002-08-01,ACT,Australian Capital Territory,192.0
+2002-09-01,NSW,New South Wales,3899.0
+2002-09-01,VIC,Victoria,3851.0
+2002-09-01,QLD,Queensland,2939.0
+2002-09-01,SA,South Australia,880.0
+2002-09-01,WA,Western Australia,1643.0
+2002-09-01,TAS,Tasmania,179.0
+2002-09-01,NT,Northern Territory,108.0
+2002-09-01,ACT,Australian Capital Territory,567.0
+2002-10-01,NSW,New South Wales,6246.0
+2002-10-01,VIC,Victoria,4739.0
+2002-10-01,QLD,Queensland,5163.0
+2002-10-01,SA,South Australia,1152.0
+2002-10-01,WA,Western Australia,1760.0
+2002-10-01,TAS,Tasmania,172.0
+2002-10-01,NT,Northern Territory,101.0
+2002-10-01,ACT,Australian Capital Territory,318.0
+2002-11-01,NSW,New South Wales,4594.0
+2002-11-01,VIC,Victoria,3311.0
+2002-11-01,QLD,Queensland,3205.0
+2002-11-01,SA,South Australia,942.0
+2002-11-01,WA,Western Australia,1800.0
+2002-11-01,TAS,Tasmania,148.0
+2002-11-01,NT,Northern Territory,60.0
+2002-11-01,ACT,Australian Capital Territory,292.0
+2002-12-01,NSW,New South Wales,3734.0
+2002-12-01,VIC,Victoria,3527.0
+2002-12-01,QLD,Queensland,2897.0
+2002-12-01,SA,South Australia,896.0
+2002-12-01,WA,Western Australia,1527.0
+2002-12-01,TAS,Tasmania,198.0
+2002-12-01,NT,Northern Territory,80.0
+2002-12-01,ACT,Australian Capital Territory,316.0
+2003-01-01,NSW,New South Wales,3840.0
+2003-01-01,VIC,Victoria,3228.0
+2003-01-01,QLD,Queensland,2888.0
+2003-01-01,SA,South Australia,796.0
+2003-01-01,WA,Western Australia,1658.0
+2003-01-01,TAS,Tasmania,142.0
+2003-01-01,NT,Northern Territory,30.0
+2003-01-01,ACT,Australian Capital Territory,139.0
+2003-02-01,NSW,New South Wales,3680.0
+2003-02-01,VIC,Victoria,3477.0
+2003-02-01,QLD,Queensland,2998.0
+2003-02-01,SA,South Australia,760.0
+2003-02-01,WA,Western Australia,1810.0
+2003-02-01,TAS,Tasmania,153.0
+2003-02-01,NT,Northern Territory,83.0
+2003-02-01,ACT,Australian Capital Territory,224.0
+2003-03-01,NSW,New South Wales,3868.0
+2003-03-01,VIC,Victoria,3404.0
+2003-03-01,QLD,Queensland,4022.0
+2003-03-01,SA,South Australia,1048.0
+2003-03-01,WA,Western Australia,1640.0
+2003-03-01,TAS,Tasmania,185.0
+2003-03-01,NT,Northern Territory,69.0
+2003-03-01,ACT,Australian Capital Territory,219.0
+2003-04-01,NSW,New South Wales,3663.0
+2003-04-01,VIC,Victoria,4567.0
+2003-04-01,QLD,Queensland,2867.0
+2003-04-01,SA,South Australia,761.0
+2003-04-01,WA,Western Australia,1513.0
+2003-04-01,TAS,Tasmania,173.0
+2003-04-01,NT,Northern Territory,43.0
+2003-04-01,ACT,Australian Capital Territory,221.0
+2003-05-01,NSW,New South Wales,4260.0
+2003-05-01,VIC,Victoria,4057.0
+2003-05-01,QLD,Queensland,3538.0
+2003-05-01,SA,South Australia,834.0
+2003-05-01,WA,Western Australia,2056.0
+2003-05-01,TAS,Tasmania,251.0
+2003-05-01,NT,Northern Territory,97.0
+2003-05-01,ACT,Australian Capital Territory,192.0
+2003-06-01,NSW,New South Wales,3605.0
+2003-06-01,VIC,Victoria,4090.0
+2003-06-01,QLD,Queensland,3258.0
+2003-06-01,SA,South Australia,971.0
+2003-06-01,WA,Western Australia,2442.0
+2003-06-01,TAS,Tasmania,189.0
+2003-06-01,NT,Northern Territory,67.0
+2003-06-01,ACT,Australian Capital Territory,162.0
+2003-07-01,NSW,New South Wales,4546.0
+2003-07-01,VIC,Victoria,3962.0
+2003-07-01,QLD,Queensland,4582.0
+2003-07-01,SA,South Australia,1048.0
+2003-07-01,WA,Western Australia,2020.0
+2003-07-01,TAS,Tasmania,296.0
+2003-07-01,NT,Northern Territory,73.0
+2003-07-01,ACT,Australian Capital Territory,186.0
+2003-08-01,NSW,New South Wales,4307.0
+2003-08-01,VIC,Victoria,3726.0
+2003-08-01,QLD,Queensland,3860.0
+2003-08-01,SA,South Australia,928.0
+2003-08-01,WA,Western Australia,1898.0
+2003-08-01,TAS,Tasmania,247.0
+2003-08-01,NT,Northern Territory,58.0
+2003-08-01,ACT,Australian Capital Territory,126.0
+2003-09-01,NSW,New South Wales,4981.0
+2003-09-01,VIC,Victoria,4427.0
+2003-09-01,QLD,Queensland,4169.0
+2003-09-01,SA,South Australia,1079.0
+2003-09-01,WA,Western Australia,1941.0
+2003-09-01,TAS,Tasmania,255.0
+2003-09-01,NT,Northern Territory,233.0
+2003-09-01,ACT,Australian Capital Territory,368.0
+2003-10-01,NSW,New South Wales,4380.0
+2003-10-01,VIC,Victoria,5148.0
+2003-10-01,QLD,Queensland,3954.0
+2003-10-01,SA,South Australia,1299.0
+2003-10-01,WA,Western Australia,2400.0
+2003-10-01,TAS,Tasmania,241.0
+2003-10-01,NT,Northern Territory,105.0
+2003-10-01,ACT,Australian Capital Territory,485.0
+2003-11-01,NSW,New South Wales,3943.0
+2003-11-01,VIC,Victoria,3553.0
+2003-11-01,QLD,Queensland,3850.0
+2003-11-01,SA,South Australia,881.0
+2003-11-01,WA,Western Australia,2038.0
+2003-11-01,TAS,Tasmania,326.0
+2003-11-01,NT,Northern Territory,50.0
+2003-11-01,ACT,Australian Capital Territory,125.0
+2003-12-01,NSW,New South Wales,4112.0
+2003-12-01,VIC,Victoria,3349.0
+2003-12-01,QLD,Queensland,3487.0
+2003-12-01,SA,South Australia,1231.0
+2003-12-01,WA,Western Australia,1945.0
+2003-12-01,TAS,Tasmania,296.0
+2003-12-01,NT,Northern Territory,90.0
+2003-12-01,ACT,Australian Capital Territory,144.0
+2004-01-01,NSW,New South Wales,2920.0
+2004-01-01,VIC,Victoria,3666.0
+2004-01-01,QLD,Queensland,3058.0
+2004-01-01,SA,South Australia,737.0
+2004-01-01,WA,Western Australia,1566.0
+2004-01-01,TAS,Tasmania,198.0
+2004-01-01,NT,Northern Territory,72.0
+2004-01-01,ACT,Australian Capital Territory,114.0
+2004-02-01,NSW,New South Wales,4008.0
+2004-02-01,VIC,Victoria,3375.0
+2004-02-01,QLD,Queensland,3175.0
+2004-02-01,SA,South Australia,875.0
+2004-02-01,WA,Western Australia,2019.0
+2004-02-01,TAS,Tasmania,201.0
+2004-02-01,NT,Northern Territory,82.0
+2004-02-01,ACT,Australian Capital Territory,216.0
+2004-03-01,NSW,New South Wales,4164.0
+2004-03-01,VIC,Victoria,3839.0
+2004-03-01,QLD,Queensland,4812.0
+2004-03-01,SA,South Australia,1015.0
+2004-03-01,WA,Western Australia,2111.0
+2004-03-01,TAS,Tasmania,277.0
+2004-03-01,NT,Northern Territory,86.0
+2004-03-01,ACT,Australian Capital Territory,202.0
+2004-04-01,NSW,New South Wales,3838.0
+2004-04-01,VIC,Victoria,3736.0
+2004-04-01,QLD,Queensland,3288.0
+2004-04-01,SA,South Australia,859.0
+2004-04-01,WA,Western Australia,1598.0
+2004-04-01,TAS,Tasmania,293.0
+2004-04-01,NT,Northern Territory,52.0
+2004-04-01,ACT,Australian Capital Territory,243.0
+2004-05-01,NSW,New South Wales,4368.0
+2004-05-01,VIC,Victoria,3962.0
+2004-05-01,QLD,Queensland,3047.0
+2004-05-01,SA,South Australia,932.0
+2004-05-01,WA,Western Australia,2166.0
+2004-05-01,TAS,Tasmania,308.0
+2004-05-01,NT,Northern Territory,133.0
+2004-05-01,ACT,Australian Capital Territory,734.0
+2004-06-01,NSW,New South Wales,4000.0
+2004-06-01,VIC,Victoria,3667.0
+2004-06-01,QLD,Queensland,3957.0
+2004-06-01,SA,South Australia,1145.0
+2004-06-01,WA,Western Australia,2146.0
+2004-06-01,TAS,Tasmania,235.0
+2004-06-01,NT,Northern Territory,138.0
+2004-06-01,ACT,Australian Capital Territory,193.0
+2004-07-01,NSW,New South Wales,4031.0
+2004-07-01,VIC,Victoria,3800.0
+2004-07-01,QLD,Queensland,3617.0
+2004-07-01,SA,South Australia,1022.0
+2004-07-01,WA,Western Australia,2127.0
+2004-07-01,TAS,Tasmania,219.0
+2004-07-01,NT,Northern Territory,125.0
+2004-07-01,ACT,Australian Capital Territory,72.0
+2004-08-01,NSW,New South Wales,3912.0
+2004-08-01,VIC,Victoria,3644.0
+2004-08-01,QLD,Queensland,3624.0
+2004-08-01,SA,South Australia,981.0
+2004-08-01,WA,Western Australia,1989.0
+2004-08-01,TAS,Tasmania,254.0
+2004-08-01,NT,Northern Territory,162.0
+2004-08-01,ACT,Australian Capital Territory,109.0
+2004-09-01,NSW,New South Wales,3524.0
+2004-09-01,VIC,Victoria,3347.0
+2004-09-01,QLD,Queensland,3396.0
+2004-09-01,SA,South Australia,941.0
+2004-09-01,WA,Western Australia,2103.0
+2004-09-01,TAS,Tasmania,221.0
+2004-09-01,NT,Northern Territory,209.0
+2004-09-01,ACT,Australian Capital Territory,92.0
+2004-10-01,NSW,New South Wales,3117.0
+2004-10-01,VIC,Victoria,3575.0
+2004-10-01,QLD,Queensland,3253.0
+2004-10-01,SA,South Australia,907.0
+2004-10-01,WA,Western Australia,1941.0
+2004-10-01,TAS,Tasmania,261.0
+2004-10-01,NT,Northern Territory,80.0
+2004-10-01,ACT,Australian Capital Territory,75.0
+2004-11-01,NSW,New South Wales,3521.0
+2004-11-01,VIC,Victoria,3522.0
+2004-11-01,QLD,Queensland,3214.0
+2004-11-01,SA,South Australia,962.0
+2004-11-01,WA,Western Australia,1936.0
+2004-11-01,TAS,Tasmania,272.0
+2004-11-01,NT,Northern Territory,121.0
+2004-11-01,ACT,Australian Capital Territory,251.0
+2004-12-01,NSW,New South Wales,3362.0
+2004-12-01,VIC,Victoria,2843.0
+2004-12-01,QLD,Queensland,3113.0
+2004-12-01,SA,South Australia,994.0
+2004-12-01,WA,Western Australia,1980.0
+2004-12-01,TAS,Tasmania,262.0
+2004-12-01,NT,Northern Territory,84.0
+2004-12-01,ACT,Australian Capital Territory,543.0
+2005-01-01,NSW,New South Wales,2479.0
+2005-01-01,VIC,Victoria,2318.0
+2005-01-01,QLD,Queensland,2650.0
+2005-01-01,SA,South Australia,1034.0
+2005-01-01,WA,Western Australia,1721.0
+2005-01-01,TAS,Tasmania,212.0
+2005-01-01,NT,Northern Territory,82.0
+2005-01-01,ACT,Australian Capital Territory,481.0
+2005-02-01,NSW,New South Wales,3357.0
+2005-02-01,VIC,Victoria,3162.0
+2005-02-01,QLD,Queensland,2971.0
+2005-02-01,SA,South Australia,733.0
+2005-02-01,WA,Western Australia,1988.0
+2005-02-01,TAS,Tasmania,191.0
+2005-02-01,NT,Northern Territory,156.0
+2005-02-01,ACT,Australian Capital Territory,47.0
+2005-03-01,NSW,New South Wales,3154.0
+2005-03-01,VIC,Victoria,3363.0
+2005-03-01,QLD,Queensland,2908.0
+2005-03-01,SA,South Australia,1083.0
+2005-03-01,WA,Western Australia,1949.0
+2005-03-01,TAS,Tasmania,222.0
+2005-03-01,NT,Northern Territory,95.0
+2005-03-01,ACT,Australian Capital Territory,154.0
+2005-04-01,NSW,New South Wales,3046.0
+2005-04-01,VIC,Victoria,3720.0
+2005-04-01,QLD,Queensland,2751.0
+2005-04-01,SA,South Australia,815.0
+2005-04-01,WA,Western Australia,2067.0
+2005-04-01,TAS,Tasmania,201.0
+2005-04-01,NT,Northern Territory,52.0
+2005-04-01,ACT,Australian Capital Territory,136.0
+2005-05-01,NSW,New South Wales,3467.0
+2005-05-01,VIC,Victoria,4134.0
+2005-05-01,QLD,Queensland,4158.0
+2005-05-01,SA,South Australia,936.0
+2005-05-01,WA,Western Australia,2268.0
+2005-05-01,TAS,Tasmania,267.0
+2005-05-01,NT,Northern Territory,100.0
+2005-05-01,ACT,Australian Capital Territory,206.0
+2005-06-01,NSW,New South Wales,3115.0
+2005-06-01,VIC,Victoria,5109.0
+2005-06-01,QLD,Queensland,3688.0
+2005-06-01,SA,South Australia,806.0
+2005-06-01,WA,Western Australia,2177.0
+2005-06-01,TAS,Tasmania,196.0
+2005-06-01,NT,Northern Territory,122.0
+2005-06-01,ACT,Australian Capital Territory,113.0
+2005-07-01,NSW,New South Wales,3338.0
+2005-07-01,VIC,Victoria,2750.0
+2005-07-01,QLD,Queensland,3699.0
+2005-07-01,SA,South Australia,937.0
+2005-07-01,WA,Western Australia,2073.0
+2005-07-01,TAS,Tasmania,224.0
+2005-07-01,NT,Northern Territory,166.0
+2005-07-01,ACT,Australian Capital Territory,89.0
+2005-08-01,NSW,New South Wales,3225.0
+2005-08-01,VIC,Victoria,3070.0
+2005-08-01,QLD,Queensland,3441.0
+2005-08-01,SA,South Australia,1036.0
+2005-08-01,WA,Western Australia,2261.0
+2005-08-01,TAS,Tasmania,228.0
+2005-08-01,NT,Northern Territory,143.0
+2005-08-01,ACT,Australian Capital Territory,204.0
+2005-09-01,NSW,New South Wales,3251.0
+2005-09-01,VIC,Victoria,3073.0
+2005-09-01,QLD,Queensland,3376.0
+2005-09-01,SA,South Australia,916.0
+2005-09-01,WA,Western Australia,1943.0
+2005-09-01,TAS,Tasmania,238.0
+2005-09-01,NT,Northern Territory,148.0
+2005-09-01,ACT,Australian Capital Territory,90.0
+2005-10-01,NSW,New South Wales,2660.0
+2005-10-01,VIC,Victoria,3045.0
+2005-10-01,QLD,Queensland,3299.0
+2005-10-01,SA,South Australia,933.0
+2005-10-01,WA,Western Australia,2231.0
+2005-10-01,TAS,Tasmania,207.0
+2005-10-01,NT,Northern Territory,70.0
+2005-10-01,ACT,Australian Capital Territory,74.0
+2005-11-01,NSW,New South Wales,3054.0
+2005-11-01,VIC,Victoria,3435.0
+2005-11-01,QLD,Queensland,3413.0
+2005-11-01,SA,South Australia,922.0
+2005-11-01,WA,Western Australia,2396.0
+2005-11-01,TAS,Tasmania,214.0
+2005-11-01,NT,Northern Territory,127.0
+2005-11-01,ACT,Australian Capital Territory,145.0
+2005-12-01,NSW,New South Wales,2970.0
+2005-12-01,VIC,Victoria,2473.0
+2005-12-01,QLD,Queensland,2603.0
+2005-12-01,SA,South Australia,884.0
+2005-12-01,WA,Western Australia,2056.0
+2005-12-01,TAS,Tasmania,201.0
+2005-12-01,NT,Northern Territory,115.0
+2005-12-01,ACT,Australian Capital Territory,247.0
+2006-01-01,NSW,New South Wales,2275.0
+2006-01-01,VIC,Victoria,2432.0
+2006-01-01,QLD,Queensland,2196.0
+2006-01-01,SA,South Australia,828.0
+2006-01-01,WA,Western Australia,2028.0
+2006-01-01,TAS,Tasmania,183.0
+2006-01-01,NT,Northern Territory,69.0
+2006-01-01,ACT,Australian Capital Territory,66.0
+2006-02-01,NSW,New South Wales,2448.0
+2006-02-01,VIC,Victoria,2951.0
+2006-02-01,QLD,Queensland,3149.0
+2006-02-01,SA,South Australia,859.0
+2006-02-01,WA,Western Australia,1983.0
+2006-02-01,TAS,Tasmania,174.0
+2006-02-01,NT,Northern Territory,84.0
+2006-02-01,ACT,Australian Capital Territory,245.0
+2006-03-01,NSW,New South Wales,2697.0
+2006-03-01,VIC,Victoria,3631.0
+2006-03-01,QLD,Queensland,3724.0
+2006-03-01,SA,South Australia,1097.0
+2006-03-01,WA,Western Australia,2192.0
+2006-03-01,TAS,Tasmania,278.0
+2006-03-01,NT,Northern Territory,163.0
+2006-03-01,ACT,Australian Capital Territory,137.0
+2006-04-01,NSW,New South Wales,2072.0
+2006-04-01,VIC,Victoria,2540.0
+2006-04-01,QLD,Queensland,2391.0
+2006-04-01,SA,South Australia,1291.0
+2006-04-01,WA,Western Australia,2068.0
+2006-04-01,TAS,Tasmania,157.0
+2006-04-01,NT,Northern Territory,126.0
+2006-04-01,ACT,Australian Capital Territory,122.0
+2006-05-01,NSW,New South Wales,3248.0
+2006-05-01,VIC,Victoria,3819.0
+2006-05-01,QLD,Queensland,3421.0
+2006-05-01,SA,South Australia,951.0
+2006-05-01,WA,Western Australia,2812.0
+2006-05-01,TAS,Tasmania,268.0
+2006-05-01,NT,Northern Territory,71.0
+2006-05-01,ACT,Australian Capital Territory,245.0
+2006-06-01,NSW,New South Wales,3244.0
+2006-06-01,VIC,Victoria,3314.0
+2006-06-01,QLD,Queensland,3675.0
+2006-06-01,SA,South Australia,930.0
+2006-06-01,WA,Western Australia,2158.0
+2006-06-01,TAS,Tasmania,276.0
+2006-06-01,NT,Northern Territory,83.0
+2006-06-01,ACT,Australian Capital Territory,203.0
+2006-07-01,NSW,New South Wales,2719.0
+2006-07-01,VIC,Victoria,3642.0
+2006-07-01,QLD,Queensland,3672.0
+2006-07-01,SA,South Australia,1052.0
+2006-07-01,WA,Western Australia,2655.0
+2006-07-01,TAS,Tasmania,251.0
+2006-07-01,NT,Northern Territory,187.0
+2006-07-01,ACT,Australian Capital Territory,224.0
+2006-08-01,NSW,New South Wales,2852.0
+2006-08-01,VIC,Victoria,3749.0
+2006-08-01,QLD,Queensland,3576.0
+2006-08-01,SA,South Australia,958.0
+2006-08-01,WA,Western Australia,2456.0
+2006-08-01,TAS,Tasmania,246.0
+2006-08-01,NT,Northern Territory,84.0
+2006-08-01,ACT,Australian Capital Territory,229.0
+2006-09-01,NSW,New South Wales,3449.0
+2006-09-01,VIC,Victoria,3027.0
+2006-09-01,QLD,Queensland,3443.0
+2006-09-01,SA,South Australia,829.0
+2006-09-01,WA,Western Australia,2206.0
+2006-09-01,TAS,Tasmania,244.0
+2006-09-01,NT,Northern Territory,146.0
+2006-09-01,ACT,Australian Capital Territory,244.0
+2006-10-01,NSW,New South Wales,2920.0
+2006-10-01,VIC,Victoria,3256.0
+2006-10-01,QLD,Queensland,3629.0
+2006-10-01,SA,South Australia,825.0
+2006-10-01,WA,Western Australia,1926.0
+2006-10-01,TAS,Tasmania,270.0
+2006-10-01,NT,Northern Territory,103.0
+2006-10-01,ACT,Australian Capital Territory,90.0
+2006-11-01,NSW,New South Wales,2594.0
+2006-11-01,VIC,Victoria,3406.0
+2006-11-01,QLD,Queensland,3499.0
+2006-11-01,SA,South Australia,1078.0
+2006-11-01,WA,Western Australia,2462.0
+2006-11-01,TAS,Tasmania,301.0
+2006-11-01,NT,Northern Territory,110.0
+2006-11-01,ACT,Australian Capital Territory,243.0
+2006-12-01,NSW,New South Wales,2330.0
+2006-12-01,VIC,Victoria,2481.0
+2006-12-01,QLD,Queensland,2887.0
+2006-12-01,SA,South Australia,841.0
+2006-12-01,WA,Western Australia,2025.0
+2006-12-01,TAS,Tasmania,202.0
+2006-12-01,NT,Northern Territory,106.0
+2006-12-01,ACT,Australian Capital Territory,84.0
+2007-01-01,NSW,New South Wales,2240.0
+2007-01-01,VIC,Victoria,2139.0
+2007-01-01,QLD,Queensland,3112.0
+2007-01-01,SA,South Australia,775.0
+2007-01-01,WA,Western Australia,1654.0
+2007-01-01,TAS,Tasmania,246.0
+2007-01-01,NT,Northern Territory,92.0
+2007-01-01,ACT,Australian Capital Territory,77.0
+2007-02-01,NSW,New South Wales,2804.0
+2007-02-01,VIC,Victoria,3358.0
+2007-02-01,QLD,Queensland,3408.0
+2007-02-01,SA,South Australia,1070.0
+2007-02-01,WA,Western Australia,1607.0
+2007-02-01,TAS,Tasmania,207.0
+2007-02-01,NT,Northern Territory,194.0
+2007-02-01,ACT,Australian Capital Territory,164.0
+2007-03-01,NSW,New South Wales,2496.0
+2007-03-01,VIC,Victoria,3147.0
+2007-03-01,QLD,Queensland,3669.0
+2007-03-01,SA,South Australia,810.0
+2007-03-01,WA,Western Australia,1903.0
+2007-03-01,TAS,Tasmania,253.0
+2007-03-01,NT,Northern Territory,110.0
+2007-03-01,ACT,Australian Capital Territory,236.0
+2007-04-01,NSW,New South Wales,2359.0
+2007-04-01,VIC,Victoria,2920.0
+2007-04-01,QLD,Queensland,3167.0
+2007-04-01,SA,South Australia,820.0
+2007-04-01,WA,Western Australia,1758.0
+2007-04-01,TAS,Tasmania,222.0
+2007-04-01,NT,Northern Territory,131.0
+2007-04-01,ACT,Australian Capital Territory,116.0
+2007-05-01,NSW,New South Wales,2906.0
+2007-05-01,VIC,Victoria,3596.0
+2007-05-01,QLD,Queensland,3551.0
+2007-05-01,SA,South Australia,996.0
+2007-05-01,WA,Western Australia,2268.0
+2007-05-01,TAS,Tasmania,305.0
+2007-05-01,NT,Northern Territory,120.0
+2007-05-01,ACT,Australian Capital Territory,222.0
+2007-06-01,NSW,New South Wales,2592.0
+2007-06-01,VIC,Victoria,3247.0
+2007-06-01,QLD,Queensland,4137.0
+2007-06-01,SA,South Australia,862.0
+2007-06-01,WA,Western Australia,2215.0
+2007-06-01,TAS,Tasmania,227.0
+2007-06-01,NT,Northern Territory,81.0
+2007-06-01,ACT,Australian Capital Territory,313.0
+2007-07-01,NSW,New South Wales,2738.0
+2007-07-01,VIC,Victoria,3646.0
+2007-07-01,QLD,Queensland,4062.0
+2007-07-01,SA,South Australia,1041.0
+2007-07-01,WA,Western Australia,1834.0
+2007-07-01,TAS,Tasmania,218.0
+2007-07-01,NT,Northern Territory,105.0
+2007-07-01,ACT,Australian Capital Territory,337.0
+2007-08-01,NSW,New South Wales,2616.0
+2007-08-01,VIC,Victoria,3946.0
+2007-08-01,QLD,Queensland,4304.0
+2007-08-01,SA,South Australia,1002.0
+2007-08-01,WA,Western Australia,1986.0
+2007-08-01,TAS,Tasmania,244.0
+2007-08-01,NT,Northern Territory,122.0
+2007-08-01,ACT,Australian Capital Territory,123.0
+2007-09-01,NSW,New South Wales,2656.0
+2007-09-01,VIC,Victoria,3713.0
+2007-09-01,QLD,Queensland,3679.0
+2007-09-01,SA,South Australia,1225.0
+2007-09-01,WA,Western Australia,2115.0
+2007-09-01,TAS,Tasmania,259.0
+2007-09-01,NT,Northern Territory,96.0
+2007-09-01,ACT,Australian Capital Territory,99.0
+2007-10-01,NSW,New South Wales,2246.0
+2007-10-01,VIC,Victoria,4483.0
+2007-10-01,QLD,Queensland,5295.0
+2007-10-01,SA,South Australia,1146.0
+2007-10-01,WA,Western Australia,1847.0
+2007-10-01,TAS,Tasmania,249.0
+2007-10-01,NT,Northern Territory,242.0
+2007-10-01,ACT,Australian Capital Territory,180.0
+2007-11-01,NSW,New South Wales,3888.0
+2007-11-01,VIC,Victoria,3629.0
+2007-11-01,QLD,Queensland,3874.0
+2007-11-01,SA,South Australia,1339.0
+2007-11-01,WA,Western Australia,2180.0
+2007-11-01,TAS,Tasmania,253.0
+2007-11-01,NT,Northern Territory,41.0
+2007-11-01,ACT,Australian Capital Territory,300.0
+2007-12-01,NSW,New South Wales,2533.0
+2007-12-01,VIC,Victoria,2902.0
+2007-12-01,QLD,Queensland,3851.0
+2007-12-01,SA,South Australia,961.0
+2007-12-01,WA,Western Australia,1828.0
+2007-12-01,TAS,Tasmania,275.0
+2007-12-01,NT,Northern Territory,76.0
+2007-12-01,ACT,Australian Capital Territory,110.0
+2008-01-01,NSW,New South Wales,2237.0
+2008-01-01,VIC,Victoria,2850.0
+2008-01-01,QLD,Queensland,3129.0
+2008-01-01,SA,South Australia,850.0
+2008-01-01,WA,Western Australia,2286.0
+2008-01-01,TAS,Tasmania,235.0
+2008-01-01,NT,Northern Territory,34.0
+2008-01-01,ACT,Australian Capital Territory,117.0
+2008-02-01,NSW,New South Wales,2723.0
+2008-02-01,VIC,Victoria,3727.0
+2008-02-01,QLD,Queensland,3461.0
+2008-02-01,SA,South Australia,1107.0
+2008-02-01,WA,Western Australia,1854.0
+2008-02-01,TAS,Tasmania,264.0
+2008-02-01,NT,Northern Territory,150.0
+2008-02-01,ACT,Australian Capital Territory,212.0
+2008-03-01,NSW,New South Wales,2316.0
+2008-03-01,VIC,Victoria,3207.0
+2008-03-01,QLD,Queensland,2795.0
+2008-03-01,SA,South Australia,890.0
+2008-03-01,WA,Western Australia,1822.0
+2008-03-01,TAS,Tasmania,209.0
+2008-03-01,NT,Northern Territory,81.0
+2008-03-01,ACT,Australian Capital Territory,102.0
+2008-04-01,NSW,New South Wales,2563.0
+2008-04-01,VIC,Victoria,3393.0
+2008-04-01,QLD,Queensland,4233.0
+2008-04-01,SA,South Australia,1060.0
+2008-04-01,WA,Western Australia,1959.0
+2008-04-01,TAS,Tasmania,269.0
+2008-04-01,NT,Northern Territory,89.0
+2008-04-01,ACT,Australian Capital Territory,203.0
+2008-05-01,NSW,New South Wales,3024.0
+2008-05-01,VIC,Victoria,3615.0
+2008-05-01,QLD,Queensland,3160.0
+2008-05-01,SA,South Australia,1336.0
+2008-05-01,WA,Western Australia,2262.0
+2008-05-01,TAS,Tasmania,307.0
+2008-05-01,NT,Northern Territory,125.0
+2008-05-01,ACT,Australian Capital Territory,108.0
+2008-06-01,NSW,New South Wales,2500.0
+2008-06-01,VIC,Victoria,3803.0
+2008-06-01,QLD,Queensland,3462.0
+2008-06-01,SA,South Australia,1459.0
+2008-06-01,WA,Western Australia,1742.0
+2008-06-01,TAS,Tasmania,178.0
+2008-06-01,NT,Northern Territory,91.0
+2008-06-01,ACT,Australian Capital Territory,448.0
+2008-07-01,NSW,New South Wales,2603.0
+2008-07-01,VIC,Victoria,4083.0
+2008-07-01,QLD,Queensland,3349.0
+2008-07-01,SA,South Australia,1375.0
+2008-07-01,WA,Western Australia,2084.0
+2008-07-01,TAS,Tasmania,389.0
+2008-07-01,NT,Northern Territory,28.0
+2008-07-01,ACT,Australian Capital Territory,310.0
+2008-08-01,NSW,New South Wales,2283.0
+2008-08-01,VIC,Victoria,3603.0
+2008-08-01,QLD,Queensland,3115.0
+2008-08-01,SA,South Australia,997.0
+2008-08-01,WA,Western Australia,2074.0
+2008-08-01,TAS,Tasmania,249.0
+2008-08-01,NT,Northern Territory,159.0
+2008-08-01,ACT,Australian Capital Territory,164.0
+2008-09-01,NSW,New South Wales,2099.0
+2008-09-01,VIC,Victoria,3681.0
+2008-09-01,QLD,Queensland,3204.0
+2008-09-01,SA,South Australia,1322.0
+2008-09-01,WA,Western Australia,1568.0
+2008-09-01,TAS,Tasmania,273.0
+2008-09-01,NT,Northern Territory,67.0
+2008-09-01,ACT,Australian Capital Territory,158.0
+2008-10-01,NSW,New South Wales,2376.0
+2008-10-01,VIC,Victoria,3845.0
+2008-10-01,QLD,Queensland,3100.0
+2008-10-01,SA,South Australia,966.0
+2008-10-01,WA,Western Australia,1752.0
+2008-10-01,TAS,Tasmania,284.0
+2008-10-01,NT,Northern Territory,93.0
+2008-10-01,ACT,Australian Capital Territory,452.0
+2008-11-01,NSW,New South Wales,2114.0
+2008-11-01,VIC,Victoria,2896.0
+2008-11-01,QLD,Queensland,2274.0
+2008-11-01,SA,South Australia,947.0
+2008-11-01,WA,Western Australia,1377.0
+2008-11-01,TAS,Tasmania,259.0
+2008-11-01,NT,Northern Territory,118.0
+2008-11-01,ACT,Australian Capital Territory,251.0
+2008-12-01,NSW,New South Wales,2152.0
+2008-12-01,VIC,Victoria,2758.0
+2008-12-01,QLD,Queensland,1725.0
+2008-12-01,SA,South Australia,883.0
+2008-12-01,WA,Western Australia,1333.0
+2008-12-01,TAS,Tasmania,214.0
+2008-12-01,NT,Northern Territory,439.0
+2008-12-01,ACT,Australian Capital Territory,110.0
+2009-01-01,NSW,New South Wales,1268.0
+2009-01-01,VIC,Victoria,2435.0
+2009-01-01,QLD,Queensland,1499.0
+2009-01-01,SA,South Australia,763.0
+2009-01-01,WA,Western Australia,1087.0
+2009-01-01,TAS,Tasmania,238.0
+2009-01-01,NT,Northern Territory,39.0
+2009-01-01,ACT,Australian Capital Territory,102.0
+2009-02-01,NSW,New South Wales,1756.0
+2009-02-01,VIC,Victoria,3563.0
+2009-02-01,QLD,Queensland,1817.0
+2009-02-01,SA,South Australia,941.0
+2009-02-01,WA,Western Australia,1562.0
+2009-02-01,TAS,Tasmania,213.0
+2009-02-01,NT,Northern Territory,79.0
+2009-02-01,ACT,Australian Capital Territory,181.0
+2009-03-01,NSW,New South Wales,1731.0
+2009-03-01,VIC,Victoria,4023.0
+2009-03-01,QLD,Queensland,2222.0
+2009-03-01,SA,South Australia,1006.0
+2009-03-01,WA,Western Australia,1429.0
+2009-03-01,TAS,Tasmania,249.0
+2009-03-01,NT,Northern Territory,122.0
+2009-03-01,ACT,Australian Capital Territory,223.0
+2009-04-01,NSW,New South Wales,2254.0
+2009-04-01,VIC,Victoria,3293.0
+2009-04-01,QLD,Queensland,2427.0
+2009-04-01,SA,South Australia,1033.0
+2009-04-01,WA,Western Australia,1422.0
+2009-04-01,TAS,Tasmania,226.0
+2009-04-01,NT,Northern Territory,117.0
+2009-04-01,ACT,Australian Capital Territory,382.0
+2009-05-01,NSW,New South Wales,2098.0
+2009-05-01,VIC,Victoria,3236.0
+2009-05-01,QLD,Queensland,2348.0
+2009-05-01,SA,South Australia,898.0
+2009-05-01,WA,Western Australia,1881.0
+2009-05-01,TAS,Tasmania,333.0
+2009-05-01,NT,Northern Territory,84.0
+2009-05-01,ACT,Australian Capital Territory,273.0
+2009-06-01,NSW,New South Wales,2163.0
+2009-06-01,VIC,Victoria,4372.0
+2009-06-01,QLD,Queensland,2492.0
+2009-06-01,SA,South Australia,1075.0
+2009-06-01,WA,Western Australia,1945.0
+2009-06-01,TAS,Tasmania,307.0
+2009-06-01,NT,Northern Territory,117.0
+2009-06-01,ACT,Australian Capital Territory,279.0
+2009-07-01,NSW,New South Wales,2569.0
+2009-07-01,VIC,Victoria,5042.0
+2009-07-01,QLD,Queensland,2908.0
+2009-07-01,SA,South Australia,1032.0
+2009-07-01,WA,Western Australia,1979.0
+2009-07-01,TAS,Tasmania,253.0
+2009-07-01,NT,Northern Territory,100.0
+2009-07-01,ACT,Australian Capital Territory,537.0
+2009-08-01,NSW,New South Wales,2499.0
+2009-08-01,VIC,Victoria,4150.0
+2009-08-01,QLD,Queensland,2655.0
+2009-08-01,SA,South Australia,1096.0
+2009-08-01,WA,Western Australia,1968.0
+2009-08-01,TAS,Tasmania,300.0
+2009-08-01,NT,Northern Territory,102.0
+2009-08-01,ACT,Australian Capital Territory,231.0
+2009-09-01,NSW,New South Wales,2887.0
+2009-09-01,VIC,Victoria,4869.0
+2009-09-01,QLD,Queensland,3107.0
+2009-09-01,SA,South Australia,1092.0
+2009-09-01,WA,Western Australia,2201.0
+2009-09-01,TAS,Tasmania,350.0
+2009-09-01,NT,Northern Territory,125.0
+2009-09-01,ACT,Australian Capital Territory,386.0
+2009-10-01,NSW,New South Wales,2808.0
+2009-10-01,VIC,Victoria,4836.0
+2009-10-01,QLD,Queensland,2974.0
+2009-10-01,SA,South Australia,1006.0
+2009-10-01,WA,Western Australia,2263.0
+2009-10-01,TAS,Tasmania,340.0
+2009-10-01,NT,Northern Territory,115.0
+2009-10-01,ACT,Australian Capital Territory,296.0
+2009-11-01,NSW,New South Wales,3188.0
+2009-11-01,VIC,Victoria,4752.0
+2009-11-01,QLD,Queensland,3214.0
+2009-11-01,SA,South Australia,1071.0
+2009-11-01,WA,Western Australia,2133.0
+2009-11-01,TAS,Tasmania,264.0
+2009-11-01,NT,Northern Territory,129.0
+2009-11-01,ACT,Australian Capital Territory,414.0
+2009-12-01,NSW,New South Wales,2911.0
+2009-12-01,VIC,Victoria,4676.0
+2009-12-01,QLD,Queensland,2739.0
+2009-12-01,SA,South Australia,985.0
+2009-12-01,WA,Western Australia,1978.0
+2009-12-01,TAS,Tasmania,338.0
+2009-12-01,NT,Northern Territory,194.0
+2009-12-01,ACT,Australian Capital Territory,330.0
+2010-01-01,NSW,New South Wales,2556.0
+2010-01-01,VIC,Victoria,3532.0
+2010-01-01,QLD,Queensland,2359.0
+2010-01-01,SA,South Australia,932.0
+2010-01-01,WA,Western Australia,2018.0
+2010-01-01,TAS,Tasmania,209.0
+2010-01-01,NT,Northern Territory,51.0
+2010-01-01,ACT,Australian Capital Territory,242.0
+2010-02-01,NSW,New South Wales,2977.0
+2010-02-01,VIC,Victoria,4676.0
+2010-02-01,QLD,Queensland,2964.0
+2010-02-01,SA,South Australia,918.0
+2010-02-01,WA,Western Australia,2443.0
+2010-02-01,TAS,Tasmania,257.0
+2010-02-01,NT,Northern Territory,49.0
+2010-02-01,ACT,Australian Capital Territory,292.0
+2010-03-01,NSW,New South Wales,3553.0
+2010-03-01,VIC,Victoria,6037.0
+2010-03-01,QLD,Queensland,3741.0
+2010-03-01,SA,South Australia,1305.0
+2010-03-01,WA,Western Australia,2579.0
+2010-03-01,TAS,Tasmania,284.0
+2010-03-01,NT,Northern Territory,64.0
+2010-03-01,ACT,Australian Capital Territory,397.0
+2010-04-01,NSW,New South Wales,2847.0
+2010-04-01,VIC,Victoria,4920.0
+2010-04-01,QLD,Queensland,3147.0
+2010-04-01,SA,South Australia,957.0
+2010-04-01,WA,Western Australia,1944.0
+2010-04-01,TAS,Tasmania,237.0
+2010-04-01,NT,Northern Territory,240.0
+2010-04-01,ACT,Australian Capital Territory,548.0
+2010-05-01,NSW,New South Wales,3170.0
+2010-05-01,VIC,Victoria,4795.0
+2010-05-01,QLD,Queensland,3221.0
+2010-05-01,SA,South Australia,1433.0
+2010-05-01,WA,Western Australia,2091.0
+2010-05-01,TAS,Tasmania,224.0
+2010-05-01,NT,Northern Territory,90.0
+2010-05-01,ACT,Australian Capital Territory,377.0
+2010-06-01,NSW,New South Wales,2812.0
+2010-06-01,VIC,Victoria,5416.0
+2010-06-01,QLD,Queensland,3312.0
+2010-06-01,SA,South Australia,1045.0
+2010-06-01,WA,Western Australia,2056.0
+2010-06-01,TAS,Tasmania,299.0
+2010-06-01,NT,Northern Territory,174.0
+2010-06-01,ACT,Australian Capital Territory,488.0
+2010-07-01,NSW,New South Wales,3406.0
+2010-07-01,VIC,Victoria,6072.0
+2010-07-01,QLD,Queensland,2682.0
+2010-07-01,SA,South Australia,1164.0
+2010-07-01,WA,Western Australia,1817.0
+2010-07-01,TAS,Tasmania,315.0
+2010-07-01,NT,Northern Territory,260.0
+2010-07-01,ACT,Australian Capital Territory,358.0
+2010-08-01,NSW,New South Wales,2438.0
+2010-08-01,VIC,Victoria,6030.0
+2010-08-01,QLD,Queensland,2686.0
+2010-08-01,SA,South Australia,1434.0
+2010-08-01,WA,Western Australia,1877.0
+2010-08-01,TAS,Tasmania,264.0
+2010-08-01,NT,Northern Territory,159.0
+2010-08-01,ACT,Australian Capital Territory,568.0
+2010-09-01,NSW,New South Wales,2669.0
+2010-09-01,VIC,Victoria,5544.0
+2010-09-01,QLD,Queensland,2818.0
+2010-09-01,SA,South Australia,1020.0
+2010-09-01,WA,Western Australia,1840.0
+2010-09-01,TAS,Tasmania,301.0
+2010-09-01,NT,Northern Territory,202.0
+2010-09-01,ACT,Australian Capital Territory,277.0
+2010-10-01,NSW,New South Wales,3841.0
+2010-10-01,VIC,Victoria,5450.0
+2010-10-01,QLD,Queensland,2793.0
+2010-10-01,SA,South Australia,898.0
+2010-10-01,WA,Western Australia,1782.0
+2010-10-01,TAS,Tasmania,283.0
+2010-10-01,NT,Northern Territory,52.0
+2010-10-01,ACT,Australian Capital Territory,1059.0
+2010-11-01,NSW,New South Wales,3283.0
+2010-11-01,VIC,Victoria,5012.0
+2010-11-01,QLD,Queensland,2680.0
+2010-11-01,SA,South Australia,1044.0
+2010-11-01,WA,Western Australia,2051.0
+2010-11-01,TAS,Tasmania,267.0
+2010-11-01,NT,Northern Territory,65.0
+2010-11-01,ACT,Australian Capital Territory,361.0
+2010-12-01,NSW,New South Wales,3276.0
+2010-12-01,VIC,Victoria,5254.0
+2010-12-01,QLD,Queensland,2411.0
+2010-12-01,SA,South Australia,874.0
+2010-12-01,WA,Western Australia,1707.0
+2010-12-01,TAS,Tasmania,259.0
+2010-12-01,NT,Northern Territory,291.0
+2010-12-01,ACT,Australian Capital Territory,488.0
+2011-01-01,NSW,New South Wales,2104.0
+2011-01-01,VIC,Victoria,3907.0
+2011-01-01,QLD,Queensland,1948.0
+2011-01-01,SA,South Australia,555.0
+2011-01-01,WA,Western Australia,1379.0
+2011-01-01,TAS,Tasmania,145.0
+2011-01-01,NT,Northern Territory,26.0
+2011-01-01,ACT,Australian Capital Territory,223.0
+2011-02-01,NSW,New South Wales,2716.0
+2011-02-01,VIC,Victoria,3964.0
+2011-02-01,QLD,Queensland,1959.0
+2011-02-01,SA,South Australia,1027.0
+2011-02-01,WA,Western Australia,1646.0
+2011-02-01,TAS,Tasmania,252.0
+2011-02-01,NT,Northern Territory,91.0
+2011-02-01,ACT,Australian Capital Territory,320.0
+2011-03-01,NSW,New South Wales,3266.0
+2011-03-01,VIC,Victoria,5661.0
+2011-03-01,QLD,Queensland,2245.0
+2011-03-01,SA,South Australia,939.0
+2011-03-01,WA,Western Australia,1814.0
+2011-03-01,TAS,Tasmania,294.0
+2011-03-01,NT,Northern Territory,59.0
+2011-03-01,ACT,Australian Capital Territory,645.0
+2011-04-01,NSW,New South Wales,2810.0
+2011-04-01,VIC,Victoria,4578.0
+2011-04-01,QLD,Queensland,2270.0
+2011-04-01,SA,South Australia,822.0
+2011-04-01,WA,Western Australia,1430.0
+2011-04-01,TAS,Tasmania,212.0
+2011-04-01,NT,Northern Territory,57.0
+2011-04-01,ACT,Australian Capital Territory,461.0
+2011-05-01,NSW,New South Wales,2466.0
+2011-05-01,VIC,Victoria,4175.0
+2011-05-01,QLD,Queensland,2627.0
+2011-05-01,SA,South Australia,1088.0
+2011-05-01,WA,Western Australia,1894.0
+2011-05-01,TAS,Tasmania,292.0
+2011-05-01,NT,Northern Territory,83.0
+2011-05-01,ACT,Australian Capital Territory,633.0
+2011-06-01,NSW,New South Wales,2356.0
+2011-06-01,VIC,Victoria,4869.0
+2011-06-01,QLD,Queensland,2477.0
+2011-06-01,SA,South Australia,971.0
+2011-06-01,WA,Western Australia,1761.0
+2011-06-01,TAS,Tasmania,240.0
+2011-06-01,NT,Northern Territory,191.0
+2011-06-01,ACT,Australian Capital Territory,473.0
+2011-07-01,NSW,New South Wales,2979.0
+2011-07-01,VIC,Victoria,4734.0
+2011-07-01,QLD,Queensland,2062.0
+2011-07-01,SA,South Australia,830.0
+2011-07-01,WA,Western Australia,1590.0
+2011-07-01,TAS,Tasmania,184.0
+2011-07-01,NT,Northern Territory,254.0
+2011-07-01,ACT,Australian Capital Territory,795.0
+2011-08-01,NSW,New South Wales,4062.0
+2011-08-01,VIC,Victoria,4936.0
+2011-08-01,QLD,Queensland,3269.0
+2011-08-01,SA,South Australia,821.0
+2011-08-01,WA,Western Australia,1863.0
+2011-08-01,TAS,Tasmania,225.0
+2011-08-01,NT,Northern Territory,78.0
+2011-08-01,ACT,Australian Capital Territory,277.0
+2011-09-01,NSW,New South Wales,2922.0
+2011-09-01,VIC,Victoria,4293.0
+2011-09-01,QLD,Queensland,2381.0
+2011-09-01,SA,South Australia,879.0
+2011-09-01,WA,Western Australia,1749.0
+2011-09-01,TAS,Tasmania,213.0
+2011-09-01,NT,Northern Territory,112.0
+2011-09-01,ACT,Australian Capital Territory,462.0
+2011-10-01,NSW,New South Wales,2974.0
+2011-10-01,VIC,Victoria,3464.0
+2011-10-01,QLD,Queensland,1931.0
+2011-10-01,SA,South Australia,761.0
+2011-10-01,WA,Western Australia,1770.0
+2011-10-01,TAS,Tasmania,163.0
+2011-10-01,NT,Northern Territory,146.0
+2011-10-01,ACT,Australian Capital Territory,649.0
+2011-11-01,NSW,New South Wales,3271.0
+2011-11-01,VIC,Victoria,4479.0
+2011-11-01,QLD,Queensland,2181.0
+2011-11-01,SA,South Australia,789.0
+2011-11-01,WA,Western Australia,1534.0
+2011-11-01,TAS,Tasmania,157.0
+2011-11-01,NT,Northern Territory,38.0
+2011-11-01,ACT,Australian Capital Territory,193.0
+2011-12-01,NSW,New South Wales,2507.0
+2011-12-01,VIC,Victoria,3235.0
+2011-12-01,QLD,Queensland,2314.0
+2011-12-01,SA,South Australia,576.0
+2011-12-01,WA,Western Australia,1487.0
+2011-12-01,TAS,Tasmania,179.0
+2011-12-01,NT,Northern Territory,187.0
+2011-12-01,ACT,Australian Capital Territory,379.0
+2012-01-01,NSW,New South Wales,2234.0
+2012-01-01,VIC,Victoria,2677.0
+2012-01-01,QLD,Queensland,1596.0
+2012-01-01,SA,South Australia,550.0
+2012-01-01,WA,Western Australia,1402.0
+2012-01-01,TAS,Tasmania,143.0
+2012-01-01,NT,Northern Territory,127.0
+2012-01-01,ACT,Australian Capital Territory,87.0
+2012-02-01,NSW,New South Wales,1912.0
+2012-02-01,VIC,Victoria,4324.0
+2012-02-01,QLD,Queensland,2379.0
+2012-02-01,SA,South Australia,743.0
+2012-02-01,WA,Western Australia,1682.0
+2012-02-01,TAS,Tasmania,191.0
+2012-02-01,NT,Northern Territory,46.0
+2012-02-01,ACT,Australian Capital Territory,321.0
+2012-03-01,NSW,New South Wales,3181.0
+2012-03-01,VIC,Victoria,3700.0
+2012-03-01,QLD,Queensland,2172.0
+2012-03-01,SA,South Australia,800.0
+2012-03-01,WA,Western Australia,1975.0
+2012-03-01,TAS,Tasmania,169.0
+2012-03-01,NT,Northern Territory,63.0
+2012-03-01,ACT,Australian Capital Territory,243.0
+2012-04-01,NSW,New South Wales,2156.0
+2012-04-01,VIC,Victoria,3554.0
+2012-04-01,QLD,Queensland,2053.0
+2012-04-01,SA,South Australia,501.0
+2012-04-01,WA,Western Australia,806.0
+2012-04-01,TAS,Tasmania,158.0
+2012-04-01,NT,Northern Territory,189.0
+2012-04-01,ACT,Australian Capital Territory,199.0
+2012-05-01,NSW,New South Wales,3822.0
+2012-05-01,VIC,Victoria,5235.0
+2012-05-01,QLD,Queensland,2456.0
+2012-05-01,SA,South Australia,739.0
+2012-05-01,WA,Western Australia,1441.0
+2012-05-01,TAS,Tasmania,180.0
+2012-05-01,NT,Northern Territory,265.0
+2012-05-01,ACT,Australian Capital Territory,972.0
+2012-06-01,NSW,New South Wales,3184.0
+2012-06-01,VIC,Victoria,5854.0
+2012-06-01,QLD,Queensland,2897.0
+2012-06-01,SA,South Australia,637.0
+2012-06-01,WA,Western Australia,1976.0
+2012-06-01,TAS,Tasmania,164.0
+2012-06-01,NT,Northern Territory,114.0
+2012-06-01,ACT,Australian Capital Territory,286.0
+2012-07-01,NSW,New South Wales,3045.0
+2012-07-01,VIC,Victoria,3746.0
+2012-07-01,QLD,Queensland,2471.0
+2012-07-01,SA,South Australia,682.0
+2012-07-01,WA,Western Australia,1862.0
+2012-07-01,TAS,Tasmania,192.0
+2012-07-01,NT,Northern Territory,67.0
+2012-07-01,ACT,Australian Capital Territory,197.0
+2012-08-01,NSW,New South Wales,2836.0
+2012-08-01,VIC,Victoria,5053.0
+2012-08-01,QLD,Queensland,2651.0
+2012-08-01,SA,South Australia,721.0
+2012-08-01,WA,Western Australia,2369.0
+2012-08-01,TAS,Tasmania,184.0
+2012-08-01,NT,Northern Territory,262.0
+2012-08-01,ACT,Australian Capital Territory,225.0
+2012-09-01,NSW,New South Wales,4138.0
+2012-09-01,VIC,Victoria,5314.0
+2012-09-01,QLD,Queensland,2618.0
+2012-09-01,SA,South Australia,682.0
+2012-09-01,WA,Western Australia,1890.0
+2012-09-01,TAS,Tasmania,157.0
+2012-09-01,NT,Northern Territory,436.0
+2012-09-01,ACT,Australian Capital Territory,226.0
+2012-10-01,NSW,New South Wales,4627.0
+2012-10-01,VIC,Victoria,4520.0
+2012-10-01,QLD,Queensland,2783.0
+2012-10-01,SA,South Australia,904.0
+2012-10-01,WA,Western Australia,2262.0
+2012-10-01,TAS,Tasmania,188.0
+2012-10-01,NT,Northern Territory,68.0
+2012-10-01,ACT,Australian Capital Territory,251.0
+2012-11-01,NSW,New South Wales,3668.0
+2012-11-01,VIC,Victoria,4527.0
+2012-11-01,QLD,Queensland,2664.0
+2012-11-01,SA,South Australia,782.0
+2012-11-01,WA,Western Australia,2220.0
+2012-11-01,TAS,Tasmania,168.0
+2012-11-01,NT,Northern Territory,162.0
+2012-11-01,ACT,Australian Capital Territory,488.0
+2012-12-01,NSW,New South Wales,4025.0
+2012-12-01,VIC,Victoria,3617.0
+2012-12-01,QLD,Queensland,2198.0
+2012-12-01,SA,South Australia,634.0
+2012-12-01,WA,Western Australia,1805.0
+2012-12-01,TAS,Tasmania,116.0
+2012-12-01,NT,Northern Territory,121.0
+2012-12-01,ACT,Australian Capital Territory,299.0
+2013-01-01,NSW,New South Wales,2920.0
+2013-01-01,VIC,Victoria,2844.0
+2013-01-01,QLD,Queensland,1942.0
+2013-01-01,SA,South Australia,568.0
+2013-01-01,WA,Western Australia,1771.0
+2013-01-01,TAS,Tasmania,129.0
+2013-01-01,NT,Northern Territory,97.0
+2013-01-01,ACT,Australian Capital Territory,202.0
+2013-02-01,NSW,New South Wales,2772.0
+2013-02-01,VIC,Victoria,3744.0
+2013-02-01,QLD,Queensland,2500.0
+2013-02-01,SA,South Australia,895.0
+2013-02-01,WA,Western Australia,2093.0
+2013-02-01,TAS,Tasmania,132.0
+2013-02-01,NT,Northern Territory,288.0
+2013-02-01,ACT,Australian Capital Territory,392.0
+2013-03-01,NSW,New South Wales,3166.0
+2013-03-01,VIC,Victoria,3623.0
+2013-03-01,QLD,Queensland,2824.0
+2013-03-01,SA,South Australia,625.0
+2013-03-01,WA,Western Australia,2073.0
+2013-03-01,TAS,Tasmania,125.0
+2013-03-01,NT,Northern Territory,251.0
+2013-03-01,ACT,Australian Capital Territory,304.0
+2013-04-01,NSW,New South Wales,4080.0
+2013-04-01,VIC,Victoria,4281.0
+2013-04-01,QLD,Queensland,2461.0
+2013-04-01,SA,South Australia,725.0
+2013-04-01,WA,Western Australia,2200.0
+2013-04-01,TAS,Tasmania,206.0
+2013-04-01,NT,Northern Territory,184.0
+2013-04-01,ACT,Australian Capital Territory,366.0
+2013-05-01,NSW,New South Wales,3726.0
+2013-05-01,VIC,Victoria,4457.0
+2013-05-01,QLD,Queensland,2872.0
+2013-05-01,SA,South Australia,1066.0
+2013-05-01,WA,Western Australia,2695.0
+2013-05-01,TAS,Tasmania,143.0
+2013-05-01,NT,Northern Territory,145.0
+2013-05-01,ACT,Australian Capital Territory,607.0
+2013-06-01,NSW,New South Wales,3820.0
+2013-06-01,VIC,Victoria,3171.0
+2013-06-01,QLD,Queensland,2741.0
+2013-06-01,SA,South Australia,782.0
+2013-06-01,WA,Western Australia,2397.0
+2013-06-01,TAS,Tasmania,157.0
+2013-06-01,NT,Northern Territory,109.0
+2013-06-01,ACT,Australian Capital Territory,245.0
+2013-07-01,NSW,New South Wales,3716.0
+2013-07-01,VIC,Victoria,4694.0
+2013-07-01,QLD,Queensland,2924.0
+2013-07-01,SA,South Australia,1008.0
+2013-07-01,WA,Western Australia,2638.0
+2013-07-01,TAS,Tasmania,195.0
+2013-07-01,NT,Northern Territory,337.0
+2013-07-01,ACT,Australian Capital Territory,844.0
+2013-08-01,NSW,New South Wales,4216.0
+2013-08-01,VIC,Victoria,4007.0
+2013-08-01,QLD,Queensland,3155.0
+2013-08-01,SA,South Australia,909.0
+2013-08-01,WA,Western Australia,2534.0
+2013-08-01,TAS,Tasmania,193.0
+2013-08-01,NT,Northern Territory,168.0
+2013-08-01,ACT,Australian Capital Territory,374.0
+2013-09-01,NSW,New South Wales,5856.0
+2013-09-01,VIC,Victoria,4943.0
+2013-09-01,QLD,Queensland,3447.0
+2013-09-01,SA,South Australia,932.0
+2013-09-01,WA,Western Australia,2621.0
+2013-09-01,TAS,Tasmania,139.0
+2013-09-01,NT,Northern Territory,194.0
+2013-09-01,ACT,Australian Capital Territory,310.0
+2013-10-01,NSW,New South Wales,4902.0
+2013-10-01,VIC,Victoria,5571.0
+2013-10-01,QLD,Queensland,3774.0
+2013-10-01,SA,South Australia,1000.0
+2013-10-01,WA,Western Australia,2654.0
+2013-10-01,TAS,Tasmania,202.0
+2013-10-01,NT,Northern Territory,348.0
+2013-10-01,ACT,Australian Capital Territory,451.0
+2013-11-01,NSW,New South Wales,5167.0
+2013-11-01,VIC,Victoria,4708.0
+2013-11-01,QLD,Queensland,4034.0
+2013-11-01,SA,South Australia,1198.0
+2013-11-01,WA,Western Australia,2727.0
+2013-11-01,TAS,Tasmania,142.0
+2013-11-01,NT,Northern Territory,120.0
+2013-11-01,ACT,Australian Capital Territory,327.0
+2013-12-01,NSW,New South Wales,4834.0
+2013-12-01,VIC,Victoria,3790.0
+2013-12-01,QLD,Queensland,3258.0
+2013-12-01,SA,South Australia,944.0
+2013-12-01,WA,Western Australia,2287.0
+2013-12-01,TAS,Tasmania,135.0
+2013-12-01,NT,Northern Territory,53.0
+2013-12-01,ACT,Australian Capital Territory,379.0
+2014-01-01,NSW,New South Wales,4281.0
+2014-01-01,VIC,Victoria,3631.0
+2014-01-01,QLD,Queensland,2880.0
+2014-01-01,SA,South Australia,931.0
+2014-01-01,WA,Western Australia,2313.0
+2014-01-01,TAS,Tasmania,144.0
+2014-01-01,NT,Northern Territory,86.0
+2014-01-01,ACT,Australian Capital Territory,457.0
+2014-02-01,NSW,New South Wales,3774.0
+2014-02-01,VIC,Victoria,4791.0
+2014-02-01,QLD,Queensland,2906.0
+2014-02-01,SA,South Australia,907.0
+2014-02-01,WA,Western Australia,2705.0
+2014-02-01,TAS,Tasmania,156.0
+2014-02-01,NT,Northern Territory,80.0
+2014-02-01,ACT,Australian Capital Territory,387.0
+2014-03-01,NSW,New South Wales,5098.0
+2014-03-01,VIC,Victoria,4142.0
+2014-03-01,QLD,Queensland,2858.0
+2014-03-01,SA,South Australia,853.0
+2014-03-01,WA,Western Australia,2460.0
+2014-03-01,TAS,Tasmania,228.0
+2014-03-01,NT,Northern Territory,87.0
+2014-03-01,ACT,Australian Capital Territory,410.0
+2014-04-01,NSW,New South Wales,3527.0
+2014-04-01,VIC,Victoria,5533.0
+2014-04-01,QLD,Queensland,2386.0
+2014-04-01,SA,South Australia,974.0
+2014-04-01,WA,Western Australia,2331.0
+2014-04-01,TAS,Tasmania,199.0
+2014-04-01,NT,Northern Territory,92.0
+2014-04-01,ACT,Australian Capital Territory,293.0
+2014-05-01,NSW,New South Wales,4691.0
+2014-05-01,VIC,Victoria,4501.0
+2014-05-01,QLD,Queensland,4017.0
+2014-05-01,SA,South Australia,1088.0
+2014-05-01,WA,Western Australia,3014.0
+2014-05-01,TAS,Tasmania,246.0
+2014-05-01,NT,Northern Territory,440.0
+2014-05-01,ACT,Australian Capital Territory,213.0
+2014-06-01,NSW,New South Wales,4033.0
+2014-06-01,VIC,Victoria,4531.0
+2014-06-01,QLD,Queensland,3632.0
+2014-06-01,SA,South Australia,907.0
+2014-06-01,WA,Western Australia,2611.0
+2014-06-01,TAS,Tasmania,205.0
+2014-06-01,NT,Northern Territory,133.0
+2014-06-01,ACT,Australian Capital Territory,191.0
+2014-07-01,NSW,New South Wales,4533.0
+2014-07-01,VIC,Victoria,5129.0
+2014-07-01,QLD,Queensland,3435.0
+2014-07-01,SA,South Australia,1035.0
+2014-07-01,WA,Western Australia,3329.0
+2014-07-01,TAS,Tasmania,221.0
+2014-07-01,NT,Northern Territory,369.0
+2014-07-01,ACT,Australian Capital Territory,307.0
+2014-08-01,NSW,New South Wales,4963.0
+2014-08-01,VIC,Victoria,5560.0
+2014-08-01,QLD,Queensland,3940.0
+2014-08-01,SA,South Australia,986.0
+2014-08-01,WA,Western Australia,2742.0
+2014-08-01,TAS,Tasmania,197.0
+2014-08-01,NT,Northern Territory,122.0
+2014-08-01,ACT,Australian Capital Territory,570.0
+2014-09-01,NSW,New South Wales,4468.0
+2014-09-01,VIC,Victoria,4852.0
+2014-09-01,QLD,Queensland,3324.0
+2014-09-01,SA,South Australia,1125.0
+2014-09-01,WA,Western Australia,2842.0
+2014-09-01,TAS,Tasmania,210.0
+2014-09-01,NT,Northern Territory,92.0
+2014-09-01,ACT,Australian Capital Territory,184.0
+2014-10-01,NSW,New South Wales,5071.0
+2014-10-01,VIC,Victoria,5900.0
+2014-10-01,QLD,Queensland,3652.0
+2014-10-01,SA,South Australia,1140.0
+2014-10-01,WA,Western Australia,3070.0
+2014-10-01,TAS,Tasmania,274.0
+2014-10-01,NT,Northern Territory,190.0
+2014-10-01,ACT,Australian Capital Territory,253.0
+2014-11-01,NSW,New South Wales,4965.0
+2014-11-01,VIC,Victoria,6954.0
+2014-11-01,QLD,Queensland,3722.0
+2014-11-01,SA,South Australia,818.0
+2014-11-01,WA,Western Australia,2996.0
+2014-11-01,TAS,Tasmania,241.0
+2014-11-01,NT,Northern Territory,206.0
+2014-11-01,ACT,Australian Capital Territory,406.0
+2014-12-01,NSW,New South Wales,6180.0
+2014-12-01,VIC,Victoria,5371.0
+2014-12-01,QLD,Queensland,3421.0
+2014-12-01,SA,South Australia,1014.0
+2014-12-01,WA,Western Australia,2675.0
+2014-12-01,TAS,Tasmania,230.0
+2014-12-01,NT,Northern Territory,103.0
+2014-12-01,ACT,Australian Capital Territory,267.0
+2015-01-01,NSW,New South Wales,4762.0
+2015-01-01,VIC,Victoria,3836.0
+2015-01-01,QLD,Queensland,4729.0
+2015-01-01,SA,South Australia,1026.0
+2015-01-01,WA,Western Australia,2077.0
+2015-01-01,TAS,Tasmania,172.0
+2015-01-01,NT,Northern Territory,79.0
+2015-01-01,ACT,Australian Capital Territory,238.0
+2015-02-01,NSW,New South Wales,5096.0
+2015-02-01,VIC,Victoria,6498.0
+2015-02-01,QLD,Queensland,3424.0
+2015-02-01,SA,South Australia,719.0
+2015-02-01,WA,Western Australia,2261.0
+2015-02-01,TAS,Tasmania,195.0
+2015-02-01,NT,Northern Territory,93.0
+2015-02-01,ACT,Australian Capital Territory,104.0
+2015-03-01,NSW,New South Wales,6073.0
+2015-03-01,VIC,Victoria,6351.0
+2015-03-01,QLD,Queensland,4242.0
+2015-03-01,SA,South Australia,985.0
+2015-03-01,WA,Western Australia,2738.0
+2015-03-01,TAS,Tasmania,340.0
+2015-03-01,NT,Northern Territory,96.0
+2015-03-01,ACT,Australian Capital Territory,241.0
+2015-04-01,NSW,New South Wales,4809.0
+2015-04-01,VIC,Victoria,5856.0
+2015-04-01,QLD,Queensland,3647.0
+2015-04-01,SA,South Australia,816.0
+2015-04-01,WA,Western Australia,2482.0
+2015-04-01,TAS,Tasmania,271.0
+2015-04-01,NT,Northern Territory,156.0
+2015-04-01,ACT,Australian Capital Territory,851.0
+2015-05-01,NSW,New South Wales,6507.0
+2015-05-01,VIC,Victoria,6669.0
+2015-05-01,QLD,Queensland,4419.0
+2015-05-01,SA,South Australia,818.0
+2015-05-01,WA,Western Australia,3094.0
+2015-05-01,TAS,Tasmania,248.0
+2015-05-01,NT,Northern Territory,185.0
+2015-05-01,ACT,Australian Capital Territory,292.0
+2015-06-01,NSW,New South Wales,5992.0
+2015-06-01,VIC,Victoria,4696.0
+2015-06-01,QLD,Queensland,4749.0
+2015-06-01,SA,South Australia,918.0
+2015-06-01,WA,Western Australia,2401.0
+2015-06-01,TAS,Tasmania,273.0
+2015-06-01,NT,Northern Territory,123.0
+2015-06-01,ACT,Australian Capital Territory,548.0
+2015-07-01,NSW,New South Wales,7525.0
+2015-07-01,VIC,Victoria,5888.0
+2015-07-01,QLD,Queensland,3776.0
+2015-07-01,SA,South Australia,891.0
+2015-07-01,WA,Western Australia,2443.0
+2015-07-01,TAS,Tasmania,199.0
+2015-07-01,NT,Northern Territory,209.0
+2015-07-01,ACT,Australian Capital Territory,290.0
+2015-08-01,NSW,New South Wales,5341.0
+2015-08-01,VIC,Victoria,5436.0
+2015-08-01,QLD,Queensland,3790.0
+2015-08-01,SA,South Australia,1029.0
+2015-08-01,WA,Western Australia,2768.0
+2015-08-01,TAS,Tasmania,222.0
+2015-08-01,NT,Northern Territory,108.0
+2015-08-01,ACT,Australian Capital Territory,589.0
+2015-09-01,NSW,New South Wales,5141.0
+2015-09-01,VIC,Victoria,6194.0
+2015-09-01,QLD,Queensland,5705.0
+2015-09-01,SA,South Australia,1010.0
+2015-09-01,WA,Western Australia,2258.0
+2015-09-01,TAS,Tasmania,265.0
+2015-09-01,NT,Northern Territory,116.0
+2015-09-01,ACT,Australian Capital Territory,411.0
+2015-10-01,NSW,New South Wales,7213.0
+2015-10-01,VIC,Victoria,7296.0
+2015-10-01,QLD,Queensland,4278.0
+2015-10-01,SA,South Australia,1265.0
+2015-10-01,WA,Western Australia,2378.0
+2015-10-01,TAS,Tasmania,176.0
+2015-10-01,NT,Northern Territory,270.0
+2015-10-01,ACT,Australian Capital Territory,208.0
+2015-11-01,NSW,New South Wales,6540.0
+2015-11-01,VIC,Victoria,4519.0
+2015-11-01,QLD,Queensland,4441.0
+2015-11-01,SA,South Australia,1004.0
+2015-11-01,WA,Western Australia,1888.0
+2015-11-01,TAS,Tasmania,222.0
+2015-11-01,NT,Northern Territory,75.0
+2015-11-01,ACT,Australian Capital Territory,255.0
+2015-12-01,NSW,New South Wales,6533.0
+2015-12-01,VIC,Victoria,5430.0
+2015-12-01,QLD,Queensland,3656.0
+2015-12-01,SA,South Australia,889.0
+2015-12-01,WA,Western Australia,1872.0
+2015-12-01,TAS,Tasmania,210.0
+2015-12-01,NT,Northern Territory,156.0
+2015-12-01,ACT,Australian Capital Territory,162.0
+2016-01-01,NSW,New South Wales,4214.0
+2016-01-01,VIC,Victoria,4289.0
+2016-01-01,QLD,Queensland,3946.0
+2016-01-01,SA,South Australia,870.0
+2016-01-01,WA,Western Australia,1792.0
+2016-01-01,TAS,Tasmania,153.0
+2016-01-01,NT,Northern Territory,77.0
+2016-01-01,ACT,Australian Capital Territory,231.0
+2016-02-01,NSW,New South Wales,5482.0
+2016-02-01,VIC,Victoria,5647.0
+2016-02-01,QLD,Queensland,4023.0
+2016-02-01,SA,South Australia,933.0
+2016-02-01,WA,Western Australia,2016.0
+2016-02-01,TAS,Tasmania,230.0
+2016-02-01,NT,Northern Territory,140.0
+2016-02-01,ACT,Australian Capital Territory,811.0
+2016-03-01,NSW,New South Wales,6204.0
+2016-03-01,VIC,Victoria,5563.0
+2016-03-01,QLD,Queensland,4382.0
+2016-03-01,SA,South Australia,1318.0
+2016-03-01,WA,Western Australia,1896.0
+2016-03-01,TAS,Tasmania,189.0
+2016-03-01,NT,Northern Territory,87.0
+2016-03-01,ACT,Australian Capital Territory,528.0
+2016-04-01,NSW,New South Wales,6851.0
+2016-04-01,VIC,Victoria,5974.0
+2016-04-01,QLD,Queensland,4993.0
+2016-04-01,SA,South Australia,1090.0
+2016-04-01,WA,Western Australia,1917.0
+2016-04-01,TAS,Tasmania,206.0
+2016-04-01,NT,Northern Territory,89.0
+2016-04-01,ACT,Australian Capital Territory,263.0
+2016-05-01,NSW,New South Wales,7070.0
+2016-05-01,VIC,Victoria,6090.0
+2016-05-01,QLD,Queensland,4015.0
+2016-05-01,SA,South Australia,1113.0
+2016-05-01,WA,Western Australia,1725.0
+2016-05-01,TAS,Tasmania,215.0
+2016-05-01,NT,Northern Territory,265.0
+2016-05-01,ACT,Australian Capital Territory,681.0
+2016-06-01,NSW,New South Wales,5375.0
+2016-06-01,VIC,Victoria,5756.0
+2016-06-01,QLD,Queensland,4139.0
+2016-06-01,SA,South Australia,1179.0
+2016-06-01,WA,Western Australia,1697.0
+2016-06-01,TAS,Tasmania,161.0
+2016-06-01,NT,Northern Territory,111.0
+2016-06-01,ACT,Australian Capital Territory,248.0
+2016-07-01,NSW,New South Wales,7777.0
+2016-07-01,VIC,Victoria,6921.0
+2016-07-01,QLD,Queensland,4378.0
+2016-07-01,SA,South Australia,868.0
+2016-07-01,WA,Western Australia,2034.0
+2016-07-01,TAS,Tasmania,151.0
+2016-07-01,NT,Northern Territory,66.0
+2016-07-01,ACT,Australian Capital Territory,532.0
+2016-08-01,NSW,New South Wales,8197.0
+2016-08-01,VIC,Victoria,6483.0
+2016-08-01,QLD,Queensland,4197.0
+2016-08-01,SA,South Australia,925.0
+2016-08-01,WA,Western Australia,1777.0
+2016-08-01,TAS,Tasmania,184.0
+2016-08-01,NT,Northern Territory,73.0
+2016-08-01,ACT,Australian Capital Territory,627.0
+2016-09-01,NSW,New South Wales,6589.0
+2016-09-01,VIC,Victoria,5399.0
+2016-09-01,QLD,Queensland,4130.0
+2016-09-01,SA,South Australia,985.0
+2016-09-01,WA,Western Australia,1769.0
+2016-09-01,TAS,Tasmania,157.0
+2016-09-01,NT,Northern Territory,126.0
+2016-09-01,ACT,Australian Capital Territory,912.0
+2016-10-01,NSW,New South Wales,5892.0
+2016-10-01,VIC,Victoria,4566.0
+2016-10-01,QLD,Queensland,3342.0
+2016-10-01,SA,South Australia,877.0
+2016-10-01,WA,Western Australia,1568.0
+2016-10-01,TAS,Tasmania,160.0
+2016-10-01,NT,Northern Territory,131.0
+2016-10-01,ACT,Australian Capital Territory,346.0
+2016-11-01,NSW,New South Wales,6051.0
+2016-11-01,VIC,Victoria,5864.0
+2016-11-01,QLD,Queensland,3363.0
+2016-11-01,SA,South Australia,1163.0
+2016-11-01,WA,Western Australia,2133.0
+2016-11-01,TAS,Tasmania,169.0
+2016-11-01,NT,Northern Territory,70.0
+2016-11-01,ACT,Australian Capital Territory,536.0
+2016-12-01,NSW,New South Wales,4997.0
+2016-12-01,VIC,Victoria,6204.0
+2016-12-01,QLD,Queensland,2873.0
+2016-12-01,SA,South Australia,792.0
+2016-12-01,WA,Western Australia,1589.0
+2016-12-01,TAS,Tasmania,196.0
+2016-12-01,NT,Northern Territory,43.0
+2016-12-01,ACT,Australian Capital Territory,443.0
+2017-01-01,NSW,New South Wales,4791.0
+2017-01-01,VIC,Victoria,4340.0
+2017-01-01,QLD,Queensland,2376.0
+2017-01-01,SA,South Australia,750.0
+2017-01-01,WA,Western Australia,1361.0
+2017-01-01,TAS,Tasmania,155.0
+2017-01-01,NT,Northern Territory,99.0
+2017-01-01,ACT,Australian Capital Territory,168.0
+2017-02-01,NSW,New South Wales,6024.0
+2017-02-01,VIC,Victoria,5762.0
+2017-02-01,QLD,Queensland,3421.0
+2017-02-01,SA,South Australia,754.0
+2017-02-01,WA,Western Australia,1579.0
+2017-02-01,TAS,Tasmania,186.0
+2017-02-01,NT,Northern Territory,51.0
+2017-02-01,ACT,Australian Capital Territory,345.0
+2017-03-01,NSW,New South Wales,5372.0
+2017-03-01,VIC,Victoria,5543.0
+2017-03-01,QLD,Queensland,3324.0
+2017-03-01,SA,South Australia,982.0
+2017-03-01,WA,Western Australia,1674.0
+2017-03-01,TAS,Tasmania,234.0
+2017-03-01,NT,Northern Territory,59.0
+2017-03-01,ACT,Australian Capital Territory,409.0
+2017-04-01,NSW,New South Wales,5524.0
+2017-04-01,VIC,Victoria,4387.0
+2017-04-01,QLD,Queensland,4062.0
+2017-04-01,SA,South Australia,910.0
+2017-04-01,WA,Western Australia,1237.0
+2017-04-01,TAS,Tasmania,172.0
+2017-04-01,NT,Northern Territory,74.0
+2017-04-01,ACT,Australian Capital Territory,300.0
+2017-05-01,NSW,New South Wales,5360.0
+2017-05-01,VIC,Victoria,5390.0
+2017-05-01,QLD,Queensland,3767.0
+2017-05-01,SA,South Australia,1449.0
+2017-05-01,WA,Western Australia,1772.0
+2017-05-01,TAS,Tasmania,268.0
+2017-05-01,NT,Northern Territory,59.0
+2017-05-01,ACT,Australian Capital Territory,354.0
+2017-06-01,NSW,New South Wales,6157.0
+2017-06-01,VIC,Victoria,5218.0
+2017-06-01,QLD,Queensland,4024.0
+2017-06-01,SA,South Australia,1041.0
+2017-06-01,WA,Western Australia,1875.0
+2017-06-01,TAS,Tasmania,218.0
+2017-06-01,NT,Northern Territory,61.0
+2017-06-01,ACT,Australian Capital Territory,553.0
+2017-07-01,NSW,New South Wales,7505.0
+2017-07-01,VIC,Victoria,5614.0
+2017-07-01,QLD,Queensland,3484.0
+2017-07-01,SA,South Australia,975.0
+2017-07-01,WA,Western Australia,1631.0
+2017-07-01,TAS,Tasmania,165.0
+2017-07-01,NT,Northern Territory,54.0
+2017-07-01,ACT,Australian Capital Territory,455.0
+2017-08-01,NSW,New South Wales,6049.0
+2017-08-01,VIC,Victoria,5899.0
+2017-08-01,QLD,Queensland,4259.0
+2017-08-01,SA,South Australia,1128.0
+2017-08-01,WA,Western Australia,1595.0
+2017-08-01,TAS,Tasmania,254.0
+2017-08-01,NT,Northern Territory,97.0
+2017-08-01,ACT,Australian Capital Territory,697.0
+2017-09-01,NSW,New South Wales,7375.0
+2017-09-01,VIC,Victoria,5483.0
+2017-09-01,QLD,Queensland,3477.0
+2017-09-01,SA,South Australia,1248.0
+2017-09-01,WA,Western Australia,1978.0
+2017-09-01,TAS,Tasmania,251.0
+2017-09-01,NT,Northern Territory,136.0
+2017-09-01,ACT,Australian Capital Territory,559.0
+2017-10-01,NSW,New South Wales,6537.0
+2017-10-01,VIC,Victoria,7132.0
+2017-10-01,QLD,Queensland,3450.0
+2017-10-01,SA,South Australia,1155.0
+2017-10-01,WA,Western Australia,1565.0
+2017-10-01,TAS,Tasmania,251.0
+2017-10-01,NT,Northern Territory,55.0
+2017-10-01,ACT,Australian Capital Territory,190.0
+2017-11-01,NSW,New South Wales,6418.0
+2017-11-01,VIC,Victoria,10174.0
+2017-11-01,QLD,Queensland,3711.0
+2017-11-01,SA,South Australia,1075.0
+2017-11-01,WA,Western Australia,1833.0
+2017-11-01,TAS,Tasmania,291.0
+2017-11-01,NT,Northern Territory,41.0
+2017-11-01,ACT,Australian Capital Territory,166.0
+2017-12-01,NSW,New South Wales,5098.0
+2017-12-01,VIC,Victoria,5426.0
+2017-12-01,QLD,Queensland,2999.0
+2017-12-01,SA,South Australia,795.0
+2017-12-01,WA,Western Australia,1466.0
+2017-12-01,TAS,Tasmania,245.0
+2017-12-01,NT,Northern Territory,27.0
+2017-12-01,ACT,Australian Capital Territory,150.0
+2018-01-01,NSW,New South Wales,5027.0
+2018-01-01,VIC,Victoria,5748.0
+2018-01-01,QLD,Queensland,3202.0
+2018-01-01,SA,South Australia,679.0
+2018-01-01,WA,Western Australia,1404.0
+2018-01-01,TAS,Tasmania,213.0
+2018-01-01,NT,Northern Territory,57.0
+2018-01-01,ACT,Australian Capital Territory,166.0
+2018-02-01,NSW,New South Wales,5901.0
+2018-02-01,VIC,Victoria,6173.0
+2018-02-01,QLD,Queensland,3679.0
+2018-02-01,SA,South Australia,895.0
+2018-02-01,WA,Western Australia,1184.0
+2018-02-01,TAS,Tasmania,196.0
+2018-02-01,NT,Northern Territory,57.0
+2018-02-01,ACT,Australian Capital Territory,402.0
+2018-03-01,NSW,New South Wales,5626.0
+2018-03-01,VIC,Victoria,6667.0
+2018-03-01,QLD,Queensland,3886.0
+2018-03-01,SA,South Australia,1059.0
+2018-03-01,WA,Western Australia,1137.0
+2018-03-01,TAS,Tasmania,214.0
+2018-03-01,NT,Northern Territory,63.0
+2018-03-01,ACT,Australian Capital Territory,1295.0
+2018-04-01,NSW,New South Wales,5421.0
+2018-04-01,VIC,Victoria,5796.0
+2018-04-01,QLD,Queensland,3552.0
+2018-04-01,SA,South Australia,960.0
+2018-04-01,WA,Western Australia,1283.0
+2018-04-01,TAS,Tasmania,222.0
+2018-04-01,NT,Northern Territory,47.0
+2018-04-01,ACT,Australian Capital Territory,250.0
+2018-05-01,NSW,New South Wales,5922.0
+2018-05-01,VIC,Victoria,6429.0
+2018-05-01,QLD,Queensland,3029.0
+2018-05-01,SA,South Australia,1618.0
+2018-05-01,WA,Western Australia,1671.0
+2018-05-01,TAS,Tasmania,285.0
+2018-05-01,NT,Northern Territory,69.0
+2018-05-01,ACT,Australian Capital Territory,351.0
+2018-06-01,NSW,New South Wales,5977.0
+2018-06-01,VIC,Victoria,5289.0
+2018-06-01,QLD,Queensland,4356.0
+2018-06-01,SA,South Australia,1174.0
+2018-06-01,WA,Western Australia,1630.0
+2018-06-01,TAS,Tasmania,271.0
+2018-06-01,NT,Northern Territory,70.0
+2018-06-01,ACT,Australian Capital Territory,981.0
+2018-07-01,NSW,New South Wales,6207.0
+2018-07-01,VIC,Victoria,5374.0
+2018-07-01,QLD,Queensland,3839.0
+2018-07-01,SA,South Australia,940.0
+2018-07-01,WA,Western Australia,1388.0
+2018-07-01,TAS,Tasmania,279.0
+2018-07-01,NT,Northern Territory,82.0
+2018-07-01,ACT,Australian Capital Territory,1296.0
+2018-08-01,NSW,New South Wales,5237.0
+2018-08-01,VIC,Victoria,5060.0
+2018-08-01,QLD,Queensland,3796.0
+2018-08-01,SA,South Australia,1026.0
+2018-08-01,WA,Western Australia,1441.0
+2018-08-01,TAS,Tasmania,264.0
+2018-08-01,NT,Northern Territory,74.0
+2018-08-01,ACT,Australian Capital Territory,449.0
+2018-09-01,NSW,New South Wales,5171.0
+2018-09-01,VIC,Victoria,5793.0
+2018-09-01,QLD,Queensland,2676.0
+2018-09-01,SA,South Australia,896.0
+2018-09-01,WA,Western Australia,1193.0
+2018-09-01,TAS,Tasmania,246.0
+2018-09-01,NT,Northern Territory,46.0
+2018-09-01,ACT,Australian Capital Territory,497.0
+2018-10-01,NSW,New South Wales,5741.0
+2018-10-01,VIC,Victoria,6379.0
+2018-10-01,QLD,Queensland,2980.0
+2018-10-01,SA,South Australia,885.0
+2018-10-01,WA,Western Australia,1293.0
+2018-10-01,TAS,Tasmania,284.0
+2018-10-01,NT,Northern Territory,33.0
+2018-10-01,ACT,Australian Capital Territory,652.0
+2018-11-01,NSW,New South Wales,4729.0
+2018-11-01,VIC,Victoria,5309.0
+2018-11-01,QLD,Queensland,2826.0
+2018-11-01,SA,South Australia,896.0
+2018-11-01,WA,Western Australia,1269.0
+2018-11-01,TAS,Tasmania,372.0
+2018-11-01,NT,Northern Territory,79.0
+2018-11-01,ACT,Australian Capital Territory,562.0
+2018-12-01,NSW,New South Wales,4009.0
+2018-12-01,VIC,Victoria,3964.0
+2018-12-01,QLD,Queensland,2082.0
+2018-12-01,SA,South Australia,800.0
+2018-12-01,WA,Western Australia,1004.0
+2018-12-01,TAS,Tasmania,228.0
+2018-12-01,NT,Northern Territory,51.0
+2018-12-01,ACT,Australian Capital Territory,259.0
+2019-01-01,NSW,New South Wales,3942.0
+2019-01-01,VIC,Victoria,3565.0
+2019-01-01,QLD,Queensland,1982.0
+2019-01-01,SA,South Australia,692.0
+2019-01-01,WA,Western Australia,1275.0
+2019-01-01,TAS,Tasmania,260.0
+2019-01-01,NT,Northern Territory,33.0
+2019-01-01,ACT,Australian Capital Territory,304.0
+2019-02-01,NSW,New South Wales,5145.0
+2019-02-01,VIC,Victoria,5866.0
+2019-02-01,QLD,Queensland,2432.0
+2019-02-01,SA,South Australia,894.0
+2019-02-01,WA,Western Australia,1279.0
+2019-02-01,TAS,Tasmania,240.0
+2019-02-01,NT,Northern Territory,44.0
+2019-02-01,ACT,Australian Capital Territory,259.0
+2019-03-01,NSW,New South Wales,4434.0
+2019-03-01,VIC,Victoria,5215.0
+2019-03-01,QLD,Queensland,2322.0
+2019-03-01,SA,South Australia,934.0
+2019-03-01,WA,Western Australia,1405.0
+2019-03-01,TAS,Tasmania,304.0
+2019-03-01,NT,Northern Territory,72.0
+2019-03-01,ACT,Australian Capital Territory,795.0
+2019-04-01,NSW,New South Wales,4230.0
+2019-04-01,VIC,Victoria,3746.0
+2019-04-01,QLD,Queensland,2733.0
+2019-04-01,SA,South Australia,888.0
+2019-04-01,WA,Western Australia,1235.0
+2019-04-01,TAS,Tasmania,269.0
+2019-04-01,NT,Northern Territory,35.0
+2019-04-01,ACT,Australian Capital Territory,678.0
+2019-05-01,NSW,New South Wales,4955.0
+2019-05-01,VIC,Victoria,5061.0
+2019-05-01,QLD,Queensland,2831.0
+2019-05-01,SA,South Australia,996.0
+2019-05-01,WA,Western Australia,1500.0
+2019-05-01,TAS,Tasmania,263.0
+2019-05-01,NT,Northern Territory,61.0
+2019-05-01,ACT,Australian Capital Territory,190.0
+2019-06-01,NSW,New South Wales,4182.0
+2019-06-01,VIC,Victoria,5000.0
+2019-06-01,QLD,Queensland,2663.0
+2019-06-01,SA,South Australia,915.0
+2019-06-01,WA,Western Australia,1150.0
+2019-06-01,TAS,Tasmania,212.0
+2019-06-01,NT,Northern Territory,70.0
+2019-06-01,ACT,Australian Capital Territory,239.0
+2019-07-01,NSW,New South Wales,4295.0
+2019-07-01,VIC,Victoria,4196.0
+2019-07-01,QLD,Queensland,3164.0
+2019-07-01,SA,South Australia,1240.0
+2019-07-01,WA,Western Australia,1248.0
+2019-07-01,TAS,Tasmania,274.0
+2019-07-01,NT,Northern Territory,46.0
+2019-07-01,ACT,Australian Capital Territory,166.0
+2019-08-01,NSW,New South Wales,4231.0
+2019-08-01,VIC,Victoria,4510.0
+2019-08-01,QLD,Queensland,2381.0
+2019-08-01,SA,South Australia,912.0
+2019-08-01,WA,Western Australia,1558.0
+2019-08-01,TAS,Tasmania,295.0
+2019-08-01,NT,Northern Territory,49.0
+2019-08-01,ACT,Australian Capital Territory,248.0
+2019-09-01,NSW,New South Wales,4085.0
+2019-09-01,VIC,Victoria,4578.0
+2019-09-01,QLD,Queensland,2735.0
+2019-09-01,SA,South Australia,970.0
+2019-09-01,WA,Western Australia,1037.0
+2019-09-01,TAS,Tasmania,263.0
+2019-09-01,NT,Northern Territory,33.0
+2019-09-01,ACT,Australian Capital Territory,982.0
+2019-10-01,NSW,New South Wales,3463.0
+2019-10-01,VIC,Victoria,5237.0
+2019-10-01,QLD,Queensland,3417.0
+2019-10-01,SA,South Australia,1149.0
+2019-10-01,WA,Western Australia,1316.0
+2019-10-01,TAS,Tasmania,294.0
+2019-10-01,NT,Northern Territory,25.0
+2019-10-01,ACT,Australian Capital Territory,213.0
+2019-11-01,NSW,New South Wales,5223.0
+2019-11-01,VIC,Victoria,5100.0
+2019-11-01,QLD,Queensland,2506.0
+2019-11-01,SA,South Australia,1175.0
+2019-11-01,WA,Western Australia,1156.0
+2019-11-01,TAS,Tasmania,282.0
+2019-11-01,NT,Northern Territory,48.0
+2019-11-01,ACT,Australian Capital Territory,208.0
+2019-12-01,NSW,New South Wales,3577.0
+2019-12-01,VIC,Victoria,6126.0
+2019-12-01,QLD,Queensland,1940.0
+2019-12-01,SA,South Australia,850.0
+2019-12-01,WA,Western Australia,1036.0
+2019-12-01,TAS,Tasmania,222.0
+2019-12-01,NT,Northern Territory,43.0
+2019-12-01,ACT,Australian Capital Territory,714.0
+2020-01-01,NSW,New South Wales,3307.0
+2020-01-01,VIC,Victoria,3564.0
+2020-01-01,QLD,Queensland,2106.0
+2020-01-01,SA,South Australia,656.0
+2020-01-01,WA,Western Australia,950.0
+2020-01-01,TAS,Tasmania,203.0
+2020-01-01,NT,Northern Territory,17.0
+2020-01-01,ACT,Australian Capital Territory,436.0
+2020-02-01,NSW,New South Wales,4250.0
+2020-02-01,VIC,Victoria,7048.0
+2020-02-01,QLD,Queensland,2349.0
+2020-02-01,SA,South Australia,931.0
+2020-02-01,WA,Western Australia,1122.0
+2020-02-01,TAS,Tasmania,257.0
+2020-02-01,NT,Northern Territory,34.0
+2020-02-01,ACT,Australian Capital Territory,198.0
+2020-03-01,NSW,New South Wales,5449.0
+2020-03-01,VIC,Victoria,5202.0
+2020-03-01,QLD,Queensland,2392.0
+2020-03-01,SA,South Australia,869.0
+2020-03-01,WA,Western Australia,1165.0
+2020-03-01,TAS,Tasmania,328.0
+2020-03-01,NT,Northern Territory,42.0
+2020-03-01,ACT,Australian Capital Territory,342.0
+2020-04-01,NSW,New South Wales,3728.0
+2020-04-01,VIC,Victoria,5475.0
+2020-04-01,QLD,Queensland,2670.0
+2020-04-01,SA,South Australia,1020.0
+2020-04-01,WA,Western Australia,1311.0
+2020-04-01,TAS,Tasmania,289.0
+2020-04-01,NT,Northern Territory,76.0
+2020-04-01,ACT,Australian Capital Territory,907.0
+2020-05-01,NSW,New South Wales,3844.0
+2020-05-01,VIC,Victoria,4827.0
+2020-05-01,QLD,Queensland,2386.0
+2020-05-01,SA,South Australia,1008.0
+2020-05-01,WA,Western Australia,1358.0
+2020-05-01,TAS,Tasmania,239.0
+2020-05-01,NT,Northern Territory,44.0
+2020-05-01,ACT,Australian Capital Territory,131.0
+2020-06-01,NSW,New South Wales,3296.0
+2020-06-01,VIC,Victoria,4639.0
+2020-06-01,QLD,Queensland,2446.0
+2020-06-01,SA,South Australia,954.0
+2020-06-01,WA,Western Australia,1087.0
+2020-06-01,TAS,Tasmania,252.0
+2020-06-01,NT,Northern Territory,125.0
+2020-06-01,ACT,Australian Capital Territory,383.0
+2020-07-01,NSW,New South Wales,4742.0
+2020-07-01,VIC,Victoria,6071.0
+2020-07-01,QLD,Queensland,2732.0
+2020-07-01,SA,South Australia,833.0
+2020-07-01,WA,Western Australia,1134.0
+2020-07-01,TAS,Tasmania,345.0
+2020-07-01,NT,Northern Territory,31.0
+2020-07-01,ACT,Australian Capital Territory,518.0
+2020-08-01,NSW,New South Wales,3496.0
+2020-08-01,VIC,Victoria,5393.0
+2020-08-01,QLD,Queensland,2613.0
+2020-08-01,SA,South Australia,835.0
+2020-08-01,WA,Western Australia,1304.0
+2020-08-01,TAS,Tasmania,258.0
+2020-08-01,NT,Northern Territory,38.0
+2020-08-01,ACT,Australian Capital Territory,344.0
+2020-09-01,NSW,New South Wales,4027.0
+2020-09-01,VIC,Victoria,6084.0
+2020-09-01,QLD,Queensland,3291.0
+2020-09-01,SA,South Australia,989.0
+2020-09-01,WA,Western Australia,1835.0
+2020-09-01,TAS,Tasmania,314.0
+2020-09-01,NT,Northern Territory,95.0
+2020-09-01,ACT,Australian Capital Territory,278.0
+2020-10-01,NSW,New South Wales,5140.0
+2020-10-01,VIC,Victoria,5462.0
+2020-10-01,QLD,Queensland,3390.0
+2020-10-01,SA,South Australia,951.0
+2020-10-01,WA,Western Australia,2555.0
+2020-10-01,TAS,Tasmania,287.0
+2020-10-01,NT,Northern Territory,48.0
+2020-10-01,ACT,Australian Capital Territory,418.0
+2020-11-01,NSW,New South Wales,5384.0
+2020-11-01,VIC,Victoria,4970.0
+2020-11-01,QLD,Queensland,3449.0
+2020-11-01,SA,South Australia,1215.0
+2020-11-01,WA,Western Australia,2330.0
+2020-11-01,TAS,Tasmania,319.0
+2020-11-01,NT,Northern Territory,78.0
+2020-11-01,ACT,Australian Capital Territory,533.0
+2020-12-01,NSW,New South Wales,4605.0
+2020-12-01,VIC,Victoria,4762.0
+2020-12-01,QLD,Queensland,3601.0
+2020-12-01,SA,South Australia,1204.0
+2020-12-01,WA,Western Australia,2353.0
+2020-12-01,TAS,Tasmania,440.0
+2020-12-01,NT,Northern Territory,70.0
+2020-12-01,ACT,Australian Capital Territory,489.0
+2021-01-01,NSW,New South Wales,3676.0
+2021-01-01,VIC,Victoria,3554.0
+2021-01-01,QLD,Queensland,2435.0
+2021-01-01,SA,South Australia,1107.0
+2021-01-01,WA,Western Australia,1965.0
+2021-01-01,TAS,Tasmania,267.0
+2021-01-01,NT,Northern Territory,31.0
+2021-01-01,ACT,Australian Capital Territory,251.0
+2021-02-01,NSW,New South Wales,4705.0
+2021-02-01,VIC,Victoria,5877.0
+2021-02-01,QLD,Queensland,3999.0
+2021-02-01,SA,South Australia,1387.0
+2021-02-01,WA,Western Australia,2869.0
+2021-02-01,TAS,Tasmania,411.0
+2021-02-01,NT,Northern Territory,61.0
+2021-02-01,ACT,Australian Capital Territory,405.0
+2021-03-01,NSW,New South Wales,6282.0
+2021-03-01,VIC,Victoria,7739.0
+2021-03-01,QLD,Queensland,4732.0
+2021-03-01,SA,South Australia,1571.0
+2021-03-01,WA,Western Australia,2849.0
+2021-03-01,TAS,Tasmania,494.0
+2021-03-01,NT,Northern Territory,165.0
+2021-03-01,ACT,Australian Capital Territory,892.0
+2021-04-01,NSW,New South Wales,6328.0
+2021-04-01,VIC,Victoria,5892.0
+2021-04-01,QLD,Queensland,4270.0
+2021-04-01,SA,South Australia,1127.0
+2021-04-01,WA,Western Australia,2786.0
+2021-04-01,TAS,Tasmania,397.0
+2021-04-01,NT,Northern Territory,66.0
+2021-04-01,ACT,Australian Capital Territory,313.0
+2021-05-01,NSW,New South Wales,6393.0
+2021-05-01,VIC,Victoria,6089.0
+2021-05-01,QLD,Queensland,3709.0
+2021-05-01,SA,South Australia,1403.0
+2021-05-01,WA,Western Australia,2942.0
+2021-05-01,TAS,Tasmania,382.0
+2021-05-01,NT,Northern Territory,60.0
+2021-05-01,ACT,Australian Capital Territory,249.0
+2021-06-01,NSW,New South Wales,5435.0
+2021-06-01,VIC,Victoria,6825.0
+2021-06-01,QLD,Queensland,3693.0
+2021-06-01,SA,South Australia,1456.0
+2021-06-01,WA,Western Australia,2025.0
+2021-06-01,TAS,Tasmania,378.0
+2021-06-01,NT,Northern Territory,52.0
+2021-06-01,ACT,Australian Capital Territory,327.0
+2021-07-01,NSW,New South Wales,5745.0
+2021-07-01,VIC,Victoria,6011.0
+2021-07-01,QLD,Queensland,3983.0
+2021-07-01,SA,South Australia,1158.0
+2021-07-01,WA,Western Australia,1971.0
+2021-07-01,TAS,Tasmania,330.0
+2021-07-01,NT,Northern Territory,45.0
+2021-07-01,ACT,Australian Capital Territory,183.0
+2021-08-01,NSW,New South Wales,5024.0
+2021-08-01,VIC,Victoria,6717.0
+2021-08-01,QLD,Queensland,3847.0
+2021-08-01,SA,South Australia,1240.0
+2021-08-01,WA,Western Australia,2046.0
+2021-08-01,TAS,Tasmania,277.0
+2021-08-01,NT,Northern Territory,23.0
+2021-08-01,ACT,Australian Capital Territory,324.0
+2021-09-01,NSW,New South Wales,6404.0
+2021-09-01,VIC,Victoria,5860.0
+2021-09-01,QLD,Queensland,3458.0
+2021-09-01,SA,South Australia,1098.0
+2021-09-01,WA,Western Australia,1731.0
+2021-09-01,TAS,Tasmania,248.0
+2021-09-01,NT,Northern Territory,44.0
+2021-09-01,ACT,Australian Capital Territory,741.0
+2021-10-01,NSW,New South Wales,4645.0
+2021-10-01,VIC,Victoria,5534.0
+2021-10-01,QLD,Queensland,3024.0
+2021-10-01,SA,South Australia,929.0
+2021-10-01,WA,Western Australia,1631.0
+2021-10-01,TAS,Tasmania,197.0
+2021-10-01,NT,Northern Territory,22.0
+2021-10-01,ACT,Australian Capital Territory,376.0
+2021-11-01,NSW,New South Wales,3996.0
+2021-11-01,VIC,Victoria,6259.0
+2021-11-01,QLD,Queensland,3436.0
+2021-11-01,SA,South Australia,1257.0
+2021-11-01,WA,Western Australia,1685.0
+2021-11-01,TAS,Tasmania,341.0
+2021-11-01,NT,Northern Territory,41.0
+2021-11-01,ACT,Australian Capital Territory,475.0
+2021-12-01,NSW,New South Wales,4667.0
+2021-12-01,VIC,Victoria,5309.0
+2021-12-01,QLD,Queensland,2529.0
+2021-12-01,SA,South Australia,1082.0
+2021-12-01,WA,Western Australia,1343.0
+2021-12-01,TAS,Tasmania,295.0
+2021-12-01,NT,Northern Territory,28.0
+2021-12-01,ACT,Australian Capital Territory,1065.0
+2022-01-01,NSW,New South Wales,2851.0
+2022-01-01,VIC,Victoria,3089.0
+2022-01-01,QLD,Queensland,2418.0
+2022-01-01,SA,South Australia,597.0
+2022-01-01,WA,Western Australia,936.0
+2022-01-01,TAS,Tasmania,196.0
+2022-01-01,NT,Northern Territory,23.0
+2022-01-01,ACT,Australian Capital Territory,86.0
+2022-02-01,NSW,New South Wales,5151.0
+2022-02-01,VIC,Victoria,6880.0
+2022-02-01,QLD,Queensland,2787.0
+2022-02-01,SA,South Australia,1108.0
+2022-02-01,WA,Western Australia,1216.0
+2022-02-01,TAS,Tasmania,301.0
+2022-02-01,NT,Northern Territory,76.0
+2022-02-01,ACT,Australian Capital Territory,551.0
+2022-03-01,NSW,New South Wales,4294.0
+2022-03-01,VIC,Victoria,5194.0
+2022-03-01,QLD,Queensland,3369.0
+2022-03-01,SA,South Australia,978.0
+2022-03-01,WA,Western Australia,1405.0
+2022-03-01,TAS,Tasmania,266.0
+2022-03-01,NT,Northern Territory,103.0
+2022-03-01,ACT,Australian Capital Territory,872.0
+2022-04-01,NSW,New South Wales,4026.0
+2022-04-01,VIC,Victoria,5160.0
+2022-04-01,QLD,Queensland,2617.0
+2022-04-01,SA,South Australia,1260.0
+2022-04-01,WA,Western Australia,1253.0
+2022-04-01,TAS,Tasmania,227.0
+2022-04-01,NT,Northern Territory,19.0
+2022-04-01,ACT,Australian Capital Territory,118.0
+2022-05-01,NSW,New South Wales,4549.0
+2022-05-01,VIC,Victoria,4860.0
+2022-05-01,QLD,Queensland,3425.0
+2022-05-01,SA,South Australia,1137.0
+2022-05-01,WA,Western Australia,2079.0
+2022-05-01,TAS,Tasmania,314.0
+2022-05-01,NT,Northern Territory,49.0
+2022-05-01,ACT,Australian Capital Territory,871.0
+2022-06-01,NSW,New South Wales,4222.0
+2022-06-01,VIC,Victoria,5304.0
+2022-06-01,QLD,Queensland,3576.0
+2022-06-01,SA,South Australia,957.0
+2022-06-01,WA,Western Australia,1870.0
+2022-06-01,TAS,Tasmania,347.0
+2022-06-01,NT,Northern Territory,56.0
+2022-06-01,ACT,Australian Capital Territory,533.0
+2022-07-01,NSW,New South Wales,4119.0
+2022-07-01,VIC,Victoria,4279.0
+2022-07-01,QLD,Queensland,2955.0
+2022-07-01,SA,South Australia,1142.0
+2022-07-01,WA,Western Australia,1264.0
+2022-07-01,TAS,Tasmania,321.0
+2022-07-01,NT,Northern Territory,85.0
+2022-07-01,ACT,Australian Capital Territory,249.0
+2022-08-01,NSW,New South Wales,5637.0
+2022-08-01,VIC,Victoria,5587.0
+2022-08-01,QLD,Queensland,3693.0
+2022-08-01,SA,South Australia,1252.0
+2022-08-01,WA,Western Australia,1588.0
+2022-08-01,TAS,Tasmania,331.0
+2022-08-01,NT,Northern Territory,79.0
+2022-08-01,ACT,Australian Capital Territory,266.0
+2022-09-01,NSW,New South Wales,6107.0
+2022-09-01,VIC,Victoria,5356.0
+2022-09-01,QLD,Queensland,3169.0
+2022-09-01,SA,South Australia,967.0
+2022-09-01,WA,Western Australia,1148.0
+2022-09-01,TAS,Tasmania,246.0
+2022-09-01,NT,Northern Territory,50.0
+2022-09-01,ACT,Australian Capital Territory,459.0
+2022-10-01,NSW,New South Wales,4043.0
+2022-10-01,VIC,Victoria,5749.0
+2022-10-01,QLD,Queensland,2720.0
+2022-10-01,SA,South Australia,1135.0
+2022-10-01,WA,Western Australia,1246.0
+2022-10-01,TAS,Tasmania,192.0
+2022-10-01,NT,Northern Territory,45.0
+2022-10-01,ACT,Australian Capital Territory,294.0
+2022-11-01,NSW,New South Wales,3808.0
+2022-11-01,VIC,Victoria,5318.0
+2022-11-01,QLD,Queensland,3644.0
+2022-11-01,SA,South Australia,1373.0
+2022-11-01,WA,Western Australia,1201.0
+2022-11-01,TAS,Tasmania,431.0
+2022-11-01,NT,Northern Territory,47.0
+2022-11-01,ACT,Australian Capital Territory,648.0
+2022-12-01,NSW,New South Wales,5304.0
+2022-12-01,VIC,Victoria,5412.0
+2022-12-01,QLD,Queensland,2421.0
+2022-12-01,SA,South Australia,841.0
+2022-12-01,WA,Western Australia,990.0
+2022-12-01,TAS,Tasmania,216.0
+2022-12-01,NT,Northern Territory,41.0
+2022-12-01,ACT,Australian Capital Territory,620.0
+2023-01-01,NSW,New South Wales,1947.0
+2023-01-01,VIC,Victoria,2893.0
+2023-01-01,QLD,Queensland,3026.0
+2023-01-01,SA,South Australia,665.0
+2023-01-01,WA,Western Australia,859.0
+2023-01-01,TAS,Tasmania,131.0
+2023-01-01,NT,Northern Territory,22.0
+2023-01-01,ACT,Australian Capital Territory,262.0
+2023-02-01,NSW,New South Wales,3211.0
+2023-02-01,VIC,Victoria,4248.0
+2023-02-01,QLD,Queensland,3116.0
+2023-02-01,SA,South Australia,1058.0
+2023-02-01,WA,Western Australia,996.0
+2023-02-01,TAS,Tasmania,335.0
+2023-02-01,NT,Northern Territory,51.0
+2023-02-01,ACT,Australian Capital Territory,217.0
+2023-03-01,NSW,New South Wales,3727.0
+2023-03-01,VIC,Victoria,4487.0
+2023-03-01,QLD,Queensland,3428.0
+2023-03-01,SA,South Australia,913.0
+2023-03-01,WA,Western Australia,1323.0
+2023-03-01,TAS,Tasmania,228.0
+2023-03-01,NT,Northern Territory,65.0
+2023-03-01,ACT,Australian Capital Territory,363.0
+2023-04-01,NSW,New South Wales,3810.0
+2023-04-01,VIC,Victoria,3139.0
+2023-04-01,QLD,Queensland,2120.0
+2023-04-01,SA,South Australia,1041.0
+2023-04-01,WA,Western Australia,1087.0
+2023-04-01,TAS,Tasmania,182.0
+2023-04-01,NT,Northern Territory,34.0
+2023-04-01,ACT,Australian Capital Territory,197.0
+2023-05-01,NSW,New South Wales,7051.0
+2023-05-01,VIC,Victoria,4422.0
+2023-05-01,QLD,Queensland,2614.0
+2023-05-01,SA,South Australia,1102.0
+2023-05-01,WA,Western Australia,1134.0
+2023-05-01,TAS,Tasmania,329.0
+2023-05-01,NT,Northern Territory,45.0
+2023-05-01,ACT,Australian Capital Territory,89.0
+2023-06-01,NSW,New South Wales,3551.0
+2023-06-01,VIC,Victoria,4554.0
+2023-06-01,QLD,Queensland,3190.0
+2023-06-01,SA,South Australia,1043.0
+2023-06-01,WA,Western Australia,1144.0
+2023-06-01,TAS,Tasmania,188.0
+2023-06-01,NT,Northern Territory,39.0
+2023-06-01,ACT,Australian Capital Territory,193.0
+2023-07-01,NSW,New South Wales,3364.0
+2023-07-01,VIC,Victoria,4009.0
+2023-07-01,QLD,Queensland,2886.0
+2023-07-01,SA,South Australia,982.0
+2023-07-01,WA,Western Australia,1035.0
+2023-07-01,TAS,Tasmania,276.0
+2023-07-01,NT,Northern Territory,45.0
+2023-07-01,ACT,Australian Capital Territory,341.0
+2023-08-01,NSW,New South Wales,3786.0
+2023-08-01,VIC,Victoria,5279.0
+2023-08-01,QLD,Queensland,2236.0
+2023-08-01,SA,South Australia,992.0
+2023-08-01,WA,Western Australia,1386.0
+2023-08-01,TAS,Tasmania,254.0
+2023-08-01,NT,Northern Territory,44.0
+2023-08-01,ACT,Australian Capital Territory,553.0
+2023-09-01,NSW,New South Wales,3884.0
+2023-09-01,VIC,Victoria,4786.0
+2023-09-01,QLD,Queensland,2804.0
+2023-09-01,SA,South Australia,996.0
+2023-09-01,WA,Western Australia,1109.0
+2023-09-01,TAS,Tasmania,252.0
+2023-09-01,NT,Northern Territory,39.0
+2023-09-01,ACT,Australian Capital Territory,97.0
+2023-10-01,NSW,New South Wales,3861.0
+2023-10-01,VIC,Victoria,4898.0
+2023-10-01,QLD,Queensland,3191.0
+2023-10-01,SA,South Australia,1007.0
+2023-10-01,WA,Western Australia,1388.0
+2023-10-01,TAS,Tasmania,220.0
+2023-10-01,NT,Northern Territory,33.0
+2023-10-01,ACT,Australian Capital Territory,532.0
+2023-11-01,NSW,New South Wales,3809.0
+2023-11-01,VIC,Victoria,5357.0
+2023-11-01,QLD,Queensland,2817.0
+2023-11-01,SA,South Australia,1076.0
+2023-11-01,WA,Western Australia,1334.0
+2023-11-01,TAS,Tasmania,195.0
+2023-11-01,NT,Northern Territory,44.0
+2023-11-01,ACT,Australian Capital Territory,1193.0
+2023-12-01,NSW,New South Wales,3628.0
+2023-12-01,VIC,Victoria,3618.0
+2023-12-01,QLD,Queensland,2222.0
+2023-12-01,SA,South Australia,738.0
+2023-12-01,WA,Western Australia,1228.0
+2023-12-01,TAS,Tasmania,156.0
+2023-12-01,NT,Northern Territory,25.0
+2023-12-01,ACT,Australian Capital Territory,458.0
+2024-01-01,NSW,New South Wales,2254.0
+2024-01-01,VIC,Victoria,3336.0
+2024-01-01,QLD,Queensland,3133.0
+2024-01-01,SA,South Australia,624.0
+2024-01-01,WA,Western Australia,1271.0
+2024-01-01,TAS,Tasmania,171.0
+2024-01-01,NT,Northern Territory,14.0
+2024-01-01,ACT,Australian Capital Territory,252.0
+2024-02-01,NSW,New South Wales,3997.0
+2024-02-01,VIC,Victoria,3988.0
+2024-02-01,QLD,Queensland,2656.0
+2024-02-01,SA,South Australia,904.0
+2024-02-01,WA,Western Australia,1550.0
+2024-02-01,TAS,Tasmania,266.0
+2024-02-01,NT,Northern Territory,23.0
+2024-02-01,ACT,Australian Capital Territory,48.0
+2024-03-01,NSW,New South Wales,3540.0
+2024-03-01,VIC,Victoria,4019.0
+2024-03-01,QLD,Queensland,2329.0
+2024-03-01,SA,South Australia,851.0
+2024-03-01,WA,Western Australia,1631.0
+2024-03-01,TAS,Tasmania,211.0
+2024-03-01,NT,Northern Territory,55.0
+2024-03-01,ACT,Australian Capital Territory,423.0
+2024-04-01,NSW,New South Wales,3696.0
+2024-04-01,VIC,Victoria,4096.0
+2024-04-01,QLD,Queensland,2642.0
+2024-04-01,SA,South Australia,1026.0
+2024-04-01,WA,Western Australia,1615.0
+2024-04-01,TAS,Tasmania,171.0
+2024-04-01,NT,Northern Territory,43.0
+2024-04-01,ACT,Australian Capital Territory,341.0
+2024-05-01,NSW,New South Wales,4523.0
+2024-05-01,VIC,Victoria,4867.0
+2024-05-01,QLD,Queensland,2894.0
+2024-05-01,SA,South Australia,1061.0
+2024-05-01,WA,Western Australia,2238.0
+2024-05-01,TAS,Tasmania,227.0
+2024-05-01,NT,Northern Territory,40.0
+2024-05-01,ACT,Australian Capital Territory,99.0
+2024-06-01,NSW,New South Wales,2676.0
+2024-06-01,VIC,Victoria,3668.0
+2024-06-01,QLD,Queensland,3185.0
+2024-06-01,SA,South Australia,1038.0
+2024-06-01,WA,Western Australia,1680.0
+2024-06-01,TAS,Tasmania,170.0
+2024-06-01,NT,Northern Territory,32.0
+2024-06-01,ACT,Australian Capital Territory,212.0
+2024-07-01,NSW,New South Wales,4263.0
+2024-07-01,VIC,Victoria,5169.0
+2024-07-01,QLD,Queensland,3534.0
+2024-07-01,SA,South Australia,1261.0
+2024-07-01,WA,Western Australia,1989.0
+2024-07-01,TAS,Tasmania,244.0
+2024-07-01,NT,Northern Territory,59.0
+2024-07-01,ACT,Australian Capital Territory,71.0
+2024-08-01,NSW,New South Wales,3611.0
+2024-08-01,VIC,Victoria,4785.0
+2024-08-01,QLD,Queensland,3213.0
+2024-08-01,SA,South Australia,1097.0
+2024-08-01,WA,Western Australia,1824.0
+2024-08-01,TAS,Tasmania,195.0
+2024-08-01,NT,Northern Territory,54.0
+2024-08-01,ACT,Australian Capital Territory,79.0
+2024-09-01,NSW,New South Wales,2993.0
+2024-09-01,VIC,Victoria,4726.0
+2024-09-01,QLD,Queensland,3614.0
+2024-09-01,SA,South Australia,1143.0
+2024-09-01,WA,Western Australia,1989.0
+2024-09-01,TAS,Tasmania,201.0
+2024-09-01,NT,Northern Territory,67.0
+2024-09-01,ACT,Australian Capital Territory,199.0
+2024-10-01,NSW,New South Wales,4562.0
+2024-10-01,VIC,Victoria,6389.0
+2024-10-01,QLD,Queensland,3421.0
+2024-10-01,SA,South Australia,1238.0
+2024-10-01,WA,Western Australia,1906.0
+2024-10-01,TAS,Tasmania,236.0
+2024-10-01,NT,Northern Territory,45.0
+2024-10-01,ACT,Australian Capital Territory,134.0
+2024-11-01,NSW,New South Wales,3840.0
+2024-11-01,VIC,Victoria,4877.0
+2024-11-01,QLD,Queensland,3545.0
+2024-11-01,SA,South Australia,1270.0
+2024-11-01,WA,Western Australia,2016.0
+2024-11-01,TAS,Tasmania,190.0
+2024-11-01,NT,Northern Territory,60.0
+2024-11-01,ACT,Australian Capital Territory,118.0
+2024-12-01,NSW,New South Wales,4296.0
+2024-12-01,VIC,Victoria,3910.0
+2024-12-01,QLD,Queensland,3113.0
+2024-12-01,SA,South Australia,1039.0
+2024-12-01,WA,Western Australia,1545.0
+2024-12-01,TAS,Tasmania,189.0
+2024-12-01,NT,Northern Territory,26.0
+2024-12-01,ACT,Australian Capital Territory,203.0
+2025-01-01,NSW,New South Wales,4607.0
+2025-01-01,VIC,Victoria,3831.0
+2025-01-01,QLD,Queensland,2023.0
+2025-01-01,SA,South Australia,1081.0
+2025-01-01,WA,Western Australia,1464.0
+2025-01-01,TAS,Tasmania,120.0
+2025-01-01,NT,Northern Territory,69.0
+2025-01-01,ACT,Australian Capital Territory,77.0
+2025-02-01,NSW,New South Wales,3230.0
+2025-02-01,VIC,Victoria,5815.0
+2025-02-01,QLD,Queensland,3032.0
+2025-02-01,SA,South Australia,1286.0
+2025-02-01,WA,Western Australia,2247.0
+2025-02-01,TAS,Tasmania,291.0
+2025-02-01,NT,Northern Territory,72.0
+2025-02-01,ACT,Australian Capital Territory,284.0
+2025-03-01,NSW,New South Wales,4153.0
+2025-03-01,VIC,Victoria,4351.0
+2025-03-01,QLD,Queensland,3299.0
+2025-03-01,SA,South Australia,1207.0
+2025-03-01,WA,Western Australia,1815.0
+2025-03-01,TAS,Tasmania,166.0
+2025-03-01,NT,Northern Territory,62.0
+2025-03-01,ACT,Australian Capital Territory,682.0
+2025-04-01,NSW,New South Wales,3743.0
+2025-04-01,VIC,Victoria,3902.0
+2025-04-01,QLD,Queensland,3047.0
+2025-04-01,SA,South Australia,1290.0
+2025-04-01,WA,Western Australia,2288.0
+2025-04-01,TAS,Tasmania,157.0
+2025-04-01,NT,Northern Territory,81.0
+2025-04-01,ACT,Australian Capital Territory,84.0
+2025-05-01,NSW,New South Wales,5326.0
+2025-05-01,VIC,Victoria,4623.0
+2025-05-01,QLD,Queensland,2958.0
+2025-05-01,SA,South Australia,1312.0
+2025-05-01,WA,Western Australia,2204.0
+2025-05-01,TAS,Tasmania,181.0
+2025-05-01,NT,Northern Territory,47.0
+2025-05-01,ACT,Australian Capital Territory,108.0
+2025-06-01,NSW,New South Wales,4891.0
+2025-06-01,VIC,Victoria,4203.0
+2025-06-01,QLD,Queensland,3430.0
+2025-06-01,SA,South Australia,1293.0
+2025-06-01,WA,Western Australia,1658.0
+2025-06-01,TAS,Tasmania,171.0
+2025-06-01,NT,Northern Territory,61.0
+2025-06-01,ACT,Australian Capital Territory,792.0
+2025-07-01,NSW,New South Wales,4794.0
+2025-07-01,VIC,Victoria,4854.0
+2025-07-01,QLD,Queensland,4604.0
+2025-07-01,SA,South Australia,1294.0
+2025-07-01,WA,Western Australia,2051.0
+2025-07-01,TAS,Tasmania,216.0
+2025-07-01,NT,Northern Territory,63.0
+2025-07-01,ACT,Australian Capital Territory,219.0
+2025-08-01,NSW,New South Wales,3270.0
+2025-08-01,VIC,Victoria,4177.0
+2025-08-01,QLD,Queensland,3924.0
+2025-08-01,SA,South Australia,1121.0
+2025-08-01,WA,Western Australia,1961.0
+2025-08-01,TAS,Tasmania,229.0
+2025-08-01,NT,Northern Territory,57.0
+2025-08-01,ACT,Australian Capital Territory,572.0
+2025-09-01,NSW,New South Wales,5563.0
+2025-09-01,VIC,Victoria,5588.0
+2025-09-01,QLD,Queensland,3787.0
+2025-09-01,SA,South Australia,1242.0
+2025-09-01,WA,Western Australia,1882.0
+2025-09-01,TAS,Tasmania,274.0
+2025-09-01,NT,Northern Territory,85.0
+2025-09-01,ACT,Australian Capital Territory,91.0
+2025-10-01,NSW,New South Wales,4160.0
+2025-10-01,VIC,Victoria,4825.0
+2025-10-01,QLD,Queensland,3564.0
+2025-10-01,SA,South Australia,1343.0
+2025-10-01,WA,Western Australia,2545.0
+2025-10-01,TAS,Tasmania,227.0
+2025-10-01,NT,Northern Territory,89.0
+2025-10-01,ACT,Australian Capital Territory,668.0
+2025-11-01,NSW,New South Wales,4830.0
+2025-11-01,VIC,Victoria,4950.0
+2025-11-01,QLD,Queensland,4823.0
+2025-11-01,SA,South Australia,1293.0
+2025-11-01,WA,Western Australia,2099.0
+2025-11-01,TAS,Tasmania,182.0
+2025-11-01,NT,Northern Territory,61.0
+2025-11-01,ACT,Australian Capital Territory,303.0
+2025-12-01,NSW,New South Wales,4206.0
+2025-12-01,VIC,Victoria,3440.0
+2025-12-01,QLD,Queensland,3506.0
+2025-12-01,SA,South Australia,1240.0
+2025-12-01,WA,Western Australia,1865.0
+2025-12-01,TAS,Tasmania,227.0
+2025-12-01,NT,Northern Territory,76.0
+2025-12-01,ACT,Australian Capital Territory,579.0
+2026-01-01,NSW,New South Wales,2680.0
+2026-01-01,VIC,Victoria,2319.0
+2026-01-01,QLD,Queensland,2577.0
+2026-01-01,SA,South Australia,932.0
+2026-01-01,WA,Western Australia,1851.0
+2026-01-01,TAS,Tasmania,172.0
+2026-01-01,NT,Northern Territory,30.0
+2026-01-01,ACT,Australian Capital Territory,76.0
+2026-02-01,NSW,New South Wales,3905.0
+2026-02-01,VIC,Victoria,6043.0
+2026-02-01,QLD,Queensland,3998.0
+2026-02-01,SA,South Australia,1210.0
+2026-02-01,WA,Western Australia,2685.0
+2026-02-01,TAS,Tasmania,191.0
+2026-02-01,NT,Northern Territory,41.0
+2026-02-01,ACT,Australian Capital Territory,612.0
+2026-03-01,NSW,New South Wales,4423.0
+2026-03-01,VIC,Victoria,5236.0
+2026-03-01,QLD,Queensland,4213.0
+2026-03-01,SA,South Australia,1313.0
+2026-03-01,WA,Western Australia,2158.0
+2026-03-01,TAS,Tasmania,215.0
+2026-03-01,NT,Northern Territory,57.0
+2026-03-01,ACT,Australian Capital Territory,165.0
