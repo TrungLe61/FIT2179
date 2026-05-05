@@ -7,7 +7,7 @@
   },
   "width": "container",
   "height": 300,
-  "data": {"url": "../data/approvals_national_monthly.csv"},
+  "data": {"url": "data/approvals_national_monthly.csv"},
   "transform": [
     {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
     {

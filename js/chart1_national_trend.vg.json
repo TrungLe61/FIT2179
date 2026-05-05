@@ -9,7 +9,7 @@
   "height": 340,
   "layer": [
     {
-      "data": {"url": "../data/approvals_national_monthly.csv"},
+      "data": {"url": "data/approvals_national_monthly.csv"},
       "transform": [
         {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
         {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}

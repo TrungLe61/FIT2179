@@ -9,14 +9,14 @@
   "height": 340,
   "projection": {"type": "mercator"},
   "data": {
-    "url": "../topojson/aus-states.topojson",
+    "url": "topojson/aus-states.topojson",
     "format": {"type": "json", "property": "features"}
   },
   "transform": [
     {
       "lookup": "properties.STATE_NAME",
       "from": {
-        "data": {"url": "../data/state_summary.csv"},
+        "data": {"url": "data/state_summary.csv"},
         "key": "state_name",
         "fields": ["state_name", "approvals_fy2425", "approvals_per_1000", "yoy_change_pct"]
       }

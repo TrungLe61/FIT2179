@@ -11,13 +11,13 @@
   "layer": [
     {
       "data": {
-        "url": "../topojson/aus-states.topojson",
+        "url": "topojson/aus-states.topojson",
         "format": {"type": "json", "property": "features"}
       },
       "mark": {"type": "geoshape", "fill": "#dce8f5", "stroke": "white", "strokeWidth": 1}
     },
     {
-      "data": {"url": "../data/gccsa_summary.csv"},
+      "data": {"url": "data/gccsa_summary.csv"},
       "transform": [
         {
           "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",
@@ -51,7 +51,7 @@
       }
     },
     {
-      "data": {"url": "../data/gccsa_summary.csv"},
+      "data": {"url": "data/gccsa_summary.csv"},
       "transform": [
         {
           "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",

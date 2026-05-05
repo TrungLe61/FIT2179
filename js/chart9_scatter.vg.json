@@ -7,7 +7,7 @@
   },
   "width": "container",
   "height": 340,
-  "data": {"url": "../data/state_summary.csv"},
+  "data": {"url": "data/state_summary.csv"},
   "transform": [
     {"filter": "isValid(datum.approvals_per_1000) && isValid(datum.pop_growth_pct)"}
   ],

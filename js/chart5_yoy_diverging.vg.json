@@ -7,7 +7,7 @@
   },
   "width": "container",
   "height": 260,
-  "data": {"url": "../data/state_summary.csv"},
+  "data": {"url": "data/state_summary.csv"},
   "transform": [
     {"filter": "isValid(datum.yoy_change_pct)"}
   ],

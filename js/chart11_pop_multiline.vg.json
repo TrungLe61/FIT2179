@@ -7,7 +7,7 @@
   },
   "width": "container",
   "height": 320,
-  "data": {"url": "../data/population_gccsa_2001_2025.csv"},
+  "data": {"url": "data/population_gccsa_2001_2025.csv"},
   "transform": [
     {
       "filter": "indexof(['Greater Sydney','Greater Melbourne','Greater Brisbane','Greater Perth','Greater Adelaide','Australian Capital Territory','Greater Hobart','Greater Darwin'], datum.gccsa_name) >= 0"

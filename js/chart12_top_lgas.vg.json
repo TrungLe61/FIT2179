@@ -7,7 +7,7 @@
   },
   "width": "container",
   "height": 460,
-  "data": {"url": "../data/population_lga_2024_25.csv"},
+  "data": {"url": "data/population_lga_2024_25.csv"},
   "transform": [
     {"filter": "isValid(datum.change_pct) && datum.change_pct > 0"},
     {

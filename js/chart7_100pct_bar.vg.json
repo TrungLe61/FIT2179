@@ -7,7 +7,7 @@
   },
   "width": "container",
   "height": 280,
-  "data": {"url": "../data/gccsa_summary.csv"},
+  "data": {"url": "data/gccsa_summary.csv"},
   "transform": [
     {
       "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra (ACT)' : replace(datum.city_name, 'Greater ', '')",

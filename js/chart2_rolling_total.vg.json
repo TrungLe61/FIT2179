@@ -9,7 +9,7 @@
   "height": 280,
   "layer": [
     {
-      "data": {"url": "../data/approvals_national_monthly.csv"},
+      "data": {"url": "data/approvals_national_monthly.csv"},
       "transform": [
         {
           "window": [{"op": "sum", "field": "total", "as": "rolling_12m"}],
