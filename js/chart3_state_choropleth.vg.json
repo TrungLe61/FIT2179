@@ -7,7 +7,7 @@
   },
   "width": 480,
   "height": 340,
-  "projection": {"type": "mercator"},
+  "projection": {"type": "equirectangular", "center": [132, -27], "scale": 580},
   "data": {
     "url": "topojson/aus-states.topojson",
     "format": {"type": "json", "property": "features"}

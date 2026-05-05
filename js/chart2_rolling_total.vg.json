@@ -13,9 +13,10 @@
       "transform": [
         {
           "window": [{"op": "sum", "field": "total", "as": "rolling_12m"}],
-          "frame": [-11, 0]
+          "frame": [-11, 0],
+          "sort": [{"field": "date", "order": "ascending"}]
         },
-        {"filter": "datum.date >= '1984-06-01'"}
+        {"filter": "datum.rolling_12m != null && datum.rolling_12m > 0"}
       ],
       "mark": {"type": "bar", "color": "#90CAF9"},
       "encoding": {
@@ -29,7 +30,7 @@
           "field": "rolling_12m",
           "type": "quantitative",
           "title": "Annual Approvals (rolling 12 months)",
-          "axis": {"format": ","}
+          "axis": {"format": ",.0f"}
         },
         "tooltip": [
           {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},

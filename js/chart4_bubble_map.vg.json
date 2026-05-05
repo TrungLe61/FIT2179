@@ -7,7 +7,7 @@
   },
   "width": 800,
   "height": 450,
-  "projection": {"type": "mercator"},
+  "projection": {"type": "equirectangular", "center": [132, -27], "scale": 800},
   "layer": [
     {
       "data": {
