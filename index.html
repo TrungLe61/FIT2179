@@ -817,20 +817,23 @@ const spec12 = {
 };
 
 /* ─────────────────────────────────────────────
-   Embed all charts
+   Embed all charts — deferred so CSS grid has
+   computed its layout before vega reads widths
 ───────────────────────────────────────────── */
-vegaEmbed("#chart1",  spec1,  EMBED_OPTS);
-vegaEmbed("#chart2",  spec2,  EMBED_OPTS);
-vegaEmbed("#chart3",  spec3,  EMBED_OPTS);
-vegaEmbed("#chart4",  spec4,  EMBED_OPTS);
-vegaEmbed("#chart5",  spec5,  EMBED_OPTS);
-vegaEmbed("#chart6",  spec6,  EMBED_OPTS);
-vegaEmbed("#chart7",  spec7,  EMBED_OPTS);
-vegaEmbed("#chart8",  spec8,  EMBED_OPTS);
-vegaEmbed("#chart9",  spec9,  EMBED_OPTS);
-vegaEmbed("#chart10", spec10, EMBED_OPTS);
-vegaEmbed("#chart11", spec11, EMBED_OPTS);
-vegaEmbed("#chart12", spec12, EMBED_OPTS);
+window.addEventListener("load", () => {
+  vegaEmbed("#chart1",  spec1,  EMBED_OPTS);
+  vegaEmbed("#chart2",  spec2,  EMBED_OPTS);
+  vegaEmbed("#chart3",  spec3,  EMBED_OPTS);
+  vegaEmbed("#chart4",  spec4,  EMBED_OPTS);
+  vegaEmbed("#chart5",  spec5,  EMBED_OPTS);
+  vegaEmbed("#chart6",  spec6,  EMBED_OPTS);
+  vegaEmbed("#chart7",  spec7,  EMBED_OPTS);
+  vegaEmbed("#chart8",  spec8,  EMBED_OPTS);
+  vegaEmbed("#chart9",  spec9,  EMBED_OPTS);
+  vegaEmbed("#chart10", spec10, EMBED_OPTS);
+  vegaEmbed("#chart11", spec11, EMBED_OPTS);
+  vegaEmbed("#chart12", spec12, EMBED_OPTS);
+});
 </script>
 </body>
 </html>
