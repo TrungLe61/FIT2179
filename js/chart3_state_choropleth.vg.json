@@ -9,8 +9,8 @@
   "height": 340,
   "projection": {"type": "equirectangular", "center": [132, -27], "scale": 580},
   "data": {
-    "url": "topojson/aus-states.topojson",
-    "format": {"type": "json", "property": "features"}
+    "url": "topojson/aus-states-topo.json",
+    "format": {"type": "topojson", "feature": "aus_states"}
   },
   "transform": [
     {

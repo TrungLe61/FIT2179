@@ -11,8 +11,8 @@
   "layer": [
     {
       "data": {
-        "url": "topojson/aus-states.topojson",
-        "format": {"type": "json", "property": "features"}
+        "url": "topojson/aus-states-topo.json",
+        "format": {"type": "topojson", "feature": "aus_states"}
       },
       "mark": {"type": "geoshape", "fill": "#dce8f5", "stroke": "white", "strokeWidth": 1}
     },
