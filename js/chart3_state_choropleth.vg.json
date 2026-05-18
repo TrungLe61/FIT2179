@@ -75,13 +75,13 @@
         "color": {
           "field": "growth_pct_filled",
           "type": "quantitative",
-          "title": "How fast the population is growing (% per year)",
-          "scale": {"scheme": "greens", "domain": [0, 4]},
-          "legend": {"orient": "bottom-right", "format": ".1f"}
+          "title": "Pop. growth (% per year)",
+          "scale": {"scheme": "greens", "domain": [0, 5], "clamp": true},
+          "legend": {"orient": "bottom-right", "format": ".1f", "values": [0, 2.5, 5]}
         },
         "tooltip": [
           {"field": "properties.sa4_name", "type": "nominal", "title": "Region"},
-          {"field": "growth_pct", "type": "quantitative", "title": "Pop. growth (% per year)", "format": ".2f"},
+          {"field": "growth_pct", "type": "quantitative", "title": "Pop. growth (% / yr)", "format": ".2f"},
           {"field": "total_pop", "type": "quantitative", "title": "Population 2025", "format": ","},
           {"field": "total_change", "type": "quantitative", "title": "Pop. change (2024→25)", "format": ","}
         ]
