@@ -43,7 +43,7 @@
         "domain": ["Houses", "Apartments / Other"],
         "range": ["#1976D2", "#FF7043"]
       },
-      "legend": {"orient": "top-right"}
+      "legend": {"orient": "bottom", "direction": "horizontal", "titleOrient": "left"}
     },
     "order": {"field": "type", "sort": "ascending"},
     "tooltip": [
