@@ -85,7 +85,7 @@
         "color": {
           "field": "growth_pct_filled",
           "type": "quantitative",
-          "title": "Pop. Growth (%)",
+          "title": "Regional Growth (%)",
           "scale": {"scheme": "greens", "domainMin": 0},
           "legend": {"format": ".1f"}
         },
@@ -122,7 +122,7 @@
         "size": {
           "field": "change_pct",
           "type": "quantitative",
-          "title": "Pop. growth (%)",
+          "title": "LGA Growth (%)",
           "scale": {"domain": [0, 12], "range": [30, 700]},
           "legend": {"orient": "bottom-right", "format": ".1f"}
         },
