@@ -108,31 +108,39 @@
     <h2>Where Is Australia Building?</h2>
   </div>
 
-  <!-- Chart 3: full width — zoomable state choropleth -->
+  <!-- Chart 3: per-state map -->
   <div class="pure-g">
-    <div class="pure-u-1-1">
-      <p>
-        Victoria leads the nation in total approvals (56,581 in FY2024–25), ahead of New South Wales
-        (49,515) and Queensland (38,229). Together these three states account for over 75% of all
-        Australian building activity. Use the <strong>Focus State</strong> dropdown to centre on a
-        jurisdiction, then push the <strong>Zoom</strong> slider past halfway to reveal local growth
-        hotspots — orange circles mark the fastest-growing Local Government Areas within each state,
-        sized by population growth rate. Labels appear at maximum zoom.
-      </p>
+    <div class="pure-u-1-2">
       <div id="vis3" class="vis-container"></div>
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description-right">
+        <h3>Building Activity by State</h3>
+        <p>
+          Select a state to explore its building footprint. The map zooms to that state and shows
+          SA4 regions shaded by population growth (% per year), with the capital city plotted as
+          a circle coloured by its approvals-per-1,000-residents rate.
+        </p>
+        <p>
+          Victoria leads nationally with 56,581 approvals, followed by New South Wales (49,515)
+          and Queensland (38,229). Hover over a region or the city circle for full details.
+        </p>
+        <div class="insight">
+          The ACT's dramatic collapse (−37.8% YoY) stands out as the most severe decline, driven
+          by the near-halt of apartment development in Canberra amid high interest rates.
+        </div>
+      </div>
     </div>
   </div>
 
-  <!-- Chart 4: full width — capital city bubble map -->
+  <!-- Chart 4: approvals rate bar chart -->
   <div class="pure-g">
     <div class="pure-u-1-1">
       <p>
-        Bubble <strong>size</strong> represents total approvals per city; <strong>colour</strong> shows
-        the approvals-per-1,000-residents rate. Melbourne dominates in volume, but Adelaide and Perth
-        punch above their weight on a per-capita basis. Use <strong>Focus City</strong> and
-        <strong>Zoom</strong> to drill into any metro area — smaller red circles appear showing the
-        fastest-growing Local Government Areas in that city's fringe, revealing exactly where
-        growth pressure is concentrated.
+        While Victoria and NSW approve the most dwellings in raw terms, the per-capita picture
+        tells a different story. Melbourne leads on rate (8.56 per 1,000), closely followed by
+        Adelaide (7.94) and Perth (7.93). Darwin approves the fewest relative to its population,
+        reflecting limited construction activity in the Territory.
       </p>
       <div id="vis4" class="vis-container"></div>
     </div>

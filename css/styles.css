@@ -1,60 +1,79 @@
-/* ── Base ── */
-*, *::before, *::after {
-  box-sizing: border-box;
+/* ── Variables ─────────────────────────────────────────────── */
+:root {
+  --blue:       #1565C0;
+  --blue-light: #e8f0fe;
+  --orange:     #FF6F00;
+  --text:       #2b2b2b;
+  --text-muted: #555;
+  --text-faint: #777;
+  --bg-page:    #f0f2f5;
+  --bg-card:    #ffffff;
+  --border:     #e0e4ec;
+  --radius:     3px;
+  --font:       'Open Sans', sans-serif;
 }
+
+/* ── Reset & base ───────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; }
 
 body {
-  background-color: #f0f2f5;
+  font-family: var(--font);
+  background-color: var(--bg-page);
+  color: var(--text);
   margin: 0;
+  padding: 24px 0 48px;
+  font-size: 15px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
-body * {
-  font-family: 'Open Sans', sans-serif;
-}
-
-/* ── Page shell ── */
+/* ── Page shell ─────────────────────────────────────────────── */
 .page {
-  width: 1000px;
-  background-color: white;
+  max-width: 1020px;
+  background-color: var(--bg-card);
   margin: 0 auto;
-  padding: 40px 50px 60px;
+  padding: 44px 52px 52px;
+  border-radius: 4px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
   overflow-x: hidden;
 }
 
-/* ── Typography ── */
+/* ── Typography ─────────────────────────────────────────────── */
+h1, h2, h3 { margin-top: 0; font-family: var(--font); }
+
 h1 {
-  font-size: 2em;
-  font-weight: 900;
-  color: #1565C0;
-  margin: 0 0 10px 0;
+  font-size: 1.75em;
+  font-weight: 800;
+  color: var(--blue);
   line-height: 1.2;
+  margin-bottom: 10px;
 }
 
 h2 {
   font-size: 1.15em;
   font-weight: 700;
-  color: #1565C0;
-  margin: 0 0 10px 0;
+  color: var(--blue);
+  margin-bottom: 10px;
 }
 
 h3 {
   font-size: 0.95em;
   font-weight: 700;
   color: #333;
-  margin: 0 0 8px 0;
+  margin-bottom: 8px;
 }
 
 p {
-  font-size: 0.88em;
-  line-height: 1.65;
+  font-size: 0.875em;
+  line-height: 1.7;
   color: #444;
-  margin: 0 0 10px 0;
+  margin: 0 0 10px;
 }
 
-a {
-  color: #1565C0;
-  text-decoration: none;
-}
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--blue); text-decoration: none; }
+a:hover { text-decoration: underline; }
 
 .small-font {
   font-size: 0.8em;
@@ -62,104 +81,100 @@ a {
   line-height: 1.5;
 }
 
-/* ── Grid helpers ── */
-.pure-g {
-  margin-bottom: 36px;
-}
-
-.pure-g:last-child {
-  margin-bottom: 0;
-}
-
-/* ── Description columns ── */
-.description-left {
-  padding-right: 24px;
-}
-
-.description-right {
-  padding-left: 24px;
-}
-
-/* ── Chart containers ── */
-.vis-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-/* Centre fixed-width Vega embeds (maps) inside fluid grid columns */
-.vis-container > div {
-  margin: 0 auto;
-}
-
-/* ── Header block ── */
+/* ── Page header ────────────────────────────────────────────── */
 .page-header {
-  border-bottom: 3px solid #1565C0;
-  margin-bottom: 28px;
+  border-bottom: 3px solid var(--blue);
+  margin-bottom: 24px;
   padding-bottom: 20px;
 }
 
-/* ── Stat row ── */
-.stat-row {
-  margin-bottom: 28px;
+.page-header h1 { margin-bottom: 8px; }
+
+.page-header > p {
+  color: var(--text-muted);
+  font-size: 0.92em;
+  max-width: 800px;
 }
+
+/* ── Stat row ───────────────────────────────────────────────── */
+.stat-row { margin-bottom: 28px; }
 
 .stat-box {
-  background: #f7f9fc;
-  border-top: 3px solid #1565C0;
-  padding: 12px 14px;
+  background: #f7f9fd;
+  border-top: 3px solid var(--blue);
+  padding: 12px 14px 14px;
   margin-right: 6px;
+  border-radius: var(--radius);
 }
 
-.pure-u-1-5:last-child .stat-box {
-  margin-right: 0;
-}
+.pure-u-1-5:last-child .stat-box { margin-right: 0; }
 
 .stat-highlight {
-  font-size: 1.7em;
-  font-weight: 900;
-  color: #1565C0;
-  line-height: 1;
+  font-size: 1.65em;
+  font-weight: 800;
+  color: var(--blue);
+  line-height: 1.1;
   display: block;
   margin-bottom: 4px;
 }
 
-/* ── Section dividers ── */
+/* ── Section dividers ───────────────────────────────────────── */
 .section-divider {
-  border-top: 2px solid #1565C0;
-  margin: 44px 0 20px 0;
+  border-top: 2px solid var(--blue);
+  margin: 36px 0 18px;
   padding-top: 14px;
 }
 
 .section-label {
   display: block;
-  font-size: 0.72em;
+  font-size: 0.7em;
   font-weight: 700;
-  color: #1565C0;
+  color: var(--blue);
   text-transform: uppercase;
   letter-spacing: 1.5px;
   margin-bottom: 4px;
 }
 
-/* ── Insight callout ── */
-.insight {
-  background: #e8f0fe;
-  border-left: 3px solid #1565C0;
-  padding: 10px 14px;
-  font-size: 0.82em;
-  color: #1a3a6b;
-  line-height: 1.55;
-  margin: 8px 0;
+.section-divider h2 { margin-bottom: 0; }
+
+/* ── Grid rows ──────────────────────────────────────────────── */
+.pure-g { margin-bottom: 32px; }
+.pure-g:last-child { margin-bottom: 0; }
+
+/* ── Vis containers ─────────────────────────────────────────── */
+.vis-container {
+  width: 100%;
+  min-height: 40px;
+  overflow: hidden;
 }
 
-/* ── Footer ── */
+.vis-container > div { margin: 0 auto; }
+
+/* ── Description columns ────────────────────────────────────── */
+.description-left  { padding-right: 28px; }
+.description-right { padding-left: 28px; }
+
+/* ── Insight callouts ───────────────────────────────────────── */
+.insight {
+  background: var(--blue-light);
+  border-left: 3px solid var(--blue);
+  padding: 10px 14px;
+  font-size: 0.845em;
+  color: #1a3a6b;
+  line-height: 1.6;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin-top: 10px;
+}
+
+/* ── Footer ─────────────────────────────────────────────────── */
 .page-footer {
-  border-top: 1px solid #ddd;
-  margin-top: 48px;
+  border-top: 1px solid var(--border);
+  margin-top: 44px;
   padding-top: 20px;
 }
 
 .page-footer p {
   font-size: 0.76em;
-  color: #777;
-  line-height: 1.7;
+  color: var(--text-faint);
+  line-height: 1.75;
 }

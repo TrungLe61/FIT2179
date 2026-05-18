@@ -1,177 +1,172 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Building Approvals by State & Region (FY 2024–25)",
-    "subtitle": "Zoom in past the midpoint to reveal SA4 regional detail — select a state to focus",
+    "text": "Building Approvals by State (FY 2024–25)",
+    "subtitle": "Select a state — circle colour shows approvals per 1,000 residents; regions shaded by population growth",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleColor": "#666",
     "fontSize": 14,
     "fontWeight": "bold"
   },
-  "width": 800,
-  "height": 450,
+  "width": "container",
+  "height": 500,
   "params": [
     {
-      "name": "zoom_level",
-      "value": 850,
-      "bind": {"input": "range", "min": 400, "max": 3000, "step": 50, "name": "Zoom: "}
-    },
-    {
       "name": "selected_state",
-      "value": "All",
+      "value": "New South Wales",
       "bind": {
         "input": "select",
         "options": [
-          "All",
           "New South Wales", "Victoria", "Queensland",
           "Western Australia", "South Australia", "Tasmania",
           "Northern Territory", "Australian Capital Territory"
         ],
         "labels": [
-          "All Australia",
           "New South Wales", "Victoria", "Queensland",
           "Western Australia", "South Australia", "Tasmania",
           "Northern Territory", "ACT"
         ],
-        "name": "Focus State: "
+        "name": "State: "
       }
     }
   ],
   "projection": {
     "type": "mercator",
-    "scale": {"expr": "zoom_level"},
+    "scale": {
+      "expr": "{'New South Wales':6000,'Victoria':4000,'Queensland':5000,'Western Australia':4000,'South Australia':5000,'Tasmania':6500,'Northern Territory':4500,'Australian Capital Territory':38000}[selected_state]"
+    },
     "center": {
-      "expr": "{'All':[134,-26],'New South Wales':[151,-33],'Victoria':[144,-37],'Queensland':[153,-27],'Western Australia':[116,-32],'South Australia':[138,-35],'Tasmania':[147,-42],'Northern Territory':[130,-12],'Australian Capital Territory':[149,-35]}[selected_state]"
+      "expr": "{'New South Wales':[151.0,-33.3],'Victoria':[145.5,-37.5],'Queensland':[152.7,-27.3],'Western Australia':[116.9,-32.9],'South Australia':[139.0,-35.2],'Tasmania':[146.7,-42.1],'Northern Territory':[131.5,-13.0],'Australian Capital Territory':[149.1,-35.3]}[selected_state]"
     }
   },
   "layer": [
     {
-      "description": "Layer 1: State choropleth — fades out as user zooms in",
+      "description": "Selected state boundary (base fill)",
       "data": {
         "url": "topojson/aus-states-topo.json",
         "format": {"type": "topojson", "feature": "aus_states"}
       },
-      "mark": {"type": "geoshape", "fill": "#b8d4e8", "stroke": "white", "strokeWidth": 2},
-      "encoding": {
-        "tooltip": [
-          {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"}
-        ]
-      }
+      "transform": [
+        {"filter": "datum.properties.STATE_NAME === selected_state"}
+      ],
+      "mark": {"type": "geoshape", "fill": "#e8f0f8", "stroke": "#5a8fc2", "strokeWidth": 2}
     },
     {
-      "description": "Layer 2: SA4 regional choropleth — appears when user zooms in",
+      "description": "SA4 regional population growth choropleth",
       "data": {
         "url": "topojson/aus-sa4-topo.json",
         "format": {"type": "topojson", "feature": "data"}
       },
       "transform": [
-        {"filter": "zoom_level >= 1400"},
-        {
-          "filter": "selected_state === 'All' || datum.properties.state === selected_state"
-        },
+        {"filter": "datum.properties.state === selected_state"},
         {
           "lookup": "properties.sa4_name",
           "from": {
             "data": {"url": "data/sa4_population.csv"},
             "key": "sa4_name",
-            "fields": ["total_pop", "growth_pct", "total_change", "lga_count"]
+            "fields": ["growth_pct", "total_pop", "total_change", "lga_count"]
           }
         },
         {"calculate": "isValid(datum.growth_pct) ? datum.growth_pct : 0", "as": "growth_pct_filled"}
       ],
-      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.8},
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.6},
       "encoding": {
         "color": {
           "field": "growth_pct_filled",
           "type": "quantitative",
-          "title": "Regional Growth (%)",
-          "scale": {"scheme": "greens", "domainMin": 0},
-          "legend": {"format": ".1f"}
+          "title": "Pop. growth (% per year)",
+          "scale": {"scheme": "greens", "domain": [0, 4]},
+          "legend": {"orient": "bottom-right", "format": ".1f"}
         },
         "tooltip": [
           {"field": "properties.sa4_name", "type": "nominal", "title": "Region"},
-          {"field": "properties.state", "type": "nominal", "title": "State"},
-          {"field": "growth_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".2f"},
+          {"field": "growth_pct", "type": "quantitative", "title": "Pop. growth (% per year)", "format": ".2f"},
           {"field": "total_pop", "type": "quantitative", "title": "Population 2025", "format": ","},
           {"field": "total_change", "type": "quantitative", "title": "Pop. change (2024→25)", "format": ","}
         ]
       }
     },
     {
-      "description": "Layer 3: LGA growth circles — appear at high zoom",
-      "data": {"url": "data/population_lga_2024_25.csv"},
+      "description": "Capital city circle",
+      "data": {"url": "data/gccsa_summary.csv"},
       "transform": [
-        {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
-        {"filter": "selected_state === 'All' || datum.state === selected_state"},
         {
-          "window": [{"op": "rank", "as": "rank"}],
-          "sort": [{"field": "change_pct", "order": "descending"}]
+          "calculate": "{'ACT':'Australian Capital Territory','Adelaide':'South Australia','Brisbane':'Queensland','Darwin':'Northern Territory','Hobart':'Tasmania','Melbourne':'Victoria','Perth':'Western Australia','Sydney':'New South Wales'}[datum.city]",
+          "as": "state_name"
         },
-        {"filter": "datum.rank <= 60"}
+        {"filter": "datum.state_name === selected_state"}
       ],
-      "mark": {
-        "type": "circle",
-        "opacity": {"expr": "zoom_level > 1700 ? 0.72 : 0"},
-        "stroke": "white",
-        "strokeWidth": 0.8
-      },
+      "mark": {"type": "circle", "size": 1800, "opacity": 0.85, "stroke": "white", "strokeWidth": 1.5},
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
-        "size": {
-          "field": "change_pct",
-          "type": "quantitative",
-          "title": "LGA Growth (%)",
-          "scale": {"domain": [0, 12], "range": [30, 700]},
-          "legend": {"orient": "bottom-right", "format": ".1f"}
-        },
         "color": {
-          "field": "change_pct",
+          "field": "approvals_per_1000",
           "type": "quantitative",
-          "title": null,
-          "scale": {"scheme": "orangered", "domain": [0, 12]},
+          "title": "Per 1,000 residents",
+          "scale": {"scheme": "oranges", "domain": [2, 10]},
           "legend": null
         },
         "tooltip": [
-          {"field": "lga_name", "type": "nominal", "title": "LGA"},
-          {"field": "state_abbr", "type": "nominal", "title": "State"},
-          {"field": "change_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".1f"},
-          {"field": "erp_2025", "type": "quantitative", "title": "Population 2025", "format": ","}
+          {"field": "city_name", "type": "nominal", "title": "City"},
+          {"field": "total", "type": "quantitative", "title": "Total Approvals FY24-25", "format": ","},
+          {"field": "houses", "type": "quantitative", "title": "Houses", "format": ","},
+          {"field": "non_houses", "type": "quantitative", "title": "Apartments / Other", "format": ","},
+          {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 residents", "format": ".2f"},
+          {"field": "pop_growth_pct", "type": "quantitative", "title": "Pop. growth (% per year)", "format": ".2f"}
         ]
       }
     },
     {
-      "description": "Layer 4: SA4 region name labels — top 6 largest per state, at centroids",
-      "data": {
-        "url": "topojson/aus-sa4-topo.json",
-        "format": {"type": "topojson", "feature": "data"}
-      },
+      "description": "City name label",
+      "data": {"url": "data/gccsa_summary.csv"},
       "transform": [
-        {"filter": "zoom_level >= 1800"},
-        {"filter": "selected_state === 'All' || datum.properties.state === selected_state"},
         {
-          "lookup": "properties.sa4_name",
-          "from": {
-            "data": {"url": "data/sa4_population.csv"},
-            "key": "sa4_name",
-            "fields": ["centroid_lon", "centroid_lat", "data_area_rank"]
-          }
+          "calculate": "{'ACT':'Australian Capital Territory','Adelaide':'South Australia','Brisbane':'Queensland','Darwin':'Northern Territory','Hobart':'Tasmania','Melbourne':'Victoria','Perth':'Western Australia','Sydney':'New South Wales'}[datum.city]",
+          "as": "state_name"
         },
-        {"filter": "isValid(datum.centroid_lon) && datum.data_area_rank <= 6"}
+        {"filter": "datum.state_name === selected_state"},
+        {
+          "calculate": "datum.city === 'ACT' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",
+          "as": "short_name"
+        }
       ],
       "mark": {
         "type": "text",
-        "fontSize": 10,
-        "fontWeight": "600",
-        "color": "#1a1a2e",
-        "align": "center",
-        "baseline": "middle"
+        "dy": -22,
+        "fontSize": 13,
+        "fontWeight": "bold",
+        "color": "#1a1a2e"
       },
       "encoding": {
-        "longitude": {"field": "centroid_lon", "type": "quantitative"},
-        "latitude": {"field": "centroid_lat", "type": "quantitative"},
-        "text": {"field": "properties.sa4_name", "type": "nominal"}
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "short_name", "type": "nominal"}
+      }
+    },
+    {
+      "description": "Total approvals annotation below city name",
+      "data": {"url": "data/gccsa_summary.csv"},
+      "transform": [
+        {
+          "calculate": "{'ACT':'Australian Capital Territory','Adelaide':'South Australia','Brisbane':'Queensland','Darwin':'Northern Territory','Hobart':'Tasmania','Melbourne':'Victoria','Perth':'Western Australia','Sydney':'New South Wales'}[datum.city]",
+          "as": "state_name"
+        },
+        {"filter": "datum.state_name === selected_state"},
+        {"calculate": "format(datum.total, ',') + ' approvals'", "as": "approvals_label"}
+      ],
+      "mark": {
+        "type": "text",
+        "dy": 28,
+        "fontSize": 11,
+        "fontWeight": "normal",
+        "color": "#333"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "approvals_label", "type": "nominal"}
       }
     }
   ],
