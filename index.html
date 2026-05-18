@@ -125,10 +125,6 @@
           Victoria leads nationally with 56,581 approvals, followed by New South Wales (49,515)
           and Queensland (38,229). Hover over a region or the city circle for full details.
         </p>
-        <div class="insight">
-          The ACT's dramatic collapse (−37.8% YoY) stands out as the most severe decline, driven
-          by the near-halt of apartment development in Canberra amid high interest rates.
-        </div>
       </div>
     </div>
   </div>
@@ -146,26 +142,19 @@
     </div>
   </div>
 
-  <!-- Charts 5 & 6: side by side — diverging choropleth · small multiples -->
+  <!-- Chart 5: full width — diverging bar -->
   <div class="pure-g">
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-1">
       <h3>Where Is Growth Accelerating?</h3>
       <p>
         Western Australia (+31.4%) is the standout performer, driven by strong migration inflows.
         The ACT (−37.8%) and South Australia (−5.2%) are the only jurisdictions recording declines.
-        <strong>Blue</strong> = growth; <strong>orange</strong> = decline.
+        <strong style="color:#2196F3">Blue</strong> = growth; <strong style="color:#F44336">red</strong> = decline.
       </p>
       <div id="vis5" class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-2">
-      <div class="description-right">
-        <h3>Three Views, One Geography</h3>
-        <p>
-          The same state boundaries reveal three different dimensions of the housing story:
-          total approval volumes, per-capita supply rate, and year-on-year momentum — side by side.
-          Victoria scores highest on volume; Melbourne leads on per-capita supply.
-        </p>
-        <div id="vis6" class="vis-container"></div>
+      <div class="insight">
+        The ACT's dramatic collapse (−37.8% YoY) stands out as the most severe decline, driven
+        by the near-halt of apartment development in Canberra amid high interest rates.
       </div>
     </div>
   </div>
@@ -184,7 +173,6 @@
         The long-term shift from detached houses to apartments is one of the defining structural trends
         in Australian housing. In 1983, houses dominated; today apartments account for roughly 40% of all
         approvals nationally — and far more in Sydney and Melbourne.
-        <em>Drag the navigator bar to zoom into a specific period.</em>
       </p>
       <div id="vis7" class="vis-container"></div>
     </div>
@@ -318,7 +306,6 @@
   vegaEmbed('#vis3',  './js/chart3_state_choropleth.vg.json',    OPTS);
   vegaEmbed('#vis4',  './js/chart4_bubble_map.vg.json',          OPTS);
   vegaEmbed('#vis5',  './js/chart5_yoy_choropleth.vg.json',      OPTS);
-  vegaEmbed('#vis6',  './js/chart6_small_multiples_map.vg.json', OPTS);
   vegaEmbed('#vis7',  './js/chart7_stacked_area.vg.json',        OPTS);
   vegaEmbed('#vis8',  './js/chart8_100pct_bar.vg.json',          OPTS);
   vegaEmbed('#vis9',  './js/chart9_supply_choropleth.vg.json',   OPTS);
