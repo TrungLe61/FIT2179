@@ -24,7 +24,7 @@
           "field": "approvals", "type": "quantitative",
           "title": "Monthly Approvals",
           "stack": true,
-          "axis": {"format": ","}
+          "axis": {"format": ",.0f"}
         },
         "color": {
           "field": "dwelling_type", "type": "nominal",
@@ -41,12 +41,15 @@
     {
       "data": {
         "values": [
-          {"date": "2008-09-01", "label": "2008 Financial Crisis", "y_pos": 15},
-          {"date": "2012-06-01", "label": "2012 Mining Boom Peak", "y_pos": 40},
-          {"date": "2020-03-01", "label": "COVID-19", "y_pos": 15},
-          {"date": "2022-05-01", "label": "Post-Covid Rate Hikes", "y_pos": 40}
+          {"date": "2008-09-01", "line1": "2008 Financial", "line2": "Crisis",     "y_pos": 15},
+          {"date": "2012-06-01", "line1": "2012 Mining",    "line2": "Boom Peak",  "y_pos": 40},
+          {"date": "2020-03-01", "line1": "COVID-19",       "line2": "",           "y_pos": 15},
+          {"date": "2022-05-01", "line1": "Post-Covid",     "line2": "Rate Hikes", "y_pos": 40}
         ]
       },
+      "transform": [
+        {"calculate": "datum.line2 ? datum.line1 + '\\n' + datum.line2 : datum.line1", "as": "label"}
+      ],
       "layer": [
         {
           "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#999", "strokeWidth": 1},
@@ -55,7 +58,7 @@
           }
         },
         {
-          "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10, "fontStyle": "italic", "color": "#666"},
+          "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10, "fontStyle": "italic", "color": "#666", "lineBreak": "\n"},
           "encoding": {
             "x": {"field": "date", "type": "temporal"},
             "y": {"expr": "datum.y_pos"},
