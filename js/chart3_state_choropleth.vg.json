@@ -142,29 +142,36 @@
       }
     },
     {
-      "description": "Layer 4: LGA name labels — appear at maximum zoom",
-      "data": {"url": "data/population_lga_2024_25.csv"},
+      "description": "Layer 4: SA4 region name labels at polygon centroids — appear when zoomed in",
+      "data": {
+        "url": "topojson/aus-sa4-topo.json",
+        "format": {"type": "topojson", "feature": "data"}
+      },
       "transform": [
-        {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
-        {"filter": "selected_state === 'All' || datum.state === selected_state"},
+        {"filter": "zoom_level >= 1400"},
+        {"filter": "selected_state === 'All' || datum.properties.state === selected_state"},
         {
-          "window": [{"op": "rank", "as": "rank"}],
-          "sort": [{"field": "change_pct", "order": "descending"}]
+          "lookup": "properties.sa4_name",
+          "from": {
+            "data": {"url": "data/sa4_centroids.csv"},
+            "key": "sa4_name",
+            "fields": ["centroid_lon", "centroid_lat"]
+          }
         },
-        {"filter": "datum.rank <= 30"}
+        {"filter": "isValid(datum.centroid_lon) && isValid(datum.centroid_lat)"}
       ],
       "mark": {
         "type": "text",
-        "opacity": {"expr": "zoom_level > 2000 ? 1 : 0"},
-        "fontSize": 9,
+        "fontSize": 10,
         "fontWeight": "600",
-        "dy": -10,
-        "color": "#1a1a2e"
+        "color": "#1a1a2e",
+        "align": "center",
+        "baseline": "middle"
       },
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "lga_name", "type": "nominal"}
+        "longitude": {"field": "centroid_lon", "type": "quantitative"},
+        "latitude": {"field": "centroid_lat", "type": "quantitative"},
+        "text": {"field": "properties.sa4_name", "type": "nominal"}
       }
     }
   ],
