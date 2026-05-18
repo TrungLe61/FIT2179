@@ -41,10 +41,10 @@
     {
       "data": {
         "values": [
-          {"date": "2008-09-01", "label": "2008 Financial Crisis"},
-          {"date": "2012-06-01", "label": "Mining Boom Peak"},
-          {"date": "2020-03-01", "label": "COVID-19"},
-          {"date": "2022-05-01", "label": "Rate Hikes Begin"}
+          {"date": "2008-09-01", "label": "2008 Financial Crisis", "y_pos": 15},
+          {"date": "2012-06-01", "label": "2012 Mining Boom Peak", "y_pos": 40},
+          {"date": "2020-03-01", "label": "COVID-19", "y_pos": 15},
+          {"date": "2022-05-01", "label": "Post-Covid Rate Hikes", "y_pos": 40}
         ]
       },
       "layer": [
@@ -55,10 +55,10 @@
           }
         },
         {
-          "mark": {"type": "text", "align": "left", "dx": 4, "dy": -8, "fontSize": 10, "fontStyle": "italic", "color": "#666"},
+          "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10, "fontStyle": "italic", "color": "#666"},
           "encoding": {
             "x": {"field": "date", "type": "temporal"},
-            "y": {"value": 20},
+            "y": {"expr": "datum.y_pos"},
             "text": {"field": "label"}
           }
         }
