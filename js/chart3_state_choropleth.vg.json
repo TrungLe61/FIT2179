@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Building Approvals by State/Territory (FY 2024–25)",
-    "subtitle": "Use Zoom slider and Focus State dropdown — zoom in to reveal local growth hotspots",
+    "text": "Building Approvals by State & Region (FY 2024–25)",
+    "subtitle": "Zoom in past the midpoint to reveal SA4 regional detail — select a state to focus",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleColor": "#666",
@@ -18,17 +18,21 @@
       "bind": {"input": "range", "min": 400, "max": 3000, "step": 50, "name": "Zoom: "}
     },
     {
-      "name": "center_to",
-      "value": [134, -26],
+      "name": "selected_state",
+      "value": "All",
       "bind": {
         "input": "select",
         "options": [
-          [134,-26],[151,-33],[144,-37],[153,-27],
-          [116,-32],[138,-35],[147,-42],[130,-12],[149,-35]
+          "All",
+          "New South Wales", "Victoria", "Queensland",
+          "Western Australia", "South Australia", "Tasmania",
+          "Northern Territory", "Australian Capital Territory"
         ],
         "labels": [
-          "All Australia","New South Wales","Victoria","Queensland",
-          "Western Australia","South Australia","Tasmania","Northern Territory","ACT"
+          "All Australia",
+          "New South Wales", "Victoria", "Queensland",
+          "Western Australia", "South Australia", "Tasmania",
+          "Northern Territory", "ACT"
         ],
         "name": "Focus State: "
       }
@@ -37,46 +41,69 @@
   "projection": {
     "type": "mercator",
     "scale": {"expr": "zoom_level"},
-    "center": {"expr": "center_to"}
+    "center": {
+      "expr": "{'All':[134,-26],'New South Wales':[151,-33],'Victoria':[144,-37],'Queensland':[153,-27],'Western Australia':[116,-32],'South Australia':[138,-35],'Tasmania':[147,-42],'Northern Territory':[130,-12],'Australian Capital Territory':[149,-35]}[selected_state]"
+    }
   },
   "layer": [
     {
+      "description": "Layer 1: State choropleth — fades out as user zooms in",
       "data": {
         "url": "topojson/aus-states-topo.json",
         "format": {"type": "topojson", "feature": "aus_states"}
       },
-      "transform": [
-        {
-          "lookup": "properties.STATE_NAME",
-          "from": {
-            "data": {"url": "data/state_summary.csv"},
-            "key": "state_name",
-            "fields": ["state_name", "approvals_fy2425", "approvals_per_1000", "yoy_change_pct", "pop_2025"]
-          }
-        }
-      ],
-      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
+      "mark": {"type": "geoshape", "fill": "#b8d4e8", "stroke": "white", "strokeWidth": 2},
       "encoding": {
-        "color": {
-          "field": "approvals_fy2425",
-          "type": "quantitative",
-          "title": "Approvals FY24–25",
-          "scale": {"scheme": "blues", "nullColor": "#cccccc"},
-          "legend": {"format": ".2s"}
-        },
         "tooltip": [
-          {"field": "state_name", "type": "nominal", "title": "State"},
-          {"field": "approvals_fy2425", "type": "quantitative", "title": "Total Approvals FY24–25", "format": ","},
-          {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 people", "format": ".2f"},
-          {"field": "yoy_change_pct", "type": "quantitative", "title": "YoY Change (%)", "format": ".1f"},
-          {"field": "pop_2025", "type": "quantitative", "title": "Population 2025", "format": ","}
+          {"field": "properties.STATE_NAME", "type": "nominal", "title": "State"}
         ]
       }
     },
     {
+      "description": "Layer 2: SA4 regional choropleth — appears when user zooms in",
+      "data": {
+        "url": "topojson/aus-sa4-topo.json",
+        "format": {"type": "topojson", "feature": "data"}
+      },
+      "transform": [
+        {"filter": "zoom_level >= 1400"},
+        {
+          "filter": "selected_state === 'All' || datum.properties.state === selected_state"
+        },
+        {
+          "lookup": "properties.sa4_name",
+          "from": {
+            "data": {"url": "data/sa4_population.csv"},
+            "key": "sa4_name",
+            "fields": ["total_pop", "growth_pct", "total_change", "lga_count"]
+          }
+        },
+        {"calculate": "isValid(datum.growth_pct) ? datum.growth_pct : 0", "as": "growth_pct_filled"}
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 0.8},
+      "encoding": {
+        "color": {
+          "field": "growth_pct_filled",
+          "type": "quantitative",
+          "title": "Pop. Growth (%)",
+          "scale": {"scheme": "greens", "domainMin": 0},
+          "legend": {"format": ".1f"}
+        },
+        "tooltip": [
+          {"field": "properties.sa4_name", "type": "nominal", "title": "Region"},
+          {"field": "properties.state", "type": "nominal", "title": "State"},
+          {"field": "growth_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".2f"},
+          {"field": "total_pop", "type": "quantitative", "title": "Population 2025", "format": ","},
+          {"field": "total_change", "type": "quantitative", "title": "Pop. change (2024→25)", "format": ","}
+        ]
+      }
+    },
+    {
+      "description": "Layer 3: LGA growth circles — appear at high zoom",
       "data": {"url": "data/population_lga_2024_25.csv"},
       "transform": [
         {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
+        {"filter": "selected_state === 'All' || datum.state === selected_state"},
         {
           "window": [{"op": "rank", "as": "rank"}],
           "sort": [{"field": "change_pct", "order": "descending"}]
@@ -85,7 +112,7 @@
       ],
       "mark": {
         "type": "circle",
-        "opacity": {"expr": "zoom_level > 1300 ? 0.72 : 0"},
+        "opacity": {"expr": "zoom_level > 1700 ? 0.72 : 0"},
         "stroke": "white",
         "strokeWidth": 0.8
       },
@@ -115,9 +142,11 @@
       }
     },
     {
+      "description": "Layer 4: LGA name labels — appear at maximum zoom",
       "data": {"url": "data/population_lga_2024_25.csv"},
       "transform": [
         {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
+        {"filter": "selected_state === 'All' || datum.state === selected_state"},
         {
           "window": [{"op": "rank", "as": "rank"}],
           "sort": [{"field": "change_pct", "order": "descending"}]
@@ -126,7 +155,7 @@
       ],
       "mark": {
         "type": "text",
-        "opacity": {"expr": "zoom_level > 1700 ? 1 : 0"},
+        "opacity": {"expr": "zoom_level > 2000 ? 1 : 0"},
         "fontSize": 9,
         "fontWeight": "600",
         "dy": -10,
