@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Are We Building Enough? (12-Month Rolling Total)",
+    "text": "Total New Homes Approved Over the Past 12 Months",
     "fontSize": 14,
     "fontWeight": "bold"
   },
@@ -29,7 +29,7 @@
         "y": {
           "field": "rolling_12m",
           "type": "quantitative",
-          "title": "Annual Approvals (rolling 12 months)",
+          "title": "Homes Approved in the Last 12 Months",
           "axis": {"format": ",.0f"}
         },
         "tooltip": [
@@ -44,7 +44,7 @@
       "encoding": {"y": {"datum": 240000}}
     },
     {
-      "data": {"values": [{"label": "240,000 annual target"}]},
+      "data": {"values": [{"label": "Government's yearly goal: 240,000 homes"}]},
       "mark": {
         "type": "text",
         "align": "left",

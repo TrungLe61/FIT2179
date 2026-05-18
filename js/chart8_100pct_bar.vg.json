@@ -15,7 +15,7 @@
     },
     {"fold": ["houses", "non_houses"], "as": ["type", "count"]},
     {
-      "calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'",
+      "calculate": "datum.type === 'houses' ? 'Standalone Houses' : 'Apartments, Units & Townhouses'",
       "as": "dwelling_type"
     }
   ],
@@ -40,7 +40,7 @@
       "type": "nominal",
       "title": "Dwelling Type",
       "scale": {
-        "domain": ["Houses", "Apartments / Other"],
+        "domain": ["Standalone Houses", "Apartments, Units & Townhouses"],
         "range": ["#1976D2", "#FF7043"]
       },
       "legend": {"orient": "bottom", "direction": "horizontal", "titleOrient": "left"}

@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Australia's Building Approvals: 40 Years of Booms and Busts (1983–2026)",
+    "text": "New Homes Approved to Be Built Each Month in Australia (1983–2026)",
     "fontSize": 14,
     "fontWeight": "bold"
   },
@@ -12,7 +12,7 @@
     {
       "transform": [
         {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
-        {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}
+        {"calculate": "datum.type === 'houses' ? 'Standalone Houses' : 'Apartments, Units & Townhouses'", "as": "dwelling_type"}
       ],
       "mark": {"type": "area", "opacity": 0.7, "interpolate": "monotone"},
       "encoding": {
@@ -22,13 +22,13 @@
         },
         "y": {
           "field": "approvals", "type": "quantitative",
-          "title": "Monthly Approvals",
+          "title": "New Homes Approved Per Month",
           "stack": true,
           "axis": {"format": ",.0f"}
         },
         "color": {
           "field": "dwelling_type", "type": "nominal",
-          "scale": {"domain": ["Houses", "Apartments / Other"], "range": ["#1976D2", "#FF7043"]},
+          "scale": {"domain": ["Standalone Houses", "Apartments, Units & Townhouses"], "range": ["#1976D2", "#FF7043"]},
           "legend": {"title": null, "orient": "top-left"}
         },
         "tooltip": [
@@ -41,10 +41,10 @@
     {
       "data": {
         "values": [
-          {"date": "2008-09-01", "line1": "2008 Financial", "line2": "Crisis",     "y_pos": 15},
-          {"date": "2012-06-01", "line1": "2012 Mining",    "line2": "Boom Peak",  "y_pos": 40},
-          {"date": "2020-03-01", "line1": "COVID-19",       "line2": "",           "y_pos": 15},
-          {"date": "2022-05-01", "line1": "Post-Covid",     "line2": "Rate Hikes", "y_pos": 40}
+          {"date": "2008-09-01", "line1": "2008 Global",    "line2": "Financial Crash", "y_pos": 15},
+          {"date": "2012-06-01", "line1": "2012 Resources", "line2": "Boom",            "y_pos": 40},
+          {"date": "2020-03-01", "line1": "COVID Stimulus", "line2": "(2020–21)",        "y_pos": 15},
+          {"date": "2022-05-01", "line1": "Rate Rises Slow","line2": "Things Down",      "y_pos": 40}
         ]
       },
       "transform": [

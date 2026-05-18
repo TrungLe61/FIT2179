@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Building Approvals by State (FY 2024–25)",
-    "subtitle": "Select a state — circle colour shows approvals per 1,000 residents; regions shaded by population growth",
+    "text": "New Homes Approved Per State (July 2024 – June 2025)",
+    "subtitle": "Select a state — the dot over each capital shows homes approved per 1,000 people; map shading shows how fast each region's population is growing",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleColor": "#666",
@@ -75,7 +75,7 @@
         "color": {
           "field": "growth_pct_filled",
           "type": "quantitative",
-          "title": "Pop. growth (% per year)",
+          "title": "How fast the population is growing (% per year)",
           "scale": {"scheme": "greens", "domain": [0, 4]},
           "legend": {"orient": "bottom-right", "format": ".1f"}
         },
@@ -154,7 +154,7 @@
           "as": "state_name"
         },
         {"filter": "datum.state_name === selected_state"},
-        {"calculate": "format(datum.total, ',') + ' approvals'", "as": "approvals_label"}
+        {"calculate": "format(datum.total, ',') + ' new homes approved'", "as": "approvals_label"}
       ],
       "mark": {
         "type": "text",

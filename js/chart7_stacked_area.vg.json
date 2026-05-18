@@ -10,7 +10,7 @@
   "data": {"url": "data/approvals_national_monthly.csv"},
   "transform": [
     {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
-    {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}
+    {"calculate": "datum.type === 'houses' ? 'Standalone Houses' : 'Apartments, Units & Townhouses'", "as": "dwelling_type"}
   ],
   "mark": {"type": "area", "opacity": 0.8, "interpolate": "monotone"},
   "encoding": {
@@ -26,7 +26,7 @@
     },
     "color": {
       "field": "dwelling_type", "type": "nominal",
-      "scale": {"domain": ["Houses", "Apartments / Other"], "range": ["#1976D2", "#FF7043"]},
+      "scale": {"domain": ["Standalone Houses", "Apartments, Units & Townhouses"], "range": ["#1976D2", "#FF7043"]},
       "legend": {"title": null, "orient": "top-left"}
     },
     "tooltip": [
