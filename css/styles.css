@@ -136,6 +136,7 @@ a:hover { text-decoration: underline; }
 }
 
 .section-divider h2 { margin-bottom: 0; }
+.section-divider.no-top-border { border-top: none; padding-top: 0; margin-top: 0; }
 
 /* ── Grid rows ──────────────────────────────────────────────── */
 .pure-g { margin-bottom: 32px; }

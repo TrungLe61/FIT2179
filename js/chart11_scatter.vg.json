@@ -1,71 +1,101 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Which States Are Keeping Up? Population Growth vs Building Supply",
+    "text": "Population Growth vs Building Supply Rate by State",
+    "subtitle": "Dashed lines mark median values — quadrant labels show supply-demand position",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
     "fontSize": 14,
     "fontWeight": "bold"
   },
   "width": "container",
-  "height": 340,
+  "height": 360,
   "data": {"url": "data/state_summary.csv"},
   "transform": [
-    {"filter": "isValid(datum.approvals_per_1000) && isValid(datum.pop_growth_pct)"}
-  ],
-  "params": [
-    {
-      "name": "state_highlight",
-      "bind": {
-        "input": "select",
-        "options": [null, "NSW", "VIC", "QLD", "WA", "SA", "TAS", "NT", "ACT"],
-        "labels": ["Show All", "NSW", "VIC", "QLD", "WA", "SA", "TAS", "NT", "ACT"],
-        "name": "Highlight State: "
-      }
-    }
+    {"filter": "isValid(datum.approvals_per_1000) && isValid(datum.pop_growth_pct) && isValid(datum.pop_2025)"}
   ],
   "layer": [
     {
-      "mark": {"type": "rule", "color": "#ccc", "strokeDash": [4, 4]},
-      "encoding": {"x": {"datum": 1.8}}
+      "description": "Quadrant background shading",
+      "data": {
+        "values": [
+          {"x1": 1.41, "x2": 3.2,  "y1": 6.74, "y2": 10.5, "label": "Strong Supply",     "color": "#e8f5e9"},
+          {"x1": 0,    "x2": 1.41, "y1": 6.74, "y2": 10.5, "label": "Overbuilding Risk", "color": "#fff8e1"},
+          {"x1": 1.41, "x2": 3.2,  "y1": 0,    "y2": 6.74, "label": "Undersupplied",     "color": "#fce4ec"},
+          {"x1": 0,    "x2": 1.41, "y1": 0,    "y2": 6.74, "label": "Keeping Pace",      "color": "#f3f4f6"}
+        ]
+      },
+      "mark": {"type": "rect", "opacity": 0.45},
+      "encoding": {
+        "x":  {"field": "x1", "type": "quantitative"},
+        "x2": {"field": "x2"},
+        "y":  {"field": "y1", "type": "quantitative"},
+        "y2": {"field": "y2"},
+        "color": {"field": "color", "type": "nominal", "scale": null, "legend": null}
+      }
     },
     {
-      "mark": {"type": "rule", "color": "#ccc", "strokeDash": [4, 4]},
-      "encoding": {"y": {"datum": 5.8}}
+      "description": "Quadrant label annotations",
+      "data": {
+        "values": [
+          {"qx": 2.9,  "qy": 10.2, "qlabel": "Strong Supply",     "anchor": "end"},
+          {"qx": 0.05, "qy": 10.2, "qlabel": "Overbuilding Risk", "anchor": "start"},
+          {"qx": 2.9,  "qy": 0.3,  "qlabel": "Undersupplied",     "anchor": "end"},
+          {"qx": 0.05, "qy": 0.3,  "qlabel": "Keeping Pace",      "anchor": "start"}
+        ]
+      },
+      "mark": {"type": "text", "fontSize": 10, "fontWeight": "bold", "opacity": 0.55},
+      "encoding": {
+        "x":    {"field": "qx", "type": "quantitative"},
+        "y":    {"field": "qy", "type": "quantitative"},
+        "text": {"field": "qlabel"},
+        "align": {"field": "anchor", "type": "nominal", "scale": null}
+      }
     },
     {
-      "mark": {"type": "circle"},
+      "description": "Vertical median rule",
+      "mark": {"type": "rule", "color": "#aaa", "strokeDash": [5, 4], "strokeWidth": 1},
+      "encoding": {"x": {"datum": 1.41}}
+    },
+    {
+      "description": "Horizontal median rule",
+      "mark": {"type": "rule", "color": "#aaa", "strokeDash": [5, 4], "strokeWidth": 1},
+      "encoding": {"y": {"datum": 6.74}}
+    },
+    {
+      "description": "State bubbles",
+      "mark": {"type": "circle", "opacity": 0.85, "stroke": "white", "strokeWidth": 1},
       "encoding": {
         "x": {
           "field": "pop_growth_pct",
           "type": "quantitative",
           "title": "Population Growth Rate (%)",
-          "scale": {"domain": [0, 3]},
+          "scale": {"domain": [0, 3.2]},
           "axis": {"grid": false}
         },
         "y": {
           "field": "approvals_per_1000",
           "type": "quantitative",
-          "title": "Approvals per 1,000 People",
+          "title": "Approvals per 1,000 Residents",
+          "scale": {"domain": [0, 10.5]},
           "axis": {"grid": false}
         },
         "size": {
           "field": "pop_2025",
           "type": "quantitative",
           "title": "Population (2025)",
-          "scale": {
-            "type": "threshold",
-            "domain": [500000, 1000000, 3000000, 6000000],
-            "range": [50, 150, 300, 500, 800]
-          },
-          "legend": {"format": ","}
+          "scale": {"type": "threshold", "domain": [500000, 2000000, 5000000], "range": [80, 200, 400, 700]},
+          "legend": {"format": ",.0f", "orient": "bottom-right"}
         },
         "color": {
-          "field": "state_name",
-          "type": "nominal",
-          "legend": null
-        },
-        "opacity": {
-          "condition": {"test": "state_highlight == null || datum.state == state_highlight", "value": 0.85},
-          "value": 0.1
+          "condition": [
+            {"test": "datum.approvals_per_1000 >= 6.74 && datum.pop_growth_pct >= 1.41", "value": "#2e7d32"},
+            {"test": "datum.approvals_per_1000 >= 6.74 && datum.pop_growth_pct < 1.41",  "value": "#f9a825"},
+            {"test": "datum.approvals_per_1000 < 6.74  && datum.pop_growth_pct >= 1.41", "value": "#c62828"},
+            {"test": "datum.approvals_per_1000 < 6.74  && datum.pop_growth_pct < 1.41",  "value": "#757575"}
+          ],
+          "value": "#757575"
         },
         "tooltip": [
           {"field": "state_name", "type": "nominal", "title": "State"},
@@ -76,12 +106,12 @@
       }
     },
     {
-      "mark": {"type": "text", "dy": -12, "fontSize": 11, "fontWeight": "bold"},
+      "description": "State abbreviation labels",
+      "mark": {"type": "text", "dy": -13, "fontSize": 11, "fontWeight": "bold", "color": "#222"},
       "encoding": {
         "x": {"field": "pop_growth_pct", "type": "quantitative"},
         "y": {"field": "approvals_per_1000", "type": "quantitative"},
-        "text": {"field": "state", "type": "nominal"},
-        "color": {"value": "#333"}
+        "text": {"field": "state", "type": "nominal"}
       }
     }
   ],
