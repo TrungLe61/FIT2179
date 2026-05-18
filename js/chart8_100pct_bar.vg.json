@@ -52,5 +52,11 @@
       {"field": "count", "type": "quantitative", "title": "Approvals", "format": ","},
       {"field": "house_pct", "type": "quantitative", "title": "House %", "format": ".1f"}
     ]
+  },
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
   }
 }

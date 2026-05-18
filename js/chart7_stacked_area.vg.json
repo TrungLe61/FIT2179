@@ -1,0 +1,64 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Composition of Approvals: Houses vs Apartments (1983–2026)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": "container",
+  "data": {"url": "data/approvals_national_monthly.csv"},
+  "vconcat": [
+    {
+      "height": 260,
+      "transform": [
+        {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
+        {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}
+      ],
+      "mark": {"type": "area", "opacity": 0.8, "interpolate": "monotone"},
+      "encoding": {
+        "x": {
+          "field": "date", "type": "temporal",
+          "scale": {"domain": {"param": "time_brush"}},
+          "axis": {"title": ""}
+        },
+        "y": {
+          "field": "approvals", "type": "quantitative",
+          "stack": true,
+          "title": "Monthly Approvals",
+          "axis": {"format": ","}
+        },
+        "color": {
+          "field": "dwelling_type", "type": "nominal",
+          "scale": {"domain": ["Houses", "Apartments / Other"], "range": ["#1976D2", "#FF7043"]},
+          "legend": {"title": null, "orient": "top-left"}
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
+          {"field": "dwelling_type", "type": "nominal", "title": "Type"},
+          {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
+        ]
+      }
+    },
+    {
+      "height": 60,
+      "mark": {"type": "area", "color": "#1565C0", "opacity": 0.4, "interpolate": "monotone"},
+      "title": {"text": "Drag to select a time period", "fontSize": 11, "color": "#888"},
+      "params": [
+        {"name": "time_brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "axis": {"title": ""}},
+        "y": {
+          "field": "total", "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false, "title": null}
+        }
+      }
+    }
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
+}

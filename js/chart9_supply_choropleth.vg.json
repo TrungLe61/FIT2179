@@ -1,0 +1,51 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Building Supply Rate by State — Approvals per 1,000 People (FY 2024–25)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": 800,
+  "height": 450,
+  "projection": {"type": "mercator", "center": [134, -26], "scale": 850},
+  "data": {
+    "url": "topojson/aus-states-topo.json",
+    "format": {"type": "topojson", "feature": "aus_states"}
+  },
+  "transform": [
+    {
+      "lookup": "properties.STATE_NAME",
+      "from": {
+        "data": {"url": "data/state_summary.csv"},
+        "key": "state_name",
+        "fields": ["state_name", "approvals_per_1000", "pop_growth_pct", "pop_2025"]
+      }
+    },
+    {
+      "calculate": "datum.approvals_per_1000 >= 5.8 ? 'Above average' : 'Below average'",
+      "as": "supply_status"
+    }
+  ],
+  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
+  "encoding": {
+    "color": {
+      "field": "approvals_per_1000",
+      "type": "quantitative",
+      "title": "Approvals / 1,000 people",
+      "scale": {"scheme": "greens", "domain": [2, 10], "nullColor": "#e0e0e0"},
+      "legend": {"format": ".1f"}
+    },
+    "tooltip": [
+      {"field": "state_name", "type": "nominal", "title": "State"},
+      {"field": "approvals_per_1000", "type": "quantitative", "title": "Approvals per 1,000 people", "format": ".2f"},
+      {"field": "pop_growth_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".2f"},
+      {"field": "supply_status", "type": "nominal", "title": "vs National Average"}
+    ]
+  },
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
+}

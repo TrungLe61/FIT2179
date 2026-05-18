@@ -2,40 +2,147 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Building Approvals by State/Territory (FY 2024–25)",
+    "subtitle": "Use Zoom slider and Focus State dropdown — zoom in to reveal local growth hotspots",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
     "fontSize": 14,
     "fontWeight": "bold"
   },
-  "width": 480,
-  "height": 340,
-  "projection": {"type": "equirectangular", "center": [132, -27], "scale": 580},
-  "data": {
-    "url": "topojson/aus-states-topo.json",
-    "format": {"type": "topojson", "feature": "aus_states"}
-  },
-  "transform": [
+  "width": 800,
+  "height": 450,
+  "params": [
     {
-      "lookup": "properties.STATE_NAME",
-      "from": {
-        "data": {"url": "data/state_summary.csv"},
-        "key": "state_name",
-        "fields": ["state_name", "approvals_fy2425", "approvals_per_1000", "yoy_change_pct"]
+      "name": "zoom_level",
+      "value": 850,
+      "bind": {"input": "range", "min": 400, "max": 3000, "step": 50, "name": "Zoom: "}
+    },
+    {
+      "name": "center_to",
+      "value": [134, -26],
+      "bind": {
+        "input": "select",
+        "options": [
+          [134,-26],[151,-33],[144,-37],[153,-27],
+          [116,-32],[138,-35],[147,-42],[130,-12],[149,-35]
+        ],
+        "labels": [
+          "All Australia","New South Wales","Victoria","Queensland",
+          "Western Australia","South Australia","Tasmania","Northern Territory","ACT"
+        ],
+        "name": "Focus State: "
       }
     }
   ],
-  "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
-  "encoding": {
-    "color": {
-      "field": "approvals_fy2425",
-      "type": "quantitative",
-      "title": "Approvals FY24–25",
-      "scale": {"scheme": "blues", "nullColor": "#cccccc"},
-      "legend": {"format": ",.0f"}
+  "projection": {
+    "type": "mercator",
+    "scale": {"expr": "zoom_level"},
+    "center": {"expr": "center_to"}
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "topojson/aus-states-topo.json",
+        "format": {"type": "topojson", "feature": "aus_states"}
+      },
+      "transform": [
+        {
+          "lookup": "properties.STATE_NAME",
+          "from": {
+            "data": {"url": "data/state_summary.csv"},
+            "key": "state_name",
+            "fields": ["state_name", "approvals_fy2425", "approvals_per_1000", "yoy_change_pct", "pop_2025"]
+          }
+        }
+      ],
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
+      "encoding": {
+        "color": {
+          "field": "approvals_fy2425",
+          "type": "quantitative",
+          "title": "Approvals FY24–25",
+          "scale": {"scheme": "blues", "nullColor": "#cccccc"},
+          "legend": {"format": ".2s"}
+        },
+        "tooltip": [
+          {"field": "state_name", "type": "nominal", "title": "State"},
+          {"field": "approvals_fy2425", "type": "quantitative", "title": "Total Approvals FY24–25", "format": ","},
+          {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 people", "format": ".2f"},
+          {"field": "yoy_change_pct", "type": "quantitative", "title": "YoY Change (%)", "format": ".1f"},
+          {"field": "pop_2025", "type": "quantitative", "title": "Population 2025", "format": ","}
+        ]
+      }
     },
-    "tooltip": [
-      {"field": "state_name", "type": "nominal", "title": "State"},
-      {"field": "approvals_fy2425", "type": "quantitative", "title": "Approvals FY24–25", "format": ","},
-      {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 people", "format": ".2f"},
-      {"field": "yoy_change_pct", "type": "quantitative", "title": "YoY change (%)", "format": ".1f"}
-    ]
+    {
+      "data": {"url": "data/population_lga_2024_25.csv"},
+      "transform": [
+        {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "change_pct", "order": "descending"}]
+        },
+        {"filter": "datum.rank <= 60"}
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": {"expr": "zoom_level > 1300 ? 0.72 : 0"},
+        "stroke": "white",
+        "strokeWidth": 0.8
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "change_pct",
+          "type": "quantitative",
+          "title": "Pop. growth (%)",
+          "scale": {"domain": [0, 12], "range": [30, 700]},
+          "legend": {"orient": "bottom-right", "format": ".1f"}
+        },
+        "color": {
+          "field": "change_pct",
+          "type": "quantitative",
+          "title": null,
+          "scale": {"scheme": "orangered", "domain": [0, 12]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "lga_name", "type": "nominal", "title": "LGA"},
+          {"field": "state_abbr", "type": "nominal", "title": "State"},
+          {"field": "change_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".1f"},
+          {"field": "erp_2025", "type": "quantitative", "title": "Population 2025", "format": ","}
+        ]
+      }
+    },
+    {
+      "data": {"url": "data/population_lga_2024_25.csv"},
+      "transform": [
+        {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "change_pct", "order": "descending"}]
+        },
+        {"filter": "datum.rank <= 30"}
+      ],
+      "mark": {
+        "type": "text",
+        "opacity": {"expr": "zoom_level > 1700 ? 1 : 0"},
+        "fontSize": 9,
+        "fontWeight": "600",
+        "dy": -10,
+        "color": "#1a1a2e"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "lga_name", "type": "nominal"}
+      }
+    }
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
   }
 }

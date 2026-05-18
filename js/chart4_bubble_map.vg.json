@@ -2,19 +2,93 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Capital City Building Activity (FY 2024–25)",
+    "subtitle": "Zoom in on a city to reveal surrounding LGA growth hotspots",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
     "fontSize": 14,
     "fontWeight": "bold"
   },
   "width": 800,
   "height": 450,
-  "projection": {"type": "equirectangular", "center": [132, -27], "scale": 800},
+  "params": [
+    {
+      "name": "map_zoom",
+      "value": 850,
+      "bind": {"input": "range", "min": 400, "max": 4000, "step": 50, "name": "Zoom: "}
+    },
+    {
+      "name": "map_center",
+      "value": [134, -26],
+      "bind": {
+        "input": "select",
+        "options": [
+          [134,-26],[151,-33],[144,-37],[153,-27],
+          [116,-32],[138,-35],[147,-42],[130,-12],[149,-35]
+        ],
+        "labels": [
+          "All Australia","Sydney","Melbourne","Brisbane",
+          "Perth","Adelaide","Hobart","Darwin","Canberra"
+        ],
+        "name": "Focus City: "
+      }
+    },
+    {
+      "name": "city_selection",
+      "bind": {
+        "input": "select",
+        "options": [null, "Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide", "Hobart", "Darwin", "Canberra"],
+        "labels": ["Show All", "Sydney", "Melbourne", "Brisbane", "Perth", "Adelaide", "Hobart", "Darwin", "Canberra"],
+        "name": "Highlight City: "
+      }
+    }
+  ],
+  "projection": {
+    "type": "mercator",
+    "scale": {"expr": "map_zoom"},
+    "center": {"expr": "map_center"}
+  },
   "layer": [
     {
       "data": {
         "url": "topojson/aus-states-topo.json",
         "format": {"type": "topojson", "feature": "aus_states"}
       },
-      "mark": {"type": "geoshape", "fill": "#dce8f5", "stroke": "white", "strokeWidth": 1}
+      "mark": {"type": "geoshape", "fill": "#e8e8e8", "stroke": "white", "strokeWidth": 1}
+    },
+    {
+      "data": {"url": "data/population_lga_2024_25.csv"},
+      "transform": [
+        {"filter": "isValid(datum.lon) && isValid(datum.lat) && datum.change_pct > 0"},
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "change_pct", "order": "descending"}]
+        },
+        {"filter": "datum.rank <= 60"}
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": {"expr": "map_zoom > 1400 ? 0.55 : 0"},
+        "stroke": "white",
+        "strokeWidth": 0.5,
+        "color": "#E53935"
+      },
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "change_pct",
+          "type": "quantitative",
+          "scale": {"domain": [0, 12], "range": [20, 500]},
+          "legend": null
+        },
+        "tooltip": [
+          {"field": "lga_name", "type": "nominal", "title": "LGA"},
+          {"field": "state_abbr", "type": "nominal", "title": "State"},
+          {"field": "change_pct", "type": "quantitative", "title": "Pop. growth (%)", "format": ".1f"},
+          {"field": "erp_2025", "type": "quantitative", "title": "Population 2025", "format": ","}
+        ]
+      }
     },
     {
       "data": {"url": "data/gccsa_summary.csv"},
@@ -24,7 +98,7 @@
           "as": "short_name"
         }
       ],
-      "mark": {"type": "circle", "opacity": 0.78, "stroke": "white", "strokeWidth": 1},
+      "mark": {"type": "circle", "stroke": "white", "strokeWidth": 1.5},
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
@@ -32,8 +106,8 @@
           "field": "total",
           "type": "quantitative",
           "title": "Approvals FY24–25",
-          "scale": {"domain": [300, 50000], "range": [80, 2200]},
-          "legend": {"format": ","}
+          "scale": {"domain": [300, 50000], "range": [60, 2200]},
+          "legend": {"format": ".2s", "orient": "bottom-left"}
         },
         "color": {
           "field": "approvals_per_1000",
@@ -41,6 +115,10 @@
           "title": "Per 1,000 people",
           "scale": {"scheme": "orangered"},
           "legend": {}
+        },
+        "opacity": {
+          "condition": {"test": "city_selection == null || datum.short_name == city_selection", "value": 0.85},
+          "value": 0.12
         },
         "tooltip": [
           {"field": "short_name", "type": "nominal", "title": "City"},
@@ -58,18 +136,22 @@
           "as": "short_name"
         }
       ],
-      "mark": {
-        "type": "text",
-        "dy": -14,
-        "fontSize": 10,
-        "fontWeight": "600",
-        "color": "#1a1a2e"
-      },
+      "mark": {"type": "text", "dy": -14, "fontSize": 10, "fontWeight": "600", "color": "#1a1a2e"},
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"},
-        "text": {"field": "short_name", "type": "nominal"}
+        "text": {"field": "short_name", "type": "nominal"},
+        "opacity": {
+          "condition": {"test": "city_selection == null || datum.short_name == city_selection", "value": 1},
+          "value": 0.2
+        }
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
 }

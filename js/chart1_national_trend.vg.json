@@ -6,77 +6,89 @@
     "fontWeight": "bold"
   },
   "width": "container",
-  "height": 340,
-  "layer": [
+  "data": {"url": "data/approvals_national_monthly.csv"},
+  "vconcat": [
     {
-      "data": {"url": "data/approvals_national_monthly.csv"},
-      "transform": [
-        {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
-        {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}
-      ],
-      "mark": {"type": "line", "strokeWidth": 1.8},
-      "encoding": {
-        "x": {
-          "field": "date",
-          "type": "temporal",
-          "title": null,
-          "axis": {"grid": false, "labelAngle": 0}
-        },
-        "y": {
-          "field": "approvals",
-          "type": "quantitative",
-          "title": "Monthly Approvals",
-          "axis": {"format": ","}
-        },
-        "color": {
-          "field": "dwelling_type",
-          "type": "nominal",
-          "title": "Dwelling Type",
-          "scale": {
-            "domain": ["Houses", "Apartments / Other"],
-            "range": ["#1565C0", "#FF6F00"]
-          },
-          "legend": {"orient": "top-left"}
-        },
-        "tooltip": [
-          {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
-          {"field": "dwelling_type", "title": "Type"},
-          {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
-        ]
-      }
-    },
-    {
-      "data": {
-        "values": [
-          {"date": "2008-09-01", "note": "GFC"},
-          {"date": "2012-06-01", "note": "Mining Boom Peak"},
-          {"date": "2020-03-01", "note": "COVID-19"},
-          {"date": "2022-05-01", "note": "Rate Hikes Begin"}
-        ]
-      },
+      "height": 280,
       "layer": [
         {
-          "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#999", "strokeWidth": 1.2},
+          "transform": [
+            {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
+            {"calculate": "datum.type === 'houses' ? 'Houses' : 'Apartments / Other'", "as": "dwelling_type"}
+          ],
+          "mark": {"type": "area", "opacity": 0.7, "interpolate": "monotone"},
           "encoding": {
-            "x": {"field": "date", "type": "temporal"}
+            "x": {
+              "field": "date", "type": "temporal",
+              "scale": {"domain": {"param": "brush"}},
+              "axis": {"title": ""}
+            },
+            "y": {
+              "field": "approvals", "type": "quantitative",
+              "title": "Monthly Approvals",
+              "stack": true,
+              "axis": {"format": ","}
+            },
+            "color": {
+              "field": "dwelling_type", "type": "nominal",
+              "scale": {"domain": ["Houses", "Apartments / Other"], "range": ["#1976D2", "#FF7043"]},
+              "legend": {"title": null, "orient": "top-left"}
+            },
+            "tooltip": [
+              {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
+              {"field": "dwelling_type", "type": "nominal", "title": "Type"},
+              {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
+            ]
           }
         },
         {
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "dx": 4,
-            "fontSize": 9.5,
-            "color": "#555",
-            "fontStyle": "italic"
+          "data": {
+            "values": [
+              {"date": "2008-09-01", "label": "GFC"},
+              {"date": "2012-06-01", "label": "Mining Boom Peak"},
+              {"date": "2020-03-01", "label": "COVID-19"},
+              {"date": "2022-05-01", "label": "Rate Hikes Begin"}
+            ]
           },
-          "encoding": {
-            "x": {"field": "date", "type": "temporal"},
-            "y": {"value": 12},
-            "text": {"field": "note"}
-          }
+          "layer": [
+            {
+              "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#999", "strokeWidth": 1},
+              "encoding": {
+                "x": {"field": "date", "type": "temporal", "scale": {"domain": {"param": "brush"}}}
+              }
+            },
+            {
+              "mark": {"type": "text", "align": "left", "dx": 4, "dy": -8, "fontSize": 10, "fontStyle": "italic", "color": "#666"},
+              "encoding": {
+                "x": {"field": "date", "type": "temporal", "scale": {"domain": {"param": "brush"}}},
+                "y": {"value": 20},
+                "text": {"field": "label"}
+              }
+            }
+          ]
         }
       ]
+    },
+    {
+      "height": 60,
+      "mark": {"type": "area", "color": "#1565C0", "opacity": 0.4, "interpolate": "monotone"},
+      "title": {"text": "Drag to zoom into a time period", "fontSize": 11, "color": "#888"},
+      "params": [
+        {"name": "brush", "select": {"type": "interval", "encodings": ["x"]}}
+      ],
+      "encoding": {
+        "x": {"field": "date", "type": "temporal", "axis": {"title": ""}},
+        "y": {
+          "field": "total", "type": "quantitative",
+          "axis": {"tickCount": 3, "grid": false, "title": null}
+        }
+      }
     }
-  ]
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
 }

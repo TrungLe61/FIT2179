@@ -2,98 +2,98 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Australia's Housing Supply — FIT2179 DV2</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Australia's Housing Supply Crisis | Trung Le</title>
 
-  <!-- Vega-Lite -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5.22.1"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.5.0"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.21.0"></script>
 
-  <!-- Pure CSS grid -->
-  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css"
+    integrity="sha384-cg6SkqEOCV1NbJoCu11+bm0NvBRc8IYLRGXkmNrqUBfTjmMYwNKPWBTIKyw9mHNJ" crossorigin="anonymous">
 
-  <!-- Google Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;900&display=swap" rel="stylesheet">
 
-  <!-- Local styles -->
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
 </head>
 <body>
 <div class="page">
 
   <!-- ══════════════════════ HEADER ══════════════════════ -->
-  <div class="header">
-    <h1>Australia's Housing Supply Crisis:<br>Building Approvals vs Population Demand</h1>
+  <div class="page-header">
+    <h1>Australia's Housing Supply Crisis</h1>
     <p>
-      An analysis of Australian residential building approvals from 1983 to March 2026, examining where
-      homes are being built, what types are being approved, and whether supply is keeping pace with
-      population growth across states and capital cities.
+      Australia is building fewer homes than it needs. From 1983 to March 2026, building approvals have
+      lurched through booms and busts driven by interest rate cycles, economic shocks, and policy changes —
+      yet the national target of <strong>240,000 new dwellings per year</strong> has rarely been met.
+      This visualisation examines where homes are being approved, what types are being built, and whether
+      supply is keeping pace with a rapidly growing population.
     </p>
   </div>
 
-  <!-- Key stats row -->
-  <div class="stat-row">
-    <div class="stat-box">
-      <div class="value">17,780</div>
-      <div class="label">Approvals · March 2026</div>
-    </div>
-    <div class="stat-box">
-      <div class="value">240K</div>
-      <div class="label">Annual dwellings needed</div>
-    </div>
-    <div class="stat-box" style="border-top-color:#4CAF50">
-      <div class="value" style="color:#388E3C">+31.4%</div>
-      <div class="label">WA year-on-year growth</div>
-    </div>
-    <div class="stat-box" style="border-top-color:#F44336">
-      <div class="value" style="color:#C62828">−37.8%</div>
-      <div class="label">ACT year-on-year decline</div>
-    </div>
-    <div class="stat-box">
-      <div class="value">8.56</div>
-      <div class="label">Melbourne · approvals/1,000</div>
-    </div>
+  <!-- Key stats -->
+  <div class="pure-g stat-row">
+    <div class="pure-u-1-5"><div class="stat-box">
+      <span class="stat-highlight">17,780</span>
+      <span class="small-font">Approvals · March 2026</span>
+    </div></div>
+    <div class="pure-u-1-5"><div class="stat-box">
+      <span class="stat-highlight">240,000</span>
+      <span class="small-font">Annual target (National Accord)</span>
+    </div></div>
+    <div class="pure-u-1-5"><div class="stat-box">
+      <span class="stat-highlight" style="color:#388E3C">+31.4%</span>
+      <span class="small-font">WA year-on-year growth</span>
+    </div></div>
+    <div class="pure-u-1-5"><div class="stat-box">
+      <span class="stat-highlight" style="color:#C62828">−37.8%</span>
+      <span class="small-font">ACT year-on-year decline</span>
+    </div></div>
+    <div class="pure-u-1-5"><div class="stat-box">
+      <span class="stat-highlight">8.56</span>
+      <span class="small-font">Melbourne · approvals / 1,000</span>
+    </div></div>
   </div>
 
-  <!-- ══════════════════════ SECTION 1 ══════════════════════ -->
-  <h2 class="section-title">Section 1 — The National Picture</h2>
 
-  <!-- Chart 1: Full width -->
+  <!-- ══════════════════════ SECTION 1 ══════════════════════ -->
+  <div class="section-divider">
+    <span class="section-label">Section 1</span>
+    <h2>The National Picture</h2>
+  </div>
+
+  <!-- Chart 1: full width — vconcat overview+detail -->
   <div class="pure-g">
     <div class="pure-u-1-1">
-      <div class="description">
-        <p>
-          Forty years of building approvals data reveal a market shaped by economic cycles, policy
-          interventions, and structural shifts toward higher-density living. Key events — the GFC,
-          the mining boom, COVID stimulus, and the rate-hike cycle — each left visible marks on
-          approval volumes.
-        </p>
-      </div>
+      <p>
+        Forty years of data reveal a market shaped by economic shocks and interest rate cycles.
+        The GFC (2008) triggered a sharp fall in approvals; the mining boom briefly lifted them;
+        COVID stimulus in 2020–21 produced a short-lived spike; and the 13 consecutive rate rises
+        from May 2022 caused the steepest sustained decline in decades.
+        <em>Drag the navigator bar below the chart to zoom into any period.</em>
+      </p>
       <div id="vis1" class="vis-container"></div>
     </div>
   </div>
 
-  <!-- Chart 2: Right side, description left -->
+  <!-- Chart 2: description left · chart right -->
   <div class="pure-g">
     <div class="pure-u-1-2">
-      <div class="description description-left">
-        <h2>Are We Building Enough?</h2>
+      <div class="description-left">
+        <h3>Are We Building Enough?</h3>
         <p>
-          Australia needs approximately <strong>240,000 new dwellings per year</strong> to house its
-          growing population — a target set by the National Housing Accord. The rolling 12-month
-          total has rarely reached this threshold, and currently sits well below it.
+          The National Housing Accord requires approximately <strong>240,000 new dwellings per year</strong>
+          to keep pace with population growth. The rolling 12-month total has rarely reached this threshold,
+          and currently sits well below it at around 160,000.
         </p>
         <p>
-          The 2021 stimulus boom briefly brought approvals close to the target, but the 13 consecutive
-          interest rate rises from May 2022 caused a sharp fall — particularly in apartment approvals,
-          which are highly sensitive to financing costs.
+          The 2021 stimulus boom briefly pushed approvals close to target, but 13 consecutive interest rate
+          rises from May 2022 caused a steep fall — particularly in apartment approvals, which are highly
+          sensitive to financing costs. At the current pace, Australia will fall approximately
+          80,000 dwellings short of the annual target.
         </p>
-        <div class="insight">
-          At the current pace, Australia will fall approximately 80,000–100,000 dwellings short of
-          the annual target, deepening the supply deficit.
-        </div>
       </div>
     </div>
     <div class="pure-u-1-2">
@@ -101,211 +101,222 @@
     </div>
   </div>
 
-  <!-- ══════════════════════ SECTION 2 ══════════════════════ -->
-  <h2 class="section-title">Section 2 — Where Is Australia Building?</h2>
 
-  <!-- Chart 3: Map left, description right -->
+  <!-- ══════════════════════ SECTION 2 ══════════════════════ -->
+  <div class="section-divider">
+    <span class="section-label">Section 2</span>
+    <h2>Where Is Australia Building?</h2>
+  </div>
+
+  <!-- Chart 3: full width — zoomable state choropleth -->
   <div class="pure-g">
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-1">
+      <p>
+        Victoria leads the nation in total approvals (56,581 in FY2024–25), ahead of New South Wales
+        (49,515) and Queensland (38,229). Together these three states account for over 75% of all
+        Australian building activity. Use the <strong>Focus State</strong> dropdown to centre on a
+        jurisdiction, then push the <strong>Zoom</strong> slider past halfway to reveal local growth
+        hotspots — orange circles mark the fastest-growing Local Government Areas within each state,
+        sized by population growth rate. Labels appear at maximum zoom.
+      </p>
       <div id="vis3" class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-2">
-      <div class="description description-right">
-        <h2>Building Activity by State</h2>
-        <p>
-          Victoria leads the nation in raw approval volumes (56,581 in FY2024–25), followed by
-          New South Wales (49,515) and Queensland (38,229). Together, these three states account
-          for over 75% of all Australian building approvals.
-        </p>
-        <p>
-          However, raw totals reflect population size. On a per-capita basis, the rankings shift
-          considerably — with Western Australia and Melbourne showing the strongest supply responses
-          relative to their populations.
-        </p>
-        <div class="insight">
-          The ACT's dramatic collapse (−37.8% YoY) stands out as the most severe decline, driven
-          by the near-halt of apartment development in Canberra amid high interest rates and
-          developer caution.
-        </div>
-      </div>
     </div>
   </div>
 
-  <!-- Chart 4: Full width bubble map -->
+  <!-- Chart 4: full width — capital city bubble map -->
   <div class="pure-g">
     <div class="pure-u-1-1">
-      <div class="description">
-        <p>
-          The bubble map shows each capital city's building activity for FY2024–25. Bubble size
-          represents total approvals; colour shows the approvals-per-1,000-residents rate.
-          Melbourne's dominance is clear in size, but Adelaide and Perth punch above their weight
-          in per-capita supply.
-        </p>
-      </div>
+      <p>
+        Bubble <strong>size</strong> represents total approvals per city; <strong>colour</strong> shows
+        the approvals-per-1,000-residents rate. Melbourne dominates in volume, but Adelaide and Perth
+        punch above their weight on a per-capita basis. Use <strong>Focus City</strong> and
+        <strong>Zoom</strong> to drill into any metro area — smaller red circles appear showing the
+        fastest-growing Local Government Areas in that city's fringe, revealing exactly where
+        growth pressure is concentrated.
+      </p>
       <div id="vis4" class="vis-container"></div>
     </div>
   </div>
 
-  <!-- Chart 5: Full width diverging bar -->
+  <!-- Charts 5 & 6: side by side — diverging choropleth · small multiples -->
   <div class="pure-g">
-    <div class="pure-u-1-1">
+    <div class="pure-u-1-2">
+      <h3>Where Is Growth Accelerating?</h3>
+      <p>
+        Western Australia (+31.4%) is the standout performer, driven by strong migration inflows.
+        The ACT (−37.8%) and South Australia (−5.2%) are the only jurisdictions recording declines.
+        <strong>Blue</strong> = growth; <strong>orange</strong> = decline.
+      </p>
       <div id="vis5" class="vis-container"></div>
-      <div class="insight">
-        Western Australia (+31.4%) is the standout performer — strong migration inflows have
-        driven a construction boom. Queensland and NSW also show solid growth. The ACT (−37.8%)
-        and South Australia (−5.2%) are the only jurisdictions recording declines.
+    </div>
+    <div class="pure-u-1-2">
+      <div class="description-right">
+        <h3>Three Views, One Geography</h3>
+        <p>
+          The same state boundaries reveal three different dimensions of the housing story:
+          total approval volumes, per-capita supply rate, and year-on-year momentum — side by side.
+          Victoria scores highest on volume; Melbourne leads on per-capita supply.
+        </p>
+        <div id="vis6" class="vis-container"></div>
       </div>
     </div>
   </div>
 
-  <!-- ══════════════════════ SECTION 3 ══════════════════════ -->
-  <h2 class="section-title">Section 3 — What Type of Homes Are We Building?</h2>
 
-  <!-- Charts 6 & 7 side by side -->
+  <!-- ══════════════════════ SECTION 3 ══════════════════════ -->
+  <div class="section-divider">
+    <span class="section-label">Section 3</span>
+    <h2>What Type of Homes Are We Building?</h2>
+  </div>
+
+  <!-- Chart 7: full width — stacked area vconcat -->
   <div class="pure-g">
-    <div class="pure-u-1-2">
-      <div id="vis6" class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-2">
+    <div class="pure-u-1-1">
+      <p>
+        The long-term shift from detached houses to apartments is one of the defining structural trends
+        in Australian housing. In 1983, houses dominated; today apartments account for roughly 40% of all
+        approvals nationally — and far more in Sydney and Melbourne.
+        <em>Drag the navigator bar to zoom into a specific period.</em>
+      </p>
       <div id="vis7" class="vis-container"></div>
     </div>
   </div>
 
+  <!-- Chart 8: chart left · description right -->
   <div class="pure-g">
-    <div class="pure-u-1-1">
-      <div class="insight">
-        Perth (79.6% houses) and Darwin (82.4%) are land-abundant cities favouring detached housing.
-        Canberra (ACT) has the highest apartment share at 75.1% — reflecting policy-driven
-        densification. Sydney sits at 61.3% apartments, reflecting its constrained land market and
-        high house prices driving demand for units.
-      </div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════ SECTION 4 ══════════════════════ -->
-  <h2 class="section-title">Section 4 — Is Supply Meeting Demand?</h2>
-
-  <!-- Chart 8: Full width -->
-  <div class="pure-g">
-    <div class="pure-u-1-1">
+    <div class="pure-u-1-2">
       <div id="vis8" class="vis-container"></div>
     </div>
-  </div>
-
-  <!-- Chart 9: Left, description right -->
-  <div class="pure-g">
-    <div class="pure-u-2-3">
-      <div id="vis9" class="vis-container"></div>
-    </div>
-    <div class="pure-u-1-3">
-      <div class="description description-right">
-        <h2>Population Growth vs Supply Rate</h2>
+    <div class="pure-u-1-2">
+      <div class="description-right">
+        <h3>A Tale of Two Cities</h3>
         <p>
-          This scatter plot joins two ABS data sources: building approvals (8731.0) and regional
-          population (3218.0). Each bubble is a state or territory; size represents population.
+          Perth (79.6% houses) and Darwin (82.4%) are land-abundant cities where detached housing
+          dominates. Canberra has the highest apartment share at 75.1% — reflecting deliberate
+          densification policy.
         </p>
         <p>
-          States in the <strong>top-right quadrant</strong> have both high population growth
-          and strong supply — Western Australia is the clear leader. States in the
-          <strong>bottom-right</strong> are growing fast but not building fast enough.
+          Sydney sits at 61.3% apartments, driven by its constrained land market and high house prices
+          pushing demand toward units. The housing mix matters for affordability: high apartment
+          shares can indicate either a well-functioning density market or a failure to deliver
+          affordable detached homes.
         </p>
-        <p>
-          The dashed lines mark approximate median values, dividing the chart into four
-          supply-demand quadrants.
-        </p>
-        <div class="insight small-font">
-          <strong>Data sources joined:</strong> ABS Building Approvals 8731.0 (Mar 2026) +
-          ABS Regional Population 3218.0 (2024–25 release).
-        </div>
       </div>
     </div>
   </div>
 
-  <!-- Chart 10: Full width connected dot -->
+
+  <!-- ══════════════════════ SECTION 4 ══════════════════════ -->
+  <div class="section-divider">
+    <span class="section-label">Section 4</span>
+    <h2>Is Supply Meeting Demand?</h2>
+  </div>
+
+  <!-- Chart 9: full width — supply choropleth -->
   <div class="pure-g">
     <div class="pure-u-1-1">
-      <div class="description">
-        <p>
-          The connected dot plot below shows each capital city's <strong style="color:#1565C0">building supply rate</strong>
-          (approvals per 1,000 residents) alongside its <strong style="color:#FF6F00">population demand pressure</strong>
-          (annual growth %). Cities where the orange dot sits far right of the blue dot are under
-          the most acute supply stress.
-        </p>
-      </div>
+      <p>
+        Raw approval totals favour large states by population. To compare fairly, this map shows
+        <strong>approvals per 1,000 residents</strong> — a supply adequacy rate. The national average
+        is approximately 5.8 per 1,000. Melbourne leads at 8.56; Darwin trails at just 2.29.
+        Hover over each state to see whether it sits above or below the national average.
+      </p>
+      <div id="vis9" class="vis-container"></div>
+    </div>
+  </div>
+
+  <!-- Chart 10: full width — LGA symbol map -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <p>
+        Population growth is not evenly spread. The 20 fastest-growing local government areas are
+        overwhelmingly concentrated in outer-suburban greenfield corridors — Melton and Wyndham in
+        Victoria's west; Ipswich and Logan in south-east Queensland; Kwinana and
+        Serpentine-Jarrahdale south of Perth. Circle size reflects the population growth rate.
+      </p>
       <div id="vis10" class="vis-container"></div>
-      <div class="insight">
-        Melbourne shows the best supply-demand balance. Sydney has high demand but weak supply —
-        only 5.95 approvals per 1,000 residents despite 1.35% annual growth. Darwin's very low
-        supply rate (2.29) relative to its growth (1.74%) is also concerning.
+    </div>
+  </div>
+
+  <!-- Chart 11: chart left · description right -->
+  <div class="pure-g">
+    <div class="pure-u-2-3">
+      <div id="vis11" class="vis-container"></div>
+    </div>
+    <div class="pure-u-1-3">
+      <div class="description-right">
+        <h3>Population Growth vs Supply Rate</h3>
+        <p>
+          Each bubble is a state or territory; size represents population. Dashed lines mark the
+          approximate median population growth rate (1.8%) and national average supply rate
+          (5.8 per 1,000), dividing the chart into four supply-demand quadrants.
+        </p>
+        <p>
+          States in the <strong>top-right</strong> have both high growth and strong supply —
+          Western Australia leads. States in the <strong>bottom-right</strong> are growing fast
+          but not building fast enough.
+        </p>
+        <p class="small-font">
+          Data joined from two ABS sources: Building Approvals 8731.0 (Mar 2026) and Regional
+          Population 3218.0 (FY2024–25).
+        </p>
       </div>
     </div>
   </div>
 
-  <!-- ══════════════════════ SECTION 5 ══════════════════════ -->
-  <h2 class="section-title">Section 5 — The Long View</h2>
 
-  <!-- Charts 11 & 12 side by side -->
+  <!-- ══════════════════════ SECTION 5 ══════════════════════ -->
+  <div class="section-divider">
+    <span class="section-label">Section 5</span>
+    <h2>The Supply–Demand Gap</h2>
+  </div>
+
+  <!-- Chart 12: full width — connected dot plot -->
   <div class="pure-g">
-    <div class="pure-u-1-2">
-      <div id="vis11" class="vis-container"></div>
-      <p class="small-font" style="color:#666; margin-top:6px;">
-        Hover over a city line to highlight it. Melbourne is on track to overtake Sydney
-        as Australia's largest city within the decade.
+    <div class="pure-u-1-1">
+      <p>
+        Each capital city's <strong style="color:#1976D2">building supply rate</strong>
+        (approvals per 1,000 residents, blue) is paired with its
+        <strong style="color:#E53935">population demand pressure</strong> (annual growth %, red).
+        Cities where the red dot sits far to the right of the blue dot face the most acute supply
+        stress. Melbourne shows the best balance. Sydney has high demand but weak supply —
+        only 5.95 approvals per 1,000 despite 1.35% annual population growth.
       </p>
-    </div>
-    <div class="pure-u-1-2">
       <div id="vis12" class="vis-container"></div>
     </div>
   </div>
 
-  <div class="pure-g">
-    <div class="pure-u-1-1">
-      <div class="insight">
-        Growth is overwhelmingly concentrated in outer-suburban greenfield LGAs —
-        Melton, Wyndham, and Cardinia in Victoria; Ipswich and Moreton Bay in Queensland.
-        These are the areas where housing demand is most acute and infrastructure is
-        most stretched.
-      </div>
-    </div>
-  </div>
 
   <!-- ══════════════════════ FOOTER ══════════════════════ -->
-  <div class="footer">
+  <div class="page-footer">
     <p>
       <strong>Data Sources:</strong><br>
-      Australian Bureau of Statistics,
-      <a href="https://www.abs.gov.au/statistics/industry/building-and-construction/building-approvals-australia/latest-release" target="_blank">
-        Building Approvals, Australia (8731.0)
-      </a>
-      — Reference period: March 2026, released 4 May 2026.<br>
-      Australian Bureau of Statistics,
-      <a href="https://www.abs.gov.au/statistics/people/population/regional-population/latest-release" target="_blank">
-        Regional Population (3218.0)
-      </a>
-      — Reference period: Financial year 2024–25, released 31 March 2026.
+      Australian Bureau of Statistics, <em>Building Approvals, Australia</em> (cat. 8731.0) —
+      Reference period: March 2026, released 4 May 2026.<br>
+      Australian Bureau of Statistics, <em>Regional Population</em> (cat. 3218.0) —
+      Reference period: Financial year 2024–25, released 31 March 2026.
     </p>
-    <p style="margin-top:8px;">
-      FIT2179 Data Visualisation — Assignment 2 &nbsp;·&nbsp; Trung Le &nbsp;·&nbsp; May 2026
-    </p>
+    <p>FIT2179 Data Visualisation — Assignment 2 &nbsp;·&nbsp; Trung Le &nbsp;·&nbsp; May 2026 &nbsp;·&nbsp; Monash University</p>
+    <p><em>AI acknowledgement: This visualisation was created with assistance from Claude AI (Anthropic).</em></p>
   </div>
 
 </div><!-- end .page -->
 
-<script>
+<script type="text/javascript">
   const OPTS = {"actions": false};
 
-  vegaEmbed('#vis1',  './js/chart1_national_trend.vg.json',  OPTS);
-  vegaEmbed('#vis2',  './js/chart2_rolling_total.vg.json',   OPTS);
-  vegaEmbed('#vis3',  './js/chart3_state_choropleth.vg.json',OPTS);
-  vegaEmbed('#vis4',  './js/chart4_bubble_map.vg.json',      OPTS);
-  vegaEmbed('#vis5',  './js/chart5_yoy_diverging.vg.json',   OPTS);
-  vegaEmbed('#vis6',  './js/chart6_stacked_area.vg.json',    OPTS);
-  vegaEmbed('#vis7',  './js/chart7_100pct_bar.vg.json',      OPTS);
-  vegaEmbed('#vis8',  './js/chart8_per_1000.vg.json',        OPTS);
-  vegaEmbed('#vis9',  './js/chart9_scatter.vg.json',         OPTS);
-  vegaEmbed('#vis10', './js/chart10_connected_dot.vg.json',  OPTS);
-  vegaEmbed('#vis11', './js/chart11_pop_multiline.vg.json',  OPTS);
-  vegaEmbed('#vis12', './js/chart12_top_lgas.vg.json',       OPTS);
+  vegaEmbed('#vis1',  './js/chart1_national_trend.vg.json',      OPTS);
+  vegaEmbed('#vis2',  './js/chart2_rolling_total.vg.json',       OPTS);
+  vegaEmbed('#vis3',  './js/chart3_state_choropleth.vg.json',    OPTS);
+  vegaEmbed('#vis4',  './js/chart4_bubble_map.vg.json',          OPTS);
+  vegaEmbed('#vis5',  './js/chart5_yoy_choropleth.vg.json',      OPTS);
+  vegaEmbed('#vis6',  './js/chart6_small_multiples_map.vg.json', OPTS);
+  vegaEmbed('#vis7',  './js/chart7_stacked_area.vg.json',        OPTS);
+  vegaEmbed('#vis8',  './js/chart8_100pct_bar.vg.json',          OPTS);
+  vegaEmbed('#vis9',  './js/chart9_supply_choropleth.vg.json',   OPTS);
+  vegaEmbed('#vis10', './js/chart10_lga_symbol_map.vg.json',     OPTS);
+  vegaEmbed('#vis11', './js/chart11_scatter.vg.json',            OPTS);
+  vegaEmbed('#vis12', './js/chart12_connected_dot.vg.json',      OPTS);
 </script>
 </body>
 </html>

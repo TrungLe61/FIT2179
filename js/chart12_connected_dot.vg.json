@@ -24,7 +24,7 @@
   ],
   "layer": [
     {
-      "mark": {"type": "line", "color": "#bbb", "strokeWidth": 2},
+      "mark": {"type": "line", "color": "#ccc", "strokeWidth": 2},
       "encoding": {
         "y": {
           "field": "short_name",
@@ -43,7 +43,7 @@
       }
     },
     {
-      "mark": {"type": "point", "filled": true, "size": 110, "opacity": 0.9},
+      "mark": {"type": "point", "filled": true, "size": 120, "opacity": 0.9},
       "encoding": {
         "y": {
           "field": "short_name",
@@ -57,7 +57,7 @@
           "title": null,
           "scale": {
             "domain": ["Supply (approvals per 1,000)", "Demand (pop. growth %)"],
-            "range": ["#1565C0", "#FF6F00"]
+            "range": ["#1976D2", "#E53935"]
           },
           "legend": {"orient": "top", "labelFontSize": 11}
         },
@@ -68,5 +68,11 @@
         ]
       }
     }
-  ]
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
 }

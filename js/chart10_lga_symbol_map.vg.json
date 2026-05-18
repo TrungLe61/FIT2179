@@ -1,0 +1,62 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia's 20 Fastest-Growing Local Government Areas (FY 2024–25)",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": 800,
+  "height": 500,
+  "projection": {"type": "mercator", "center": [134, -26], "scale": 850},
+  "layer": [
+    {
+      "data": {
+        "url": "topojson/aus-states-topo.json",
+        "format": {"type": "topojson", "feature": "aus_states"}
+      },
+      "mark": {"type": "geoshape", "fill": "#e8e8e8", "stroke": "white", "strokeWidth": 1}
+    },
+    {
+      "data": {"url": "data/population_lga_2024_25.csv"},
+      "transform": [
+        {"filter": "isValid(datum.lon) && datum.lon != '' && isValid(datum.change_pct) && datum.change_pct > 0"},
+        {
+          "window": [{"op": "rank", "as": "rank"}],
+          "sort": [{"field": "change_pct", "order": "descending"}]
+        },
+        {"filter": "datum.rank <= 20"}
+      ],
+      "mark": {"type": "circle", "opacity": 0.75, "stroke": "white", "strokeWidth": 0.5},
+      "encoding": {
+        "longitude": {"field": "lon", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "change_pct",
+          "type": "quantitative",
+          "title": "Growth Rate (%)",
+          "scale": {"domain": [0, 10], "range": [50, 1200]},
+          "legend": {"format": ".1f"}
+        },
+        "color": {
+          "field": "state_abbr",
+          "type": "nominal",
+          "title": "State",
+          "scale": {"scheme": "category10"},
+          "legend": {"orient": "bottom-right"}
+        },
+        "tooltip": [
+          {"field": "lga_name", "type": "nominal", "title": "LGA"},
+          {"field": "state_abbr", "type": "nominal", "title": "State"},
+          {"field": "change_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".1f"},
+          {"field": "erp_2025", "type": "quantitative", "title": "Population 2025", "format": ","}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
+}
