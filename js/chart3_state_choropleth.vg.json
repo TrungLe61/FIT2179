@@ -142,23 +142,23 @@
       }
     },
     {
-      "description": "Layer 4: SA4 region name labels at polygon centroids — appear when zoomed in",
+      "description": "Layer 4: SA4 region name labels — top 6 largest per state, at centroids",
       "data": {
         "url": "topojson/aus-sa4-topo.json",
         "format": {"type": "topojson", "feature": "data"}
       },
       "transform": [
-        {"filter": "zoom_level >= 1400"},
+        {"filter": "zoom_level >= 1800"},
         {"filter": "selected_state === 'All' || datum.properties.state === selected_state"},
         {
           "lookup": "properties.sa4_name",
           "from": {
-            "data": {"url": "data/sa4_centroids.csv"},
+            "data": {"url": "data/sa4_population.csv"},
             "key": "sa4_name",
-            "fields": ["centroid_lon", "centroid_lat"]
+            "fields": ["centroid_lon", "centroid_lat", "data_area_rank"]
           }
         },
-        {"filter": "isValid(datum.centroid_lon) && isValid(datum.centroid_lat)"}
+        {"filter": "isValid(datum.centroid_lon) && datum.data_area_rank <= 6"}
       ],
       "mark": {
         "type": "text",

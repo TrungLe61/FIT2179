@@ -1,45 +1,45 @@
-sa4_code,sa4_name,state,lga_count,total_pop,total_change,total_base,growth_pct
-106,Hunter Valley exc Newcastle,New South Wales,1,100439,2207,98232,2.25
-111,Newcastle and Lake Macquarie,New South Wales,1,178935,1947,176988,1.1
-115,Sydney - Baulkham Hills and Hawkesbury,New South Wales,2,291974,7512,284462,2.64
-116,Sydney - Blacktown,New South Wales,1,449385,9833,439552,2.24
-123,Sydney - Outer South West,New South Wales,1,146483,5225,141258,3.7
-124,Sydney - Outer West and Blue Mountains,New South Wales,3,373017,5473,367544,1.49
-125,Sydney - Parramatta,New South Wales,2,535920,7675,528245,1.45
-127,Sydney - South West,New South Wales,1,261231,5864,255367,2.3
-201,Ballarat,Victoria,1,40472,763,39709,1.92
-202,Bendigo,Victoria,1,54464,879,53585,1.64
-203,Geelong,Victoria,1,295052,6376,288676,2.21
-204,Hume,Victoria,1,58459,2380,56079,4.24
-205,Latrobe - Gippsland,Victoria,1,62784,991,61793,1.6
-206,Melbourne - Inner,Victoria,1,194481,6916,187565,3.69
-209,Melbourne - North East,Victoria,1,259759,7321,252438,2.9
-210,Melbourne - North West,Victoria,1,278885,8122,270763,3.0
-211,Melbourne - Outer East,Victoria,1,160906,1127,159779,0.71
-212,Melbourne - South East,Victoria,3,717085,16039,701046,2.29
-213,Melbourne - West,Victoria,2,579397,25183,554214,4.54
-214,Mornington Peninsula,Victoria,2,317586,2438,315148,0.77
-309,Gold Coast,Queensland,1,691230,11944,679286,1.76
-310,Ipswich,Queensland,3,341266,10633,330633,3.22
-311,Logan - Beaudesert,Queensland,2,450462,12952,437510,2.96
-313,Moreton Bay - North,Queensland,1,532445,10951,521494,2.1
-316,Sunshine Coast,Queensland,1,381957,7659,374298,2.05
-317,Toowoomba,Queensland,1,186276,2201,184075,1.2
-401,Adelaide - Central and Hills,South Australia,1,45111,1400,43711,3.2
-402,Adelaide - North,South Australia,4,383665,5698,377967,1.51
-403,Adelaide - South,South Australia,2,286056,2808,283248,0.99
-404,Adelaide - West,South Australia,1,143022,1650,141372,1.17
-407,South Australia - South East,South Australia,1,31427,481,30946,1.55
-501,Bunbury,Western Australia,1,20170,682,19488,3.5
-502,Mandurah,Western Australia,2,128274,4295,123979,3.46
-503,Perth - Inner,Western Australia,1,254821,3952,250869,1.58
-504,Perth - North East,Western Australia,1,187090,7194,179896,4.0
-505,Perth - North West,Western Australia,2,422742,9972,412770,2.42
-506,Perth - South East,Western Australia,5,375790,8298,367492,2.26
-507,Perth - South West,Western Australia,3,356855,11303,345552,3.27
-509,Western Australia - Wheat Belt,Western Australia,3,17713,636,17077,3.72
-601,Hobart,Tasmania,2,114569,32,114537,0.03
-602,Launceston and North East,Tasmania,1,71341,-192,71533,-0.27
-604,West and North West,Tasmania,2,47414,55,47359,0.12
-701,Darwin,Northern Territory,2,43545,612,42933,1.43
-702,Northern Territory - Outback,Northern Territory,1,24849,544,24305,2.24
+sa4_code,sa4_name,state,lga_count,total_pop,total_change,total_base,growth_pct,area_km2,area_rank,data_area_rank,centroid_lon,centroid_lat
+106,Hunter Valley exc Newcastle,New South Wales,1,100439,2207,98232,2.25,30205.0,7,1,150.9849,-32.3548
+111,Newcastle and Lake Macquarie,New South Wales,1,178935,1947,176988,1.1,1241.0,17,5,151.5763,-32.9966
+115,Sydney - Baulkham Hills and Hawkesbury,New South Wales,2,291974,7512,284462,2.64,4674.0,13,3,150.8288,-33.3685
+116,Sydney - Blacktown,New South Wales,1,449385,9833,439552,2.24,349.0,22,7,150.8643,-33.7407
+123,Sydney - Outer South West,New South Wales,1,146483,5225,141258,3.7,1868.0,16,4,150.6816,-34.1228
+124,Sydney - Outer West and Blue Mountains,New South Wales,3,373017,5473,367544,1.49,5771.0,12,2,150.3804,-33.8742
+125,Sydney - Parramatta,New South Wales,2,535920,7675,528245,1.45,237.0,24,8,151.0047,-33.826
+127,Sydney - South West,New South Wales,1,261231,5864,255367,2.3,787.0,18,6,150.817,-33.932
+201,Ballarat,Victoria,1,40472,763,39709,1.92,16320.0,7,4,143.7346,-37.3756
+202,Bendigo,Victoria,1,54464,879,53585,1.64,18411.0,5,3,144.0945,-36.6007
+203,Geelong,Victoria,1,295052,6376,288676,2.21,7165.0,8,5,144.1266,-38.111
+204,Hume,Victoria,1,58459,2380,56079,4.24,53111.0,3,2,146.4137,-36.7761
+205,Latrobe - Gippsland,Victoria,1,62784,991,61793,1.6,66551.0,2,1,147.4116,-37.7305
+206,Melbourne - Inner,Victoria,1,194481,6916,187565,3.69,229.0,17,12,144.9645,-37.8002
+209,Melbourne - North East,Victoria,1,259759,7321,252438,2.9,2948.0,11,8,145.1692,-37.5207
+210,Melbourne - North West,Victoria,1,278885,8122,270763,3.0,2576.0,12,9,144.7458,-37.476
+211,Melbourne - Outer East,Victoria,1,160906,1127,159779,0.71,3011.0,10,7,145.5059,-37.7596
+212,Melbourne - South East,Victoria,3,717085,16039,701046,2.29,3107.0,9,6,145.4682,-38.0732
+213,Melbourne - West,Victoria,2,579397,25183,554214,4.54,2271.0,13,10,144.625,-37.7765
+214,Mornington Peninsula,Victoria,2,317586,2438,315148,0.77,1389.0,14,11,145.0563,-38.3103
+309,Gold Coast,Queensland,1,691230,11944,679286,1.76,2393.0,13,6,153.2707,-28.0131
+310,Ipswich,Queensland,3,341266,10633,330633,3.22,8542.0,8,1,152.5507,-27.6102
+311,Logan - Beaudesert,Queensland,2,450462,12952,437510,2.96,3330.0,11,4,152.964,-27.9989
+313,Moreton Bay - North,Queensland,1,532445,10951,521494,2.1,5482.0,9,2,152.5815,-26.8702
+316,Sunshine Coast,Queensland,1,381957,7659,374298,2.05,3875.0,10,3,152.909,-26.5891
+317,Toowoomba,Queensland,1,186276,2201,184075,1.2,2888.0,12,5,152.0841,-27.6166
+401,Adelaide - Central and Hills,South Australia,1,45111,1400,43711,3.2,2235.0,4,2,138.8375,-34.9713
+402,Adelaide - North,South Australia,4,383665,5698,377967,1.51,1394.0,5,3,138.6649,-34.6872
+403,Adelaide - South,South Australia,2,286056,2808,283248,0.99,994.0,6,4,138.5715,-35.1428
+404,Adelaide - West,South Australia,1,143022,1650,141372,1.17,238.0,7,5,138.5302,-34.8748
+407,South Australia - South East,South Australia,1,31427,481,30946,1.55,99553.0,2,1,139.9124,-35.6987
+501,Bunbury,Western Australia,1,20170,682,19488,3.5,36144.0,4,2,116.0092,-33.9548
+502,Mandurah,Western Australia,2,128274,4295,123979,3.46,1460.0,7,5,115.8306,-32.6323
+503,Perth - Inner,Western Australia,1,254821,3952,250869,1.58,129.0,10,8,115.8099,-31.9562
+504,Perth - North East,Western Australia,1,187090,7194,179896,4.0,2448.0,6,4,116.134,-31.8084
+505,Perth - North West,Western Australia,2,422742,9972,412770,2.42,1224.0,8,6,115.7697,-31.6622
+506,Perth - South East,Western Australia,5,375790,8298,367492,2.26,2835.0,5,3,116.0629,-32.2067
+507,Perth - South West,Western Australia,3,356855,11303,345552,3.27,870.0,9,7,115.8004,-32.2238
+509,Western Australia - Wheat Belt,Western Australia,3,17713,636,17077,3.72,275846.0,3,1,117.9185,-32.0672
+601,Hobart,Tasmania,2,114569,32,114537,0.03,3154.0,4,3,147.4376,-42.8311
+602,Launceston and North East,Tasmania,1,71341,-192,71533,-0.27,35495.0,3,2,147.4579,-41.3613
+604,West and North West,Tasmania,2,47414,55,47359,0.12,40361.0,2,1,145.4795,-41.6293
+701,Darwin,Northern Territory,2,43545,612,42933,1.43,3344.0,2,2,131.1071,-12.523
+702,Northern Territory - Outback,Northern Territory,1,24849,544,24305,2.24,1528207.0,1,1,133.37,-19.4304
