@@ -98,7 +98,7 @@
         "type": "text",
         "fontSize": 11,
         "fontWeight": "600",
-        "dy": {"expr": "datum.state === 'TAS' ? -20 : datum.state === 'NT' ? 16 : datum.state === 'ACT' ? -20 : -14"},
+        "dy": {"expr": "datum.state === 'VIC' ? 40 : datum.state === 'QLD' ? 36 : datum.state === 'WA' ? 30 : datum.state === 'TAS' ? -20 : datum.state === 'NT' ? 16 : datum.state === 'ACT' ? -20 : datum.state === 'NSW' ? -36 : -22"},
         "dx": {"expr": "datum.state === 'NT' ? 6 : 0"}
       },
       "encoding": {
