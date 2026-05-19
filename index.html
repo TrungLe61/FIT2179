@@ -193,35 +193,40 @@
 
   <!-- ══════════════════════ SECTION 4 ══════════════════════ -->
   <div class="section-divider">
-    <span class="section-label">Section 4</span>
-    <h2>Is Supply Meeting Demand?</h2>
+    <span class="section-label">Part 4</span>
+    <h2>Is Each State Building Enough for Its Growing Population?</h2>
   </div>
 
   <!-- Chart 9: full width — supply choropleth -->
   <div class="pure-g">
     <div class="pure-u-1-1">
       <p>
-        Raw approval totals favour large states by population. To compare fairly, this map shows
-        <strong>approvals per 1,000 residents</strong> — a supply adequacy rate. The national average
-        is approximately 5.8 per 1,000. Melbourne leads at 8.56; Darwin trails at just 2.29.
-        Hover over each state to see whether it sits above or below the national average.
+        Simply counting how many homes a state approves is not a fair comparison, bigger and more
+        popular states will always have bigger numbers. A better question is: <strong>did each state
+        approve enough homes to actually house the new people moving there?</strong>
+      </p>
+      <p>
+        To work this out, we use a simple calculation: on average, <strong>2.5 people live in each
+        new home</strong>, according to the ABS. So if 10,000 new people moved to a state, it would
+        need roughly 4,000 new homes. We then compare that figure to how many were actually approved.
+      </p>
+      <p>
+        A score of <strong>1.0</strong> means a state built exactly what it needed.
+        <strong style="color:#3182bd">Blue states</strong> built more than enough.
+        <strong style="color:#de2d26">Red states</strong> fell short.
       </p>
       <div id="vis9" class="vis-container"></div>
     </div>
   </div>
 
-  <!-- Chart 10 (repurposed): grouped bar — actual approvals vs estimated need -->
+  <!-- Chart 10: diverging bar — dwelling surplus / deficit by state -->
   <div class="pure-g">
     <div class="pure-u-1-1">
       <p>
-        Using the ABS standard of <strong>2.5 persons per new dwelling</strong>, we can estimate how many
-        approvals each city needs per 1,000 residents to house its growing population.
-        Bars show actual approvals — <strong style="color:#1976D2">blue</strong> when supply meets demand,
-        <strong style="color:#c62828">red</strong> when it falls short. The
-        <strong style="color:#FF7043">orange tick mark</strong> shows the estimated need threshold.
-        Darwin and Perth sit clearly left of their ticks, revealing the most acute supply shortfalls.
+        The map above shows <strong>which</strong> states are falling short, but not by how much.
+        The chart below puts a real number on the gap.
       </p>
-      <div id="vis10" class="vis-container"></div>
+      <div id="vis10b" class="vis-container"></div>
     </div>
   </div>
 
@@ -232,20 +237,19 @@
     </div>
     <div class="pure-u-1-3">
       <div class="description-right">
-        <h3>Population Growth vs Supply Rate</h3>
         <p>
-          Each bubble is a state or territory; size represents population. Dashed lines mark the
-          median population growth rate and median supply rate, dividing states into four
-          supply-demand quadrants.
+          This chart shows every state's situation at a glance. If a dot sits <strong>above</strong>
+          the diagonal line, that state approved more homes than its new residents needed. If it sits
+          <strong>below</strong>, it didn't build enough to keep up.
         </p>
         <p>
-          States in the <strong>top-right</strong> have both high growth and strong supply —
-          Western Australia leads. States in the <strong>bottom-right</strong> are growing fast
-          but not building fast enough.
+          Victoria and NSW are both building more than enough for their growing populations, they're
+          in the clear for now. Western Australia, on the other hand, is growing so fast due to people
+          moving there that even its large number of approvals can't keep up with demand.
         </p>
         <p class="small-font">
-          Data joined from two ABS sources: Building Approvals 8731.0 (Mar 2026) and Regional
-          Population 3218.0 (FY2024–25).
+          Data sourced from the Australian Bureau of Statistics, Building Approvals report (March 2026)
+          and Regional Population figures (2024–25).
         </p>
       </div>
     </div>
@@ -299,7 +303,7 @@
   vegaEmbed('#vis7',  './js/chart7_stacked_area.vg.json',        OPTS);
   vegaEmbed('#vis8',  './js/chart8_100pct_bar.vg.json',          OPTS);
   vegaEmbed('#vis9',  './js/chart9_supply_choropleth.vg.json',   OPTS);
-  vegaEmbed('#vis10', './js/chart10_lga_symbol_map.vg.json',     OPTS);
+  vegaEmbed('#vis10b', './js/chart10_supply_deficit_bar.vg.json', OPTS);
   vegaEmbed('#vis11', './js/chart11_scatter.vg.json',            OPTS);
   vegaEmbed('#vis12', './js/chart12_connected_dot.vg.json',      OPTS);
 </script>

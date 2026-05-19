@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "subtitle": "Positive number = more homes approved than needed. Negative number = fell short of what was needed.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": 700,
+  "height": 300,
+  "data": {"url": "data/state_summary.csv"},
+  "transform": [
+    {"filter": "isValid(datum.pop_2024) && isValid(datum.pop_2025)"},
+    {"calculate": "datum.pop_2025 - datum.pop_2024", "as": "pop_growth"},
+    {"calculate": "datum.pop_growth / 2.5", "as": "needed_dwellings"},
+    {"calculate": "datum.approvals_fy2425 - datum.needed_dwellings", "as": "dwelling_gap"},
+    {"calculate": "round(datum.needed_dwellings)", "as": "needed_dwellings_rounded"},
+    {"calculate": "datum.dwelling_gap >= 0 ? 'Surplus' : 'Deficit'", "as": "gap_status"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "state_name",
+      "type": "nominal",
+      "sort": ["New South Wales", "Victoria", "South Australia", "Tasmania", "Australian Capital Territory", "Northern Territory", "Queensland", "Western Australia"],
+      "title": null,
+      "axis": {"labelFontSize": 12}
+    }
+  },
+  "layer": [
+    {
+      "mark": "bar",
+      "encoding": {
+        "x": {
+          "field": "dwelling_gap",
+          "type": "quantitative",
+          "title": "Extra Homes Built (+) or Homes Missing (−)",
+          "scale": {"domainMin": -5000},
+          "axis": {"format": ",.0f", "zero": true, "grid": true}
+        },
+        "color": {
+          "condition": {"test": "datum.gap_status === 'Surplus'", "value": "#1976D2"},
+          "value": "#C62828"
+        },
+        "tooltip": [
+          {"field": "state_name", "type": "nominal", "title": "State"},
+          {"field": "approvals_fy2425", "type": "quantitative", "title": "Approvals", "format": ","},
+          {"field": "pop_growth", "type": "quantitative", "title": "New residents", "format": ","},
+          {"field": "needed_dwellings_rounded", "type": "quantitative", "title": "Dwellings needed", "format": ","},
+          {"field": "dwelling_gap", "type": "quantitative", "title": "Surplus/deficit", "format": "+,.0f"},
+          {"field": "gap_status", "type": "nominal", "title": "Status"}
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": {"expr": "datum.dwelling_gap >= 0 ? 'left' : 'right'"},
+        "dx": {"expr": "datum.dwelling_gap >= 0 ? 4 : -4"},
+        "fontSize": 11
+      },
+      "encoding": {
+        "x": {"field": "dwelling_gap", "type": "quantitative"},
+        "text": {"field": "dwelling_gap", "type": "quantitative", "format": "+,.0f"},
+        "color": {
+          "condition": {"test": "datum.gap_status === 'Surplus'", "value": "#1976D2"},
+          "value": "#C62828"
+        }
+      }
+    },
+    {
+      "mark": {"type": "rule", "color": "#999", "strokeWidth": 1},
+      "encoding": {"x": {"datum": 0}}
+    }
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
+}

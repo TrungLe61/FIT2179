@@ -1,13 +1,17 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Building Supply Rate by State — Approvals per 1,000 People (FY 2024–25)",
+    "text": "Did Each State Approve Enough Homes for Its New Residents? (2024–25)",
+    "subtitle": "For every home needed to house new residents, how many were actually approved? (Based on 2.5 people per home)",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
     "fontSize": 14,
     "fontWeight": "bold"
   },
-  "width": 800,
-  "height": 450,
-  "projection": {"type": "mercator", "center": [134, -26], "scale": 850},
+  "width": 720,
+  "height": 430,
+  "projection": {"type": "mercator", "center": [134, -28], "scale": 680},
   "data": {
     "url": "topojson/aus-states-topo.json",
     "format": {"type": "topojson", "feature": "aus_states"}
@@ -18,28 +22,30 @@
       "from": {
         "data": {"url": "data/state_summary.csv"},
         "key": "state_name",
-        "fields": ["state_name", "approvals_per_1000", "pop_growth_pct", "pop_2025"]
+        "fields": ["state_name", "approvals_fy2425", "pop_2024", "pop_2025"]
       }
     },
-    {
-      "calculate": "datum.approvals_per_1000 >= 5.8 ? 'Above average' : 'Below average'",
-      "as": "supply_status"
-    }
+    {"calculate": "datum.pop_2025 - datum.pop_2024", "as": "pop_growth"},
+    {"calculate": "datum.pop_growth / 2.5", "as": "needed_dwellings"},
+    {"calculate": "isValid(datum.approvals_fy2425) ? datum.approvals_fy2425 / datum.needed_dwellings : null", "as": "supply_ratio"},
+    {"calculate": "isValid(datum.supply_ratio) ? (datum.supply_ratio >= 1 ? 'Surplus — approvals exceed growth need' : 'Deficit — approvals fall short of growth need') : 'No data'", "as": "supply_status"}
   ],
   "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 2},
   "encoding": {
     "color": {
-      "field": "approvals_per_1000",
+      "field": "supply_ratio",
       "type": "quantitative",
-      "title": "Approvals / 1,000 people",
-      "scale": {"scheme": "greens", "domain": [2, 10], "nullColor": "#e0e0e0"},
-      "legend": {"format": ".1f"}
+      "title": "Homes approved for every home needed",
+      "scale": {"scheme": "redblue", "domain": [0.4, 2.0], "domainMid": 1.0, "nullColor": "#e0e0e0", "clamp": true},
+      "legend": {"format": ".2f", "titleLimit": 220}
     },
     "tooltip": [
       {"field": "state_name", "type": "nominal", "title": "State"},
-      {"field": "approvals_per_1000", "type": "quantitative", "title": "Approvals per 1,000 people", "format": ".2f"},
-      {"field": "pop_growth_pct", "type": "quantitative", "title": "Population growth (%)", "format": ".2f"},
-      {"field": "supply_status", "type": "nominal", "title": "vs National Average"}
+      {"field": "approvals_fy2425", "type": "quantitative", "title": "Approvals FY24–25", "format": ","},
+      {"field": "pop_growth", "type": "quantitative", "title": "New residents", "format": ","},
+      {"field": "needed_dwellings", "type": "quantitative", "title": "Dwellings needed", "format": ",.0f"},
+      {"field": "supply_ratio", "type": "quantitative", "title": "Supply ratio", "format": ".2f"},
+      {"field": "supply_status", "type": "nominal", "title": "Status"}
     ]
   },
   "config": {
