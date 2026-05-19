@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "New Homes Approved Per State (July 2024 – June 2025)",
-    "subtitle": "Select a state — the dot over each capital shows homes approved per 1,000 people; map shading shows how fast each region's population is growing",
+    "subtitle": "Select a state — map shading shows how fast each region's population is growing; total new homes approved shown at each capital city",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleColor": "#666",
@@ -88,37 +88,6 @@
       }
     },
     {
-      "description": "Capital city circle",
-      "data": {"url": "data/gccsa_summary.csv"},
-      "transform": [
-        {
-          "calculate": "{'ACT':'Australian Capital Territory','Adelaide':'South Australia','Brisbane':'Queensland','Darwin':'Northern Territory','Hobart':'Tasmania','Melbourne':'Victoria','Perth':'Western Australia','Sydney':'New South Wales'}[datum.city]",
-          "as": "state_name"
-        },
-        {"filter": "datum.state_name === selected_state"}
-      ],
-      "mark": {"type": "circle", "size": 1800, "opacity": 0.85, "stroke": "white", "strokeWidth": 1.5},
-      "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
-        "color": {
-          "field": "approvals_per_1000",
-          "type": "quantitative",
-          "title": "Per 1,000 residents",
-          "scale": {"scheme": "oranges", "domain": [2, 10]},
-          "legend": null
-        },
-        "tooltip": [
-          {"field": "city_name", "type": "nominal", "title": "City"},
-          {"field": "total", "type": "quantitative", "title": "Total Approvals FY24-25", "format": ","},
-          {"field": "houses", "type": "quantitative", "title": "Houses", "format": ","},
-          {"field": "non_houses", "type": "quantitative", "title": "Apartments / Other", "format": ","},
-          {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 residents", "format": ".2f"},
-          {"field": "pop_growth_pct", "type": "quantitative", "title": "Pop. growth (% per year)", "format": ".2f"}
-        ]
-      }
-    },
-    {
       "description": "City name label",
       "data": {"url": "data/gccsa_summary.csv"},
       "transform": [
@@ -154,14 +123,15 @@
           "as": "state_name"
         },
         {"filter": "datum.state_name === selected_state"},
-        {"calculate": "format(datum.total, ',') + ' new homes approved'", "as": "approvals_label"}
+        {"calculate": "format(datum.total, ',') + '\\nnew homes approved'", "as": "approvals_label"}
       ],
       "mark": {
         "type": "text",
-        "dy": 28,
+        "dy": 18,
         "fontSize": 11,
         "fontWeight": "normal",
-        "color": "#333"
+        "color": "#333",
+        "lineBreak": "\n"
       },
       "encoding": {
         "longitude": {"field": "lon", "type": "quantitative"},

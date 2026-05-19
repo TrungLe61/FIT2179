@@ -24,12 +24,12 @@
           "field": "approvals", "type": "quantitative",
           "title": "New Homes Approved Per Month",
           "stack": true,
-          "axis": {"format": ",.0f"}
+          "axis": {"format": ",.0f", "titleAngle": 0, "titleAlign": "left", "titleX": 0, "titleY": -10}
         },
         "color": {
           "field": "dwelling_type", "type": "nominal",
           "scale": {"domain": ["Standalone Houses", "Apartments, Units & Townhouses"], "range": ["#1976D2", "#FF7043"]},
-          "legend": {"title": null, "orient": "top-left"}
+          "legend": {"title": null, "orient": "bottom", "direction": "horizontal"}
         },
         "tooltip": [
           {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
@@ -39,33 +39,43 @@
       }
     },
     {
+      "description": "Callout pointer lines",
       "data": {
         "values": [
-          {"date": "2008-09-01", "line1": "2008 Global",    "line2": "Financial Crash", "y_pos": 15},
-          {"date": "2012-06-01", "line1": "2012 Resources", "line2": "Boom",            "y_pos": 40},
-          {"date": "2020-03-01", "line1": "COVID Stimulus", "line2": "(2020–21)",        "y_pos": 15},
-          {"date": "2022-05-01", "line1": "Rate Rises Slow","line2": "Things Down",      "y_pos": 40}
+          {"ldate": "1997-06-01", "ly": 22000, "tdate": "2000-07-01", "ty": 10500},
+          {"ldate": "2005-06-01", "ly": 22000, "tdate": "2008-09-01", "ty": 12000},
+          {"ldate": "2014-06-01", "ly": 22000, "tdate": "2012-06-01", "ty": 14500},
+          {"ldate": "2017-06-01", "ly": 19000, "tdate": "2020-03-01", "ty": 13500},
+          {"ldate": "2023-01-01", "ly": 22000, "tdate": "2020-10-01", "ty": 20000},
+          {"ldate": "2025-01-01", "ly": 19000, "tdate": "2022-05-01", "ty": 18500}
         ]
       },
-      "transform": [
-        {"calculate": "datum.line2 ? datum.line1 + '\\n' + datum.line2 : datum.line1", "as": "label"}
-      ],
-      "layer": [
-        {
-          "mark": {"type": "rule", "strokeDash": [4, 4], "color": "#999", "strokeWidth": 1},
-          "encoding": {
-            "x": {"field": "date", "type": "temporal"}
-          }
-        },
-        {
-          "mark": {"type": "text", "align": "left", "dx": 4, "fontSize": 10, "fontStyle": "italic", "color": "#666", "lineBreak": "\n"},
-          "encoding": {
-            "x": {"field": "date", "type": "temporal"},
-            "y": {"expr": "datum.y_pos"},
-            "text": {"field": "label"}
-          }
-        }
-      ]
+      "mark": {"type": "rule", "color": "#aaa", "strokeWidth": 1},
+      "encoding": {
+        "x":  {"field": "ldate", "type": "temporal"},
+        "y":  {"field": "ly",    "type": "quantitative"},
+        "x2": {"field": "tdate", "type": "temporal"},
+        "y2": {"field": "ty",    "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Callout label text",
+      "data": {
+        "values": [
+          {"ldate": "1997-06-01", "ly": 22000, "label": "GST Introduced\n(July 2000)",         "anchor": "center"},
+          {"ldate": "2005-06-01", "ly": 22000, "label": "Global Financial\nCrisis (2008)",      "anchor": "center"},
+          {"ldate": "2014-06-01", "ly": 22000, "label": "2012 Resources\nBoom",                 "anchor": "center"},
+          {"ldate": "2017-06-01", "ly": 19000, "label": "COVID 19",                             "anchor": "center"},
+          {"ldate": "2023-01-01", "ly": 22000, "label": "HomeBuilder\nGrant",                   "anchor": "center"},
+          {"ldate": "2025-01-01", "ly": 19000, "label": "Rate Rises Slow\nThings Down",         "anchor": "center"}
+        ]
+      },
+      "mark": {"type": "text", "align": "center", "fontSize": 11, "color": "#333", "lineBreak": "\n"},
+      "encoding": {
+        "x":    {"field": "ldate", "type": "temporal"},
+        "y":    {"field": "ly",    "type": "quantitative"},
+        "text": {"field": "label"}
+      }
     }
   ],
   "config": {

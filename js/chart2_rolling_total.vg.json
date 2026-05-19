@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Total New Homes Approved Over the Past 12 Months",
+    "text": "Total New Homes Approved Over the Years",
     "fontSize": 14,
     "fontWeight": "bold"
   },
@@ -29,7 +29,7 @@
         "y": {
           "field": "rolling_12m",
           "type": "quantitative",
-          "title": "Homes Approved in the Last 12 Months",
+          "title": "Homes Approved",
           "axis": {"format": ",.0f"}
         },
         "tooltip": [
@@ -42,6 +42,27 @@
       "data": {"values": [{}]},
       "mark": {"type": "rule", "color": "#C62828", "strokeWidth": 2.5, "strokeDash": [6, 3]},
       "encoding": {"y": {"datum": 240000}}
+    },
+    {
+      "description": "Callout pointer line to 2016 peak",
+      "data": {"values": [{"ldate": "2012-01-01", "ly": 170000, "tdate": "2016-06-01", "ty": 240000}]},
+      "mark": {"type": "rule", "color": "#aaa", "strokeWidth": 1},
+      "encoding": {
+        "x":  {"field": "ldate", "type": "temporal"},
+        "y":  {"field": "ly",    "type": "quantitative"},
+        "x2": {"field": "tdate", "type": "temporal"},
+        "y2": {"field": "ty",    "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Callout label for 2016 peak",
+      "data": {"values": [{"ldate": "2012-01-01", "ly": 170000, "label": "Last time approvals\nreached the 240k target"}]},
+      "mark": {"type": "text", "align": "center", "fontSize": 11, "color": "#333", "lineBreak": "\n"},
+      "encoding": {
+        "x":    {"field": "ldate", "type": "temporal"},
+        "y":    {"field": "ly",    "type": "quantitative"},
+        "text": {"field": "label"}
+      }
     },
     {
       "data": {"values": [{"label": "Government's yearly goal: 240,000 homes"}]},
