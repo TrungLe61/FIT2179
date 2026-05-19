@@ -45,6 +45,27 @@
       "encoding": {"x": {"datum": 0}}
     },
     {
+      "description": "NT callout line",
+      "data": {"values": [{"x1": 60.9, "x2": 40}]},
+      "mark": {"type": "rule", "color": "#888", "strokeWidth": 1},
+      "encoding": {
+        "x":  {"field": "x1", "type": "quantitative"},
+        "y":  {"datum": "Northern Territory"},
+        "x2": {"field": "x2"},
+        "y2": {"datum": "Victoria"}
+      }
+    },
+    {
+      "description": "NT callout text",
+      "data": {"values": [{"x": 40, "label": "The NT's jump looks impressive, but it\nstarted from a very small base — 437\napprovals in 23-24 to 703 in 24-25.\nEven a small increase in a small territory\ncan produce a dramatic percentage rise."}]},
+      "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 10, "color": "#444", "lineBreak": "\n", "fontStyle": "italic"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"datum": "Victoria"},
+        "text": {"field": "label"}
+      }
+    },
+    {
       "description": "ACT callout line",
       "data": {"values": [{"x1": -37.8, "x2": -30}]},
       "mark": {"type": "rule", "color": "#888", "strokeWidth": 1},

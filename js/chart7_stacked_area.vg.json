@@ -1,40 +1,64 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Composition of Approvals: Houses vs Apartments (1983–2026)",
+    "text": "Houses vs Apartments: How Many of Each Were Approved Each Month (1983–2026)",
     "fontSize": 14,
     "fontWeight": "bold"
   },
   "width": "container",
   "height": 300,
   "data": {"url": "data/approvals_national_monthly.csv"},
-  "transform": [
-    {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
-    {"calculate": "datum.type === 'houses' ? 'Standalone Houses' : 'Apartments, Units & Townhouses'", "as": "dwelling_type"}
+  "layer": [
+    {
+      "transform": [
+        {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
+        {"calculate": "datum.type === 'houses' ? 'Standalone Houses' : 'Apartments, Units & Townhouses (shared buildings)'", "as": "dwelling_type"}
+      ],
+      "mark": {"type": "line", "opacity": 0.85, "interpolate": "monotone", "strokeWidth": 1.8},
+      "encoding": {
+        "x": {
+          "field": "date", "type": "temporal",
+          "axis": {"title": ""}
+        },
+        "y": {
+          "field": "approvals", "type": "quantitative",
+          "title": "New Homes Approved Per Month",
+          "axis": {"format": ",.0f"}
+        },
+        "color": {
+          "field": "dwelling_type", "type": "nominal",
+          "scale": {"domain": ["Standalone Houses", "Apartments, Units & Townhouses (shared buildings)"], "range": ["#1976D2", "#FF7043"]},
+          "legend": {"title": null, "orient": "top-left"}
+        },
+        "tooltip": [
+          {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
+          {"field": "dwelling_type", "type": "nominal", "title": "Type"},
+          {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
+        ]
+      }
+    },
+    {
+      "description": "Apartment boom callout line",
+      "data": {"values": [{"ldate": "2012-01-01", "ly": 15000, "tdate": "2015-06-01", "ty": 12500}]},
+      "mark": {"type": "rule", "color": "#aaa", "strokeWidth": 1},
+      "encoding": {
+        "x":  {"field": "ldate", "type": "temporal"},
+        "y":  {"field": "ly",    "type": "quantitative"},
+        "x2": {"field": "tdate", "type": "temporal"},
+        "y2": {"field": "ty",    "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Apartment boom callout text",
+      "data": {"values": [{"ldate": "2012-01-01", "ly": 15000, "label": "Apartment boom: Low interest rates and surging\ndemand in Sydney and Melbourne made apartment\ndevelopment highly profitable. For the first time,\napartments nearly outweigh houses in monthly approvals."}]},
+      "mark": {"type": "text", "align": "center", "fontSize": 10, "color": "#444", "lineBreak": "\n", "fontStyle": "italic"},
+      "encoding": {
+        "x":    {"field": "ldate", "type": "temporal"},
+        "y":    {"field": "ly",    "type": "quantitative"},
+        "text": {"field": "label"}
+      }
+    }
   ],
-  "mark": {"type": "area", "opacity": 0.8, "interpolate": "monotone"},
-  "encoding": {
-    "x": {
-      "field": "date", "type": "temporal",
-      "axis": {"title": ""}
-    },
-    "y": {
-      "field": "approvals", "type": "quantitative",
-      "stack": true,
-      "title": "Monthly Approvals",
-      "axis": {"format": ",.0f"}
-    },
-    "color": {
-      "field": "dwelling_type", "type": "nominal",
-      "scale": {"domain": ["Standalone Houses", "Apartments, Units & Townhouses"], "range": ["#1976D2", "#FF7043"]},
-      "legend": {"title": null, "orient": "top-left"}
-    },
-    "tooltip": [
-      {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
-      {"field": "dwelling_type", "type": "nominal", "title": "Type"},
-      {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
-    ]
-  },
   "config": {
     "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
     "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},

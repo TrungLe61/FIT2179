@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Housing Mix by Capital City: Houses vs Apartments",
+    "text": "What Share of New Homes Are Houses vs Apartments, by Capital City?",
     "fontSize": 14,
     "fontWeight": "bold"
   },
@@ -32,13 +32,13 @@
       "field": "count",
       "type": "quantitative",
       "stack": "normalize",
-      "title": "Share of Approvals",
+      "title": "Percentage of New Homes Approved (%)",
       "axis": {"format": "%"}
     },
     "color": {
       "field": "dwelling_type",
       "type": "nominal",
-      "title": "Dwelling Type",
+      "title": "Home Type",
       "scale": {
         "domain": ["Standalone Houses", "Apartments, Units & Townhouses"],
         "range": ["#1976D2", "#FF7043"]
