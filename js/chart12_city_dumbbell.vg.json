@@ -1,0 +1,98 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Are Our Cities Building Enough for the People Moving There? (FY 2024–25)",
+    "subtitle": "Each city's approvals (coloured dot) vs dwellings needed for new arrivals (grey dot) — ABS: 2.5 persons per dwelling. Grey dot to the right of coloured = undersupplied.",
+    "subtitleFontStyle": "italic",
+    "subtitleFontSize": 11,
+    "subtitleColor": "#666",
+    "fontSize": 14,
+    "fontWeight": "bold"
+  },
+  "width": 650,
+  "height": 320,
+  "data": {"url": "data/gccsa_summary.csv"},
+  "transform": [
+    {
+      "calculate": "datum.city_name === 'Australian Capital Territory' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",
+      "as": "short_name"
+    },
+    {"calculate": "datum.total * 1000 / datum.approvals_per_1000", "as": "city_pop"},
+    {"calculate": "datum.city_pop * (datum.pop_growth_pct / 100) / 2.5", "as": "needed_dwellings"},
+    {"calculate": "round(datum.needed_dwellings)", "as": "needed_rounded"},
+    {"calculate": "datum.total - datum.needed_dwellings", "as": "dwelling_gap"},
+    {"calculate": "datum.dwelling_gap >= 0 ? 'Surplus' : 'Deficit'", "as": "gap_status"},
+    {"calculate": "max(datum.total, datum.needed_dwellings)", "as": "label_x"}
+  ],
+  "encoding": {
+    "y": {
+      "field": "short_name",
+      "type": "nominal",
+      "sort": {"field": "dwelling_gap", "order": "ascending"},
+      "title": null,
+      "axis": {"labelFontSize": 12}
+    }
+  },
+  "layer": [
+    {
+      "mark": {"type": "rule", "strokeWidth": 3},
+      "encoding": {
+        "x": {
+          "field": "needed_dwellings",
+          "type": "quantitative",
+          "title": "Dwellings (needed vs approved)",
+          "axis": {"format": ",.0f"}
+        },
+        "x2": {"field": "total"},
+        "color": {
+          "condition": {"test": "datum.gap_status === 'Surplus'", "value": "#1976D2"},
+          "value": "#C62828"
+        }
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 120, "color": "#888"},
+      "encoding": {
+        "x": {"field": "needed_dwellings", "type": "quantitative"},
+        "tooltip": [
+          {"field": "short_name", "type": "nominal", "title": "City"},
+          {"field": "needed_rounded", "type": "quantitative", "title": "Dwellings needed", "format": ","}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "point", "filled": true, "size": 120},
+      "encoding": {
+        "x": {"field": "total", "type": "quantitative"},
+        "color": {
+          "condition": {"test": "datum.gap_status === 'Surplus'", "value": "#1976D2"},
+          "value": "#C62828"
+        },
+        "tooltip": [
+          {"field": "short_name", "type": "nominal", "title": "City"},
+          {"field": "total", "type": "quantitative", "title": "Approvals", "format": ","},
+          {"field": "needed_rounded", "type": "quantitative", "title": "Dwellings needed", "format": ","},
+          {"field": "dwelling_gap", "type": "quantitative", "title": "Gap", "format": "+,.0f"},
+          {"field": "gap_status", "type": "nominal", "title": "Status"}
+        ]
+      }
+    },
+    {
+      "mark": {"type": "text", "fontSize": 10, "dx": 6, "align": "left"},
+      "encoding": {
+        "x": {"field": "label_x", "type": "quantitative"},
+        "text": {"field": "dwelling_gap", "type": "quantitative", "format": "+,.0f"},
+        "color": {
+          "condition": {"test": "datum.gap_status === 'Surplus'", "value": "#1976D2"},
+          "value": "#C62828"
+        }
+      }
+    }
+  ],
+  "config": {
+    "title": {"font": "Open Sans", "fontSize": 14, "fontWeight": "bold"},
+    "axis": {"labelFont": "Open Sans", "titleFont": "Open Sans", "labelFontSize": 11},
+    "legend": {"labelFont": "Open Sans", "titleFont": "Open Sans"},
+    "view": {"stroke": "transparent"}
+  }
+}

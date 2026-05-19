@@ -245,6 +245,21 @@
   </div>
 
 
+  <!-- Chart 12: city dumbbell — approvals vs needed by capital city -->
+  <div class="pure-g">
+    <div class="pure-u-1-1">
+      <p>
+        State totals can be misleading, because most migrants, whether arriving from overseas or moving
+        interstate, settle in capital cities, not spread evenly across the state. This chart strips back
+        to the city level: the <strong>grey dot</strong> shows how many dwellings each city needed to
+        house its new arrivals; the <strong>coloured dot</strong> shows how many were actually approved.
+        Cities where the grey dot sits to the right of the coloured dot did not build enough.
+      </p>
+      <div id="vis12" class="vis-container"></div>
+    </div>
+  </div>
+
+
   <!-- ══════════════════════ FOOTER ══════════════════════ -->
   <div class="page-footer">
     <p>
@@ -266,14 +281,13 @@
   vegaEmbed('#vis1',  './js/chart1_national_trend.vg.json',      OPTS);
   vegaEmbed('#vis2',  './js/chart2_rolling_total.vg.json',       OPTS);
   vegaEmbed('#vis3',  './js/chart3_state_choropleth.vg.json',    OPTS);
-  vegaEmbed('#vis4',  './js/chart4_bubble_map.vg.json',          OPTS);
   vegaEmbed('#vis5',  './js/chart5_yoy_choropleth.vg.json',      OPTS);
   vegaEmbed('#vis7',  './js/chart7_stacked_area.vg.json',        OPTS);
   vegaEmbed('#vis8',  './js/chart8_100pct_bar.vg.json',          OPTS);
   vegaEmbed('#vis9',  './js/chart9_supply_choropleth.vg.json',   OPTS);
   vegaEmbed('#vis10b', './js/chart10_supply_deficit_bar.vg.json', OPTS);
   vegaEmbed('#vis11', './js/chart11_scatter.vg.json',            OPTS);
-  vegaEmbed('#vis12', './js/chart12_connected_dot.vg.json',      OPTS);
+  vegaEmbed('#vis12', './js/chart12_city_dumbbell.vg.json',      OPTS);
 </script>
 </body>
 </html>
