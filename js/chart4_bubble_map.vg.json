@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
-    "text": "Building Rate by Capital City (FY 2024–25)",
-    "subtitle": "New dwellings approved per 1,000 residents",
+    "text": "New Homes Approved Per 1,000 Residents, by State (2024–25)",
+    "subtitle": "For every 1,000 people living in that state, how many new homes were approved",
     "subtitleFontStyle": "italic",
     "subtitleFontSize": 11,
     "subtitleColor": "#666",
@@ -11,11 +11,11 @@
   },
   "width": "container",
   "height": 320,
-  "data": {"url": "data/gccsa_summary.csv"},
+  "data": {"url": "data/state_summary.csv"},
   "transform": [
     {
-      "calculate": "datum.city === 'ACT' ? 'Canberra' : replace(datum.city_name, 'Greater ', '')",
-      "as": "short_name"
+      "calculate": "datum.state === 'ACT' ? 'ACT' : datum.state_name",
+      "as": "display_name"
     }
   ],
   "layer": [
@@ -23,7 +23,7 @@
       "mark": {"type": "bar", "cornerRadiusEnd": 4},
       "encoding": {
         "y": {
-          "field": "short_name",
+          "field": "display_name",
           "type": "nominal",
           "sort": "-x",
           "title": "",
@@ -32,7 +32,8 @@
         "x": {
           "field": "approvals_per_1000",
           "type": "quantitative",
-          "title": "Approvals per 1,000 residents",
+          "title": "New Homes Approved Per 1,000 People",
+          "scale": {"domainMax": 11},
           "axis": {"format": ".1f", "grid": true}
         },
         "color": {
@@ -42,9 +43,9 @@
           "legend": null
         },
         "tooltip": [
-          {"field": "short_name", "type": "nominal", "title": "City"},
+          {"field": "display_name", "type": "nominal", "title": "State"},
           {"field": "approvals_per_1000", "type": "quantitative", "title": "Per 1,000 residents", "format": ".2f"},
-          {"field": "total", "type": "quantitative", "title": "Total Approvals FY24-25", "format": ","},
+          {"field": "approvals_fy2425", "type": "quantitative", "title": "Total Approvals FY24-25", "format": ","},
           {"field": "pop_growth_pct", "type": "quantitative", "title": "Pop. growth (%)", "format": ".2f"}
         ]
       }
@@ -52,9 +53,30 @@
     {
       "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 11, "color": "#333"},
       "encoding": {
-        "y": {"field": "short_name", "type": "nominal", "sort": "-x"},
+        "y": {"field": "display_name", "type": "nominal", "sort": "-x"},
         "x": {"field": "approvals_per_1000", "type": "quantitative"},
         "text": {"field": "approvals_per_1000", "type": "quantitative", "format": ".2f"}
+      }
+    },
+    {
+      "description": "NSW callout line",
+      "data": {"values": [{"x1": 5.76, "x2": 7.2}]},
+      "mark": {"type": "rule", "color": "#888", "strokeWidth": 1},
+      "encoding": {
+        "x":  {"field": "x1", "type": "quantitative"},
+        "y":  {"datum": "New South Wales"},
+        "x2": {"field": "x2"},
+        "y2": {"datum": "ACT"}
+      }
+    },
+    {
+      "description": "NSW callout text",
+      "data": {"values": [{"x": 7.2, "label": "Despite having Australia's 2nd-largest\npopulation, NSW approves far fewer\nhomes per person than Victoria or SA,\nsuggesting it's not building fast enough."}]},
+      "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 10, "color": "#444", "lineBreak": "\n", "fontStyle": "italic"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"datum": "ACT"},
+        "text": {"field": "label"}
       }
     }
   ],

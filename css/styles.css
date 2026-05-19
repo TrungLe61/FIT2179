@@ -167,6 +167,64 @@ a:hover { text-decoration: underline; }
   margin-top: 10px;
 }
 
+/* ── State leaderboard ──────────────────────────────────────── */
+.state-leaderboard {
+  margin-top: 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.85em;
+}
+
+.leaderboard-title {
+  background: var(--blue-light);
+  color: var(--blue);
+  font-weight: 600;
+  padding: 6px 12px;
+  font-size: 0.9em;
+}
+
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  padding: 5px 12px;
+  border-top: 1px solid var(--border);
+}
+
+.leaderboard-row:first-of-type {
+  border-top: none;
+}
+
+.rank {
+  width: 24px;
+  color: var(--text-muted);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.state-name {
+  flex: 1;
+  color: var(--text);
+}
+
+.state-total {
+  font-weight: 600;
+  color: var(--blue);
+  text-align: right;
+}
+
+/* ── Tip box ────────────────────────────────────────────────── */
+.tip-box {
+  background: #fffde7;
+  border-left: 4px solid #f9a825;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  padding: 8px 14px;
+  font-size: 0.85em;
+  color: #5d4037;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
 /* ── Footer ─────────────────────────────────────────────────── */
 .page-footer {
   border-top: 1px solid var(--border);

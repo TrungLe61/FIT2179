@@ -2,15 +2,11 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "New Homes Approved Per State (July 2024 – June 2025)",
-    "subtitle": "Select a state — map shading shows how fast each region's population is growing; total new homes approved shown at each capital city",
-    "subtitleFontStyle": "italic",
-    "subtitleFontSize": 11,
-    "subtitleColor": "#666",
     "fontSize": 14,
     "fontWeight": "bold"
   },
   "width": "container",
-  "height": 500,
+  "height": 620,
   "params": [
     {
       "name": "selected_state",
@@ -115,7 +111,25 @@
       }
     },
     {
-      "description": "Total approvals annotation below city name",
+      "description": "Callout line from city to label",
+      "data": {"url": "data/gccsa_summary.csv"},
+      "transform": [
+        {
+          "calculate": "{'ACT':'Australian Capital Territory','Adelaide':'South Australia','Brisbane':'Queensland','Darwin':'Northern Territory','Hobart':'Tasmania','Melbourne':'Victoria','Perth':'Western Australia','Sydney':'New South Wales'}[datum.city]",
+          "as": "state_name"
+        },
+        {"filter": "datum.state_name === selected_state"}
+      ],
+      "mark": {"type": "rule", "color": "#aaa", "strokeWidth": 1},
+      "encoding": {
+        "longitude":  {"field": "lon",       "type": "quantitative"},
+        "latitude":   {"field": "lat",       "type": "quantitative"},
+        "longitude2": {"field": "label_lon", "type": "quantitative"},
+        "latitude2":  {"field": "label_lat", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Total approvals annotation at label position",
       "data": {"url": "data/gccsa_summary.csv"},
       "transform": [
         {
@@ -123,19 +137,20 @@
           "as": "state_name"
         },
         {"filter": "datum.state_name === selected_state"},
-        {"calculate": "format(datum.total, ',') + '\\nnew homes approved'", "as": "approvals_label"}
+        {"calculate": "format(datum.state_total, ',') + '\\nnew homes approved'", "as": "approvals_label"}
       ],
       "mark": {
         "type": "text",
-        "dy": 18,
         "fontSize": 11,
-        "fontWeight": "normal",
+        "fontWeight": "bold",
         "color": "#333",
-        "lineBreak": "\n"
+        "lineBreak": "\n",
+        "align": "left",
+        "dx": 4
       },
       "encoding": {
-        "longitude": {"field": "lon", "type": "quantitative"},
-        "latitude": {"field": "lat", "type": "quantitative"},
+        "longitude": {"field": "label_lon", "type": "quantitative"},
+        "latitude":  {"field": "label_lat", "type": "quantitative"},
         "text": {"field": "approvals_label", "type": "nominal"}
       }
     }

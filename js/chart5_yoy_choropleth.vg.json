@@ -18,7 +18,7 @@
         "y": {
           "field": "state_name",
           "type": "nominal",
-          "sort": {"field": "yoy_change_pct", "order": "descending"},
+          "sort": ["Northern Territory", "Western Australia", "South Australia", "Queensland", "New South Wales", "Victoria", "Tasmania", "Australian Capital Territory"],
           "title": null,
           "axis": {"labelFontSize": 11}
         },
@@ -43,6 +43,27 @@
     {
       "mark": {"type": "rule", "color": "#333", "strokeWidth": 1},
       "encoding": {"x": {"datum": 0}}
+    },
+    {
+      "description": "ACT callout line",
+      "data": {"values": [{"x1": -37.8, "x2": -30}]},
+      "mark": {"type": "rule", "color": "#888", "strokeWidth": 1},
+      "encoding": {
+        "x":  {"field": "x1", "type": "quantitative"},
+        "y":  {"datum": "Australian Capital Territory"},
+        "x2": {"field": "x2"},
+        "y2": {"datum": "Queensland"}
+      }
+    },
+    {
+      "description": "ACT callout text",
+      "data": {"values": [{"x": -30, "label": "Canberra's approvals have significantly\ndecreased — the biggest single-year\ndrop of any state or territory."}]},
+      "mark": {"type": "text", "align": "left", "dx": 5, "fontSize": 10, "color": "#444", "lineBreak": "\n", "fontStyle": "italic"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"datum": "Queensland"},
+        "text": {"field": "label"}
+      }
     }
   ],
   "config": {

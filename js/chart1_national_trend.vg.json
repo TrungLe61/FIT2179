@@ -10,31 +10,20 @@
   "data": {"url": "data/approvals_national_monthly.csv"},
   "layer": [
     {
-      "transform": [
-        {"fold": ["houses", "non_houses"], "as": ["type", "approvals"]},
-        {"calculate": "datum.type === 'houses' ? 'Standalone Houses' : 'Apartments, Units & Townhouses'", "as": "dwelling_type"}
-      ],
-      "mark": {"type": "area", "opacity": 0.7, "interpolate": "monotone"},
+      "mark": {"type": "area", "opacity": 0.7, "interpolate": "monotone", "color": "#1976D2"},
       "encoding": {
         "x": {
           "field": "date", "type": "temporal",
           "axis": {"title": ""}
         },
         "y": {
-          "field": "approvals", "type": "quantitative",
+          "field": "total", "type": "quantitative",
           "title": "New Homes Approved Per Month",
-          "stack": true,
           "axis": {"format": ",.0f", "titleAngle": 0, "titleAlign": "left", "titleX": 0, "titleY": -10}
-        },
-        "color": {
-          "field": "dwelling_type", "type": "nominal",
-          "scale": {"domain": ["Standalone Houses", "Apartments, Units & Townhouses"], "range": ["#1976D2", "#FF7043"]},
-          "legend": {"title": null, "orient": "bottom", "direction": "horizontal"}
         },
         "tooltip": [
           {"field": "date", "type": "temporal", "title": "Month", "format": "%b %Y"},
-          {"field": "dwelling_type", "type": "nominal", "title": "Type"},
-          {"field": "approvals", "type": "quantitative", "title": "Approvals", "format": ","}
+          {"field": "total", "type": "quantitative", "title": "Total Approvals", "format": ","}
         ]
       }
     },
@@ -70,7 +59,7 @@
           {"ldate": "2025-01-01", "ly": 19000, "label": "Rate Rises Slow\nThings Down",         "anchor": "center"}
         ]
       },
-      "mark": {"type": "text", "align": "center", "fontSize": 11, "color": "#333", "lineBreak": "\n"},
+      "mark": {"type": "text", "align": "center", "fontSize": 12, "fontWeight": "bold", "color": "#1a1a1a", "lineBreak": "\n"},
       "encoding": {
         "x":    {"field": "ldate", "type": "temporal"},
         "y":    {"field": "ly",    "type": "quantitative"},
